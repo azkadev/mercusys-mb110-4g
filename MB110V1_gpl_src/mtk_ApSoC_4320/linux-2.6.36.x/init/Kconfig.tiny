@@ -1,0 +1,121 @@
+
+menuconfig TINY
+	bool "Configure tiny kernel features"
+	help
+	  This option allows certain base kernel options and settings
+	  to be disabled or tweaked. This is for specialized
+	  environments which can tolerate a "non-standard" tiny kernel.
+	  Only use this if you really know what you are doing.
+
+
+config NET_SMALL
+	default n
+	bool "Enable various size reductions for networking" if TINY
+	help
+	  This reduces the size of miscellaneous networking data structures.
+	   a placeholder.
+
+
+config BINFMT_ELF_AOUT
+	bool "ELF binaries with a.out linkage" if TINY
+	depends on BINFMT_ELF
+	default BINFMT_AOUT
+	help
+	  The kernel may support ELF executables which use an a.out format
+	  interpreter (dynamic linker) and/or a.out shared libraries, in
+	  addition to the usual ELF-ELF setups. You shouldn't need this.
+
+
+config ETHTOOL
+	bool "Enable ethtool support" if TINY
+	default n
+	depends on NET
+	help
+	  Disabling this option removes support for configuring
+	  ethernet device features via ethtool.
+
+
+config IGMP
+	depends on NET
+	default y
+	bool "Enable IGMP support" if TINY
+	help
+	  This includes support for the Internet group management
+	  protocol, used for multicast.
+
+config INETPEER
+	default y
+	bool "Enable INET peer information storage" if TINY
+	help
+	  This allows storing various information about network peers.
+	  Disabling saves about 2k.
+
+config MEMPOOL
+	default y
+	bool "Use mempool allocator" if TINY
+	help
+	  The mempool allocator attempts keep a reserve pool of
+	  various objects available for use in low-memory situations.
+	  Disabling this feature may make more memory available and
+	  will somewhat decrease code size, but with a higher risk of
+	  deadlock under some loads.
+
+config NET_SK_FILTER
+        default y
+	depends on NET
+	bool "Enable network socket filter" if TINY
+	help
+	  This enables the basic kernel level socket filtering, not to
+	  be confused with netfilter. Required by PPP.
+
+config XATTR
+	default y
+	bool "Enable filesystem extended attribute support" if TINY
+	help
+	  This enables the filesystem extended attribute syscalls.
+
+#
+# MTK/Ralink -- can't apply this patch in 2.6.36 with gcc 4.6.3
+#               TODO: try to fix if possible. 
+#
+#config PANIC
+#	default y
+#	bool "Enable panic reporting code" if TINY
+#	help
+#	  Disabling this completely removes panic handling code.
+#          Warning: this can result in data loss if a panic condition
+#          occurs, as the kernel may ignore the condition entirely.
+
+config FULL_PANIC
+	default y
+	bool "Full panic reporting data" if TINY
+	help
+	  This includes text descriptions of panics in addition to stack dumps.
+          Disabling compiles out the explanations for panics, saving
+	  string space. Use with caution.
+
+
+config NR_LDISCS
+	int "Number of tty line disciplines" if TINY
+	range 0 16
+	default 16
+	help
+	  Select the maximum number of tty line disciplines. Embedded systems
+          can probably get by with only a few of these.
+
+
+config MAX_SWAPFILES_SHIFT
+	int "Number of swap files log2 (0 => 1, 5 => 32)" if TINY
+	range 0 5
+	default 5
+	help
+	  Select the maximum number of swapfiles (5 for default).
+
+
+config MAX_USER_RT_PRIO
+	int "Number of realtime priority levels" if TINY
+	range 5 100
+	default 100
+	help
+	  This option allows reducing the size of the O(1) scheduler arrays.
+

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<InternetGatewayDevice t=o r=P s=IGD_OBJ >
+	<DeviceInfo t=o r=P s=IGD_DEV_INFO_OBJ >
+		<ModelName t=s r=R l=64 d="MB110-4G" />
+		<Description t=s r=R l=256 d="300Mbps Wireless N 4G LTE Router" />
+		<AdditionalHardwareVersion t=s r=R l=64 d=00000001 />
+		<X_TP_DevModelVersion t=s r=R d=1.0 nw=1 h=1 />
+		<X_TP_ProductID t=u r=R d=0x06011041 nw=1 h=1 />
+		<X_TP_ProductVersion t=u r=R d=0x00000001 nw=1 h=1 />
+		<X_TP_SpecialVersion t=u r=R d=0x45550000 nw=1 h=1 />
+		<X_TP_SoftwareRevision t=u r=R d=0x55aa0100 nw=1 h=1 />
+		<X_TP_SoftwareRevisionMinor t=u r=R d=0x00 nw=1 h=1 />
+		<X_TP_PlatformVersion t=u r=R d=0xa5000901 nw=1 h=1 />
+		<X_TP_HardwareID t=s r=R l=33 al=nae d=5B431C5335BE54B0A78BDCCDC7174FFF nw=1 h=1 />
+		<X_TP_FirmwareID t=s r=R l=33 al=cli d=20002233445566778899AABBCCDDEE0B nw=1 h=1 />
+		<X_TP_OemID t=s r=R l=33 al=nae d=23B6CF67FBCE5E2B85246135C1EFE046 nw=1 h=1 />
+	</DeviceInfo>
+</InternetGatewayDevice>

@@ -1,0 +1,142 @@
+#!/bin/sh
+
+mount -a
+
+/bin/mkdir -m 0777 -p /var/lock
+/bin/mkdir -m 0777 -p /var/log
+/bin/mkdir -m 0777 -p /var/run
+/bin/mkdir -m 0777 -p /var/tmp
+/bin/mkdir -m 0777 -p /var/Wireless/RT2860AP
+/bin/mkdir -m 0777 -p /var/tmp/wsc_upnp/
+
+#for tpapp dropbear
+/bin/mkdir -m 0777 -p /var/tmp/dropbear
+
+#for the dirs of samba and ntfs-3g, zjj, 20111129
+/bin/mkdir -m 0777 -p /var/usbdisk
+/bin/mkdir -m 0777 -p /var/dev
+/bin/mkdir -m 0777 -p /var/samba/lib
+/bin/mkdir -m 0777 -p /var/samba/private
+/bin/mkdir -m 0777 -p /var/samba/var/locks
+cp -p /etc/passwd.bak /var/passwd
+/bin/mkdir -m 0777 -p /var/3G
+#end by zjj
+
+#for the dirs of vdsl in 9980, wzy, 20130315
+/bin/mkdir -m 0777 -p /var/xdsl_changeover
+#end by wzy
+
+#added by CCy for Vpn, 07Jul2015
+/bin/mkdir -m 0777 -p /var/easy-rsa
+/bin/mkdir -m 0777 -p /var/easy-rsa/keys
+/bin/mkdir -m 0777 -p /var/openvpn
+
+/bin/mkdir -m 0777 -p /var/pptpd
+#add ended
+
+#for https certificate
+/bin/mkdir -m 0777 -p /var/https
+
+echo 30 > /proc/sys/net/unix/max_dgram_qlen
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+#echo 1 > /proc/sys/net/ipv4/tcp_syncookies
+echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
+
+#krammer add for LAN can't continuous ping to WAN when exchenging the routing mode
+#bug1126
+echo 3 > /proc/sys/net/netfilter/nf_conntrack_icmp_timeout
+
+echo 0 > /proc/sys/net/ipv4/conf/default/accept_source_route
+echo 0 > /proc/sys/net/ipv4/conf/all/accept_source_route
+
+echo 4096 > /proc/sys/net/netfilter/nf_conntrack_expect_max
+#echo 5120 > /proc/sys/net/netfilter/nf_conntrack_max
+
+echo 5120 > /proc/sys/vm/min_free_kbytes
+#for lantiq dsl firmware, wzy, 20120331
+#insmod /lib/modules/drv_ifxos.ko
+#insmod /lib/modules/drv_dsl_cpe_api.ko debug_level=3
+#end by wzy
+
+
+insmod /lib/modules/kmdir/kernel/drivers/scsi/scsi_mod.ko
+insmod /lib/modules/kmdir/kernel/drivers/scsi/sd_mod.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/usb/core/usbcore.ko
+
+#for 3g-dongle, add by zjj, 20120521
+mount -t usbfs usbfs /proc/bus/usb/
+
+#insmod /lib/modules/kmdir/kernel/drivers/usb/host/ehci-hcd.ko
+#insmod /lib/modules/kmdir/kernel/drivers/usb/host/ohci-hcd.ko
+insmod /lib/modules/kmdir/kernel/drivers/usb/storage/usb-storage.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/scsi/scsi_wait_scan.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/usb/host/ifxusb_host.ko
+
+
+#netfilter modules load
+insmod /lib/modules/kmdir/kernel/net/netfilter/nf_conntrack_proto_gre.ko
+insmod /lib/modules/kmdir/kernel/net/netfilter/nf_conntrack_pptp.ko
+insmod /lib/modules/ipt_STAT.ko
+insmod /lib/modules/tp_domain.ko 
+
+ln -s /lib/firmware/ap_upper_wave300.bin /tmp/ap_upper_wave300.bin
+ln -s /lib/firmware/sta_upper_wave300.bin /tmp/sta_upper_wave300.bin
+ln -s /lib/firmware/contr_lm.bin /tmp/contr_lm.bin
+ln -s /lib/firmware/ProgModel_A_CB_38_RevA_wave300.bin /tmp/ProgModel_A_CB_38_RevA_wave300.bin
+ln -s /lib/firmware/ProgModel_A_CB_wave300.bin /tmp/ProgModel_A_CB_wave300.bin
+ln -s /lib/firmware/ProgModel_A_nCB_38_RevA_wave300.bin /tmp/ProgModel_A_nCB_38_RevA_wave300.bin
+ln -s /lib/firmware/ProgModel_A_nCB_wave300.bin /tmp/ProgModel_A_nCB_wave300.bin
+ln -s /lib/firmware/ProgModel_BG_CB_38_RevB_wave300.bin /tmp/ProgModel_BG_CB_38_RevB_wave300.bin
+ln -s /lib/firmware/ProgModel_BG_CB_wave300.bin /tmp/ProgModel_BG_CB_wave300.bin
+ln -s /lib/firmware/ProgModel_BG_nCB_38_RevB_wave300.bin /tmp/ProgModel_BG_nCB_38_RevB_wave300.bin
+ln -s /lib/firmware/ProgModel_BG_nCB_wave300.bin /tmp/ProgModel_BG_nCB_wave300.bin
+
+telnetd
+cmmsyslogd &
+#for download gphy_firmware, added by wzy
+cat /firmware/gphy_image > /proc/driver/ifx_gphy/phyfirmware
+#end added by wzy
+
+# insted of cos, by wzy, 06Aug13
+#insmod /lib/modules/kmdir/kernel/drivers/net/ifxmips_ppa/platform/vr9/a5/ifxmips_ppa_datapath_vr9_a5.ko
+#insmod /lib/modules/kmdir/kernel/drivers/net/ifxmips_ppa/platform/vr9/a5/ifxmips_ppa_hal_vr9_a5.ko
+#insmod /lib/modules/kmdir/kernel/drivers/net/ifxmips_ppa/ppa_api/ifx_ppa_api.ko
+#insmod /lib/modules/kmdir/kernel/drivers/net/ifxmips_ppa/ppa_api/ifx_ppa_api_proc.ko
+#insmod /lib/modules/drv_ifxos.ko
+#insmod /lib/modules/drv_dsl_cpe_api.ko debug_level=3
+#ifconfig lo 127.0.0.1 netmask 255.0.0.0
+#ifconfig br0 down
+#brctl delbr br0
+#brctl addbr br0
+#brctl addif br0 eth0
+#ifconfig eth0 up
+#ppacmd addlan -i eth0
+#ppacmd addlan -i br0
+#ifconfig br0 192.168.1.1 up
+#end added by wzy
+voip_server &
+cos &
+
+echo 2 > /proc/sys/vm/overcommit_memory
+echo 95 > /proc/sys/vm/overcommit_ratio
+echo 250 > /proc/sys/vm/lowmem_reserve_ratio
+echo 2 > /proc/sys/vm/dirty_background_ratio
+echo 250 > /proc/sys/vm/dirty_writeback_centisecs
+echo 10 > /proc/sys/vm/dirty_ratio
+echo 16384 > /proc/sys/vm/max_map_count
+echo 2 > /proc/sys/vm/page-cluster
+echo 70 > /proc/sys/vm/swappiness
+
+#while true;do
+#echo 3 > /proc/sys/vm/drop_caches
+#sleep 1
+#done &
+
+#sleep 5
+#echo "Klog Module Starting..."
+#klogd &
+

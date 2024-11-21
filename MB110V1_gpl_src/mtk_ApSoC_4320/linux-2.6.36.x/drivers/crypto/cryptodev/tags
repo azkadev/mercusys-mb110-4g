@@ -1,0 +1,636 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AALG_MAX_RESULT_LEN	crypto/cryptodev.h	70;"	d
+AES_BLOCK_LEN	crypto/cryptodev.h	60;"	d
+AES_BLOCK_SIZE	examples/aes-gcm.h	12;"	d
+AES_BLOCK_SIZE	examples/aes-sha1.h	12;"	d
+AES_BLOCK_SIZE	examples/aes.h	12;"	d
+AES_H	examples/aes-gcm.h	2;"	d
+AES_H	examples/aes-sha1.h	2;"	d
+AES_H	examples/aes.h	2;"	d
+AUTH_SIZE	tests/cipher-aead.c	17;"	d	file:
+AUTH_SIZE	tests/cipher-gcm.c	17;"	d	file:
+BLOCK_SIZE	tests/async_cipher.c	21;"	d	file:
+BLOCK_SIZE	tests/async_hmac.c	22;"	d	file:
+BLOCK_SIZE	tests/cipher-aead-srtp.c	20;"	d	file:
+BLOCK_SIZE	tests/cipher-aead.c	18;"	d	file:
+BLOCK_SIZE	tests/cipher-gcm.c	18;"	d	file:
+BLOCK_SIZE	tests/cipher.c	18;"	d	file:
+BLOCK_SIZE	tests/cipher_comp.c	19;"	d	file:
+BLOCK_SIZE	tests/hash_comp.c	19;"	d	file:
+BLOCK_SIZE	tests/hmac.c	19;"	d	file:
+BLOCK_SIZE	tests/hmac_comp.c	19;"	d	file:
+BLOWFISH_BLOCK_LEN	crypto/cryptodev.h	62;"	d
+CAMELLIA_BLOCK_LEN	crypto/cryptodev.h	61;"	d
+CAST128_BLOCK_LEN	crypto/cryptodev.h	64;"	d
+CIOCASYMFEAT	crypto/cryptodev.h	274;"	d
+CIOCASYNCCRYPT	crypto/cryptodev.h	282;"	d
+CIOCASYNCFETCH	crypto/cryptodev.h	283;"	d
+CIOCAUTHCRYPT	crypto/cryptodev.h	286;"	d
+CIOCCRYPT	crypto/cryptodev.h	272;"	d
+CIOCFSESSION	crypto/cryptodev.h	271;"	d
+CIOCGSESSINFO	crypto/cryptodev.h	275;"	d
+CIOCGSESSION	crypto/cryptodev.h	270;"	d
+CIOCKEY	crypto/cryptodev.h	273;"	d
+COMPAT_CIOCASYNCCRYPT	cryptodev_int.h	68;"	d
+COMPAT_CIOCASYNCFETCH	cryptodev_int.h	69;"	d
+COMPAT_CIOCCRYPT	cryptodev_int.h	67;"	d
+COMPAT_CIOCGSESSION	cryptodev_int.h	66;"	d
+COP_DECRYPT	crypto/cryptodev.h	115;"	d
+COP_ENCRYPT	crypto/cryptodev.h	114;"	d
+COP_FLAG_AEAD_SRTP_TYPE	crypto/cryptodev.h	214;"	d
+COP_FLAG_AEAD_TLS_TYPE	crypto/cryptodev.h	212;"	d
+COP_FLAG_FINAL	crypto/cryptodev.h	209;"	d
+COP_FLAG_NONE	crypto/cryptodev.h	207;"	d
+COP_FLAG_NO_ZC	crypto/cryptodev.h	211;"	d
+COP_FLAG_RESET	crypto/cryptodev.h	216;"	d
+COP_FLAG_UPDATE	crypto/cryptodev.h	208;"	d
+COP_FLAG_WRITE_IV	crypto/cryptodev.h	210;"	d
+CRF_DH_COMPUTE_KEY	crypto/cryptodev.h	264;"	d
+CRF_DSA_SIGN	crypto/cryptodev.h	262;"	d
+CRF_DSA_VERIFY	crypto/cryptodev.h	263;"	d
+CRF_MOD_EXP	crypto/cryptodev.h	260;"	d
+CRF_MOD_EXP_CRT	crypto/cryptodev.h	261;"	d
+CRIOGET	crypto/cryptodev.h	269;"	d
+CRIOGET_NOT_NEEDED	crypto/cryptodev.h	279;"	d
+CRK_ALGORITHM_ALL	crypto/cryptodev.h	/^	CRK_ALGORITHM_ALL$/;"	e	enum:cryptodev_crk_op_t
+CRK_ALGORITHM_MAX	crypto/cryptodev.h	256;"	d
+CRK_DH_COMPUTE_KEY	crypto/cryptodev.h	/^	CRK_DH_COMPUTE_KEY = 4,$/;"	e	enum:cryptodev_crk_op_t
+CRK_DSA_SIGN	crypto/cryptodev.h	/^	CRK_DSA_SIGN = 2,$/;"	e	enum:cryptodev_crk_op_t
+CRK_DSA_VERIFY	crypto/cryptodev.h	/^	CRK_DSA_VERIFY = 3,$/;"	e	enum:cryptodev_crk_op_t
+CRK_MAXPARAM	crypto/cryptodev.h	235;"	d
+CRK_MOD_EXP	crypto/cryptodev.h	/^	CRK_MOD_EXP = 0,$/;"	e	enum:cryptodev_crk_op_t
+CRK_MOD_EXP_CRT	crypto/cryptodev.h	/^	CRK_MOD_EXP_CRT = 1,$/;"	e	enum:cryptodev_crk_op_t
+CRYPTLIB_H	cryptlib.h	2;"	d
+CRYPTODEV_INT_H	cryptodev_int.h	3;"	d
+CRYPTODEV_MAX_ALG_NAME	crypto/cryptodev.h	73;"	d
+CRYPTO_3DES_CBC	crypto/cryptodev.h	/^	CRYPTO_3DES_CBC = 2,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_AES_CBC	crypto/cryptodev.h	/^	CRYPTO_AES_CBC = CRYPTO_RIJNDAEL128_CBC,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_AES_CTR	crypto/cryptodev.h	/^	CRYPTO_AES_CTR = 21,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_AES_ECB	crypto/cryptodev.h	/^	CRYPTO_AES_ECB = 23,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_AES_GCM	crypto/cryptodev.h	/^	CRYPTO_AES_GCM = 50,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_AES_XTS	crypto/cryptodev.h	/^	CRYPTO_AES_XTS = 22,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_ALGORITHM_ALL	crypto/cryptodev.h	/^	CRYPTO_ALGORITHM_ALL, \/* Keep updated - see below *\/$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_ALGORITHM_MAX	crypto/cryptodev.h	54;"	d
+CRYPTO_ALG_FLAG_DSA_SHA	crypto/cryptodev.h	228;"	d
+CRYPTO_ALG_FLAG_RNG_ENABLE	crypto/cryptodev.h	227;"	d
+CRYPTO_ALG_FLAG_SUPPORTED	crypto/cryptodev.h	226;"	d
+CRYPTO_ARC4	crypto/cryptodev.h	/^	CRYPTO_ARC4 = 12,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_BLF_CBC	crypto/cryptodev.h	/^	CRYPTO_BLF_CBC = 3,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_CAMELLIA_CBC	crypto/cryptodev.h	/^	CRYPTO_CAMELLIA_CBC = 101,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_CAST_CBC	crypto/cryptodev.h	/^	CRYPTO_CAST_CBC = 4,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_CIPHER_MAX_KEY_LEN	crypto/cryptodev.h	15;"	d
+CRYPTO_DEFLATE_COMP	crypto/cryptodev.h	/^	CRYPTO_DEFLATE_COMP = 15,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_DES_CBC	crypto/cryptodev.h	/^	CRYPTO_DES_CBC = 1,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_HMAC_MAX_KEY_LEN	crypto/cryptodev.h	14;"	d
+CRYPTO_LZS_COMP	crypto/cryptodev.h	/^	CRYPTO_LZS_COMP = 17,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_MD5	crypto/cryptodev.h	/^	CRYPTO_MD5 = 13,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_MD5_HMAC	crypto/cryptodev.h	/^	CRYPTO_MD5_HMAC = 6,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_MD5_KPDK	crypto/cryptodev.h	/^	CRYPTO_MD5_KPDK = 9,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_NULL	crypto/cryptodev.h	/^	CRYPTO_NULL = 16,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_RIJNDAEL128_CBC	crypto/cryptodev.h	/^	CRYPTO_RIJNDAEL128_CBC = 11,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_RIPEMD160	crypto/cryptodev.h	/^	CRYPTO_RIPEMD160,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_RIPEMD160_HMAC	crypto/cryptodev.h	/^	CRYPTO_RIPEMD160_HMAC = 8,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SHA1	crypto/cryptodev.h	/^	CRYPTO_SHA1 = 14,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SHA1_HMAC	crypto/cryptodev.h	/^	CRYPTO_SHA1_HMAC = 7,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SHA1_KPDK	crypto/cryptodev.h	/^	CRYPTO_SHA1_KPDK = 10,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SHA2_256	crypto/cryptodev.h	/^	CRYPTO_SHA2_256,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SHA2_256_HMAC	crypto/cryptodev.h	/^	CRYPTO_SHA2_256_HMAC = 18,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SHA2_384	crypto/cryptodev.h	/^	CRYPTO_SHA2_384,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SHA2_384_HMAC	crypto/cryptodev.h	/^	CRYPTO_SHA2_384_HMAC = 19,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SHA2_512	crypto/cryptodev.h	/^	CRYPTO_SHA2_512,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SHA2_512_HMAC	crypto/cryptodev.h	/^	CRYPTO_SHA2_512_HMAC = 20,$/;"	e	enum:cryptodev_crypto_op_t
+CRYPTO_SKIPJACK_CBC	crypto/cryptodev.h	/^	CRYPTO_SKIPJACK_CBC = 5,$/;"	e	enum:cryptodev_crypto_op_t
+DATA_SIZE	tests/async_cipher.c	20;"	d	file:
+DATA_SIZE	tests/async_hmac.c	21;"	d	file:
+DATA_SIZE	tests/cipher-aead-srtp.c	16;"	d	file:
+DATA_SIZE	tests/cipher-aead.c	16;"	d	file:
+DATA_SIZE	tests/cipher-gcm.c	16;"	d	file:
+DATA_SIZE	tests/cipher.c	17;"	d	file:
+DATA_SIZE	tests/hmac.c	18;"	d	file:
+DEFAULT_PREALLOC_PAGES	zc.h	25;"	d
+DEF_COP_RINGSIZE	ioctl.c	60;"	d	file:
+DES3_BLOCK_LEN	crypto/cryptodev.h	58;"	d
+DES_BLOCK_LEN	crypto/cryptodev.h	57;"	d
+DO_OR_DIE	tests/testhelper.h	49;"	d
+EALG_MAX_BLOCK_LEN	crypto/cryptodev.h	67;"	d
+ENGINE_load_cryptodev	extras/eng_cryptodev.c	/^ENGINE_load_cryptodev(void)$/;"	f
+FILEBASE	Makefile	/^FILEBASE = cryptodev-linux-$(VERSION)$/;"	m
+FILL_SG	ioctl.c	89;"	d	file:
+FOOTER_SIZE	tests/cipher-aead-srtp.c	19;"	d	file:
+HASH_MAX_LEN	crypto/cryptodev.h	75;"	d
+HAVE_CRYPTODEV	extras/eng_cryptodev.c	39;"	d	file:
+HAVE_SYSLOG_R	extras/eng_cryptodev.c	42;"	d	file:
+HEADER_SIZE	tests/cipher-aead-srtp.c	17;"	d	file:
+KERNEL_DIR	Makefile	/^	KERNEL_DIR=$(KERNEL_DIR) make -C tests clean$/;"	m
+KERNEL_DIR	Makefile	/^KERNEL_DIR = \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KERNEL_DIR	tests/Makefile	/^KERNEL_DIR ?= \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KEY_SIZE	examples/aes.c	15;"	d	file:
+KEY_SIZE	tests/async_cipher.c	22;"	d	file:
+KEY_SIZE	tests/async_hmac.c	23;"	d	file:
+KEY_SIZE	tests/cipher-aead-srtp.c	21;"	d	file:
+KEY_SIZE	tests/cipher-aead.c	19;"	d	file:
+KEY_SIZE	tests/cipher-gcm.c	19;"	d	file:
+KEY_SIZE	tests/cipher.c	19;"	d	file:
+KEY_SIZE	tests/cipher_comp.c	20;"	d	file:
+KEY_SIZE	tests/hmac.c	20;"	d	file:
+KEY_SIZE	tests/hmac_comp.c	20;"	d	file:
+L_CRYPTODEV_H	crypto/cryptodev.h	6;"	d
+MACKEY_SIZE	tests/hmac_comp.c	21;"	d	file:
+MAC_SIZE	tests/cipher-aead-srtp.c	23;"	d	file:
+MAC_SIZE	tests/cipher-aead.c	21;"	d	file:
+MAX	tests/fullspeed.c	72;"	d	file:
+MAX	tests/hashcrypt_speed.c	30;"	d	file:
+MAX	tests/speed.c	71;"	d	file:
+MAX_COP_RINGSIZE	ioctl.c	61;"	d	file:
+MAX_DATALEN	tests/cipher_comp.c	21;"	d	file:
+MAX_DATALEN	tests/hash_comp.c	20;"	d	file:
+MAX_DATALEN	tests/hmac_comp.c	22;"	d	file:
+MAX_SRTP_AUTH_DATA_DIFF	authenc.c	98;"	d	file:
+OUTPUT	Makefile	/^OUTPUT = $(FILEBASE).tar.gz$/;"	m
+PAGECOUNT	zc.h	20;"	d
+PAGEOFFSET	zc.c	46;"	d	file:
+PFX	cryptodev_int.h	17;"	d
+PLAINTEXT_SIZE	tests/cipher-aead-srtp.c	18;"	d	file:
+RIJNDAEL128_BLOCK_LEN	crypto/cryptodev.h	59;"	d
+SHA1_HASH_LEN	tests/async_hmac.c	24;"	d	file:
+SHA1_HASH_LEN	tests/hmac.c	21;"	d	file:
+SHA_H	examples/sha.h	2;"	d
+SIOP_FLAG_KERNEL_DRIVER_ONLY	crypto/cryptodev.h	112;"	d
+SKIPJACK_BLOCK_LEN	crypto/cryptodev.h	63;"	d
+SUBDIRS	Makefile	/^	make -C $(KERNEL_DIR) SUBDIRS=`pwd` modules$/;"	m
+TMPDIR	Makefile	/^TMPDIR ?= \/tmp$/;"	m
+VERSION	Makefile	/^VERSION = 1.5$/;"	m
+VERSION	version.h	1;"	d
+ZC_H	zc.h	2;"	d
+_TESTHELPER_H	tests/testhelper.h	5;"	d
+__OPENSSL_WRAPPER_H	tests/openssl_wrapper.h	2;"	d
+__crypto_auth_run_zc	authenc.c	/^__crypto_auth_run_zc(struct csession *ses_ptr, struct kernel_crypt_auth_op *kcaop)$/;"	f	file:
+__crypto_run_std	main.c	/^__crypto_run_std(struct csession *ses_ptr, struct crypt_op *cop)$/;"	f	file:
+__crypto_run_zc	main.c	/^__crypto_run_zc(struct csession *ses_ptr, struct kernel_crypt_op *kcop)$/;"	f	file:
+__get_userbuf	zc.c	/^int __get_userbuf(uint8_t __user *addr, uint32_t len, int write,$/;"	f
+__hook	ioctl.c	/^	struct list_head __hook;$/;"	m	struct:todo_list_item	typeref:struct:todo_list_item::list_head	file:
+__ses_to_ctx	tests/openssl_wrapper.c	/^static union openssl_ctx *__ses_to_ctx(__u32 ses)$/;"	f	file:
+__this_module	cryptodev.mod.c	/^struct module __this_module$/;"	v	typeref:struct:module
+__used	cryptodev.mod.c	/^__used$/;"	v	file:
+__user	crypto/cryptodev.h	10;"	d
+adjust_sg_array	zc.c	/^int adjust_sg_array(struct csession * ses, int pagecount)$/;"	f
+aead	cryptlib.h	/^	int aead;$/;"	m	struct:cipher_data
+aes_ctx_deinit	examples/aes.c	/^void aes_ctx_deinit(struct cryptodev_ctx* ctx) $/;"	f
+aes_ctx_init	examples/aes.c	/^int aes_ctx_init(struct cryptodev_ctx* ctx, int cfd, const uint8_t *key, unsigned int key_size)$/;"	f
+aes_decrypt	examples/aes.c	/^aes_decrypt(struct cryptodev_ctx* ctx, const void* iv, const void* ciphertext, void* plaintext, size_t size)$/;"	f
+aes_encrypt	examples/aes.c	/^aes_encrypt(struct cryptodev_ctx* ctx, const void* iv, const void* plaintext, void* ciphertext, size_t size)$/;"	f
+aes_gcm_ctx_deinit	examples/aes-gcm.c	/^void aes_gcm_ctx_deinit(struct cryptodev_ctx* ctx) $/;"	f
+aes_gcm_ctx_init	examples/aes-gcm.c	/^int aes_gcm_ctx_init(struct cryptodev_ctx* ctx, int cfd, const uint8_t *key, unsigned int key_size)$/;"	f
+aes_gcm_decrypt	examples/aes-gcm.c	/^aes_gcm_decrypt(struct cryptodev_ctx* ctx, const void* iv, $/;"	f
+aes_gcm_encrypt	examples/aes-gcm.c	/^aes_gcm_encrypt(struct cryptodev_ctx* ctx, const void* iv, $/;"	f
+aes_gcm_vectors	tests/cipher-gcm.c	/^struct aes_gcm_vectors_st aes_gcm_vectors[] = {$/;"	v	typeref:struct:aes_gcm_vectors_st
+aes_gcm_vectors_st	tests/cipher-gcm.c	/^struct aes_gcm_vectors_st {$/;"	s	file:
+aes_sha1_ctx_deinit	examples/aes-sha1.c	/^void aes_sha1_ctx_deinit(struct cryptodev_ctx* ctx) $/;"	f
+aes_sha1_ctx_init	examples/aes-sha1.c	/^int aes_sha1_ctx_init(struct cryptodev_ctx* ctx, int cfd, $/;"	f
+aes_sha1_decrypt	examples/aes-sha1.c	/^aes_sha1_decrypt(struct cryptodev_ctx* ctx, const void* iv, $/;"	f
+aes_sha1_encrypt	examples/aes-sha1.c	/^aes_sha1_encrypt(struct cryptodev_ctx* ctx, const void* iv, $/;"	f
+alarm_handler	tests/async_speed.c	/^static void alarm_handler(int signo)$/;"	f	file:
+alarm_handler	tests/fullspeed.c	/^static void alarm_handler(int signo)$/;"	f	file:
+alarm_handler	tests/hashcrypt_speed.c	/^static void alarm_handler(int signo)$/;"	f	file:
+alarm_handler	tests/sha_speed.c	/^static void alarm_handler(int signo)$/;"	f	file:
+alarm_handler	tests/speed.c	/^static void alarm_handler(int signo)$/;"	f	file:
+alg_info	crypto/cryptodev.h	/^	struct alg_info {$/;"	s	struct:session_info_op
+alignmask	cryptlib.h	/^	int alignmask;$/;"	m	struct:cipher_data
+alignmask	cryptlib.h	/^	int alignmask;$/;"	m	struct:hash_data
+alignmask	crypto/cryptodev.h	/^	__u16	alignmask;	\/* alignment constraints *\/$/;"	m	struct:session_info_op
+alignmask	cryptodev_int.h	/^	uint32_t alignmask;$/;"	m	struct:csession
+alignmask	examples/aes-gcm.h	/^	uint16_t alignmask;$/;"	m	struct:cryptodev_ctx
+alignmask	examples/aes-sha1.h	/^	uint16_t alignmask;$/;"	m	struct:cryptodev_ctx
+alignmask	examples/aes.h	/^	uint16_t alignmask;$/;"	m	struct:cryptodev_ctx
+alignmask	examples/sha.h	/^	uint16_t alignmask;$/;"	m	struct:cryptodev_ctx
+arequest	cryptlib.h	/^		struct aead_request *arequest;$/;"	m	struct:cipher_data::__anon1	typeref:struct:cipher_data::__anon1::aead_request
+array_size	cryptodev_int.h	/^	unsigned int array_size;$/;"	m	struct:csession
+as	cryptlib.h	/^		struct crypto_aead *as;$/;"	m	struct:cipher_data::__anon1	typeref:struct:cipher_data::__anon1::crypto_aead
+async	cryptlib.h	/^	} async;$/;"	m	struct:cipher_data	typeref:struct:cipher_data::__anon1
+async	cryptlib.h	/^	} async;$/;"	m	struct:hash_data	typeref:struct:hash_data::__anon2
+auth	tests/cipher-gcm.c	/^	const uint8_t *auth;$/;"	m	struct:aes_gcm_vectors_st	file:
+auth_len	crypto/cryptodev.h	/^	__u32	auth_len;	\/* length of auth data *\/$/;"	m	struct:crypt_auth_op
+auth_n_crypt	authenc.c	/^auth_n_crypt(struct csession *ses_ptr, struct kernel_crypt_auth_op *kcaop,$/;"	f	file:
+auth_size	tests/cipher-gcm.c	/^	int auth_size;$/;"	m	struct:aes_gcm_vectors_st	file:
+auth_src	crypto/cryptodev.h	/^	__u8	__user *auth_src;	\/* authenticated-only data *\/$/;"	m	struct:crypt_auth_op
+blocksize	cryptlib.h	/^	int blocksize;$/;"	m	struct:cipher_data
+bn2crparam	extras/eng_cryptodev.c	/^bn2crparam(const BIGNUM *a, struct crparam *crp)$/;"	f	file:
+caop	cryptodev_int.h	/^	struct crypt_auth_op caop;$/;"	m	struct:kernel_crypt_auth_op	typeref:struct:kernel_crypt_auth_op::crypt_auth_op
+cdata	cryptodev_int.h	/^	struct cipher_data cdata;$/;"	m	struct:csession	typeref:struct:csession::cipher_data
+cfd	examples/aes-gcm.h	/^	int cfd;$/;"	m	struct:cryptodev_ctx
+cfd	examples/aes-sha1.h	/^	int cfd;$/;"	m	struct:cryptodev_ctx
+cfd	examples/aes.h	/^	int cfd;$/;"	m	struct:cryptodev_ctx
+cfd	examples/sha.h	/^	int cfd;$/;"	m	struct:cryptodev_ctx
+cipher	crypto/cryptodev.h	/^	__u32	cipher;		\/* cryptodev_crypto_op_t *\/$/;"	m	struct:session_op
+cipher	cryptodev_int.h	/^	uint32_t	cipher;		\/* cryptodev_crypto_op_t *\/$/;"	m	struct:compat_session_op
+cipher_data	cryptlib.h	/^struct cipher_data {$/;"	s
+cipher_info	crypto/cryptodev.h	/^	} cipher_info, hash_info;$/;"	m	struct:session_info_op	typeref:struct:session_info_op::alg_info
+ciphers	extras/eng_cryptodev.c	/^} ciphers[] = {$/;"	v	typeref:struct:__anon3	file:
+ciphertext	tests/cipher-gcm.c	/^	const uint8_t *ciphertext;$/;"	m	struct:aes_gcm_vectors_st	file:
+clonefd	ioctl.c	/^clonefd(struct file *filp)$/;"	f	file:
+comp_progs	tests/Makefile	/^comp_progs := cipher_comp hash_comp hmac_comp$/;"	m
+compat_crypt_op	cryptodev_int.h	/^ struct compat_crypt_op {$/;"	s
+compat_kcop_from_user	ioctl.c	/^static int compat_kcop_from_user(struct kernel_crypt_op *kcop,$/;"	f	file:
+compat_kcop_to_user	ioctl.c	/^static int compat_kcop_to_user(struct kernel_crypt_op *kcop,$/;"	f	file:
+compat_session_op	cryptodev_int.h	/^struct compat_session_op {$/;"	s
+compat_to_crypt_op	ioctl.c	/^compat_to_crypt_op(struct compat_crypt_op *compat, struct crypt_op *cop)$/;"	f	file:
+compat_to_session_op	ioctl.c	/^compat_to_session_op(struct compat_session_op *compat, struct session_op *sop)$/;"	f	file:
+completion	cryptlib.c	/^	struct completion completion;$/;"	m	struct:cryptodev_result	typeref:struct:cryptodev_result::completion	file:
+cop	cryptodev_int.h	/^	struct crypt_op cop;$/;"	m	struct:kernel_crypt_op	typeref:struct:kernel_crypt_op::crypt_op
+copy_tls_hash	authenc.c	/^static void copy_tls_hash( struct scatterlist *dst_sg, int len, void* hash, int hash_len)$/;"	f	file:
+cra_driver_name	crypto/cryptodev.h	/^		char cra_driver_name[CRYPTODEV_MAX_ALG_NAME];$/;"	m	struct:session_info_op::alg_info
+cra_name	crypto/cryptodev.h	/^		char cra_name[CRYPTODEV_MAX_ALG_NAME];$/;"	m	struct:session_info_op::alg_info
+crk_iparams	crypto/cryptodev.h	/^	__u16	crk_iparams;$/;"	m	struct:crypt_kop
+crk_op	crypto/cryptodev.h	/^	__u32	crk_op;		\/* cryptodev_crk_ot_t *\/$/;"	m	struct:crypt_kop
+crk_oparams	crypto/cryptodev.h	/^	__u16	crk_oparams;$/;"	m	struct:crypt_kop
+crk_pad1	crypto/cryptodev.h	/^	__u32	crk_pad1;$/;"	m	struct:crypt_kop
+crk_param	crypto/cryptodev.h	/^	struct crparam	crk_param[CRK_MAXPARAM];$/;"	m	struct:crypt_kop	typeref:struct:crypt_kop::crparam
+crk_status	crypto/cryptodev.h	/^	__u32	crk_status;$/;"	m	struct:crypt_kop
+crp_nbits	crypto/cryptodev.h	/^	__u32	crp_nbits;$/;"	m	struct:crparam
+crp_p	crypto/cryptodev.h	/^	__u8	*crp_p;$/;"	m	struct:crparam
+crparam	crypto/cryptodev.h	/^struct crparam {$/;"	s
+crparam2bn	extras/eng_cryptodev.c	/^crparam2bn(struct crparam *crp, BIGNUM *a)$/;"	f	file:
+crypt_auth_op	crypto/cryptodev.h	/^struct crypt_auth_op {$/;"	s
+crypt_kop	crypto/cryptodev.h	/^struct crypt_kop {$/;"	s
+crypt_op	crypto/cryptodev.h	/^struct crypt_op {$/;"	s
+crypt_op_to_compat	ioctl.c	/^crypt_op_to_compat(struct crypt_op *cop, struct compat_crypt_op *compat)$/;"	f	file:
+crypt_priv	ioctl.c	/^struct crypt_priv {$/;"	s	file:
+cryptask	ioctl.c	/^	struct work_struct cryptask;$/;"	m	struct:crypt_priv	typeref:struct:crypt_priv::work_struct	file:
+cryptask_routine	ioctl.c	/^static void cryptask_routine(struct work_struct *work)$/;"	f	file:
+crypto_async_fetch	ioctl.c	/^static int crypto_async_fetch(struct crypt_priv *pcr,$/;"	f	file:
+crypto_async_run	ioctl.c	/^static int crypto_async_run(struct crypt_priv *pcr, struct kernel_crypt_op *kcop)$/;"	f	file:
+crypto_auth_run	authenc.c	/^int crypto_auth_run(struct fcrypt *fcr, struct kernel_crypt_auth_op *kcaop)$/;"	f
+crypto_create_session	ioctl.c	/^crypto_create_session(struct fcrypt *fcr, struct session_op *sop)$/;"	f	file:
+crypto_destroy_session	ioctl.c	/^crypto_destroy_session(struct csession *ses_ptr)$/;"	f	file:
+crypto_finish_all_sessions	ioctl.c	/^crypto_finish_all_sessions(struct fcrypt *fcr)$/;"	f	file:
+crypto_finish_session	ioctl.c	/^crypto_finish_session(struct fcrypt *fcr, uint32_t sid)$/;"	f	file:
+crypto_get_session_by_sid	ioctl.c	/^crypto_get_session_by_sid(struct fcrypt *fcr, uint32_t sid)$/;"	f
+crypto_put_session	cryptodev_int.h	/^inline static void crypto_put_session(struct csession * ses_ptr)$/;"	f
+crypto_run	main.c	/^int crypto_run(struct fcrypt *fcr, struct kernel_crypt_op *kcop)$/;"	f
+cryptodev	ioctl.c	/^static struct miscdevice cryptodev = {$/;"	v	typeref:struct:miscdevice	file:
+cryptodev-objs	Makefile	/^cryptodev-objs = ioctl.o main.o cryptlib.o authenc.o zc.o util.o$/;"	m
+cryptodev_3des_cbc	extras/eng_cryptodev.c	/^const EVP_CIPHER cryptodev_3des_cbc = {$/;"	v
+cryptodev_aes_192_cbc	extras/eng_cryptodev.c	/^const EVP_CIPHER cryptodev_aes_192_cbc = {$/;"	v
+cryptodev_aes_256_cbc	extras/eng_cryptodev.c	/^const EVP_CIPHER cryptodev_aes_256_cbc = {$/;"	v
+cryptodev_aes_cbc	extras/eng_cryptodev.c	/^const EVP_CIPHER cryptodev_aes_cbc = {$/;"	v
+cryptodev_asym	extras/eng_cryptodev.c	/^cryptodev_asym(struct crypt_kop *kop, int rlen, BIGNUM *r, int slen, BIGNUM *s)$/;"	f	file:
+cryptodev_asymfeat	extras/eng_cryptodev.c	/^static u_int32_t cryptodev_asymfeat = 0;$/;"	v	file:
+cryptodev_bf_cbc	extras/eng_cryptodev.c	/^const EVP_CIPHER cryptodev_bf_cbc = {$/;"	v
+cryptodev_bn_mod_exp	extras/eng_cryptodev.c	/^cryptodev_bn_mod_exp(BIGNUM *r, const BIGNUM *a, const BIGNUM *p,$/;"	f	file:
+cryptodev_cast_cbc	extras/eng_cryptodev.c	/^const EVP_CIPHER cryptodev_cast_cbc = {$/;"	v
+cryptodev_cipher	extras/eng_cryptodev.c	/^cryptodev_cipher(EVP_CIPHER_CTX *ctx, unsigned char *out,$/;"	f	file:
+cryptodev_cipher_auth	cryptlib.h	/^inline static void cryptodev_cipher_auth(struct cipher_data *cdata,$/;"	f
+cryptodev_cipher_decrypt	cryptlib.c	/^ssize_t cryptodev_cipher_decrypt(struct cipher_data *cdata,$/;"	f
+cryptodev_cipher_deinit	cryptlib.c	/^void cryptodev_cipher_deinit(struct cipher_data *cdata)$/;"	f
+cryptodev_cipher_encrypt	cryptlib.c	/^ssize_t cryptodev_cipher_encrypt(struct cipher_data *cdata,$/;"	f
+cryptodev_cipher_get_iv	cryptlib.h	/^inline static void cryptodev_cipher_get_iv(struct cipher_data *cdata,$/;"	f
+cryptodev_cipher_get_tag_size	cryptlib.h	/^inline static int cryptodev_cipher_get_tag_size(struct cipher_data *cdata)$/;"	f
+cryptodev_cipher_init	cryptlib.c	/^int cryptodev_cipher_init(struct cipher_data *out, const char *alg_name,$/;"	f
+cryptodev_cipher_set_iv	cryptlib.h	/^inline static void cryptodev_cipher_set_iv(struct cipher_data *cdata,$/;"	f
+cryptodev_cipher_set_tag_size	cryptlib.h	/^inline static void cryptodev_cipher_set_tag_size(struct cipher_data *cdata, int size)$/;"	f
+cryptodev_cleanup	extras/eng_cryptodev.c	/^cryptodev_cleanup(EVP_CIPHER_CTX *ctx)$/;"	f	file:
+cryptodev_compat_ioctl	ioctl.c	/^cryptodev_compat_ioctl(struct file *file, unsigned int cmd, unsigned long arg_)$/;"	f	file:
+cryptodev_complete	cryptlib.c	/^static void cryptodev_complete(struct crypto_async_request *req, int err)$/;"	f	file:
+cryptodev_crk_op_t	crypto/cryptodev.h	/^enum cryptodev_crk_op_t {$/;"	g
+cryptodev_crypto_op_t	crypto/cryptodev.h	/^enum cryptodev_crypto_op_t {$/;"	g
+cryptodev_ctrl	extras/eng_cryptodev.c	/^cryptodev_ctrl(ENGINE *e, int cmd, long i, void *p, void (*f)(void))$/;"	f	file:
+cryptodev_ctx	examples/aes-gcm.h	/^struct cryptodev_ctx {$/;"	s
+cryptodev_ctx	examples/aes-sha1.h	/^struct cryptodev_ctx {$/;"	s
+cryptodev_ctx	examples/aes.h	/^struct cryptodev_ctx {$/;"	s
+cryptodev_ctx	examples/sha.h	/^struct cryptodev_ctx {$/;"	s
+cryptodev_defns	extras/eng_cryptodev.c	/^static const ENGINE_CMD_DEFN cryptodev_defns[] = {$/;"	v	file:
+cryptodev_deregister	ioctl.c	/^cryptodev_deregister(void)$/;"	f	file:
+cryptodev_des_cbc	extras/eng_cryptodev.c	/^const EVP_CIPHER cryptodev_des_cbc = {$/;"	v
+cryptodev_dh	extras/eng_cryptodev.c	/^static DH_METHOD cryptodev_dh = {$/;"	v	file:
+cryptodev_dh_compute_key	extras/eng_cryptodev.c	/^cryptodev_dh_compute_key(unsigned char *key, const BIGNUM *pub_key, DH *dh)$/;"	f	file:
+cryptodev_digest_cleanup	extras/eng_cryptodev.c	/^static int cryptodev_digest_cleanup(EVP_MD_CTX *ctx)$/;"	f	file:
+cryptodev_digest_copy	extras/eng_cryptodev.c	/^static int cryptodev_digest_copy(EVP_MD_CTX *to,const EVP_MD_CTX *from)$/;"	f	file:
+cryptodev_digest_final	extras/eng_cryptodev.c	/^static int cryptodev_digest_final(EVP_MD_CTX *ctx, unsigned char *md)$/;"	f	file:
+cryptodev_digest_init	extras/eng_cryptodev.c	/^static int cryptodev_digest_init(EVP_MD_CTX *ctx)$/;"	f	file:
+cryptodev_digest_update	extras/eng_cryptodev.c	/^static int cryptodev_digest_update(EVP_MD_CTX *ctx, const void *data,$/;"	f	file:
+cryptodev_dsa	extras/eng_cryptodev.c	/^static DSA_METHOD cryptodev_dsa = {$/;"	v	file:
+cryptodev_dsa_bn_mod_exp	extras/eng_cryptodev.c	/^cryptodev_dsa_bn_mod_exp(DSA *dsa, BIGNUM *r, BIGNUM *a, const BIGNUM *p,$/;"	f	file:
+cryptodev_dsa_do_sign	extras/eng_cryptodev.c	/^cryptodev_dsa_do_sign(const unsigned char *dgst, int dlen, DSA *dsa)$/;"	f	file:
+cryptodev_dsa_dsa_mod_exp	extras/eng_cryptodev.c	/^cryptodev_dsa_dsa_mod_exp(DSA *dsa, BIGNUM *t1, BIGNUM *g,$/;"	f	file:
+cryptodev_dsa_verify	extras/eng_cryptodev.c	/^cryptodev_dsa_verify(const unsigned char *dgst, int dlen,$/;"	f	file:
+cryptodev_engine_ciphers	extras/eng_cryptodev.c	/^cryptodev_engine_ciphers(ENGINE *e, const EVP_CIPHER **cipher,$/;"	f	file:
+cryptodev_engine_digests	extras/eng_cryptodev.c	/^cryptodev_engine_digests(ENGINE *e, const EVP_MD **digest,$/;"	f	file:
+cryptodev_fops	ioctl.c	/^static const struct file_operations cryptodev_fops = {$/;"	v	typeref:struct:file_operations	file:
+cryptodev_hash_deinit	cryptlib.c	/^void cryptodev_hash_deinit(struct hash_data *hdata)$/;"	f
+cryptodev_hash_final	cryptlib.c	/^int cryptodev_hash_final(struct hash_data *hdata, void* output)$/;"	f
+cryptodev_hash_init	cryptlib.c	/^int cryptodev_hash_init(struct hash_data *hdata, const char *alg_name,$/;"	f
+cryptodev_hash_reset	cryptlib.c	/^int cryptodev_hash_reset(struct hash_data *hdata)$/;"	f
+cryptodev_hash_update	cryptlib.c	/^ssize_t cryptodev_hash_update(struct hash_data *hdata,$/;"	f
+cryptodev_init_key	extras/eng_cryptodev.c	/^cryptodev_init_key(EVP_CIPHER_CTX *ctx, const unsigned char *key,$/;"	f	file:
+cryptodev_ioctl	ioctl.c	/^cryptodev_ioctl(struct file *filp, unsigned int cmd, unsigned long arg_)$/;"	f	file:
+cryptodev_md5	extras/eng_cryptodev.c	/^static const EVP_MD cryptodev_md5 = {$/;"	v	file:
+cryptodev_mod_exp_dh	extras/eng_cryptodev.c	/^cryptodev_mod_exp_dh(const DH *dh, BIGNUM *r, const BIGNUM *a,$/;"	f	file:
+cryptodev_open	ioctl.c	/^cryptodev_open(struct inode *inode, struct file *filp)$/;"	f	file:
+cryptodev_poll	ioctl.c	/^static unsigned int cryptodev_poll(struct file *file, poll_table *wait)$/;"	f	file:
+cryptodev_rc4	extras/eng_cryptodev.c	/^const EVP_CIPHER cryptodev_rc4 = {$/;"	v
+cryptodev_register	ioctl.c	/^cryptodev_register(void)$/;"	f	file:
+cryptodev_release	ioctl.c	/^cryptodev_release(struct inode *inode, struct file *filp)$/;"	f	file:
+cryptodev_result	cryptlib.c	/^struct cryptodev_result {$/;"	s	file:
+cryptodev_rsa	extras/eng_cryptodev.c	/^static RSA_METHOD cryptodev_rsa = {$/;"	v	file:
+cryptodev_rsa_mod_exp	extras/eng_cryptodev.c	/^cryptodev_rsa_mod_exp(BIGNUM *r0, const BIGNUM *I, RSA *rsa, BN_CTX *ctx)$/;"	f	file:
+cryptodev_rsa_nocrt_mod_exp	extras/eng_cryptodev.c	/^cryptodev_rsa_nocrt_mod_exp(BIGNUM *r0, const BIGNUM *I, RSA *rsa, BN_CTX *ctx)$/;"	f	file:
+cryptodev_sha1	extras/eng_cryptodev.c	/^static const EVP_MD cryptodev_sha1 = {$/;"	v	file:
+cryptodev_sha256	extras/eng_cryptodev.c	/^static const EVP_MD cryptodev_sha256 = {$/;"	v	file:
+cryptodev_sha384	extras/eng_cryptodev.c	/^static const EVP_MD cryptodev_sha384 = {$/;"	v	file:
+cryptodev_sha512	extras/eng_cryptodev.c	/^static const EVP_MD cryptodev_sha512 = {$/;"	v	file:
+cryptodev_usable_ciphers	extras/eng_cryptodev.c	/^cryptodev_usable_ciphers(const int **nids)$/;"	f	file:
+cryptodev_usable_digests	extras/eng_cryptodev.c	/^cryptodev_usable_digests(const int **nids)$/;"	f	file:
+cryptodev_verbosity	ioctl.c	/^int cryptodev_verbosity;$/;"	v
+cryptodev_wq	ioctl.c	/^static struct workqueue_struct *cryptodev_wq;$/;"	v	typeref:struct:workqueue_struct	file:
+csession	cryptodev_int.h	/^struct csession {$/;"	s
+ctx	tests/openssl_wrapper.c	/^	union openssl_ctx ctx;$/;"	m	struct:ctx_mapping	typeref:union:ctx_mapping::openssl_ctx	file:
+ctx_map	tests/openssl_wrapper.c	/^static struct ctx_mapping ctx_map[512];$/;"	v	typeref:struct:ctx_mapping	file:
+ctx_mapping	tests/openssl_wrapper.c	/^struct ctx_mapping {$/;"	s	file:
+ctx_type	tests/openssl_wrapper.c	/^enum ctx_type {$/;"	g	file:
+ctx_type_hmac	tests/openssl_wrapper.c	/^	ctx_type_hmac,$/;"	e	enum:ctx_type	file:
+ctx_type_md	tests/openssl_wrapper.c	/^	ctx_type_md,$/;"	e	enum:ctx_type	file:
+ctx_type_none	tests/openssl_wrapper.c	/^	ctx_type_none = 0,$/;"	e	enum:ctx_type	file:
+d_fd	extras/eng_cryptodev.c	/^	int d_fd;$/;"	m	struct:dev_crypto_state	file:
+d_sess	extras/eng_cryptodev.c	/^	struct session_op d_sess;$/;"	m	struct:dev_crypto_state	typeref:struct:dev_crypto_state::session_op	file:
+dbgp	tests/openssl_wrapper.c	11;"	d	file:
+dbgp	tests/openssl_wrapper.c	17;"	d	file:
+debug	tests/async_cipher.c	/^static int debug = 0;$/;"	v	file:
+debug	tests/async_hmac.c	/^static int debug = 0;$/;"	v	file:
+debug	tests/cipher-aead-srtp.c	/^static int debug = 0;$/;"	v	file:
+debug	tests/cipher-aead.c	/^static int debug = 0;$/;"	v	file:
+debug	tests/cipher-gcm.c	/^static int debug = 0;$/;"	v	file:
+debug	tests/cipher.c	/^static int debug = 0;$/;"	v	file:
+debug	tests/hmac.c	/^static int debug = 0;$/;"	v	file:
+dev_crypto_state	extras/eng_cryptodev.c	/^struct dev_crypto_state {$/;"	s	file:
+digest_nid_to_cryptodev	extras/eng_cryptodev.c	/^digest_nid_to_cryptodev(int nid)$/;"	f	file:
+digest_res	extras/eng_cryptodev.c	/^	unsigned char digest_res[HASH_MAX_LEN];$/;"	m	struct:dev_crypto_state	file:
+digestlen	extras/eng_cryptodev.c	/^	int 	digestlen;$/;"	m	struct:__anon4	file:
+digests	extras/eng_cryptodev.c	/^} digests[] = {$/;"	v	typeref:struct:__anon4	file:
+digestsize	cryptlib.h	/^	int digestsize;$/;"	m	struct:hash_data
+digestsize	cryptodev_int.h	/^	int digestsize;$/;"	m	struct:kernel_crypt_op
+do_async_crypt	tests/testhelper.h	/^inline int do_async_crypt(int cfd, struct crypt_op *cryp)$/;"	f
+do_async_fetch	tests/testhelper.h	/^inline int do_async_fetch(int cfd, struct crypt_op *cryp)$/;"	f
+done	ioctl.c	/^	struct locked_list free, todo, done;$/;"	m	struct:crypt_priv	typeref:struct:crypt_priv::	file:
+dprintk	cryptodev_int.h	18;"	d
+dst	crypto/cryptodev.h	/^	__u8	__user *dst;	\/* pointer to output data *\/$/;"	m	struct:crypt_op
+dst	crypto/cryptodev.h	/^	__u8	__user *dst;	\/* pointer to output data. Must have$/;"	m	struct:crypt_auth_op
+dst	cryptodev_int.h	/^	compat_uptr_t	dst;		\/* pointer to output data *\/$/;"	m	struct:compat_crypt_op
+dst_len	cryptodev_int.h	/^	int dst_len; \/* based on src_len + pad + tag *\/$/;"	m	struct:kernel_crypt_auth_op
+encrypt_data	tests/async_speed.c	/^int encrypt_data(struct session_op *sess, int fdc, int chunksize, int alignmask)$/;"	f
+encrypt_data	tests/fullspeed.c	/^int encrypt_data(int algo, void* keybuf, int key_size, int fdc, int chunksize)$/;"	f
+encrypt_data	tests/speed.c	/^int encrypt_data(struct session_op *sess, int fdc, int chunksize, int alignmask)$/;"	f
+entry	cryptodev_int.h	/^	struct list_head entry;$/;"	m	struct:csession	typeref:struct:csession::list_head
+err	cryptlib.c	/^	int err;$/;"	m	struct:cryptodev_result	file:
+example-async-cipher-objs	tests/Makefile	/^example-async-cipher-objs := async_cipher.o$/;"	m
+example-async-hmac-objs	tests/Makefile	/^example-async-hmac-objs := async_hmac.o$/;"	m
+example-async-speed-objs	tests/Makefile	/^example-async-speed-objs := async_speed.o$/;"	m
+example-cipher-aead-objs	tests/Makefile	/^example-cipher-aead-objs := cipher-aead.o$/;"	m
+example-cipher-objs	tests/Makefile	/^example-cipher-objs := cipher.o$/;"	m
+example-fullspeed-objs	tests/Makefile	/^example-fullspeed-objs := fullspeed.c$/;"	m
+example-hashcrypt-speed-objs	tests/Makefile	/^example-hashcrypt-speed-objs := hashcrypt_speed.c$/;"	m
+example-hmac-objs	tests/Makefile	/^example-hmac-objs := hmac.o$/;"	m
+example-sha-speed-objs	tests/Makefile	/^example-sha-speed-objs := sha_speed.c$/;"	m
+example-speed-objs	tests/Makefile	/^example-speed-objs := speed.c$/;"	m
+exit_cryptodev	ioctl.c	/^module_exit(exit_cryptodev);$/;"	v
+exit_cryptodev	ioctl.c	/^static void __exit exit_cryptodev(void)$/;"	f	file:
+fcrypt	cryptodev_int.h	/^struct fcrypt {$/;"	s
+fcrypt	ioctl.c	/^	struct fcrypt fcrypt;$/;"	m	struct:crypt_priv	typeref:struct:crypt_priv::fcrypt	file:
+fill_caop_from_kcaop	authenc.c	/^static int fill_caop_from_kcaop(struct kernel_crypt_auth_op *kcaop, struct fcrypt *fcr)$/;"	f	file:
+fill_cop_from_kcop	ioctl.c	/^static int fill_cop_from_kcop(struct kernel_crypt_op *kcop, struct fcrypt *fcr)$/;"	f	file:
+fill_kcaop_from_caop	authenc.c	/^static int fill_kcaop_from_caop(struct kernel_crypt_auth_op *kcaop, struct fcrypt *fcr)$/;"	f	file:
+fill_kcop_from_cop	ioctl.c	/^static int fill_kcop_from_cop(struct kernel_crypt_op *kcop, struct fcrypt *fcr)$/;"	f	file:
+find_mapping	tests/openssl_wrapper.c	/^static struct ctx_mapping *find_mapping(__u32 ses)$/;"	f	file:
+flags	crypto/cryptodev.h	/^	__u16	flags;		\/* see COP_FLAG_* *\/$/;"	m	struct:crypt_op
+flags	crypto/cryptodev.h	/^	__u16	flags;		\/* see COP_FLAG_AEAD_* *\/$/;"	m	struct:crypt_auth_op
+flags	crypto/cryptodev.h	/^	__u32   flags;          \/* SIOP_FLAGS_* *\/$/;"	m	struct:session_info_op
+flags	cryptodev_int.h	/^	uint16_t	flags;		\/* see COP_FLAG_* *\/$/;"	m	struct:compat_crypt_op
+free	ioctl.c	/^	struct locked_list free, todo, done;$/;"	m	struct:crypt_priv	typeref:struct:crypt_priv::locked_list	file:
+get_asym_dev_crypto	extras/eng_cryptodev.c	/^get_asym_dev_crypto(void)$/;"	f	file:
+get_cryptodev_ciphers	extras/eng_cryptodev.c	/^get_cryptodev_ciphers(const int **cnids)$/;"	f	file:
+get_cryptodev_digests	extras/eng_cryptodev.c	/^get_cryptodev_digests(const int **cnids)$/;"	f	file:
+get_dev_crypto	extras/eng_cryptodev.c	/^get_dev_crypto(void)$/;"	f	file:
+get_session_info	ioctl.c	/^static int get_session_info(struct fcrypt *fcr, struct session_info_op *siop)$/;"	f	file:
+get_sha1_hmac	tests/cipher-aead-srtp.c	/^get_sha1_hmac(int cfd, void* key, int key_size, void* data, int data_size, void* mac)$/;"	f	file:
+get_sha1_hmac	tests/cipher-aead.c	/^get_sha1_hmac(int cfd, void* key, int key_size, void* data1, int data1_size, void* data2, int data2_size, void* mac)$/;"	f	file:
+get_userbuf	zc.c	/^int get_userbuf(struct csession *ses,$/;"	f
+get_userbuf_srtp	authenc.c	/^static int get_userbuf_srtp(struct csession *ses, struct kernel_crypt_auth_op *kcaop,$/;"	f	file:
+get_userbuf_tls	authenc.c	/^static int get_userbuf_tls(struct csession *ses, struct kernel_crypt_auth_op *kcaop,$/;"	f	file:
+hash_data	cryptlib.h	/^struct hash_data {$/;"	s
+hash_data	tests/hashcrypt_speed.c	/^int hash_data(struct session_op *sess, int fdc, int chunksize, int align)$/;"	f
+hash_data	tests/sha_speed.c	/^int hash_data(struct session_op *sess, int fdc, int chunksize, int alignmask)$/;"	f
+hash_info	crypto/cryptodev.h	/^	} cipher_info, hash_info;$/;"	m	struct:session_info_op	typeref:struct:session_info_op::alg_info
+hash_n_crypt	main.c	/^hash_n_crypt(struct csession *ses_ptr, struct crypt_op *cop,$/;"	f	file:
+hash_output	cryptodev_int.h	/^	uint8_t hash_output[AALG_MAX_RESULT_LEN];$/;"	m	struct:kernel_crypt_op
+hdata	cryptodev_int.h	/^	struct hash_data hdata;$/;"	m	struct:csession	typeref:struct:csession::hash_data
+hmac	tests/openssl_wrapper.c	/^	HMAC_CTX hmac;$/;"	m	union:openssl_ctx	file:
+hostprogs	tests/Makefile	/^hostprogs := cipher cipher-aead hmac speed async_cipher async_hmac \\$/;"	m
+id	extras/eng_cryptodev.c	/^	int	id;$/;"	m	struct:__anon3	file:
+id	extras/eng_cryptodev.c	/^	int	id;$/;"	m	struct:__anon4	file:
+init	cryptlib.h	/^	int init; \/* 0 uninitialized *\/$/;"	m	struct:cipher_data
+init	cryptlib.h	/^	int init; \/* 0 uninitialized *\/$/;"	m	struct:hash_data
+init_cryptodev	ioctl.c	/^module_init(init_cryptodev);$/;"	v
+init_cryptodev	ioctl.c	/^static int __init init_cryptodev(void)$/;"	f	file:
+is_known_accelerated	ioctl.c	/^static unsigned int is_known_accelerated(struct crypto_tfm *tfm)$/;"	f	file:
+itemcount	ioctl.c	/^	int itemcount;$/;"	m	struct:crypt_priv	file:
+iv	cryptlib.h	/^		uint8_t iv[EALG_MAX_BLOCK_LEN];$/;"	m	struct:cipher_data::__anon1
+iv	crypto/cryptodev.h	/^	__u8	__user *iv;$/;"	m	struct:crypt_auth_op
+iv	crypto/cryptodev.h	/^	__u8	__user *iv;$/;"	m	struct:crypt_op
+iv	cryptodev_int.h	/^	__u8 iv[EALG_MAX_BLOCK_LEN];$/;"	m	struct:kernel_crypt_auth_op
+iv	cryptodev_int.h	/^	__u8 iv[EALG_MAX_BLOCK_LEN];$/;"	m	struct:kernel_crypt_op
+iv	cryptodev_int.h	/^	compat_uptr_t	iv;\/* initialization vector for encryption operations *\/$/;"	m	struct:compat_crypt_op
+iv	tests/cipher-gcm.c	/^	const uint8_t *iv;$/;"	m	struct:aes_gcm_vectors_st	file:
+iv_len	crypto/cryptodev.h	/^	__u32   iv_len;$/;"	m	struct:crypt_auth_op
+ivlen	cryptodev_int.h	/^	int ivlen;$/;"	m	struct:kernel_crypt_auth_op
+ivlen	cryptodev_int.h	/^	int ivlen;$/;"	m	struct:kernel_crypt_op
+ivmax	extras/eng_cryptodev.c	/^	int	ivmax;$/;"	m	struct:__anon3	file:
+ivsize	cryptlib.h	/^	int ivsize;$/;"	m	struct:cipher_data
+kcaop_from_user	authenc.c	/^int kcaop_from_user(struct kernel_crypt_auth_op *kcaop,$/;"	f
+kcaop_to_user	authenc.c	/^int kcaop_to_user(struct kernel_crypt_auth_op *kcaop,$/;"	f
+kcop	ioctl.c	/^	struct kernel_crypt_op kcop;$/;"	m	struct:todo_list_item	typeref:struct:todo_list_item::kernel_crypt_op	file:
+kcop_from_user	ioctl.c	/^static int kcop_from_user(struct kernel_crypt_op *kcop,$/;"	f	file:
+kcop_to_user	ioctl.c	/^static int kcop_to_user(struct kernel_crypt_op *kcop,$/;"	f	file:
+kernel_crypt_auth_op	cryptodev_int.h	/^struct kernel_crypt_auth_op {$/;"	s
+kernel_crypt_op	cryptodev_int.h	/^struct kernel_crypt_op {$/;"	s
+key	crypto/cryptodev.h	/^	__u8	__user *key;$/;"	m	struct:session_op
+key	cryptodev_int.h	/^	compat_uptr_t	key;		\/* pointer to key data *\/$/;"	m	struct:compat_session_op
+key	tests/cipher-gcm.c	/^	const uint8_t *key;$/;"	m	struct:aes_gcm_vectors_st	file:
+keylen	crypto/cryptodev.h	/^	__u32	keylen;$/;"	m	struct:session_op
+keylen	cryptodev_int.h	/^	uint32_t	keylen;$/;"	m	struct:compat_session_op
+keylen	extras/eng_cryptodev.c	/^	int	keylen;$/;"	m	struct:__anon3	file:
+len	crypto/cryptodev.h	/^	__u32	len;		\/* length of source data *\/$/;"	m	struct:crypt_auth_op
+len	crypto/cryptodev.h	/^	__u32	len;		\/* length of source data *\/$/;"	m	struct:crypt_op
+len	cryptodev_int.h	/^	uint32_t	len;		\/* length of source data *\/$/;"	m	struct:compat_crypt_op
+list	cryptodev_int.h	/^	struct list_head list;$/;"	m	struct:fcrypt	typeref:struct:fcrypt::list_head
+list	ioctl.c	/^	struct list_head list;$/;"	m	struct:locked_list	typeref:struct:locked_list::list_head	file:
+lock	ioctl.c	/^	struct mutex lock;$/;"	m	struct:locked_list	typeref:struct:locked_list::mutex	file:
+locked_list	ioctl.c	/^struct locked_list {$/;"	s	file:
+mac	crypto/cryptodev.h	/^	__u32	mac;		\/* cryptodev_crypto_op_t *\/$/;"	m	struct:session_op
+mac	crypto/cryptodev.h	/^	__u8	__user *mac;$/;"	m	struct:crypt_op
+mac	cryptodev_int.h	/^	compat_uptr_t	mac;\/* pointer to output data for hash\/MAC operations *\/$/;"	m	struct:compat_crypt_op
+mac	cryptodev_int.h	/^	uint32_t	mac;		\/* cryptodev_crypto_op_t *\/$/;"	m	struct:compat_session_op
+mac_data	extras/eng_cryptodev.c	/^	char *mac_data;$/;"	m	struct:dev_crypto_state	file:
+mac_len	extras/eng_cryptodev.c	/^	int mac_len;$/;"	m	struct:dev_crypto_state	file:
+mackey	crypto/cryptodev.h	/^	__u8	__user *mackey;$/;"	m	struct:session_op
+mackey	cryptodev_int.h	/^	compat_uptr_t	mackey;		\/* pointer to mac key data *\/$/;"	m	struct:compat_session_op
+mackeylen	crypto/cryptodev.h	/^	__u32	mackeylen;$/;"	m	struct:session_op
+mackeylen	cryptodev_int.h	/^	uint32_t	mackeylen;$/;"	m	struct:compat_session_op
+main	examples/aes.c	/^main()$/;"	f
+main	examples/sha.c	/^main()$/;"	f
+main	tests/async_cipher.c	/^main(int argc, char** argv)$/;"	f
+main	tests/async_hmac.c	/^main()$/;"	f
+main	tests/async_speed.c	/^int main(void)$/;"	f
+main	tests/cipher-aead-srtp.c	/^main(int argc, char** argv)$/;"	f
+main	tests/cipher-aead.c	/^main()$/;"	f
+main	tests/cipher-gcm.c	/^int main(int argc, char** argv)$/;"	f
+main	tests/cipher.c	/^main(int argc, char** argv)$/;"	f
+main	tests/cipher_comp.c	/^main(int argc, char **argv)$/;"	f
+main	tests/fullspeed.c	/^int main(int argc, char** argv)$/;"	f
+main	tests/hash_comp.c	/^main(int argc, char **argv)$/;"	f
+main	tests/hashcrypt_speed.c	/^int main(void)$/;"	f
+main	tests/hmac.c	/^main(int argc, char** argv)$/;"	f
+main	tests/hmac_comp.c	/^main(int argc, char **argv)$/;"	f
+main	tests/sha_speed.c	/^int main(void)$/;"	f
+main	tests/speed.c	/^int main(int argc, char** argv)$/;"	f
+max	tests/cipher_comp.c	85;"	d	file:
+max	tests/hash_comp.c	83;"	d	file:
+max	tests/hmac_comp.c	100;"	d	file:
+md	tests/openssl_wrapper.c	/^	EVP_MD_CTX md;$/;"	m	union:openssl_ctx	file:
+min	tests/cipher_comp.c	86;"	d	file:
+min	tests/hash_comp.c	84;"	d	file:
+min	tests/hmac_comp.c	101;"	d	file:
+mm	cryptodev_int.h	/^	struct mm_struct *mm;$/;"	m	struct:kernel_crypt_auth_op	typeref:struct:kernel_crypt_auth_op::mm_struct
+mm	cryptodev_int.h	/^	struct mm_struct *mm;$/;"	m	struct:kernel_crypt_op	typeref:struct:kernel_crypt_op::mm_struct
+must_finish	tests/async_speed.c	/^static int must_finish = 0;$/;"	v	file:
+must_finish	tests/fullspeed.c	/^static int must_finish = 0;$/;"	v	file:
+must_finish	tests/hashcrypt_speed.c	/^static int must_finish = 0;$/;"	v	file:
+must_finish	tests/sha_speed.c	/^static int must_finish = 0;$/;"	v	file:
+must_finish	tests/speed.c	/^static int must_finish = 0;$/;"	v	file:
+my_perror	tests/cipher-gcm.c	21;"	d	file:
+new_mapping	tests/openssl_wrapper.c	/^static struct ctx_mapping *new_mapping(void)$/;"	f	file:
+nid	extras/eng_cryptodev.c	/^	int	nid;$/;"	m	struct:__anon3	file:
+nid	extras/eng_cryptodev.c	/^	int	nid;$/;"	m	struct:__anon4	file:
+op	crypto/cryptodev.h	/^	__u16	op;		\/* COP_ENCRYPT or COP_DECRYPT *\/$/;"	m	struct:crypt_auth_op
+op	crypto/cryptodev.h	/^	__u16	op;		\/* COP_ENCRYPT or COP_DECRYPT *\/$/;"	m	struct:crypt_op
+op	cryptodev_int.h	/^	uint16_t	op;		\/* COP_ENCRYPT or COP_DECRYPT *\/$/;"	m	struct:compat_crypt_op
+open_dev_crypto	extras/eng_cryptodev.c	/^open_dev_crypto(void)$/;"	f	file:
+openssl_aes	tests/openssl_wrapper.c	/^static int openssl_aes(struct session_op *sess, struct crypt_op *cop)$/;"	f	file:
+openssl_cioccrypt	tests/openssl_wrapper.c	/^int openssl_cioccrypt(struct session_op *sess, struct crypt_op *cop)$/;"	f
+openssl_ctx	tests/openssl_wrapper.c	/^union openssl_ctx {$/;"	u	file:
+openssl_hmac	tests/openssl_wrapper.c	/^static int openssl_hmac(struct session_op *sess, struct crypt_op *cop)$/;"	f	file:
+openssl_md	tests/openssl_wrapper.c	/^static int openssl_md(struct session_op *sess, struct crypt_op *cop)$/;"	f	file:
+pad_record	authenc.c	/^static int pad_record( struct scatterlist *dst_sg, int len, int block_size)$/;"	f	file:
+pages	cryptodev_int.h	/^	struct page **pages;$/;"	m	struct:csession	typeref:struct:csession::page
+pfd	tests/async_speed.c	/^static struct pollfd pfd;$/;"	v	typeref:struct:pollfd	file:
+plaintext	tests/cipher-gcm.c	/^	const uint8_t *plaintext;$/;"	m	struct:aes_gcm_vectors_st	file:
+plaintext_size	tests/cipher-gcm.c	/^	int plaintext_size;$/;"	m	struct:aes_gcm_vectors_st	file:
+print_buf	tests/cipher-aead-srtp.c	/^static void print_buf(char* desc, unsigned char* buf, int size)$/;"	f	file:
+print_buf	tests/cipher-aead.c	/^static void print_buf(char* desc, unsigned char* buf, int size)$/;"	f	file:
+print_buf	tests/cipher-gcm.c	/^static void print_buf(char *desc, const unsigned char *buf, int size)$/;"	f	file:
+printhex	tests/hash_comp.c	/^static void printhex(unsigned char *buf, int buflen)$/;"	f	file:
+printhex	tests/hmac_comp.c	/^static void printhex(unsigned char *buf, int buflen)$/;"	f	file:
+put_dev_crypto	extras/eng_cryptodev.c	/^static void put_dev_crypto(int fd)$/;"	f	file:
+ra_dbg	cryptlib.c	39;"	d	file:
+read_tls_hash	authenc.c	/^static void read_tls_hash( struct scatterlist *dst_sg, int len, void* hash, int hash_len)$/;"	f	file:
+readonly_pages	cryptodev_int.h	/^	unsigned int readonly_pages;$/;"	m	struct:csession
+release_user_pages	zc.c	/^void release_user_pages(struct csession *ses)$/;"	f
+remove_mapping	tests/openssl_wrapper.c	/^static void remove_mapping(__u32 ses)$/;"	f	file:
+request	cryptlib.h	/^		struct ablkcipher_request *request;$/;"	m	struct:cipher_data::__anon1	typeref:struct:cipher_data::__anon1::ablkcipher_request
+request	cryptlib.h	/^		struct ahash_request *request;$/;"	m	struct:hash_data::__anon2	typeref:struct:hash_data::__anon2::ahash_request
+result	cryptlib.h	/^		struct cryptodev_result *result;$/;"	m	struct:cipher_data::__anon1	typeref:struct:cipher_data::__anon1::cryptodev_result
+result	cryptlib.h	/^		struct cryptodev_result *result;$/;"	m	struct:hash_data::__anon2	typeref:struct:hash_data::__anon2::cryptodev_result
+result	ioctl.c	/^	int result;$/;"	m	struct:todo_list_item	file:
+s	cryptlib.h	/^		struct crypto_ablkcipher *s;$/;"	m	struct:cipher_data::__anon1	typeref:struct:cipher_data::__anon1::crypto_ablkcipher
+s	cryptlib.h	/^		struct crypto_ahash *s;$/;"	m	struct:hash_data::__anon2	typeref:struct:hash_data::__anon2::crypto_ahash
+sem	cryptodev_int.h	/^	struct mutex sem;$/;"	m	struct:csession	typeref:struct:csession::mutex
+sem	cryptodev_int.h	/^	struct mutex sem;$/;"	m	struct:fcrypt	typeref:struct:fcrypt::mutex
+ses	crypto/cryptodev.h	/^	__u32	ses;		\/* session identifier *\/$/;"	m	struct:crypt_auth_op
+ses	crypto/cryptodev.h	/^	__u32	ses;		\/* session identifier *\/$/;"	m	struct:crypt_op
+ses	crypto/cryptodev.h	/^	__u32	ses;		\/* session identifier *\/$/;"	m	struct:session_op
+ses	crypto/cryptodev.h	/^	__u32 ses;		\/* session identifier *\/$/;"	m	struct:session_info_op
+ses	cryptodev_int.h	/^	uint32_t	ses;		\/* session identifier *\/$/;"	m	struct:compat_crypt_op
+ses	cryptodev_int.h	/^	uint32_t	ses;		\/* session identifier *\/$/;"	m	struct:compat_session_op
+ses	tests/openssl_wrapper.c	/^	__u32 ses;$/;"	m	struct:ctx_mapping	file:
+ses_to_hmac	tests/openssl_wrapper.c	/^static HMAC_CTX *ses_to_hmac(__u32 ses) { return (HMAC_CTX *)__ses_to_ctx(ses); }$/;"	f	file:
+ses_to_md	tests/openssl_wrapper.c	/^static EVP_MD_CTX *ses_to_md(__u32 ses) { return (EVP_MD_CTX *)__ses_to_ctx(ses); }$/;"	f	file:
+sess	examples/aes-gcm.h	/^	struct session_op sess;$/;"	m	struct:cryptodev_ctx	typeref:struct:cryptodev_ctx::session_op
+sess	examples/aes-sha1.h	/^	struct session_op sess;$/;"	m	struct:cryptodev_ctx	typeref:struct:cryptodev_ctx::session_op
+sess	examples/aes.h	/^	struct session_op sess;$/;"	m	struct:cryptodev_ctx	typeref:struct:cryptodev_ctx::session_op
+sess	examples/sha.h	/^	struct session_op sess;$/;"	m	struct:cryptodev_ctx	typeref:struct:cryptodev_ctx::session_op
+sess_to_evp_md	tests/openssl_wrapper.c	/^static const EVP_MD *sess_to_evp_md(struct session_op *sess)$/;"	f	file:
+session_info_op	crypto/cryptodev.h	/^struct session_info_op {$/;"	s
+session_op	crypto/cryptodev.h	/^struct session_op {$/;"	s
+session_op_to_compat	ioctl.c	/^session_op_to_compat(struct session_op *sop, struct compat_session_op *compat)$/;"	f	file:
+sg	cryptodev_int.h	/^	struct scatterlist *sg;$/;"	m	struct:csession	typeref:struct:csession::scatterlist
+sg_advance	util.c	/^struct scatterlist *sg_advance(struct scatterlist *sg, int consumed)$/;"	f
+sg_copy	util.c	/^int sg_copy(struct scatterlist *sg_from, struct scatterlist *sg_to, int len)$/;"	f
+sha_ctx_deinit	examples/sha.c	/^void sha_ctx_deinit(struct cryptodev_ctx* ctx) $/;"	f
+sha_ctx_init	examples/sha.c	/^int sha_ctx_init(struct cryptodev_ctx* ctx, int cfd, const uint8_t *key, unsigned int key_size)$/;"	f
+sha_hash	examples/sha.c	/^sha_hash(struct cryptodev_ctx* ctx, const void* text, size_t size, void* digest)$/;"	f
+si	tests/fullspeed.c	/^static int si = 1; \/* SI by default *\/$/;"	v	file:
+si	tests/speed.c	/^static int si = 1; \/* SI by default *\/$/;"	v	file:
+si_units	tests/fullspeed.c	/^static char *si_units[] = { "", "K", "M", "G", "T", 0};$/;"	v	file:
+si_units	tests/hashcrypt_speed.c	/^static char *si_units[] = { "", "K", "M", "G", "T", 0};$/;"	v	file:
+si_units	tests/sha_speed.c	/^static char *si_units[] = { "", "K", "M", "G", "T", 0};$/;"	v	file:
+si_units	tests/speed.c	/^static char *si_units[] = { "", "K", "M", "G", "T", 0};$/;"	v	file:
+sid	cryptodev_int.h	/^	uint32_t sid;$/;"	m	struct:csession
+src	crypto/cryptodev.h	/^	__u8	__user *src;	\/* data to be encrypted and authenticated *\/$/;"	m	struct:crypt_auth_op
+src	crypto/cryptodev.h	/^	__u8	__user *src;	\/* source data *\/$/;"	m	struct:crypt_op
+src	cryptodev_int.h	/^	compat_uptr_t	src;		\/* source data *\/$/;"	m	struct:compat_crypt_op
+srtp_auth_n_crypt	authenc.c	/^srtp_auth_n_crypt(struct csession *ses_ptr, struct kernel_crypt_auth_op *kcaop,$/;"	f	file:
+stream	cryptlib.h	/^	int stream;$/;"	m	struct:cipher_data
+tag	crypto/cryptodev.h	/^	__u8    __user *tag;    \/* where the tag will be copied to. TLS mode$/;"	m	struct:crypt_auth_op
+tag	tests/cipher-gcm.c	/^	const uint8_t *tag;$/;"	m	struct:aes_gcm_vectors_st	file:
+tag_len	crypto/cryptodev.h	/^	__u32	tag_len;	\/* the length of the tag. Use zero for digest size or max tag. *\/$/;"	m	struct:crypt_auth_op
+task	cryptodev_int.h	/^	struct task_struct *task;$/;"	m	struct:kernel_crypt_auth_op	typeref:struct:kernel_crypt_auth_op::task_struct
+task	cryptodev_int.h	/^	struct task_struct *task;$/;"	m	struct:kernel_crypt_op	typeref:struct:kernel_crypt_op::task_struct
+test_aes	examples/aes.c	/^static int test_aes(int cfd)$/;"	f	file:
+test_aes	tests/async_cipher.c	/^static int test_aes(int cfd)$/;"	f	file:
+test_aes	tests/cipher.c	/^static int test_aes(int cfd)$/;"	f	file:
+test_crypto	tests/async_cipher.c	/^test_crypto(int cfd)$/;"	f	file:
+test_crypto	tests/async_hmac.c	/^test_crypto(int cfd)$/;"	f	file:
+test_crypto	tests/cipher-aead-srtp.c	/^test_crypto(int cfd)$/;"	f	file:
+test_crypto	tests/cipher-aead.c	/^test_crypto(int cfd)$/;"	f	file:
+test_crypto	tests/cipher-gcm.c	/^static int test_crypto(int cfd)$/;"	f	file:
+test_crypto	tests/cipher.c	/^test_crypto(int cfd)$/;"	f	file:
+test_crypto	tests/cipher_comp.c	/^test_crypto(int cfd, struct session_op *sess, int datalen)$/;"	f	file:
+test_crypto	tests/hash_comp.c	/^test_crypto(int cfd, struct session_op *sess, int datalen)$/;"	f	file:
+test_crypto	tests/hmac.c	/^test_crypto(int cfd)$/;"	f	file:
+test_crypto	tests/hmac_comp.c	/^test_crypto(int cfd, struct session_op *sess, int datalen)$/;"	f	file:
+test_encrypt_decrypt	tests/cipher-aead-srtp.c	/^test_encrypt_decrypt(int cfd)$/;"	f	file:
+test_encrypt_decrypt	tests/cipher-aead.c	/^test_encrypt_decrypt(int cfd)$/;"	f	file:
+test_encrypt_decrypt	tests/cipher-gcm.c	/^static int test_encrypt_decrypt(int cfd)$/;"	f	file:
+test_encrypt_decrypt_error	tests/cipher-aead-srtp.c	/^test_encrypt_decrypt_error(int cfd, int err)$/;"	f	file:
+test_encrypt_decrypt_error	tests/cipher-aead.c	/^test_encrypt_decrypt_error(int cfd, int err)$/;"	f	file:
+test_encrypt_decrypt_error	tests/cipher-gcm.c	/^static int test_encrypt_decrypt_error(int cfd, int err)$/;"	f	file:
+test_extras	tests/async_hmac.c	/^test_extras(int cfd)$/;"	f	file:
+test_extras	tests/hmac.c	/^test_extras(int cfd)$/;"	f	file:
+tfm_info_to_alg_info	ioctl.c	/^static inline void tfm_info_to_alg_info(struct alg_info *dst, struct crypto_tfm *tfm)$/;"	f	file:
+tls_auth_n_crypt	authenc.c	/^tls_auth_n_crypt(struct csession *ses_ptr, struct kernel_crypt_auth_op *kcaop,$/;"	f	file:
+todo	ioctl.c	/^	struct locked_list free, todo, done;$/;"	m	struct:crypt_priv	typeref:struct:crypt_priv::	file:
+todo_list_item	ioctl.c	/^struct todo_list_item {$/;"	s	file:
+type	tests/openssl_wrapper.c	/^	enum ctx_type type;$/;"	m	struct:ctx_mapping	typeref:enum:ctx_mapping::ctx_type	file:
+udifftimeval	tests/async_speed.c	/^static double udifftimeval(struct timeval start, struct timeval end)$/;"	f	file:
+udifftimeval	tests/fullspeed.c	/^static double udifftimeval(struct timeval start, struct timeval end)$/;"	f	file:
+udifftimeval	tests/hashcrypt_speed.c	/^static double udifftimeval(struct timeval start, struct timeval end)$/;"	f	file:
+udifftimeval	tests/sha_speed.c	/^static double udifftimeval(struct timeval start, struct timeval end)$/;"	f	file:
+udifftimeval	tests/speed.c	/^static double udifftimeval(struct timeval start, struct timeval end)$/;"	f	file:
+units	tests/async_speed.c	/^static char *units[] = { "", "Ki", "Mi", "Gi", "Ti", 0};$/;"	v	file:
+units	tests/fullspeed.c	/^static char *units[] = { "", "Ki", "Mi", "Gi", "Ti", 0};$/;"	v	file:
+units	tests/hashcrypt_speed.c	/^static char *units[] = { "", "Ki", "Mi", "Gi", "Ti", 0};$/;"	v	file:
+units	tests/sha_speed.c	/^static char *units[] = { "", "Ki", "Mi", "Gi", "Ti", 0};$/;"	v	file:
+units	tests/speed.c	/^static char *units[] = { "", "Ki", "Mi", "Gi", "Ti", 0};$/;"	v	file:
+used_pages	cryptodev_int.h	/^	unsigned int used_pages; \/* the number of pages that are used *\/$/;"	m	struct:csession
+user_waiter	ioctl.c	/^	wait_queue_head_t user_waiter;$/;"	m	struct:crypt_priv	file:
+value2human	tests/async_speed.c	/^static void value2human(double bytes, double time, double* data, double* speed,char* metric)$/;"	f	file:
+value2human	tests/fullspeed.c	/^static void value2human(int si, double bytes, double time, double* data, double* speed,char* metric)$/;"	f	file:
+value2human	tests/hashcrypt_speed.c	/^static void value2human(int si, double bytes, double time, double* data, double* speed,char* metric)$/;"	f	file:
+value2human	tests/sha_speed.c	/^static void value2human(int si, double bytes, double time, double* data, double* speed,char* metric)$/;"	f	file:
+value2human	tests/speed.c	/^static void value2human(int si, double bytes, double time, double* data, double* speed,char* metric)$/;"	f	file:
+verify_tls_record_pad	authenc.c	/^static int verify_tls_record_pad( struct scatterlist *dst_sg, int len, int block_size)$/;"	f	file:
+waitfor	cryptlib.c	/^static inline int waitfor(struct cryptodev_result *cr, ssize_t ret)$/;"	f	file:
+zapparams	extras/eng_cryptodev.c	/^zapparams(struct crypt_kop *kop)$/;"	f	file:

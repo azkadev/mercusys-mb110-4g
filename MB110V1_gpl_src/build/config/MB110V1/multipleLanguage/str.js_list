@@ -1,0 +1,118 @@
+head
+menu_str
+m_str
+c_str
+s_str
+status_nstr
+networkMap_nstr
+sysMode_nstr
+wanBasic_nstr
+wan_nstr
+ethWanBasic_nstr
+ethWan_nstr
+eth_nstr
+# basic3g_nstr
+# usb3g_nstr
+# usb3gModemList_nstr
+# group_nstr
+# groupAdd_nstr
+advanceLte_nstr
+wanIfMobile_nstr
+basicLte_nstr
+lteProfileAdd_nstr
+lteIspUpdate_nstr
+PINManagement_nstr
+dataSettings_nstr
+# natBoost_nstr
+alg_nstr
+# dslcfg_nstr
+dhcp_nstr
+wirelessBasic_nstr
+wlScan_2G_nstr
+# wlScan_5G_nstr
+wps_nstr
+wirelessSettings_nstr
+wirelessAdv_nstr
+wirelessStat_nstr
+wlGuestDulBandBasic_nstr
+wlGuestDulBandAdv_nstr
+wirelessSchedule_nstr
+# usbManage_nstr
+# printSrv_nstr
+# diskSettings_nstr
+# folderSharing_nstr
+route_nstr
+virtualServer_nstr
+portTrigger_nstr
+dmz_nstr
+upnp_nstr
+parentCtrl_nstr
+# qosSettings_nstr
+# qosDatabase_nstr
+accessControl_nstr
+portFiltering_nstr
+ddos_nstr
+ddos_host_nstr
+ipv6Tunnel_nstr
+trafficCtrl_nstr
+arpBind_nstr
+ddns_nstr
+diagnostic_nstr
+# pushService_nstr
+log_nstr
+logConf_nstr
+time_nstr
+manageCtrl_nstr
+manageCtrl_remote_nstr
+cwmp_nstr
+# snmp_nstr
+backNRestore_nstr
+defaultCfg_nstr
+softup_nstr
+restart_nstr
+# stat_nstr
+# iptv_nstr
+# iptvDsl_nstr
+# iptvEth_nstr
+# ipsec_nstr
+# voice_advance_nstr
+# voice_adddect_nstr
+# voice_callblocks_nstr
+# voice_callforward_nstr
+# voice_telebook_nstr
+# voice_basic_nstr
+# voice_telephony_nstr
+# voice_calllog_nstr
+# voice_callthrough_nstr
+# voice_dectadv_nstr
+# voice_voiceapp_nstr
+# voice_electionRule_nstr
+# voice_usbmail_nstr
+# voice_usbmailBasic_nstr
+# voice_regProcess_nstr
+# voice_phone_nstr
+quicksetup_nstr
+# openvpnServer_nstr
+# pptpvpnServer_nstr
+# vpnStatus_nstr
+ledSchedule_nstr
+lteUssd_nstr
+lteSmsSettings_nstr
+lteSmsNewMsg_nstr
+lteSmsReadMsg_nstr
+lteSmsInbox_nstr
+lteSmsOutbox_nstr
+lteSmsDraftbox_nstr
+lteAtnSel_nstr
+table_str
+login
+offlineError
+cloudBasic_nstr
+# wakeLan_nstr
+qrApp
+VTYPETEXT
+# ipv6Firewall_nstr
+# SPEED_TEST
+DAY
+REGION
+tail

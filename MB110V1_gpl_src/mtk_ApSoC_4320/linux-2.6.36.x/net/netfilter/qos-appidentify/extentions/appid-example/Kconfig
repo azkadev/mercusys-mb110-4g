@@ -1,0 +1,12 @@
+#
+# iqos appidentify kernel module extensions
+#
+
+config APPID_EXAMPLE	
+	tristate "appidentify extention example"
+	depends on APPID_MOD
+	default m
+	help
+		sample module to show how to use appid extention api
+
+

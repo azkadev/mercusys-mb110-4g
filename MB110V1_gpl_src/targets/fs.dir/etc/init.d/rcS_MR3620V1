@@ -1,0 +1,99 @@
+#!/bin/sh
+
+mount -a
+
+#dbs added for sysfs
+mount -t sysfs /sys /sys
+
+/bin/mkdir -m 0777 -p /var/https
+/bin/mkdir -m 0777 -p /var/lock
+/bin/mkdir -m 0777 -p /var/log
+/bin/mkdir -m 0777 -p /var/run
+/bin/mkdir -m 0777 -p /var/tmp
+/bin/mkdir -m 0777 -p /var/tmp/wsc_upnp
+/bin/mkdir -m 0777 -p /var/tmp/wsc_upnp_5G
+/bin/mkdir -m 0777 -p /var/tmp/dropbear
+/bin/mkdir -m 0777 -p /var/ipsec
+
+#for the dirs of samba and ntfs-3g, zjj, 20111129
+/bin/mkdir -m 0777 -p /var/usbdisk
+/bin/mkdir -m 0777 -p /var/dev
+/bin/mkdir -m 0777 -p /var/samba/lib
+/bin/mkdir -m 0777 -p /var/samba/private
+/bin/mkdir -m 0777 -p /var/samba/var/locks
+cp -p /etc/passwd.bak /var/passwd
+/bin/mkdir -m 0777 -p /var/3G
+/bin/mkdir -m 0777 -p /var/l2tp
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+#echo 1 > /proc/sys/net/ipv4/tcp_syncookies
+echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
+
+echo 30 > /proc/sys/net/unix/max_dgram_qlen
+
+#krammer add for LAN can't continuous ping to WAN when exchenging the routing mode
+#bug1126
+echo 3 > /proc/sys/net/netfilter/nf_conntrack_icmp_timeout
+
+echo 0 > /proc/sys/net/ipv4/conf/default/accept_source_route
+echo 0 > /proc/sys/net/ipv4/conf/all/accept_source_route
+
+echo 32 > /proc/sys/net/netfilter/nf_conntrack_expect_max
+echo 30000 > /proc/sys/net/netfilter/nf_conntrack_max
+echo 30000 > /proc/sys/net/nf_conntrack_max
+echo 0 > /proc/sys/net/netfilter/nf_conntrack_checksum
+echo 60 > /proc/sys/net/netfilter/nf_conntrack_udp_timeout
+echo 30 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_unacknowledged
+echo 120 > /proc/sys/net/ipv4/tcp_keepalive_time
+echo 30 > /proc/sys/net/ipv4/tcp_fin_timeout
+
+echo 5120 > /proc/sys/vm/min_free_kbytes
+insmod /lib/modules/kmdir/kernel/drivers/scsi/scsi_mod.ko
+insmod /lib/modules/kmdir/kernel/drivers/scsi/sd_mod.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/usb/usb-common.ko
+insmod /lib/modules/kmdir/kernel/drivers/usb/core/usbcore.ko
+
+#for 3g-dongle, add by zjj, 20120521
+mount -t usbfs usbfs /proc/bus/usb/
+
+insmod /lib/modules/kmdir/kernel/drivers/usb/host/ehci-hcd.ko
+#insmod /lib/modules/kmdir/kernel/drivers/usb/host/ohci-hcd.ko
+insmod /lib/modules/kmdir/kernel/drivers/usb/storage/usb-storage.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/scsi/scsi_wait_scan.ko
+
+#netfilter modules load
+insmod /lib/modules/kmdir/kernel/net/netfilter/nf_conntrack_proto_gre.ko
+insmod /lib/modules/kmdir/kernel/net/netfilter/nf_conntrack_pptp.ko
+
+#ip statisctics
+insmod /lib/modules/ipt_STAT.ko
+#support tplinklogin.net
+insmod /lib/modules/tp_domain.ko 
+
+telnetd
+cmmsyslogd &
+
+#for l2tp modules
+insmod /lib/modules/pppol2tp.ko
+insmod /lib/modules/l2tp_ppp.ko
+
+#for rmnet
+#insmod /lib/modules/usbnet.ko
+#insmod /lib/modules/cdc-wdm.ko
+#insmod /lib/modules/qmi_wwan.ko
+
+cos &
+
+ifconfig lo up
+
+echo 0 > /proc/sys/vm/overcommit_memory
+echo 95 > /proc/sys/vm/overcommit_ratio
+echo 250 > /proc/sys/vm/lowmem_reserve_ratio
+echo 2 > /proc/sys/vm/dirty_background_ratio
+echo 250 > /proc/sys/vm/dirty_writeback_centisecs
+echo 10 > /proc/sys/vm/dirty_ratio
+echo 16384 > /proc/sys/vm/max_map_count
+echo 2 > /proc/sys/vm/page-cluster
+echo 70 > /proc/sys/vm/swappiness

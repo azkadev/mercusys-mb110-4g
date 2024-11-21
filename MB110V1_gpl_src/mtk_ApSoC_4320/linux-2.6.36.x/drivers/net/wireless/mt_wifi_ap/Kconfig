@@ -1,0 +1,140 @@
+config MT7628_AP_SUPPORT
+	tristate "Mediatek MT7628 802.11n AP support"
+	depends on MT_WIFI
+	select WIRELESS_EXT
+	select WEXT_SPY
+	select WEXT_PRIV
+	default y
+
+config MT7628_WDS_SUPPORT
+	bool "WDS"
+	depends on MT7628_AP_SUPPORT
+
+config MT7628_MBSS_SUPPORT
+	bool "MBSSID"
+	depends on MT7628_AP_SUPPORT
+	default y
+
+config MT7628_NEW_MBSSID_MODE
+	bool "New MBSSID MODE"
+	depends on MT7628_AP_SUPPORT && MT7628_MBSS_SUPPORT
+	depends on RALINK_RT3883 || RALINK_RT3352 || RALINK_RT5350 || RALINK_RT6352 || RALINK_MT7620 || RALINK_MT7628
+	default y
+
+config MT7628_ENHANCE_NEW_MBSSID_MODE
+	bool "Enhanced MBSSID mode"
+	depends on MT7628_NEW_MBSSID_MODE
+	default y
+
+config MT7628_APCLI_SUPPORT
+	bool "AP-Client Support"
+	depends on MT7628_AP_SUPPORT
+
+config MT7628_APCLI_AUTO_BW_SUPPORT
+	bool "AP-Client Auto Bandwidth Support"
+	depends on MT7628_AP_SUPPORT
+        depends on MT7628_APCLI_SUPPORT
+        
+config MT7628_APCLI_CERT_SUPPORT
+	bool "AP-Client TGN Cert Support"
+	depends on MT7628_AP_SUPPORT
+        depends on MT7628_APCLI_SUPPORT 
+               
+config MT7628_MAC_REPEATER_SUPPORT
+	bool "MAC Repeater Support"
+	depends on MT7628_AP_SUPPORT
+	depends on MT7628_APCLI_SUPPORT
+	default n
+
+config MT7628_MWDS_SUPPORT
+	bool "MWDS Support"
+	depends on MT7628_AP_SUPPORT
+	default y
+
+#11R
+config MT7628_DOT11R_FT_SUPPORT
+	bool "802.11r Fast BSS Transition"
+	depends on MT7628_AP_SUPPORT
+	default n
+#11K
+config MT7628_DOT11K_RRM_SUPPORT
+	bool "802.11k Radio Resource Management"
+	depends on MT7628_AP_SUPPORT
+	default y
+
+#11v
+config MT7628_DOT11V_WNM_SUPPORT
+	bool "802.11v Support"
+	depends on MT7628_AP_SUPPORT
+	default y
+
+#tp-roaming
+config MT7628_TP_NETWORK_ROAMING
+	bool "tp-network-roaming"
+	depends on MT7628_DOT11K_RRM_SUPPORT
+	depends on MT7628_DOT11V_WNM_SUPPORT
+	default y
+
+#TP-Link IE
+config MT7628_TP_IE_SUPPORT
+       bool "TP-Link Spcific Vendor IE support"
+       depends on MT7628_AP_SUPPORT
+       default n
+
+config MT7628_SNIFFER_SUPPORT
+	bool "SNIFFER"
+	depends on MT7628_AP_SUPPORT
+	default n
+
+#config MT7628_CFG80211_SUPPORT
+#	bool "CFG80211"
+#	depends on MT7628_AP_SUPPORT
+#	default n
+
+config MT7628_CON_WPS_SUPPORT
+	bool "Concurrent WPS Support"
+	depends on MT7628_AP_SUPPORT
+	depends on MT7628_APCLI_SUPPORT
+	depends on MT7628_WSC_INCLUDED
+	depends on MT7628_WSC_V2_SUPPORT
+	default n
+	
+config MT7628_LLTD_SUPPORT
+	bool "LLTD (Link Layer Topology Discovery Protocol)"
+	depends on MT7628_AP_SUPPORT
+
+#config MT7628_COC_SUPPORT
+#	bool "CoC Support"
+#	depends on MT7628_AP_SUPPORT
+#	default n
+
+#config  MT7628_SNMP
+#	bool "Net-SNMP Support"
+#	depends on MT7628_AP_SUPPORT
+
+#config MT7628_MCAST_RATE_SPECIFIC
+#	bool "User specific tx rate of mcast pkt"
+#	depends on MT7628_AP_SUPPORT
+
+#config MT7628_EXT_BUILD_CHANNEL_LIST
+#	bool "Extension Channel List"
+#	depends on MT7628_AP_SUPPORT
+
+#config MT7628_AUTO_CH_SELECT_ENHANCE
+#	bool "Auto Channel Selection Enhancement"
+#	depends on MT7628_AP_SUPPORT
+
+config MT7628_AIRPLAY_SUPPORT
+	bool "AIRPLAY Support"
+	depends on MT7628_AP_SUPPORT
+	default n
+
+config MT7628_BAND_STEERING
+	bool "Band Steering"
+	depends on MT7628_AP_SUPPORT
+	default n
+
+config MT7628_DUTY_ADMIT_SUPPORT
+	bool "Duty Admit Support"
+	depends on MT7628_AP_SUPPORT
+	default n

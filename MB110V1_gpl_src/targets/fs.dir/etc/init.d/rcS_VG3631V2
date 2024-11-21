@@ -1,0 +1,104 @@
+#!/bin/sh
+
+mount -a
+
+# added by yangcaiyong for sysfs
+mount -t sysfs /sys /sys
+# ended add
+
+/bin/mkdir -m 0777 -p /var/lock
+/bin/mkdir -m 0777 -p /var/log
+/bin/mkdir -m 0777 -p /var/run
+/bin/mkdir -m 0777 -p /var/tmp
+/bin/mkdir -m 0777 -p /var/Wireless/RT2860AP
+/bin/mkdir -m 0777 -p /var/tmp/wsc_upnp
+
+#for the dirs of samba and ntfs-3g, zjj, 20111129
+/bin/mkdir -m 0777 -p /var/usbdisk
+/bin/mkdir -m 0777 -p /var/dev
+/bin/mkdir -m 0777 -p /var/samba/lib
+/bin/mkdir -m 0777 -p /var/samba/private
+/bin/mkdir -m 0777 -p /var/samba/var/locks
+cp -p /etc/passwd.bak /var/passwd
+/bin/mkdir -m 0777 -p /var/3G
+#end by zjj
+/bin/mkdir -m 0777 -p /var/l2tp
+
+echo 5120 > /proc/sys/vm/min_free_kbytes
+echo 2 > /proc/sys/vm/overcommit_memory
+echo 95 > /proc/sys/vm/overcommit_ratio
+echo 250 > /proc/sys/vm/lowmem_reserve_ratio
+echo 2 > /proc/sys/vm/dirty_background_ratio
+echo 250 > /proc/sys/vm/dirty_writeback_centisecs
+echo 10 > /proc/sys/vm/dirty_ratio
+echo 16384 > /proc/sys/vm/max_map_count
+echo 2 > /proc/sys/vm/page-cluster
+echo 70 > /proc/sys/vm/swappiness 
+
+echo 30 > /proc/sys/net/unix/max_dgram_qlen
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+echo 1 > /proc/sys/net/ipv4/tcp_syncookies
+echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
+
+#krammer add for LAN can't continuous ping to WAN when exchenging the routing mode
+#bug1126
+echo 3 > /proc/sys/net/netfilter/nf_conntrack_icmp_timeout
+
+echo 0 > /proc/sys/net/ipv4/conf/default/accept_source_route
+echo 0 > /proc/sys/net/ipv4/conf/all/accept_source_route
+
+insmod /lib/modules/kmdir/kernel/drivers/scsi/scsi_mod.ko
+insmod /lib/modules/kmdir/kernel/drivers/scsi/sd_mod.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/usb/core/usbcore.ko
+
+#for 3g-dongle, add by zjj, 20120521
+mount -t usbfs usbfs /proc/bus/usb/
+
+insmod /lib/modules/kmdir/kernel/drivers/usb/host/ehci-hcd.ko
+insmod /lib/modules/kmdir/kernel/drivers/usb/host/ohci-hcd.ko
+insmod /lib/modules/kmdir/kernel/drivers/usb/storage/usb-storage.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/scsi/scsi_wait_scan.ko
+
+insmod /lib/modules/tcledctrl.ko
+insmod /lib/modules/tccicmd.ko
+
+#netfilter modules load
+insmod /lib/modules/kmdir/kernel/net/netfilter/nf_conntrack_proto_gre.ko
+insmod /lib/modules/kmdir/kernel/net/netfilter/nf_conntrack_pptp.ko
+insmod /lib/modules/ipt_STAT.ko
+
+
+telnetd
+
+#by yuchuwei
+insmod /lib/modules/raeth.ko
+
+# DMT Driver
+insmod /lib/modules/tc3162_dmt.ko
+# SAR Driver
+insmod /lib/modules/tc3162l2sar.ko
+
+echo "MTK DSP support"
+insmod /lib/modules/sys_mod.ko
+insmod /lib/modules/pcm.ko
+insmod /lib/modules/lec.ko
+insmod /lib/modules/slic3.ko 
+echo "TCSUPPORT_CPU_RT63368_FXS3_SLIC1"
+insmod /lib/modules/fxs3.ko slic1="le89116" slic2="le89316" slic3="le89316" 
+insmod /lib/modules/ksocket.ko
+insmod /lib/modules/ortp.ko
+insmod /lib/modules/acodec_x.ko
+insmod /lib/modules/foip.ko
+insmod /lib/modules/ovdsp.ko
+insmod /lib/modules/pcmDump.ko
+voip_server &
+
+insmod /lib/modules/module_sel.ko
+
+ifconfig eth0 up
+ifconfig lo 127.0.0.1 netmask 255.0.0.0
+
+cos &

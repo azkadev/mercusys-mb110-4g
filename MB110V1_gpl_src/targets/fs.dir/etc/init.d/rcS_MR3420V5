@@ -1,0 +1,88 @@
+#!/bin/sh
+
+mount -a
+# added by yangcaiyong for sysfs
+mount -t sysfs /sys /sys
+# ended add
+
+/bin/mkdir -m 0777 -p /var/https
+/bin/mkdir -m 0777 -p /var/lock
+/bin/mkdir -m 0777 -p /var/log
+/bin/mkdir -m 0777 -p /var/run
+/bin/mkdir -m 0777 -p /var/tmp
+/bin/mkdir -m 0777 -p /var/Wireless/RT2860AP
+/bin/mkdir -m 0777 -p /var/tmp/wsc_upnp
+cp -p /etc/SingleSKU_FCC.dat /var/Wireless/RT2860AP/SingleSKU.dat
+
+/bin/mkdir -m 0777 -p /var/tmp/dropbear
+
+#for the dirs of samba and ntfs-3g, zjj, 20111129
+/bin/mkdir -m 0777 -p /var/usbdisk
+/bin/mkdir -m 0777 -p /var/dev
+/bin/mkdir -m 0777 -p /var/samba/lib
+/bin/mkdir -m 0777 -p /var/samba/private
+/bin/mkdir -m 0777 -p /var/samba/var/locks
+cp -p /etc/passwd.bak /var/passwd
+/bin/mkdir -m 0777 -p /var/3G
+/bin/mkdir -m 0777 -p /var/l2tp
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+#echo 1 > /proc/sys/net/ipv4/tcp_syncookies
+echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
+
+echo 30 > /proc/sys/net/unix/max_dgram_qlen
+
+#krammer add for LAN can't continuous ping to WAN when exchenging the routing mode
+#bug1126
+echo 3 > /proc/sys/net/netfilter/nf_conntrack_icmp_timeout
+
+echo 0 > /proc/sys/net/ipv4/conf/default/accept_source_route
+echo 0 > /proc/sys/net/ipv4/conf/all/accept_source_route
+
+echo 2560 > /proc/sys/net/netfilter/nf_conntrack_expect_max
+#defined 8192 in nf_conntrack_core.c
+echo 8192 > /proc/sys/net/netfilter/nf_conntrack_max
+
+#allow max low mem alloc
+echo 2 > /proc/sys/vm/overcommit_memory 
+echo 100 > /proc/sys/vm/overcommit_ratio
+echo 5120 > /proc/sys/vm/min_free_kbytes
+insmod /lib/modules/kmdir/kernel/drivers/scsi/scsi_mod.ko
+insmod /lib/modules/kmdir/kernel/drivers/scsi/sd_mod.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/usb/core/usbcore.ko
+
+#for 3g-dongle, add by zjj, 20120521
+mount -t usbfs usbfs /proc/bus/usb/
+
+#insmod /lib/modules/kmdir/kernel/drivers/usb/host/ehci-hcd.ko
+#insmod /lib/modules/kmdir/kernel/drivers/usb/host/ohci-hcd.ko
+insmod /lib/modules/kmdir/kernel/drivers/usb/storage/usb-storage.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/scsi/scsi_wait_scan.ko
+
+insmod /lib/modules/kmdir/kernel/drivers/usb/host/ifxusb_host.ko
+insmod /lib/modules/kmdir/kernel/drivers/net/rt_rdm/rt_rdm.ko
+insmod /lib/modules/kmdir/kernel/drivers/net/raeth/raeth.ko
+
+#netfilter modules load
+insmod /lib/modules/kmdir/kernel/net/netfilter/nf_conntrack_proto_gre.ko
+insmod /lib/modules/kmdir/kernel/net/netfilter/nf_conntrack_pptp.ko
+
+#ip statisctics
+insmod /lib/modules/ipt_STAT.ko
+#support tplinklogin.net
+insmod /lib/modules/tp_domain.ko
+
+telnetd
+cmmsyslogd &
+ifconfig lo 127.0.0.1 netmask 255.0.0.0
+
+#for l2tp modules
+insmod /lib/modules/pppol2tp.ko
+insmod /lib/modules/l2tp_ppp.ko
+
+#config mii for 7628
+#config-mii.sh
+
+cos &

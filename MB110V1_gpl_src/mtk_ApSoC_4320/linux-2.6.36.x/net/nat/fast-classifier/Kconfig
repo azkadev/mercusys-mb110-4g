@@ -1,0 +1,18 @@
+# Copyright (c) 2013 Qualcomm Atheros, Inc.
+#
+# All Rights Reserved.
+# Qualcomm Atheros Confidential and Proprietary.
+#
+# Fast-classifier
+#
+
+config FAST_CLASSIFIER
+	tristate "Fast-classifier for shortcut Forwarding Engine"
+	depends on SHORTCUT_FE
+	---help---
+	  Fast-classifier is another implementation of Shortcut Forwarding Engine.
+
+	  To compile this code as a module, choose M here: the module will be
+	  called shortcut-fe.
+
+	  If unsure, say N.

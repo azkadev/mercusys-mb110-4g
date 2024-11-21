@@ -1,0 +1,7 @@
+# $Id: radvd.sysconfig,v 1.1.1.1 2010/09/30 21:01:54 josephxu Exp $
+
+# No chroot; /var/run/radvd must be owned by -u.
+OPTIONS="-u radvd"
+
+# Chroot; directory structure under /var/chroot/radvd has to be populated.
+#OPTIONS="-u radvd -t /var/chroot/radvd"

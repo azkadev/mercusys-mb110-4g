@@ -1,0 +1,3904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InternetGatewayDevice t=o r=P s=IGD_OBJ >
+	<DeviceSummary t=s r=R l=1024 />
+	<LANDeviceNumberOfEntries t=u r=R />
+	<WANDeviceNumberOfEntries t=u r=R />
+	<DeviceInfo t=o r=P s=IGD_DEV_INFO_OBJ >
+		<Manufacturer t=s r=R l=64 d=MERCUSYS />
+		<ManufacturerOUI t=s r=R l=7 />
+		<ModelName t=s r=R l=64 d="Archer MR600" />
+		<Description t=s r=R l=256 d="LTE Gateway" />
+		<ProductClass t=s r=R l=64 d=IGD />
+		<SerialNumber t=s r=R l=64 />
+		<HardwareVersion t=s r=W l=64 />
+		<SoftwareVersion t=s r=W l=64 fa=1 />
+		<ModemFirmwareVersion t=s r=R l=64 />
+		<EnabledOptions t=s r=R l=1024 />
+		<AdditionalHardwareVersion t=s r=R l=64 d=00000000 />
+		<AdditionalSoftwareVersion t=s r=R l=64 />
+		<SpecVersion t=s r=R l=16 d=1.0 />
+		<ProvisioningCode t=s r=W l=64 fa=1 />
+		<UpTime t=u r=R da=1 />
+		<FirstUseDate t=d r=R tb=1 />
+		<DeviceLog t=s r=R l=32768 da=1 nw=1 tb=1 />
+		<X_TP_HardwareID t=s r=R l=33 al=cli d=CCCC2233445566778899AABBCCDDEEFF nw=1 h=1 />
+		<X_TP_FirmwareID t=s r=R l=33 al=cli d=00112233445566778899AABBCCDDEEFF nw=1 h=1 />
+		<X_TP_OemID t=s r=R l=33 al=cli d=FFFF2233445566778899AABBCCDDEEFF nw=1 h=1 />
+		<X_TP_DevManufacturerURL t=s r=R l=64 d=http://www.mercusys.com nw=1 h=1 />
+		<X_TP_DevModelVersion t=s r=R d=2.0 nw=1 h=1 />
+		<X_TP_ProductID t=u r=R d=0x89741003 nw=1 h=1 />
+		<X_TP_ProductVersion t=u r=R d=0x00000001 nw=1 h=1 />
+		<X_TP_SpecialVersion t=u r=R d=0x00000000 nw=1 h=1 />
+		<X_TP_SoftwareRevision t=u r=R d=0x55aa000b nw=1 h=1 />
+		<X_TP_SoftwareRevisionMinor t=u r=R d=0x00 nw=1 h=1 />
+		<X_TP_PlatformVersion t=u r=R d=0xa5000901 nw=1 h=1 />
+		<X_TP_BuildDate t=s r=W l=8 d=110929 nw=1 h=1 />
+		<X_TP_BuildTime t=u r=W d=57600 nw=1 h=1 />
+		<X_TP_IsFactory t=b r=W al=web;cli d=0 h=1 />
+		<X_TP_IsFD t=i r=W i=1 a=3 d=1 h=1 />
+		<X_TP_LogCfg t=o r=P s=SYSLOG_CFG_OBJ h=1 >
+			<LogToRemote t=b r=W d=0 h=1 />
+			<RemoteSeverity t=u r=W i=0 a=7 d=4 h=1 />
+			<ServerIP t=s r=W l=16 d=192.168.1.100 h=1 />
+			<ServerPort t=u r=W i=1 a=65535 d=514 h=1 />
+			<Facility t=u r=W i=1 a=23 d=1 h=1 />
+			<LogToLocal t=b r=W d=1 h=1 />
+			<LocalSeverity t=u r=W i=0 a=7 d=6 h=1 />
+			<LogHeadPos t=u r=W i=0 a=32767 d=0 nw=1 h=1 />
+			<LogTailPos t=u r=W i=0 a=32767 d=1 nw=1 h=1 />
+		</X_TP_LogCfg>
+	</DeviceInfo>
+	<ManagementServer t=o r=P s=MANAGEMENT_SERVER_OBJ p=18 >
+		<EnableCWMP t=b r=W d=0 />
+		<URL t=s r=W l=256 />
+		<Username t=s r=W l=256 d=admin />
+		<Password t=s r=W l=256 d=admin tp=1 />
+		<PeriodicInformEnable t=b r=W d=0 />
+		<PeriodicInformInterval t=u r=W i=1 d=300 />
+		<PeriodicInformTime t=d r=W />
+		<ParameterKey t=s r=R l=32 da=1 />
+		<X_TP_ConnReqPort t=us r=W d=7547 h=1 />
+		<X_TP_connReqPath t=s r=W l=16 d=/tr069 h=1 />
+		<ConnectionRequestURL t=s r=R l=64 fa=1 />
+		<ConnectionRequestUsername t=s r=W l=256 d=admin />
+		<ConnectionRequestPassword t=s r=W l=256 d=admin tp=1 />
+		<UpgradesManaged t=b r=W />
+		<KickURL t=s r=R l=64 />
+		<X_TP_Flag t=u r=W d=0x801 h=1 />
+		<X_TP_BoundIfName t=s r=W l=16 h=1 />
+		<X_TP_WanUpIntf t=s r=W l=160 nw=1 h=1 />
+		<X_TP_CurrentIntf t=s r=W l=16 nw=1 h=1 />
+	</ManagementServer>
+	<X_TP_EthSwitch t=o r=P s=ETH_SWITCH_OBJ h=1 >
+		<EnableVirtualPorts t=b r=W h=1 />
+		<NumberOfVirtualPorts t=u r=R h=1 />
+		<IfName t=s r=R l=16 h=1 />
+	</X_TP_EthSwitch>
+	<X_TP_SysCfg t=o r=P s=SYS_CFG_OBJ nw=1 h=1 >
+		<FlashMac t=s r=W l=18 al=cli d=00:0A:EB:13:09:69 nw=1 h=1 />
+		<FlashPin t=u r=W al=cli d=12345670 nw=1 h=1 />
+		<FlashSerialNumber t=s r=W l=14 al=cli d=0123456789abc nw=1 h=1 />
+		<FlashRfpi t=s r=W l=15 d=00:50:04:01:00 nw=1 h=1 />
+		<FlashDevId t=s r=W l=41 nw=1 h=1 />
+		<FlashSn t=s r=W l=20 al=cli d=0123456789abcdef p=37 nw=1 h=1 />
+		<FlashVersion t=s r=W l=16 al=cli nw=1 h=1 />
+		<FlashHwId t=s r=W l=33 al=cli nw=1 h=1 />
+		<FlashOemId t=s r=W l=33 al=cli nw=1 h=1 />
+		<FlashModel t=s r=W l=64 al=cli nw=1 h=1 />
+		<FlashProductId t=u r=W al=cli nw=1 h=1 />
+		<FlashRegion t=s r=W l=16 al=cli d=EU nw=1 h=1 />
+		<Sign t=s r=W l=345 al=cli nw=1 h=1 />
+		<SignLen t=u r=W al=cli nw=1 h=1 />
+		<PublicKey1 t=s r=R l=102 al=nae d=BgIAAACkAABSU0ExAAQAAAEAAQCNrP4jIUWitcvDIHr3OHnlzLCjGyJoLXgY9uH7tAVaYN+2YWEQ9RuS4PIQo7uWwHs7PYTAh9vF nw=1 h=1 />
+		<PublicKey2 t=s r=R l=102 al=nae d="pdMfu6NNkdvneLUER5V7Q5HtmPXd3roiIMi55tK7lA0B67bjYpBE/JM+SLbyMRgeNWut0YoufpLNV24ZQa0p7Xj4M5m2ZDclnA==" nw=1 h=1 />
+		<PublicKeyLen t=us r=R al=nae d=200 nw=1 h=1 />
+		<SignStatus t=b r=R al=nae d=0 nw=1 h=1 />
+	</X_TP_SysCfg>
+	<X_TP_NetCfg t=o r=P s=NET_CFG_OBJ h=1 >
+		<DNSServers t=s r=W l=64 h=1 />
+		<DNSifAliasName t=s r=W l=32 d=NO_INTERFACE h=1 />
+		<CurrDNSServer t=u r=R d=0 h=1 />
+	</X_TP_NetCfg>
+	<X_TP_Net6Cfg t=o r=P s=NET6_CFG_OBJ p=28 >
+		<DNSv6Servers t=s r=W l=80 />
+		<CurrDNSv6Server t=s r=W l=40 />
+		<DNS6ifAliasName t=s r=W l=32 d=NO_INTERFACE />
+	</X_TP_Net6Cfg>
+	<X_TP_UserCfg t=o r=P s=USER_CFG_OBJ h=1 >
+		<RootName t=s r=R l=33 al=cli h=1 />
+		<RootPwd t=s r=R l=33 al=cli h=1 />
+		<AdminName t=s r=W l=33 al=cli d=admin h=1 />
+		<AdminPwd t=s r=W l=33 al=cli d=admin h=1 />
+		<PwdSign t=b r=W d=0 p=61 h=1 />
+		<UserName t=s r=W l=33 al=cli h=1 />
+		<UserPwd t=s r=W l=33 al=cli h=1 />
+		<Domain t=s r=W l=33 al=web d=tplinkmodem.net p=108 h=1 />
+		<CurrentUser t=o r=P s=CURRENT_USER_OBJ nw=1 h=1 >
+			<UserName t=s r=W l=65 nw=1 h=1 />
+			<Passwd t=s r=W l=33 nw=1 h=1 cp=1 />
+			<HttpSession t=s r=W l=64 nw=1 h=1 />
+			<UserSetting t=i r=W i=0 a=2 d=0 nw=1 h=1 />
+			<Action t=i r=W i=0 a=3 d=0 nw=1 h=1 />
+			<LoginStatus t=i r=W d=0 nw=1 h=1 />
+			<UserRole t=i r=W i=0 a=3 d=3 nw=1 h=1 />
+			<LogInCloud t=b r=W d=0 nw=1 h=1 />
+			<LoginToken t=s r=W l=34 nw=1 h=1 />
+			<NeedReconn t=b r=W d=0 nw=1 h=1 />
+		</CurrentUser>
+	</X_TP_UserCfg>
+	<X_TP_AppCfg t=o r=P s=APP_CFG_OBJ h=1 >
+		<LocalHost t=s r=W l=40 h=1 />
+		<RemoteHost t=s r=W l=40 h=1 />
+		<HttpCfg t=o r=P s=HTTP_CFG_OBJ h=1 >
+			<HttpCharset t=s r=R l=6 d=utf-8 nw=1 h=1 />
+			<HttpLocalEnabled t=b r=R d=1 h=1 />
+			<HttpLocalPort t=us r=W i=0 a=65535 d=80 h=1 />
+			<HttpRemoteEnabled t=b r=W d=0 h=1 />
+			<HttpRemotePort t=us r=W i=0 a=65535 d=80 h=1 />
+			<HttpsLocalEnabled t=b r=W d=0 h=1 />
+			<HttpsLocalPort t=us r=W i=0 a=65535 d=443 h=1 />
+			<HttpsRemoteEnabled t=b r=W d=1 h=1 />
+			<HttpsRemotePort t=us r=W i=0 a=65535 d=443 h=1 />
+			<CertExist t=b r=W d=0 h=1 />
+			<CertSerialNumber t=s r=W l=24 d=0 h=1 />
+			<CertAuth t=o r=P s=HTTPS_CERT_AUTH_OBJ p=81 h=1 >
+				<Cert t=s r=W l=1000 h=1 />
+				<PrivateKey t=s r=W l=1000 h=1 />
+			</CertAuth>
+		</HttpCfg>
+		<PhDDNSCfg.{i} t=o r=P s=PH_DDNS_CFG_OBJ m=4 p=14 h=1 >
+			<PhUserName t=s r=W l=64 h=1 />
+			<PhPasswd t=s r=W l=64 h=1 />
+			<PhEnabled t=b r=W h=1 />
+			<PhReg t=b r=W h=1 />
+			<PhRTData t=o r=P s=PH_RT_DATA_OBJ u=1 nw=1 h=1 >
+				<PhState t=u r=R nw=1 h=1 />
+				<PhSevType t=u r=R nw=1 h=1 />
+				<PhDomain t=s r=R l=1296 nw=1 h=1 />
+			</PhRTData>
+		</PhDDNSCfg.{i}>
+		<DynDnsCfg t=o r=P s=DYN_DNS_CFG_OBJ p=19 h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<State t=u r=R h=1 />
+			<UserName t=s r=W l=64 h=1 />
+			<Password t=s r=W l=64 h=1 />
+			<UserDomain t=s r=W l=128 h=1 />
+			<Server t=s r=W l=64 h=1 />
+			<Login t=b r=W d=0 h=1 />
+		</DynDnsCfg>
+		<UPnPCfg t=o r=P s=UPNP_CFG_OBJ h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<PortMapping.{i} t=o r=PC s=UPNP_PORTMAPPING_OBJ m=64 u=1 nw=1 h=1 >
+				<PortMappingDescription t=s r=R l=32 nw=1 h=1 />
+				<PortMappingEnabled t=b r=R d=0 nw=1 h=1 />
+				<ExternalPort t=u r=R nw=1 h=1 />
+				<PortMappingProtocol t=s r=R l=16 nw=1 h=1 />
+				<InternalPort t=u r=R nw=1 h=1 />
+				<InternalClient t=s r=R l=16 nw=1 h=1 />
+			</PortMapping.{i}>
+		</UPnPCfg>
+		<DiagnosticTool t=o r=P s=DIAG_TOOL_OBJ h=1 >
+			<CurrCommand t=i r=W i=0 a=5 d=0 h=1 />
+			<CurrHost t=s r=W l=32 d=0.0.0.0 h=1 />
+			<CurrHost6 t=s r=W l=80 p=28 h=1 />
+			<LastCommand t=i r=W i=0 a=5 d=0 h=1 />
+			<LastHost t=s r=W l=32 d=0.0.0.0 h=1 />
+			<LastHost6 t=s r=W l=80 p=28 h=1 />
+			<LastResult t=i r=W i=0 a=4 d=0 h=1 />
+		</DiagnosticTool>
+		<CwmpCfg t=o r=P s=CWMP_CFG_OBJ p=18 h=1 >
+			<RbCommandKey t=s r=W l=33 h=1 />
+			<SiCommandKey t=s r=W l=33 h=1 />
+			<DlCommandKey t=s r=W l=33 h=1 />
+			<DlStartTime t=u r=W h=1 />
+			<DlCompleteTime t=u r=W h=1 />
+			<DlFaultCode t=u r=W h=1 />
+			<EventCode t=u r=W h=1 />
+		</CwmpCfg>
+		<SnmpCfg t=o r=P s=SNMP_CFG_OBJ p=12 h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<WanEnable t=b r=W d=0 h=1 />
+			<ROCommunity t=s r=W l=64 d=public h=1 />
+			<RWCommunity t=s r=W l=64 d=private h=1 />
+			<SysName t=s r=W l=128 h=1 />
+			<SysDescr t=s r=W l=128 h=1 />
+			<SysLocation t=s r=W l=128 h=1 />
+			<SysContact t=s r=W l=128 h=1 />
+			<TrapIpAddress t=s r=W l=16 d=0.0.0.0 h=1 />
+		</SnmpCfg>
+		<NoipDnsCfg t=o r=P s=NOIP_DNS_CFG_OBJ p=32 h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<State t=u r=R h=1 />
+			<UserName t=s r=W l=64 h=1 />
+			<Password t=s r=W l=64 h=1 />
+			<UserDomain t=s r=W l=128 h=1 />
+			<Server t=s r=W l=64 h=1 />
+			<Login t=b r=W d=0 h=1 />
+		</NoipDnsCfg>
+		<ACL.{i} t=o r=PC s=ACL_CFG_OBJ m=16 p=51 h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<IPStart t=s r=W l=16 h=1 />
+			<IPEnd t=s r=W l=16 h=1 />
+			<Service t=s r=W l=7 A=ACLServiceValues d=All h=1 />
+			<Location t=s r=W l=7 A=ACLLocationValues d=Both h=1 />
+		</ACL.{i}>
+		<UserDefineDDnsCfg t=o r=P s=USERDEFINE_DDNS_CFG_OBJ p=64 h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<State t=u r=R h=1 />
+			<UserName t=s r=W l=64 h=1 />
+			<Password t=s r=W l=64 h=1 />
+			<UserDomain t=s r=W l=128 h=1 />
+			<Server t=s r=W l=64 h=1 />
+			<Login t=b r=W d=1 h=1 />
+			<UpdateURL t=s r=W l=384 h=1 />
+			<RigorousInput t=b r=W d=0 h=1 />
+			<GrabServer t=s r=R l=64 h=1 />
+			<GrabAuth t=s r=R l=64 h=1 />
+			<GrabRequest t=s r=R l=256 h=1 />
+			<GrabDomain t=s r=R l=120 h=1 />
+			<GrabIPStartOffset t=us r=R d=0 h=1 />
+			<GrabIPEndOffset t=us r=R d=0 h=1 />
+			<ServerReply t=s r=R l=512 p=65 h=1 />
+		</UserDefineDDnsCfg>
+		<RebootScheduleCfg t=o r=P s=REBOOT_SCHEDULE_CFG_OBJ p=74 h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<IsNTPTimeSet t=b r=W d=0 nw=1 h=1 />
+			<Interval t=i r=W d=3 h=1 />
+			<Hours t=i r=W d=3 h=1 />
+			<Minutes t=i r=W d=0 h=1 />
+			<LastNTPTime t=i r=W d=0 nw=1 h=1 />
+			<LastSystemUpTime t=u r=W d=0 nw=1 h=1 />
+			<RebootTime t=i r=W d=0 nw=1 h=1 />
+			<Mode t=i r=W d=1 h=1 />
+			<Week t=i r=W d=1 h=1 />
+			<Day t=i r=W d=1 h=1 />
+		</RebootScheduleCfg>
+		<LedScheduleCfg t=o r=P s=LED_SCHEDULE_CFG_OBJ p=75 h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<StartTime t=i r=W i=0 a=1440 d=0 h=1 />
+			<EndTime t=i r=W i=0 a=1440 d=0 h=1 />
+			<OldLedScheduleSwitchStatus t=u r=R i=0 a=2 al=cli;tr69 d=2 nw=1 h=1 />
+		</LedScheduleCfg>
+		<MailCfg t=o r=P s=MAIL_CFG_OBJ p=82 h=1 >
+			<EnableFlags t=u r=W d=0 h=1 />
+			<To t=s r=W l=254 h=1 />
+			<From t=s r=W l=254 h=1 />
+			<Username t=s r=W l=64 h=1 />
+			<Password t=s r=W l=256 h=1 />
+			<SmtpServerAddr t=s r=W l=256 h=1 />
+			<Port t=i r=W i=0 a=65535 d=25 h=1 />
+			<UseSSL t=i r=W i=0 a=2 d=2 h=1 />
+			<Interval t=u r=W d=0 h=1 />
+			<CheckConnectionStatus t=i r=W i=0 a=3 d=0 nw=1 h=1 />
+		</MailCfg>
+	</X_TP_AppCfg>
+	<X_TP_DmzHostCfg t=o r=P s=DMZ_HOST_CFG_OBJ h=1 >
+		<Enable t=b r=W d=0 h=1 />
+		<IPAddress t=s r=W h=1 />
+	</X_TP_DmzHostCfg>
+	<Time t=o r=P s=TIME_OBJ >
+		<__status t=i r=R nw=1 h=1 />
+		<NTPServer1 t=s r=W l=40 />
+		<NTPServer2 t=s r=W l=40 />
+		<NTPServer3 t=s r=W l=40 />
+		<NTPServer4 t=s r=W l=40 />
+		<NTPServer5 t=s r=W l=40 />
+		<CurrentLocalTime t=d r=R da=1 />
+		<LocalTimeZone t=s r=W l=8 d=+08:00 />
+		<LocalTimeZoneName t=s r=W l=64 />
+		<DaylightSavingsUsed t=b r=W d=0 />
+		<DaylightSavingsStart t=d r=W />
+		<DaylightSavingsEnd t=d r=W />
+		<X_TP_DaylightSavingsStartWeekCount t=i r=W i=1 a=5 />
+		<X_TP_DaylightSavingsEndWeekCount t=i r=W i=1 a=5 />
+		<SysMode t=i r=W d=24 h=1 />
+		<X_TP_Hour t=o r=P s=HOUR_OBJ u=1 h=1 >
+			<Year t=i r=W d=2000 h=1 />
+			<Month t=i r=W d=1 h=1 />
+			<Day t=i r=W d=1 h=1 />
+			<Hours t=i r=W d=0 h=1 />
+			<Minutes t=i r=W d=0 h=1 />
+			<Seconds t=i r=W d=0 h=1 />
+		</X_TP_Hour>
+	</Time>
+	<Layer3Forwarding t=o r=P s=L3_FORWARDING_OBJ >
+		<__defaultGateway t=s r=W l=16 h=1 />
+		<__ifName t=s r=W l=16 h=1 />
+		<__ifAliasName t=s r=W l=32 d=NO_INTERFACE h=1 />
+		<DefaultConnectionService t=s r=W l=32 />
+		<ForwardNumberOfEntries t=u r=R />
+		<Forwarding.{i} t=o r=P s=L3_FORWARDING_ENTRY_OBJ m=16 >
+			<Enable t=b r=W d=0 />
+			<Status t=s r=R l=9 A=status3eValues d=Disabled />
+			<StaticRoute t=b r=R d=1 />
+			<Type t=s r=W l=8 A=forwardingTypes d=Host />
+			<DestIPAddress t=s r=W l=16 />
+			<DestSubnetMask t=s r=W l=16 />
+			<SourceIPAddress t=s r=W l=16 />
+			<SourceSubnetMask t=s r=W l=16 />
+			<ForwardingPolicy t=i r=W d=-1 />
+			<GatewayIPAddress t=s r=W l=16 />
+			<__ifAliasName t=s r=W l=32 h=1 />
+			<Interface t=s r=W l=32 />
+			<ForwardingMetric t=i r=W d=-1 />
+			<MTU t=u r=W i=1 a=1540 />
+		</Forwarding.{i}>
+	</Layer3Forwarding>
+	<X_TP_Layer3IPv6Forwarding t=o r=P s=L3_IP6_FORWARDING_OBJ p=28 h=1 >
+		<__defaultGateway t=s r=W l=40 h=1 />
+		<__ifName t=s r=W l=16 h=1 />
+		<__ifAliasName t=s r=W l=32 d=NO_INTERFACE h=1 />
+		<DefaultConnectionService t=s r=W l=32 h=1 />
+		<IPv6ForwardNumberOfEntries t=u r=R h=1 />
+		<IPv6Forwarding.{i} t=o r=PC s=L3_IP6_FORWARDING_ENTRY_OBJ m=16 h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<Status t=s r=R l=9 A=status3eValues d=Disabled h=1 />
+			<StaticRoute t=b r=R d=1 h=1 />
+			<Type t=s r=W l=8 A=forwardingTypes d=Host h=1 />
+			<DestIPv6Address t=s r=W l=40 h=1 />
+			<DestIPv6AddressPrefixLength t=u r=W h=1 />
+			<SourceIPv6Address t=s r=W l=40 h=1 />
+			<SourceIPv6AddressPrefixLength t=u r=W h=1 />
+			<ForwardingPolicy t=i r=W d=-1 h=1 />
+			<GatewayIPv6Address t=s r=W l=40 h=1 />
+			<__ifAliasName t=s r=W l=32 h=1 />
+			<Interface t=s r=W l=32 h=1 />
+			<ForwardingMetric t=i r=W d=-1 h=1 />
+			<MTU t=u r=W i=1 a=1540 h=1 />
+		</IPv6Forwarding.{i}>
+	</X_TP_Layer3IPv6Forwarding>
+	<Layer2Bridging t=o r=P s=L2_BRIDGING_OBJ p=9 >
+		<MaxBridgeEntries t=u r=R d=16 da=1 />
+		<MaxFilterEntries t=u r=R d=64 da=1 />
+		<MaxMarkingEntries t=u r=R d=0 da=1 tb=1 />
+		<BridgeNumberOfEntries t=u r=R />
+		<FilterNumberOfEntries t=u r=R />
+		<MarkingNumberOfEntries t=u r=R />
+		<AvailableInterfaceNumberOfEntries t=u r=R />
+		<Bridge.{i} t=o r=PC s=L2_BRIDGING_ENTRY_OBJ m=8 >
+			<BridgeKey t=u r=R />
+			<BridgeEnable t=b r=W d=0 />
+			<BridgeStatus t=s r=R l=9 A=status3eValues d=Disabled />
+			<BridgeName t=s r=W l=64 />
+			<VLANID t=u r=W i=0 a=4094 d=0 />
+			<X_TP_EnableBridgeIsolation t=b r=W d=0 h=1 />
+		</Bridge.{i}>
+		<Filter.{i} t=o r=PC s=L2_BRIDGING_FILTER_OBJ m=16 >
+			<FilterKey t=u r=R />
+			<FilterEnable t=b r=W d=0 />
+			<FilterStatus t=s r=R l=9 A=status3eValues d=Disabled />
+			<FilterBridgeReference t=i r=W i=-1 a=2147483647 d=-1 />
+			<__filterBridgeRefName t=s r=W l=16 h=1 />
+			<FilterInterface t=s r=W />
+			<X_TP_IfAliasName t=s r=W l=32 h=1 />
+		</Filter.{i}>
+		<AvailableInterface.{i} t=o r=PC s=L2_BRIDGING_INTF_OBJ m=16 >
+			<AvailableInterfaceKey t=u r=R da=1 />
+			<InterfaceType t=s r=R l=20 A=bridgingIntfTypeValues da=1 />
+			<InterfaceReference t=s r=R l=256 da=1 />
+		</AvailableInterface.{i}>
+	</Layer2Bridging>
+	<LANDevice.{i} t=o r=P s=LAN_DEV_OBJ m=8 >
+		<LANEthernetInterfaceNumberOfEntries t=u r=R />
+		<LANUSBInterfaceNumberOfEntries t=u r=R />
+		<LANWLANConfigurationNumberOfEntries t=u r=R />
+		<LANHostConfigManagement t=o r=P s=LAN_HOST_CFG_OBJ >
+			<DHCPServerEnable t=b r=W d=0 />
+			<DHCPRelay t=b r=W d=0 />
+			<X_TP_DhcpRelayServer t=s r=W l=16 />
+			<MinAddress t=s r=W l=16 d=192.168.1.2 />
+			<MaxAddress t=s r=W l=16 d=192.168.1.254 />
+			<SubnetMask t=s r=W l=16 d=255.255.255.0 />
+			<DNSServers t=s r=W l=32 d=0.0.0.0,0.0.0.0 />
+			<DomainName t=s r=W l=64 />
+			<IPRouters t=s r=W l=32 />
+			<DHCPLeaseTime t=i r=W i=-1 a=2147483647 d=86400 />
+			<IPInterfaceNumberOfEntries t=u r=R />
+			<DHCPStaticAddressNumberOfEntries t=u r=R />
+			<DHCPConditionalPoolNumberOfEntries t=u r=R />
+			<X_TP_YandexDnsMode t=uc r=W i=0 a=3 d=3 p=90 h=1 />
+			<X_TP_YandexDnsEnable t=b r=W d=0 p=90 h=1 />
+			<IPInterface.{i} t=o r=R s=LAN_IP_INTF_OBJ m=8 >
+				<Enable t=b r=W d=0 />
+				<IPInterfaceIPAddress t=s r=W l=16 d=192.168.1.1 />
+				<IPInterfaceSubnetMask t=s r=W l=16 d=255.255.255.0 />
+				<IPInterfaceAddressingType t=s r=W l=7 A=AddressingTypeValues d=Static />
+				<X_TP_MACAddress t=s r=W l=18 d=00:0A:EB:13:7B:00 nw=1 h=1 />
+				<__ifName t=s r=W l=16 h=1 />
+			</IPInterface.{i}>
+			<DHCPStaticAddress.{i} t=o r=PC s=LAN_DHCP_STATIC_ADDR_OBJ m=32 >
+				<Enable t=b r=W d=0 />
+				<Chaddr t=s r=W l=18 />
+				<Yiaddr t=s r=W l=16 />
+			</DHCPStaticAddress.{i}>
+			<DHCPConditionalServingPool.{i} t=o r=PC s=LAN_DHCP_COND_SRV_POOL_OBJ m=8 >
+				<Enable t=b r=W d=0 />
+				<X_TP_DeviceName t=s r=W l=64 />
+				<X_TP_DeviceType t=s r=W l=16 />
+				<VendorClassID t=s r=W l=128 />
+				<MinAddress t=s r=W l=16 />
+				<MaxAddress t=s r=W l=16 />
+				<DNSServers t=s r=W l=64 d=0.0.0.0,0.0.0.0 />
+				<IPRouters t=s r=W l=64 />
+				<DHCPOptionNumberOfEntries t=u r=R d=0 />
+				<DHCPOption.{i} t=o r=PC s=LAN_DHCP_COND_SRV_POOL_OPT_OBJ m=8 >
+					<Enable t=b r=W d=0 />
+					<Tag t=u r=W i=1 a=254 />
+					<Value t=s r=W l=340 />
+				</DHCPOption.{i}>
+			</DHCPConditionalServingPool.{i}>
+			<X_TP_YandexDnsPool.{i} t=o r=PC s=YANDEX_DNS_POOL_OBJ m=16 p=90 h=1 >
+				<Mac t=s r=W l=18 h=1 />
+				<Mode t=uc r=W i=0 a=3 d=3 h=1 />
+				<Description t=s r=W l=64 h=1 />
+			</X_TP_YandexDnsPool.{i}>
+		</LANHostConfigManagement>
+		<X_TP_LANIPv6HostConfigManagement t=o r=P s=LAN_IP6_HOST_CFG_OBJ p=28 h=1 >
+			<DHCPv6ServerEnable t=b r=W d=0 h=1 />
+			<DHCPv6MinInterfaceID t=s r=W l=40 d=1 h=1 />
+			<DHCPv6MaxInterfaceID t=s r=W l=40 d=FFFE h=1 />
+			<DHCPv6LeaseTime t=i r=W i=-1 a=2147483647 d=86400 h=1 />
+			<IPv6DNSConfigType t=s r=W l=7 A=IPv6DNSConfigTypeValue d=DHCPv6 h=1 />
+			<IPv6DNSServers t=s r=W l=80 h=1 />
+			<IPv6DNSWANConnection t=s r=W l=32 h=1 />
+			<RADVDEnable t=b r=W d=1 h=1 />
+			<ULAEnable t=b r=W d=0 h=1 />
+			<ULAPrefix t=s r=W l=40 h=1 />
+			<ULAPrefixLength t=u r=W d=64 h=1 />
+			<RDNSSEnable t=b r=W d=0 h=1 />
+			<IPv6SitePrefixConfigType t=s r=W l=10 A=IPv6SitePrefixConfigTypeValue d=Delegated h=1 />
+			<IPv6SitePrefix t=s r=W l=40 h=1 />
+			<IPv6SitePrefixLength t=u r=W d=64 h=1 />
+			<IPv6DelePrefix t=s r=W l=40 h=1 />
+			<IPv6DelePrefixLength t=u r=W d=0 h=1 />
+			<IPv6DeleSubPrefixLength t=u r=W d=0 h=1 />
+			<IPv6PDWANConnection t=s r=W l=32 h=1 />
+			<__ifName t=s r=W l=16 h=1 />
+			<IPv6InterfaceNumberOfEntries t=u r=R h=1 />
+			<IPv6Interface.{i} t=o r=P s=LAN_IP6_INTF_OBJ m=8 h=1 >
+				<Enable t=b r=W h=1 />
+				<IPv6InterfaceAddress t=s r=W l=40 h=1 />
+				<IPv6InterfaceAddressPrefixLength t=u r=W d=64 h=1 />
+				<IPv6InterfaceAddressingType t=s r=W l=10 A=IPv6IfAddressingTypeValues d=Static h=1 />
+				<__ifName t=s r=W l=16 h=1 />
+			</IPv6Interface.{i}>
+		</X_TP_LANIPv6HostConfigManagement>
+		<LANEthernetInterfaceConfig.{i} t=o r=P s=LAN_ETH_INTF_OBJ m=6 >
+			<Enable t=b r=W d=0 />
+			<Status t=s r=R l=9 A=intf4StatusValues nw=1 />
+			<MACAddress t=s r=R l=18 d=00:0A:EB:13:7B:00 nw=1 />
+			<MACAddressControlEnabled t=b r=W />
+			<MaxBitRate t=s r=W l=5 A=ethLanMaxBitRateValues d=Auto />
+			<DuplexMode t=s r=W l=5 A=duplexModeValues d=Auto />
+			<X_TP_NegoSpeed t=us r=R nw=1 />
+			<__ifName t=s r=W l=16 h=1 />
+		</LANEthernetInterfaceConfig.{i}>
+		<Hosts t=o r=P s=LAN_HOSTS_OBJ >
+			<HostNumberOfEntries t=u r=R nw=1 />
+			<Host.{i} t=o r=PC s=LAN_HOST_ENTRY_OBJ m=32 u=1 nw=1 >
+				<IPAddress t=s r=R l=16 nw=1 />
+				<AddressSource t=s r=R l=7 A=AddressSourceValues d=DHCP nw=1 />
+				<LeaseTimeRemaining t=i r=R nw=1 />
+				<MACAddress t=s r=W l=18 nw=1 />
+				<HostName t=s r=W l=64 nw=1 />
+				<X_TP_ConnType t=uc r=R nw=1 h=1 />
+				<Active t=b r=R nw=1 />
+				<Rtmac t=s r=W l=18 nw=1 />
+			</Host.{i}>
+		</Hosts>
+		<X_TP_LANIPv6Neighbour t=o r=P s=LAN_IP6_NEIGH_OBJ p=91 >
+			<NeighbourNumberOfEntries t=u r=R d=0 />
+			<Neighbour.{i} t=o r=PC s=LAN_IP6_NEIGH_ENTRY_OBJ m=64 u=1 nw=1 >
+				<IPv6Address t=s r=R l=40 nw=1 />
+				<MACAddress t=s r=W l=18 nw=1 />
+				<NeighbourName t=s r=W l=64 nw=1 />
+			</Neighbour.{i}>
+		</X_TP_LANIPv6Neighbour>
+		<WLANConfiguration.{i} t=o r=P s=LAN_WLAN_OBJ m=2 p=1 >
+			<__syncApStatus t=b r=W al=web h=1 />
+			<__apLastStatus t=u r=W al=web h=1 />
+			<Enable t=b r=W />
+			<Status t=s r=R l=9 A=wifiIntfStatusValues nw=1 />
+			<Name t=s r=R l=16 />
+			<BSSID t=s r=R l=18 nw=1 />
+			<Channel t=u r=W i=0 a=255 />
+			<AutoChannelEnable t=b r=W />
+			<X_TP_PreSSID t=s r=R l=34 />
+			<SSID t=s r=W l=34 />
+			<BeaconType t=s r=W l=10 A=BeaconTypeValues />
+			<MACAddressControlEnabled t=b r=W />
+			<X_TP_MACAddressControlRule t=s r=W l=6 A=wlMacFilter2Modes />
+			<X_TP_MACTableSize t=u r=R i=0 a=64 />
+			<X_TP_Configuration_Modified t=b r=R d=0 nw=1 />
+			<X_TP_Band t=s r=W l=11 A=BandValues d=2.4G />
+			<X_TP_Bandwidth t=s r=W l=5 A=X_TP_BandwidthValue d=40 />
+			<Standard t=s r=W l=8 A=StandardValues />
+			<WEPKeyIndex t=u r=W i=1 a=4 />
+			<WEPEncryptionLevel t=s r=R l=64 nw=1 />
+			<BasicEncryptionModes t=s r=W l=14 A=BasicEncryptionModesValues />
+			<BasicAuthenticationMode t=s r=W l=21 A=BasicAuthenticationModeValues />
+			<WPAEncryptionModes t=s r=W l=27 A=WPAEncryptionModesValues />
+			<WPAAuthenticationMode t=s r=W l=18 A=WPAAuthenticationModeValues />
+			<IEEE11iEncryptionModes t=s r=W l=27 A=WPAEncryptionModesValues />
+			<IEEEWPA3EncryptionModes t=s r=W l=27 A=IEEEWPA3EncryptionModesValues />
+			<IEEEWPA3AuthenticationMode t=s r=W l=24 A=IEEEWPA3AuthenticationModeValues />
+			<IEEE11iAuthenticationMode t=s r=W l=24 A=IEEE11iAuthenticationModeValues />
+			<X_TP_PreSharedKey t=s r=W l=65 tp=1 cp=1 />
+			<X_TP_GroupKeyUpdateInterval t=u r=W d=0 />
+			<PossibleChannels t=s r=R l=1024 nw=1 />
+			<BasicDataTransmitRates t=s r=W l=256 nw=1 />
+			<OperationalDataTransmitRates t=s r=W l=256 nw=1 h=1 />
+			<PossibleDataTransmitRates t=s r=R l=256 nw=1 h=1 />
+			<SSIDAdvertisementEnabled t=b r=W />
+			<TransmitPowerSupported t=s r=R l=64 nw=1 />
+			<TransmitPower t=u r=W />
+			<RegulatoryDomain t=s r=W l=4 al=nae h=1 />
+			<DeviceOperationMode t=s r=W l=26 A=DeviceOperationModeValues da=1 h=1 />
+			<X_TP_RadiusServerIP t=s r=W l=64 />
+			<X_TP_RadiusServerPort t=u r=W i=1 a=65535 d=1812 />
+			<X_TP_RadiusServerPassword t=s r=W l=65 />
+			<X_TP_LteCoex t=b r=W d=0 nw=1 />
+			<WMMEnable t=b r=W />
+			<X_TP_BeaconInterval t=u r=W i=25 a=1000 d=100 />
+			<X_TP_RTSThreshold t=u r=W i=1 a=2346 d=2346 />
+			<X_TP_FragmentThreshold t=u r=W i=256 a=2346 d=2346 />
+			<X_TP_DTIMFrequency t=u r=W i=1 a=255 d=1 />
+			<X_TP_IsolateClients t=b r=W />
+			<X_TP_ShortGIEnable t=b r=W />
+			<X_TP_TxbfEnable t=b r=W d=1 p=106 />
+			<X_TP_MuEnable t=b r=W d=1 p=106 />
+			<TotalAssociations t=u r=W da=1 nw=1 h=1 />
+			<WPS t=o r=P s=LAN_WLAN_WPS_OBJ m=32 >
+				<Enable t=b r=W />
+				<DeviceName t=s r=R l=32 nw=1 />
+				<DevicePassword t=u r=W tp=1 cp=1 />
+				<X_TP_PeerPassword t=u r=W nw=1 tp=1 />
+				<X_TP_State t=s r=W l=11 A=LAN_WLANWPS_STATUS d=idle nw=1 />
+				<X_TP_Mode t=i r=W d=0 nw=1 />
+				<Version t=u r=R nw=1 />
+				<SetupLock t=b r=W d=0 />
+				<ConfigurationState t=s r=R l=15 A=ConfigurationStateValues />
+				<RegistrarNumberOfEntries t=u r=R nw=1 />
+				<RegistrarEstablished t=b r=R nw=1 />
+				<SetupLockTime t=i r=R d=0 nw=1 />
+			</WPS>
+			<X_TP_MACTableEntry.{i} t=o r=PC s=LAN_WLAN_MACTABLEENTRY_OBJ m=64 >
+				<Enabled t=b r=W />
+				<MACAddress t=s r=W l=18 />
+				<Description t=s r=W l=61 />
+				<HostName t=s r=W l=16 />
+			</X_TP_MACTableEntry.{i}>
+			<AssociatedDevice.{i} t=o r=P s=LAN_WLAN_ASSOC_DEV_OBJ m=128 nw=1 h=1 >
+				<AssociatedDeviceMACAddress t=s r=R l=18 da=1 nw=1 />
+				<X_TP_TotalPacketsSent t=u r=R nw=1 />
+				<X_TP_TotalPacketsReceived t=u r=R nw=1 />
+				<X_TP_HostName t=s r=R l=16 nw=1 h=1 />
+			</AssociatedDevice.{i}>
+			<X_TP_BSSDescEntry.{i} t=o r=P s=LAN_WLAN_BSSDESC_ENTRY_OBJ m=64 nw=1 h=1 >
+				<SSID t=s r=R l=33 nw=1 h=1 />
+				<BSSID t=s r=R l=18 nw=1 h=1 />
+				<SecurityEnable t=b r=R nw=1 h=1 />
+				<Channel t=u r=R nw=1 h=1 />
+				<RSSI t=u r=R nw=1 h=1 />
+			</X_TP_BSSDescEntry.{i}>
+			<WEPKey.{i} t=o r=P s=LAN_WLAN_WEPKEY_OBJ m=8 >
+				<WEPKey t=s r=W l=129 tp=1 cp=1 />
+			</WEPKey.{i}>
+			<X_TP_WDSBridge t=o r=P s=LAN_WLAN_WDSBRIDGE_OBJ p=16 >
+				<BridgeEnable t=b r=W d=0 />
+				<BridgeName t=s r=R l=16 />
+				<BridgeAddrMode t=s r=W l=7 A=BridgeAddrModeValues al=web;cli />
+				<BridgeBSSID t=s r=W l=18 />
+				<BridgeSSID t=s r=W l=33 />
+				<BridgeAuthMode t=s r=W l=21 A=BridgeAuthModeValues />
+				<BridgeEncryptMode t=s r=W l=15 A=BridgeEncryptModeValues />
+				<BridgeKey t=s r=W l=65 tp=1 cp=1 />
+				<BridgeWepKeyIndex t=u r=W i=1 a=4 />
+			</X_TP_WDSBridge>
+			<X_TP_MultiSSID t=o r=P s=LAN_WLAN_MULTISSID_OBJ m=3 p=15 >
+				<MultiSSIDEnable t=b r=W />
+				<MultiSSIDEntry.{i} t=o r=P s=LAN_WLAN_MSSIDENTRY_OBJ m=6 >
+					<Enable t=b r=W />
+					<Name t=s r=R l=16 />
+					<Status t=s r=R l=9 A=StatusValues nw=1 />
+					<SSID t=s r=W l=33 />
+					<SSIDAdvertisementEnable t=b r=W />
+					<BeaconType t=s r=W l=10 A=BeaconTypeValues />
+					<IsolateClients t=b r=W />
+					<WEPKeyIndex t=u r=W i=1 a=4 />
+					<BasicEncryptionModes t=s r=W l=14 A=BasicEncryptionModesValues />
+					<BasicAuthenticationMode t=s r=W l=21 A=BasicAuthenticationModeValues />
+					<WPAEncryptionModes t=s r=W l=27 A=WPAEncryptionModesValues />
+					<WPAAuthenticationMode t=s r=W l=18 A=WPAAuthenticationModeValues />
+					<IEEE11iEncryptionModes t=s r=W l=27 A=WPAEncryptionModesValues />
+					<IEEE11iAuthenticationMode t=s r=W l=24 A=IEEE11iAuthenticationModeValues />
+					<IEEEWPA3EncryptionModes t=s r=W l=27 A=IEEEWPA3EncryptionModesValues />
+					<IEEEWPA3AuthenticationMode t=s r=W l=24 A=IEEEWPA3AuthenticationModeValues />
+					<PreSharedKey t=s r=W l=65 tp=1 cp=1 />
+					<GroupKeyUpdateInterval t=u r=W />
+					<MaxStaNum t=us r=W />
+					<RadiusServerIP t=s r=W l=64 />
+					<RadiusServerPort t=u r=W i=1 a=65535 />
+					<RadiusServerPassword t=s r=W l=64 />
+					<WEPKey.{i} t=o r=P s=LAN_WLAN_MSSIDWEPKEY_OBJ m=24 >
+						<WEPKey t=s r=W l=129 tp=1 cp=1 />
+					</WEPKey.{i}>
+				</MultiSSIDEntry.{i}>
+			</X_TP_MultiSSID>
+			<X_TP_WlBrName.{i} t=o r=P s=LAN_WLAN_WLBRNAME_OBJ m=10 p=9 >
+				<IfName t=s r=R l=16 />
+				<BridgeName t=s r=R l=64 />
+			</X_TP_WlBrName.{i}>
+			<X_TP_TaskSchedule t=o r=P s=LAN_WLAN_TASK_SCHEDULE_OBJ p=42 h=1 >
+				<Enable t=uc r=W d=0 h=1 />
+				<TimeDot t=uc r=W d=100 nw=1 h=1 />
+				<IsUsrCtrl t=uc r=W d=0 nw=1 h=1 />
+				<IsTimeSet t=uc r=W d=0 nw=1 h=1 />
+				<X_TP_ItemNum t=u r=W i=0 a=4 h=1 />
+				<X_TP_ScheduleItem.{i} t=o r=PC s=LAN_WLAN_SCHEDULEITEM_OBJ m=4 p=42 h=1 >
+					<MonAm t=u r=W h=1 />
+					<MonPm t=u r=W h=1 />
+					<TueAm t=u r=W h=1 />
+					<TuePm t=u r=W h=1 />
+					<WedAm t=u r=W h=1 />
+					<WedPm t=u r=W h=1 />
+					<ThuAm t=u r=W h=1 />
+					<ThuPm t=u r=W h=1 />
+					<FriAm t=u r=W h=1 />
+					<FriPm t=u r=W h=1 />
+					<SatAm t=u r=W h=1 />
+					<SatPm t=u r=W h=1 />
+					<SunAm t=u r=W h=1 />
+					<SunPm t=u r=W h=1 />
+				</X_TP_ScheduleItem.{i}>
+			</X_TP_TaskSchedule>
+			<X_TP_GuestNetwork t=o r=P s=LAN_WLAN_GUESTNET_OBJ p=44 h=1 >
+				<Enable t=b r=W h=1 />
+				<Name t=s r=W l=16 h=1 />
+				<PreSSID t=s r=R l=34 h=1 />
+				<IsModified t=b r=W h=1 />
+				<LANAccessEnable t=b r=W d=0 h=1 />
+				<USBAccessEnable t=b r=W d=0 h=1 />
+				<EachOtherAccessEnable t=b r=W d=1 h=1 />
+				<TCEnable t=b r=W d=0 h=1 />
+				<TCMaxUpBW t=u r=W d=0 h=1 />
+				<TCMinUpBW t=u r=W d=0 h=1 />
+				<TCMaxDownBW t=u r=W d=0 h=1 />
+				<TCMinDownBW t=u r=W d=0 h=1 />
+				<TCRuleID t=i r=W d=-1 h=1 />
+			</X_TP_GuestNetwork>
+		</WLANConfiguration.{i}>
+		<WLANSyncConfig.{i} t=o r=P s=LAN_WLAN_SYNC_OBJ m=2 p=101 >
+			<Enable t=b r=W />
+			<IEEEWPA3EncryptionModes t=s r=W l=27 A=IEEEWPA3EncryptionModesValues />
+			<IEEEWPA3AuthenticationMode t=s r=W l=24 A=IEEEWPA3AuthenticationModeValues />
+			<Name t=s r=R l=16 />
+			<BSSID t=s r=R l=18 nw=1 />
+			<Channel t=u r=W i=0 a=255 />
+			<AutoChannelEnable t=b r=W />
+			<X_TP_PreSSID t=s r=R l=34 />
+			<SSID t=s r=W l=34 />
+			<BeaconType t=s r=W l=10 A=BeaconTypeValues />
+			<MACAddressControlEnabled t=b r=W />
+			<X_TP_MACAddressControlRule t=s r=W l=6 A=wlMacFilter2Modes />
+			<X_TP_Band t=s r=W l=11 A=BandValues d=2.4G />
+			<X_TP_Bandwidth t=s r=W l=5 A=X_TP_BandwidthValue d=40 />
+			<Standard t=s r=W l=8 A=StandardValues />
+			<WEPKeyIndex t=u r=W i=1 a=4 />
+			<WEPEncryptionLevel t=s r=R l=64 nw=1 />
+			<BasicEncryptionModes t=s r=W l=14 A=BasicEncryptionModesValues />
+			<BasicAuthenticationMode t=s r=W l=21 A=BasicAuthenticationModeValues />
+			<WPAEncryptionModes t=s r=W l=27 A=WPAEncryptionModesValues />
+			<WPAAuthenticationMode t=s r=W l=18 A=WPAAuthenticationModeValues />
+			<IEEE11iEncryptionModes t=s r=W l=27 A=WPAEncryptionModesValues />
+			<IEEE11iAuthenticationMode t=s r=W l=24 A=IEEE11iAuthenticationModeValues />
+			<X_TP_PreSharedKey t=s r=W l=65 tp=1 cp=1 />
+			<X_TP_GroupKeyUpdateInterval t=u r=W d=0 />
+			<PossibleChannels t=s r=R l=1024 nw=1 />
+			<SSIDAdvertisementEnabled t=b r=W />
+			<TransmitPowerSupported t=s r=R l=64 nw=1 />
+			<TransmitPower t=u r=W />
+			<RegulatoryDomain t=s r=W l=4 al=nae h=1 />
+			<DeviceOperationMode t=s r=W l=26 A=DeviceOperationModeValues da=1 h=1 />
+			<X_TP_RadiusServerIP t=s r=W l=64 />
+			<X_TP_RadiusServerPort t=u r=W i=1 a=65535 d=1812 />
+			<X_TP_RadiusServerPassword t=s r=W l=65 />
+			<WMMEnable t=b r=W />
+			<X_TP_BeaconInterval t=u r=W i=25 a=1000 d=100 />
+			<X_TP_RTSThreshold t=u r=W i=1 a=2346 d=2346 />
+			<X_TP_FragmentThreshold t=u r=W i=256 a=2346 d=2346 />
+			<X_TP_DTIMFrequency t=u r=W i=1 a=255 d=1 />
+			<X_TP_IsolateClients t=b r=W />
+			<X_TP_ShortGIEnable t=b r=W />
+			<WEPKey.{i} t=o r=P s=LAN_WLAN_SYNC_WEPKEY_OBJ m=8 >
+				<WEPKey t=s r=W l=129 tp=1 cp=1 />
+			</WEPKey.{i}>
+		</WLANSyncConfig.{i}>
+		<X_TP_LANIGMPSnoopConfig t=o r=P s=LAN_IGMP_SNOOP_OBJ p=10 h=1 >
+			<Enabled t=b r=W d=1 h=1 />
+			<LastMemberQueryInterval t=u r=W h=1 />
+			<HostTimeout t=u r=W h=1 />
+			<MrouterTimeout t=u r=W h=1 />
+			<LeaveTimeout t=u r=W h=1 />
+			<MaxGroups t=u r=W h=1 />
+			<EnabledOnLTE t=b r=W d=0 p=68 h=1 />
+		</X_TP_LANIGMPSnoopConfig>
+	</LANDevice.{i}>
+	<X_TP_HOST_NUM t=o r=P s=HOST_NUM_OBJ p=101 nw=1 >
+		<Wireless t=i r=W d=0 p=101 nw=1 />
+		<Wired t=i r=W d=0 p=101 nw=1 />
+	</X_TP_HOST_NUM>
+	<X_TP_StoredHost.{i} t=o r=P s=STORED_HOST_ENTRY_OBJ m=64 p=72 >
+		<HostName t=s r=R l=64 p=72 />
+		<MacAddress t=s r=R l=18 p=72 />
+	</X_TP_StoredHost.{i}>
+	<WANDevice.{i} t=o r=P s=WAN_DEV_OBJ m=3 >
+		<WANConnectionNumberOfEntries t=u r=R />
+		<WANCommonInterfaceConfig t=o r=P s=WAN_COMMON_INTF_CFG_OBJ >
+			<EnabledForInternet t=b r=W />
+			<WANAccessType t=s r=R l=9 A=WANAccessTypeValues />
+			<Layer1UpstreamMaxBitRate t=u r=R />
+			<Layer1DownstreamMaxBitRate t=u r=R />
+			<PhysicalLinkStatus t=s r=R l=13 A=PhysicalLinkStatusValues />
+			<WANAccessProvider t=s r=R l=256 />
+			<TotalBytesSent t=u r=R da=1 />
+			<TotalBytesReceived t=u r=R da=1 />
+			<TotalPacketsSent t=u r=R da=1 />
+			<TotalPacketsReceived t=u r=R da=1 />
+			<MaximumActiveConnections t=u r=R da=1 />
+			<NumberOfActiveConnections t=u r=R />
+		</WANCommonInterfaceConfig>
+		<WANDSLInterfaceConfig t=o r=P s=WAN_DSL_INTF_CFG_OBJ p=26 >
+			<Enable t=b r=W />
+			<Status t=s r=R l=17 A=dslIntfStatusValues />
+			<LinkEncapsulationRequested t=s r=W l=20 A=linkEncapsulationStandardValues p=54 />
+			<LinkEncapsulationUsed t=s r=R l=20 A=linkEncapsulationStandardValues d=G.992.3_Annex_K_ATM p=54 />
+			<ModulationType t=s r=R l=17 A=modulationTypeValues />
+			<LineEncoding t=s r=R l=5 A=LineEncodingValues />
+			<AllowedProfiles t=s r=R l=4 A=AllowdProfileValues p=54 />
+			<CurrentProfile t=s r=R l=4 A=AllowdProfileValues p=54 />
+			<DataPath t=s r=R l=12 A=DataPathValues />
+			<InterleaveDepth t=u r=R />
+			<LineNumber t=i r=R i=1 a=2147483647 />
+			<UpstreamCurrRate t=u r=R da=1 />
+			<DownstreamCurrRate t=u r=R da=1 />
+			<UpstreamMaxRate t=u r=R da=1 />
+			<DownstreamMaxRate t=u r=R da=1 />
+			<UpstreamNoiseMargin t=i r=R da=1 />
+			<DownstreamNoiseMargin t=i r=R da=1 />
+			<UpstreamAttenuation t=i r=R da=1 />
+			<DownstreamAttenuation t=i r=R da=1 />
+			<UpstreamPower t=i r=R da=1 />
+			<DownstreamPower t=i r=R da=1 />
+			<ATURVendor t=s r=R l=8 />
+			<ATURCountry t=s r=R l=4 />
+			<ATUCVendor t=s r=R l=8 />
+			<ATUCCountry t=s r=R l=4 />
+			<TotalStart t=u r=R da=1 />
+			<ShowtimeStart t=u r=R da=1 />
+			<QuarterHourStart t=u r=R da=1 />
+			<X_TP_LastUpMoment t=u r=R d=0 nw=1 />
+			<X_TP_UpTime t=u r=R d=0 nw=1 />
+			<X_TP_Bitswap t=s r=W l=4 A=onOffValues d=On />
+			<X_TP_SRA t=s r=W l=4 A=onOffValues d=On />
+			<X_TP_AdslModulationCfg t=s r=W l=17 A=modulationTypeValues d=Multimode />
+			<X_TP_AnnexType t=s r=W l=16 A=annexTypeValues d="Annex A/I/J/L/M" />
+			<X_TP_SupportAdslMode t=s r=R l=256 d="T1.413:A;G.lite:A;G.dmt:A;ADSL2:A,I,A/L,M,A/I/J/L/M;ADSL2+:A,I,M,A/I/J/L/M;Auto Sync-up:A,I,A/L,M,A/I/J/L/M;" />
+			<Stats t=o r=P s=WAN_DSL_INTF_STATS_OBJ >
+				<Total t=o r=P s=WAN_DSL_INTF_STATS_TOTAL_OBJ nw=1 >
+					<ReceiveBlocks t=u r=R da=1 nw=1 />
+					<TransmitBlocks t=u r=R da=1 nw=1 />
+					<CellDelin t=u r=R da=1 nw=1 />
+					<LinkRetrain t=u r=R da=1 nw=1 />
+					<InitErrors t=u r=R da=1 nw=1 />
+					<InitTimeouts t=u r=R da=1 nw=1 />
+					<LossOfFraming t=u r=R da=1 nw=1 />
+					<ErroredSecs t=u r=R da=1 nw=1 />
+					<X_TP_US_ErroredSecs t=u r=R da=1 nw=1 />
+					<SeverelyErroredSecs t=u r=R da=1 nw=1 />
+					<X_TP_US_SeverelyErroredSecs t=u r=R da=1 nw=1 />
+					<FECErrors t=u r=R da=1 nw=1 />
+					<ATUCFECErrors t=u r=R da=1 nw=1 />
+					<HECErrors t=u r=R da=1 nw=1 />
+					<ATUCHECErrors t=u r=R da=1 nw=1 />
+					<CRCErrors t=u r=R da=1 nw=1 />
+					<ATUCCRCErrors t=u r=R da=1 nw=1 />
+				</Total>
+			</Stats>
+		</WANDSLInterfaceConfig>
+		<WANEthernetInterfaceConfig t=o r=P s=WAN_ETH_INTF_OBJ p=11 >
+			<Enable t=b r=W d=0 />
+			<Status t=s r=R l=9 A=intf4StatusValues d=Disabled />
+			<MACAddress t=s r=W l=18 />
+			<MaxBitRate t=s r=W l=5 A=ethWanMaxBitRateValues />
+			<DuplexMode t=s r=W l=5 A=duplexModeValues />
+			<X_TP_IfName t=s r=W l=16 />
+			<X_TP_lastUsedIntf t=s r=W l=16 h=1 />
+			<Stats t=o r=P s=WAN_ETH_INTF_STATS_OBJ u=1 >
+				<BytesSent t=u r=R da=1 />
+				<BytesReceived t=u r=R da=1 />
+				<PacketsSent t=u r=R da=1 />
+				<PacketsReceived t=u r=R da=1 />
+			</Stats>
+		</WANEthernetInterfaceConfig>
+		<X_TP_WANPonConfig t=o r=P s=WAN_PON_OBJ p=35 >
+			<Enable t=b r=R />
+			<PonType t=s r=W l=8 d=EPON />
+			<RegErrNo t=u r=R />
+			<Status t=s r=R l=17 A=PON_statusValues />
+			<FecUsEn t=b r=W />
+			<FecDsEn t=b r=W />
+			<CtcExtVersion t=uc r=R />
+			<IfName t=s r=R l=16 h=1 />
+			<MACAddress t=s r=W l=18 h=1 />
+		</X_TP_WANPonConfig>
+		<WANEponInterafceConfig t=o r=P s=WAN_EPON_INTF_OBJ p=36 >
+			<OAMStats t=o r=P s=WAN_EPON_INTF_OAM_STATS_OBJ >
+				<PacketsSent t=u r=R da=1 nw=1 />
+				<PacketsReceived t=u r=R da=1 nw=1 />
+			</OAMStats>
+			<MPCPStats t=o r=P s=WAN_EPON_INTF_MPCP_STATS_OBJ >
+				<PacketsSent t=u r=R da=1 nw=1 />
+				<PacketsReceived t=u r=R da=1 nw=1 />
+				<PacketsDropped t=u r=R da=1 nw=1 />
+			</MPCPStats>
+			<Stats t=o r=P s=WAN_EPON_INTF_STATS_OBJ >
+				<BytesSent t=u r=R da=1 nw=1 />
+				<BytesReceived t=u r=R da=1 nw=1 />
+				<PacketsSent t=u r=R da=1 nw=1 />
+				<PacketsReceived t=u r=R da=1 nw=1 />
+				<SUnicastPackets t=u r=R da=1 nw=1 />
+				<RUnicastPackets t=u r=R da=1 nw=1 />
+				<SMulticastPackets t=u r=R da=1 nw=1 />
+				<RMulticastPackets t=u r=R da=1 nw=1 />
+				<SBroadcastPackets t=u r=R da=1 nw=1 />
+				<RBroadcastPackets t=u r=R da=1 nw=1 />
+				<FECError t=u r=R da=1 nw=1 />
+				<HECError t=u r=R da=1 nw=1 />
+				<DropPackets t=u r=R da=1 nw=1 />
+				<SPausePackets t=u r=R da=1 nw=1 />
+				<RPausePackets t=u r=R da=1 nw=1 />
+			</Stats>
+			<EponOpticalStats t=o r=P s=WAN_EPON_INTF_OPTICAL_STATS_OBJ >
+				<TXPower t=i r=R />
+				<RXPower t=i r=R />
+				<TransceiverTemperature t=i r=R />
+				<SupplyVottage t=i r=R />
+				<BiasCurrent t=i r=R />
+			</EponOpticalStats>
+		</WANEponInterafceConfig>
+		<WANGponInterafceConfig t=o r=P s=WAN_GPON_INTF_OBJ p=37 >
+			<OMCIStats t=o r=P s=WAN_GPON_INTF_OMCI_STATS_OBJ >
+				<PacketsSent t=u r=R da=1 nw=1 />
+				<PacketsReceived t=u r=R da=1 nw=1 />
+			</OMCIStats>
+			<Stats t=o r=P s=WAN_GPON_INTF_STATS_OBJ >
+				<BytesSent t=u r=R da=1 nw=1 />
+				<BytesReceived t=u r=R da=1 nw=1 />
+				<PacketsSent t=u r=R da=1 nw=1 />
+				<PacketsReceived t=u r=R da=1 nw=1 />
+			</Stats>
+			<GponOpticalStats t=o r=P s=WAN_GPON_INTF_OPTICAL_STATS_OBJ >
+				<TXPower t=i r=R />
+				<RXPower t=i r=R />
+				<TransceiverTemperature t=i r=R />
+				<SupplyVottage t=i r=R />
+				<BiasCurrent t=i r=R />
+			</GponOpticalStats>
+		</WANGponInterafceConfig>
+		<X_TP_LTEInterfaceConfig t=o r=P s=WAN_LTE_INTF_CFG_OBJ p=68 >
+			<Enable t=b r=W d=1 />
+			<FreeDurationEnabled t=i r=R d=0 />
+			<FreeDurationWhenRoaming t=i r=R d=0 />
+			<FreeDurationStart t=s r=R l=32 d=00:00 />
+			<FreeDurationEnd t=s r=R l=32 d=00:00 />
+			<CfgModified t=i r=R d=0 />
+			<DailyFlow t=s r=R l=16 d=0 />
+			<CurrentDate t=u r=R d=0 />
+			<LedLimitReached t=i r=R d=1 />
+			<AllowDialOnce t=i r=R />
+			<EnableDataLimit t=i r=W d=FALSE />
+			<AutoDisconnect t=b r=W d=0 />
+			<DataLimit t=i r=R i=0 a=2 d=0 />
+			<LimitType t=i r=W i=0 a=1 d=0 />
+			<Limitation t=s r=W l=32 d=0 />
+			<WarningPercent t=i r=W i=0 a=100 d=0 />
+			<WarnSimNumber t=s r=W l=21 d=0 p=94 />
+			<NeedSmsTip t=i r=W i=0 a=2 d=0 p=94 />
+			<EnablePaymentDay t=i r=W d=FALSE />
+			<NextDue t=u r=W d=0 />
+			<PaymentDay t=i r=W i=1 a=31 d=1 />
+			<AdjustStatistics t=s r=W l=32 d=0 />
+			<CurStatistics t=u r=R d=0 />
+			<CurConnTime t=u r=R d=0 />
+			<TotalStatistics t=s r=W l=32 d=0 />
+			<TotalConnTime t=u r=R d=0 />
+			<RxFlow t=s r=W l=32 d=0 />
+			<TxFlow t=s r=W l=32 d=0 />
+			<CurRxSpeed t=u r=R d=0 nw=1 />
+			<CurTxSpeed t=u r=R d=0 nw=1 />
+		</X_TP_LTEInterfaceConfig>
+		<WANConnectionDevice.{i} t=o r=PC s=WAN_CONN_DEVICE_OBJ m=10 >
+			<WANIPConnectionNumberOfEntries t=u r=R />
+			<WANPPPConnectionNumberOfEntries t=u r=R />
+			<WANDSLLinkConfig t=o r=P s=WAN_DSL_LINK_CFG_OBJ p=26 >
+				<Enable t=b r=W d=0 />
+				<LinkStatus t=s r=R l=13 A=adslWanLinkStatusValues />
+				<LinkType t=s r=W l=13 A=adslWanLinkTypeValues d=Unconfigured />
+				<AutoConfig t=b r=R />
+				<ModulationType t=s r=R l=17 A=modulationTypeValues />
+				<DestinationAddress t=s r=W l=128 />
+				<ATMEncapsulation t=s r=W l=6 A=atmEncapsulationValues d=LLC />
+				<ATMAAL t=s r=R l=5 A=ATMAALValues d=AAL5 />
+				<ATMQoS t=s r=W l=9 A=ATMQoSValues d=UBR />
+				<ATMPeakCellRate t=u r=W d=0 />
+				<ATMMaximumBurstSize t=u r=W d=0 />
+				<ATMSustainableCellRate t=u r=W d=0 />
+				<AAL5CRCErrors t=u r=R da=1 />
+				<X_TP_IfName t=s r=W l=16 />
+				<X_TP_MacAddress t=s r=W l=18 />
+				<X_TP_IsAutoPVC t=b r=W d=0 />
+			</WANDSLLinkConfig>
+			<WANPTMLinkConfig t=o r=P s=WAN_PTM_LINK_CFG_OBJ p=54 >
+				<Enable t=b r=W d=0 />
+				<X_TP_Used t=b r=W d=0 h=1 />
+				<LinkStatus t=s r=R d=Down nw=1 />
+				<MACAddress t=s r=W l=18 />
+				<X_TP_VlanEnabled t=b r=W d=0 />
+				<X_TP_VID t=i r=W i=-1 a=4094 d=-1 />
+				<X_TP_QosMark t=i r=W i=-1 a=7 d=-1 />
+				<X_TP_IfName t=s r=W l=16 />
+				<Stats t=o r=P s=WAN_PTM_LINK_STATS_OBJ >
+					<BytesSent t=u r=R />
+					<BytesReceived t=u r=R />
+				</Stats>
+			</WANPTMLinkConfig>
+			<X_TP_WANPonLinkConfig t=o r=P s=WAN_PON_LINK_CFG_OBJ p=35 >
+				<Enable t=b r=W d=0 />
+				<LinkStatus t=s r=R l=13 A=ponWanLinkStatusValues />
+				<Mode t=u r=W i=0 a=2 d=0 />
+				<VLANIDMark t=us r=W i=0 a=4094 d=0 />
+				<QosMark t=us r=W />
+				<IfName t=s r=W l=16 h=1 />
+				<MACAddress t=s r=W l=18 h=1 />
+			</X_TP_WANPonLinkConfig>
+			<WANEthernetLinkConfig t=o r=P s=WAN_ETH_LINK_CFG_OBJ p=11 >
+				<Enable t=b r=W d=0 />
+				<EthernetLinkStatus t=s r=W l=12 A=EthernetLinkStatusValues />
+				<X_TP_VLanEnabled t=b r=W d=0 p=83 />
+				<X_TP_VID t=i r=W i=-1 a=4094 d=-1 p=83 />
+				<X_TP_IfName t=s r=W l=16 />
+				<X_TP_QosMark t=i r=W i=-1 a=7 d=-1 p=83 />
+				<X_TP_MACAddress t=s r=W l=18 />
+			</WANEthernetLinkConfig>
+			<X_TP_WANUSB3gLinkConfig t=o r=P s=WAN_USB_3G_LINK_CFG_OBJ p=41 >
+				<Enable t=b r=W d=0 />
+				<BackupEnable t=b r=W d=0 />
+				<BackupTimerId t=i r=R d=0 p=40 nw=1 />
+				<BackupPhase t=u r=R d=0 p=40 nw=1 />
+				<BackupDelay t=u r=W d=0 p=40 />
+				<RevertDelay t=u r=W d=0 p=40 />
+				<MainConnObjName t=s r=W l=32 />
+				<CardName t=s r=R l=64 d=Unplugged nw=1 />
+				<CardId t=s r=W l=16 d=0000_0000 nw=1 />
+				<PinStatus t=i r=R d=5 nw=1 />
+				<PinAction t=i r=W i=0 a=4 d=0 nw=1 />
+				<PinCode t=s r=W l=16 />
+				<AutoUnlockPin t=b r=W d=0 />
+				<RemainedPinTimes t=u r=R nw=1 />
+				<IspCfgReaded t=b r=R d=0 nw=1 />
+				<UserSaved t=b r=W d=0 nw=1 h=1 />
+				<LocationIdx t=u r=W d=0 />
+				<IspIdx t=u r=W d=0 />
+				<ManualAPN t=b r=W d=0 />
+				<DialNumber t=s r=W l=64 d=*99# />
+				<APN t=s r=W l=63 d=internet.orange />
+				<SignalStrength t=i r=R i=-1 a=100 d=-1 nw=1 />
+				<IfName t=s r=R l=16 d=ttyNotReady nw=1 />
+				<IfNumber t=i r=R i=0 a=16 d=0 nw=1 />
+				<IfIndex t=i r=R i=-1 a=15 d=-1 nw=1 />
+				<IfString t=s r=R l=64 nw=1 />
+				<ModemChipType t=i r=R d=0 nw=1 />
+				<TmpConnTrigger t=s r=R l=9 d=AlwaysOn />
+				<IsLteModem t=b r=R d=0 nw=1 />
+				<LteDeviceName t=s r=R l=64 />
+				<LteDriverType t=i r=R d=0 nw=1 />
+				<UsbModemParam.{i} t=o r=P s=USB_MODEM_PARAM_OBJ m=4 >
+					<VendorId t=s r=W l=8 />
+					<ProductId t=s r=W l=8 />
+					<MessageString t=s r=W l=256 />
+					<VendorName t=s r=W l=65 />
+					<ProductName t=s r=W l=65 />
+				</UsbModemParam.{i}>
+			</X_TP_WANUSB3gLinkConfig>
+			<X_TP_WANLTELinkConfig t=o r=P s=WAN_LTE_LINK_CFG_OBJ p=68 >
+				<Enable t=b r=W d=1 />
+				<WispConnStat t=i r=R d=0 />
+				<NetworkType t=i r=R i=0 a=6 d=0 />
+				<RoamingStatus t=i r=R i=0 a=1 d=0 />
+				<ConnectStatus t=i r=R i=0 a=4 d=0 />
+				<SimStatus t=i r=R i=0 a=7 d=0 nw=1 />
+				<SimCardNumber t=s r=R l=32 d=0 />
+				<SimCardType t=i r=R d=-1 />
+				<SimCardState t=i r=R d=-1 />
+				<SimCardImsi t=s r=R l=16 d=0 />
+				<SimCardGid1 t=s r=R l=5 d=ff />
+				<DataSwitch t=i r=R d=1 />
+				<RoamSwitch t=i r=R d=0 />
+				<PrefNet t=i r=W d=3 />
+				<NetSelMode t=i r=R d=0 />
+				<TimeFactroyFlag t=i r=R d=0 />
+				<WlanFactoryFlag t=i r=R d=0 />
+				<SmsScEnable t=i r=R d=0 />
+				<SmsScAddress t=s r=R l=32 d=-1 />
+				<SignalStrength t=i r=R i=0 a=4 d=0 />
+				<Ipv4 t=s r=R l=16 d=0.0.0.0 />
+				<Dns1v4 t=s r=R l=16 d=0.0.0.0 />
+				<Dns2v4 t=s r=R l=16 d=0.0.0.0 />
+				<Ipv4_mtu t=u r=R d=1500 />
+				<Ipv6 t=s r=R l=40 d=0.0.0.0 />
+				<Ipv6PrefixLen t=uc r=W h=1 />
+				<Dns1v6 t=s r=R l=40 d=0.0.0.0 />
+				<Dns2v6 t=s r=R l=40 d=0.0.0.0 />
+				<Ipv6_mtu t=u r=R d=1500 />
+				<IfName t=s r=R l=64 />
+				<GatewayV4 t=s r=R l=16 d=0.0.0.0 />
+				<GatewayV6 t=s r=R l=40 d=0.0.0.0 />
+				<Netmask t=s r=R l=16 d=0.0.0.0 />
+				<LteNetStatus t=o r=P s=LTE_NET_STATUS_OBJ >
+					<UssdSessionStatus t=i r=W i=0 a=1 d=0 nw=1 />
+					<UssdStatus t=i r=W i=0 a=5 d=0 nw=1 />
+					<SmsUnreadCount t=i r=W d=0 />
+					<SmsSendCause t=i r=W d=0 nw=1 />
+					<SmsSendResult t=i r=W d=3 nw=1 />
+					<RfSwitch t=i r=W d=1 />
+					<SigLevel t=i r=W nw=1 />
+					<ConnStat t=i r=W d=1 nw=1 />
+					<RoamStat t=i r=W nw=1 />
+					<RegStat t=i r=W nw=1 />
+					<NetType t=i r=W nw=1 />
+					<SrvStat t=i r=W nw=1 />
+					<NetSelStat t=i r=W nw=1 />
+					<BandSelStat t=i r=W d=0 p=105 />
+					<RfInfoChannel t=i r=W d=0 />
+					<RfInfoBand t=i r=W d=0 />
+					<RfInfoIf t=i r=W d=0 />
+					<RfInfoRat t=i r=W d=0 p=95 nw=1 />
+					<RfInfoRssi t=i r=W d=0 p=95 nw=1 />
+					<RfInfoRsrp t=i r=W d=0 p=95 nw=1 />
+					<RfInfoRsrq t=i r=W d=0 p=95 nw=1 />
+					<RfInfoSnr t=i r=W d=0 p=95 nw=1 />
+					<RfInfoEcio t=i r=W d=0 p=95 nw=1 />
+					<Region t=s r=W l=8 nw=1 />
+				</LteNetStatus>
+				<SimLock t=o r=P s=LTE_SIMLOCK_OBJ >
+					<Pin t=s r=W l=16 d=1234 />
+					<NewPin t=s r=W l=16 d=0 />
+					<Puk t=s r=W l=16 d=0 />
+					<PinState t=i r=W d=3 />
+					<AutoUnlockPin t=i r=W d=0 />
+					<RemainPinUnlockTime t=i r=W d=3 />
+					<RemainPukUnlockTime t=i r=W i=0 a=10 d=10 />
+					<SimAction t=i r=W i=0 a=6 d=0 />
+				</SimLock>
+				<WanCfg t=o r=P s=LTE_WAN_CFG_OBJ >
+					<RoamingEnabled t=b r=W d=0 />
+					<NetworkPreferredMode t=i r=W i=0 a=3 d=0 />
+					<NetworkSelectionMode t=i r=W i=0 a=1 d=0 />
+					<NetworkSelectionMCC t=i r=W p=105 />
+					<NetworkSelectionMNC t=i r=W p=105 />
+					<NetworkSelectionISP t=s r=W l=32 p=105 />
+					<DataSwitchStatus t=i r=W d=1 />
+					<DataSwitchStatusBackup t=i r=W d=1 />
+					<CatType t=u r=W d=6 p=105 />
+					<BandSelectSwitch t=u r=W d=0 p=105 />
+					<BandSelectedMaskL t=u r=W d=0 p=105 />
+					<BandSelectedMaskH t=u r=W d=0 p=105 />
+					<BandSupportMaskL t=u r=W d=134742229 p=105 />
+					<BandSupportMaskH t=u r=W d=416 p=105 />
+					<ProfileID t=i r=W d=0 />
+					<ProfileName t=s r=W l=32 d=0 />
+					<PdpType t=i r=W i=0 a=2 d=0 />
+					<Ipv4Apn t=s r=W l=63 d=0 />
+					<Ipv4ApnType t=i r=W i=0 a=1 d=0 />
+					<Ipv4Username t=s r=W l=32 d=0 />
+					<Ipv4Password t=s r=W l=32 d=0 />
+					<Ipv4AuthType t=i r=W i=0 a=3 d=0 />
+					<Ipv6Apn t=s r=W l=63 d=0 />
+					<Ipv6ApnType t=i r=W i=0 a=1 d=0 />
+					<Ipv6Username t=s r=W l=32 d=0 />
+					<Ipv6Password t=s r=W l=32 d=0 />
+					<Ipv6AuthType t=i r=W i=0 a=3 d=0 />
+					<ActiveProfile t=i r=W />
+					<DefaultProfile t=i r=R />
+					<ProfileAction t=i r=W i=0 a=4 d=0 />
+					<NATEnabled t=b r=W d=1 />
+					<PLMNLockEnable t=i r=W i=0 a=1 al=web;cli d=0 p=109 h=1 />
+					<PLMNLockModel t=i r=W i=0 a=1 al=web;cli d=0 p=109 h=1 />
+					<PLMNLockList t=s r=W l=1024 al=web;cli p=109 h=1 />
+					<ProfStat t=o r=P s=LTE_PROF_STAT_OBJ >
+						<ActiveProfType t=b r=R />
+						<ActiveProfIndex t=i r=R />
+						<Spn t=s r=R l=128 />
+						<IspWhich t=i r=R i=0 a=33 />
+						<IspCount t=i r=R i=0 a=32 />
+						<IspMnc t=i r=R />
+						<IspMcc t=i r=R />
+						<IspName t=s r=R l=33 />
+						<UsrWhich t=i r=R i=0 a=10 d=9 />
+						<UsrCount t=i r=R />
+						<UsrMnc t=i r=R />
+						<UsrMcc t=i r=R />
+					</ProfStat>
+					<IspProf.{i} t=o r=P s=LTE_ISP_PROF_OBJ m=32 >
+						<PkgName t=s r=R l=32 />
+						<ProfName t=s r=R l=32 />
+						<MvnoType t=s r=R l=8 />
+						<MvnoData t=s r=R l=128 />
+						<IpVer t=uc r=R />
+						<StaticApn t=uc r=R />
+						<Apn t=s r=R l=63 />
+						<Usr t=s r=R l=32 />
+						<Psw t=s r=R l=32 />
+						<AuthType t=uc r=R />
+					</IspProf.{i}>
+					<UserProf.{i} t=o r=P s=LTE_USER_PROF_OBJ m=8 >
+						<PkgName t=s r=R l=32 />
+						<ProfName t=s r=R l=32 />
+						<MvnoType t=s r=R l=8 />
+						<MvnoData t=s r=R l=128 />
+						<IpVer t=uc r=R />
+						<StaticApn t=uc r=R />
+						<Apn t=s r=R l=63 />
+						<Usr t=s r=R l=32 />
+						<Psw t=s r=R l=32 />
+						<AuthType t=uc r=R />
+					</UserProf.{i}>
+					<Profile.{i} t=o r=P s=LTE_PROFILE_OBJ m=40 >
+						<ProfileID t=i r=R d=0 />
+						<ProfileName t=s r=R l=32 />
+						<PdpType t=i r=R i=0 a=2 d=0 />
+						<Ipv4Apn t=s r=R l=63 />
+						<Ipv4ApnType t=i r=R i=0 a=1 d=0 />
+						<Ipv4Username t=s r=R l=32 />
+						<Ipv4Password t=s r=R l=32 />
+						<Ipv4AuthType t=i r=R i=0 a=3 d=0 />
+						<Ipv6Apn t=s r=R l=63 />
+						<Ipv6ApnType t=i r=R i=0 a=1 d=0 />
+						<Ipv6Username t=s r=R l=32 />
+						<Ipv6Password t=s r=R l=32 />
+						<Ipv6AuthType t=i r=R i=0 a=3 d=0 />
+					</Profile.{i}>
+				</WanCfg>
+				<TimeCfg t=o r=P s=LTE_TIME_OBJ >
+					<Timezone t=s r=W l=32 d=0 />
+					<Year t=s r=R l=32 d=0 />
+					<Month t=s r=R l=32 d=0 />
+					<Date t=s r=R l=32 d=0 />
+					<Hour t=s r=R l=32 d=0 />
+					<Minute t=s r=R l=32 d=0 />
+					<Second t=s r=R l=64 d=0 />
+					<Action t=i r=W d=0 />
+				</TimeCfg>
+			</X_TP_WANLTELinkConfig>
+			<X_TP_L2TP_Connection.{i} t=o r=PC s=WAN_L2TP_CONN_OBJ m=16 p=48 >
+				<Enable t=b r=W d=0 />
+				<Name t=s r=W l=32 />
+				<ServerIpOrName t=s r=W l=256 />
+				<ServerIp t=s r=W l=16 d=0.0.0.0 />
+				<ConnectionStatusIP t=s r=R l=18 A=wanIpConnectionStatusValues d=Unconfigured nw=1 />
+				<ConnectionTypeIP t=s r=W l=13 A=wanIpPossibleConnectionTypesValues d=Unconfigured />
+				<AddressingType t=s r=W l=7 A=AddressingTypeValues d=DHCP />
+				<ExternalIPAddressIP t=s r=W />
+				<SubnetMaskIP t=s r=W />
+				<BcastAddrIP t=s r=W />
+				<DefaultGatewayIP t=s r=W />
+				<DNSServersIP t=s r=W l=64 />
+				<MaxMTUSizeIP t=u r=W i=1 a=1540 d=1500 />
+				<IfNameIP t=s r=W l=16 />
+				<Sit6rdEnabled t=b r=W d=0 p=28 h=1 />
+				<ConnectionStatus t=s r=R l=18 A=wanPppConnectionStatusValues d=Unconfigured nw=1 />
+				<PossibleConnectionTypes t=s r=R l=14 A=wanPppPossibleConnectionTypesValues />
+				<ConnectionType t=s r=W l=14 A=wanPppPossibleConnectionTypesValues d=IP_Routed />
+				<DefaultGateway t=s r=W l=16 fa=1 />
+				<Uptime t=u r=R da=1 />
+				<IdleDisconnectTime t=u r=W i=0 a=4294967296 d=15 />
+				<NATEnabled t=b r=W d=1 />
+				<FullconeNATEnabled t=b r=W d=0 />
+				<Hostname t=s r=W l=64 />
+				<Unicast t=b r=W d=0 />
+				<FirewallEnabled t=b r=W d=1 />
+				<IGMPProxyEnabled t=b r=W d=1 p=10 />
+				<Username t=s r=W l=256 fa=1 />
+				<Password t=s r=W l=256 fa=1 tp=1 cp=1 />
+				<PPPAuthenticationProtocol t=s r=W l=10 A=PPPAuthenticationProtocolValues d=AUTO_AUTH />
+				<IfName t=s r=W />
+				<L2IfName t=s r=W l=16 />
+				<BcastAddr t=s r=W />
+				<ConnectionId t=i r=W i=-5 a=100 d=-1 />
+				<ExternalIPAddress t=s r=W l=16 d=0.0.0.0 />
+				<RemoteIPAddress t=s r=R l=16 />
+				<MaxMRUSize t=u r=W i=1 a=1540 d=1460 />
+				<CurrentMRUSize t=u r=R i=1 a=1540 da=1 />
+				<DNSServers t=s r=W l=64 d=0.0.0.0,0.0.0.0 fa=1 />
+				<MACAddress t=s r=W l=18 nw=1 />
+				<MACAddressOverride t=b r=W d=0 />
+				<ClonedMACAddress t=s r=W l=18 />
+				<TransportType t=s r=W l=6 A=TransportTypeValues d=L2TP />
+				<ConnectionTrigger t=s r=W l=9 A=ConnectionTriggerValues d=AlwaysOn />
+				<PortMappingNumberOfEntries t=u r=R />
+				<PortMapping.{i} t=o r=PC s=WAN_L2TP_CONN_PORTMAPPING_OBJ m=16 >
+					<PortMappingEnabled t=b r=W d=0 />
+					<ExternalPort t=u r=W />
+					<ExternalPortEnd t=u r=W d=0 />
+					<InternalPort t=u r=W />
+					<InternalPortEnd t=u r=W d=0 />
+					<PortMappingProtocol t=s r=W l=11 A=ipProtocol2Values />
+					<InternalClient t=s r=W l=16 />
+					<ServiceName t=s r=W l=16 />
+				</PortMapping.{i}>
+				<PortTriggering.{i} t=o r=PC s=L2TP_CONN_PORTTRIGGERING_OBJ m=16 >
+					<Enable t=b r=W d=0 />
+					<TriggerPort t=u r=W />
+					<TriggerProtocol t=s r=W l=11 A=ipProtocol2Values d=TCP />
+					<OpenProtocol t=s r=W l=11 A=ipProtocol2Values d=TCP />
+					<OpenPort t=s r=W l=64 />
+					<ApplicationName t=s r=W l=16 />
+				</PortTriggering.{i}>
+				<Stats t=o r=P s=WAN_L2TP_CONN_STATS_OBJ m=16 u=1 nw=1 >
+					<EthernetBytesSent t=u r=R da=1 nw=1 />
+					<EthernetBytesReceived t=u r=R da=1 nw=1 />
+					<EthernetPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetErrorsSent t=u r=R da=1 nw=1 />
+					<EthernetErrorsReceived t=u r=R da=1 nw=1 />
+					<EthernetUnicastPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetUnicastPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetDiscardPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetDiscardPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetMulticastPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetMulticastPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetBroadcastPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetBroadcastPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetUnknownProtoPacketsReceived t=u r=R da=1 nw=1 />
+				</Stats>
+			</X_TP_L2TP_Connection.{i}>
+			<X_TP_PPTP_Connection.{i} t=o r=PC s=WAN_PPTP_CONN_OBJ m=16 p=49 >
+				<Enable t=b r=W d=0 />
+				<Name t=s r=W l=32 />
+				<ServerIpOrName t=s r=W l=256 />
+				<ServerIp t=s r=W l=16 d=0.0.0.0 />
+				<ConnectionStatusIP t=s r=R l=18 A=wanIpConnectionStatusValues d=Unconfigured nw=1 />
+				<ConnectionTypeIP t=s r=W l=13 A=wanIpPossibleConnectionTypesValues d=Unconfigured />
+				<AddressingType t=s r=W l=7 A=AddressingTypeValues d=DHCP />
+				<ExternalIPAddressIP t=s r=W />
+				<SubnetMaskIP t=s r=W />
+				<BcastAddrIP t=s r=W />
+				<DefaultGatewayIP t=s r=W />
+				<DNSServersIP t=s r=W l=64 />
+				<MaxMTUSizeIP t=u r=W i=1 a=1540 d=1500 />
+				<IfNameIP t=s r=W l=16 />
+				<Sit6rdEnabled t=b r=W d=0 p=28 h=1 />
+				<ConnectionStatus t=s r=R l=18 A=wanPppConnectionStatusValues d=Unconfigured nw=1 />
+				<PossibleConnectionTypes t=s r=R l=14 A=wanPppPossibleConnectionTypesValues />
+				<ConnectionType t=s r=W l=14 A=wanPppPossibleConnectionTypesValues d=IP_Routed />
+				<DefaultGateway t=s r=W l=16 fa=1 />
+				<Uptime t=u r=R da=1 />
+				<IdleDisconnectTime t=u r=W i=0 a=4294967296 d=15 />
+				<NATEnabled t=b r=W d=1 />
+				<FullconeNATEnabled t=b r=W d=0 />
+				<Hostname t=s r=W l=64 />
+				<Unicast t=b r=W d=0 />
+				<FirewallEnabled t=b r=W d=1 />
+				<IGMPProxyEnabled t=b r=W d=1 p=10 />
+				<Username t=s r=W l=256 fa=1 />
+				<Password t=s r=W l=256 fa=1 tp=1 cp=1 />
+				<PPPAuthenticationProtocol t=s r=W l=10 A=PPPAuthenticationProtocolValues d=AUTO_AUTH />
+				<IfName t=s r=W />
+				<L2IfName t=s r=W l=16 />
+				<BcastAddr t=s r=W />
+				<ConnectionId t=i r=W i=-5 a=100 d=-1 />
+				<ExternalIPAddress t=s r=W l=16 d=0.0.0.0 />
+				<RemoteIPAddress t=s r=R l=16 />
+				<MaxMRUSize t=u r=W i=1 a=1540 d=1420 />
+				<CurrentMRUSize t=u r=R i=1 a=1540 da=1 />
+				<DNSServers t=s r=W l=64 d=0.0.0.0,0.0.0.0 fa=1 />
+				<MACAddress t=s r=W l=18 nw=1 />
+				<MACAddressOverride t=b r=W d=0 />
+				<ClonedMACAddress t=s r=W l=18 />
+				<TransportType t=s r=W l=6 A=TransportTypeValues d=PPTP />
+				<ConnectionTrigger t=s r=W l=9 A=ConnectionTriggerValues d=AlwaysOn />
+				<PortMappingNumberOfEntries t=u r=R />
+				<PortMapping.{i} t=o r=PC s=WAN_PPTP_CONN_PORTMAPPING_OBJ m=16 >
+					<PortMappingEnabled t=b r=W d=0 />
+					<ExternalPort t=u r=W />
+					<ExternalPortEnd t=u r=W d=0 />
+					<InternalPort t=u r=W />
+					<InternalPortEnd t=u r=W d=0 />
+					<PortMappingProtocol t=s r=W l=11 A=ipProtocol2Values />
+					<InternalClient t=s r=W l=16 />
+					<ServiceName t=s r=W l=16 />
+				</PortMapping.{i}>
+				<PortTriggering.{i} t=o r=PC s=PPTP_CONN_PORTTRIGGERING_OBJ m=16 >
+					<Enable t=b r=W d=0 />
+					<TriggerPort t=u r=W />
+					<TriggerProtocol t=s r=W l=11 A=ipProtocol2Values d=TCP />
+					<OpenProtocol t=s r=W l=11 A=ipProtocol2Values d=TCP />
+					<OpenPort t=s r=W l=64 />
+					<ApplicationName t=s r=W l=16 />
+				</PortTriggering.{i}>
+				<Stats t=o r=P s=WAN_PPTP_CONN_STATS_OBJ m=16 u=1 nw=1 >
+					<EthernetBytesSent t=u r=R da=1 nw=1 />
+					<EthernetBytesReceived t=u r=R da=1 nw=1 />
+					<EthernetPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetErrorsSent t=u r=R da=1 nw=1 />
+					<EthernetErrorsReceived t=u r=R da=1 nw=1 />
+					<EthernetUnicastPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetUnicastPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetDiscardPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetDiscardPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetMulticastPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetMulticastPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetBroadcastPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetBroadcastPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetUnknownProtoPacketsReceived t=u r=R da=1 nw=1 />
+				</Stats>
+			</X_TP_PPTP_Connection.{i}>
+			<WANIPConnection.{i} t=o r=PC s=WAN_IP_CONN_OBJ m=16 >
+				<Enable t=b r=W d=0 />
+				<ConnectionStatus t=s r=R l=18 A=wanIpConnectionStatusValues d=Unconfigured nw=1 />
+				<PossibleConnectionTypes t=s r=W l=13 A=wanIpPossibleConnectionTypesValues />
+				<ConnectionType t=s r=W l=13 A=wanIpPossibleConnectionTypesValues d=Unconfigured />
+				<Name t=s r=W l=32 />
+				<Uptime t=u r=R da=1 nw=1 />
+				<LastConnectionError t=s r=R l=31 A=wanIpLastConnectionErrorValues d=ERROR_NONE nw=1 />
+				<X_TP_ConnectionId t=i r=W i=-5 a=100 d=-1 />
+				<IdleDisconnectTime t=u r=W i=0 a=4294967296 d=15 />
+				<NATEnabled t=b r=W d=1 />
+				<X_TP_8021QEnabled t=b r=W d=0 p=57 h=1 />
+				<X_TP_VlanID t=i r=W i=0 a=4094 d=0 p=57 h=1 />
+				<X_TP_VlanPr t=i r=W i=0 a=7 d=0 p=57 h=1 />
+				<X_TP_FullconeNATEnabled t=b r=W d=0 />
+				<X_TP_Hostname t=s r=W l=64 />
+				<X_TP_Unicast t=b r=W d=0 />
+				<AddressingType t=s r=W l=7 A=AddressingTypeValues d=Static />
+				<ExternalIPAddress t=s r=W fa=1 />
+				<SubnetMask t=s r=W />
+				<X_TP_BcastAddr t=s r=W />
+				<DefaultGateway t=s r=W />
+				<X_TP_FirewallEnabled t=b r=W d=1 />
+				<DNSEnabled t=b r=W d=1 />
+				<DNSOverrideAllowed t=b r=W d=0 />
+				<DNSServers t=s r=W l=64 />
+				<MaxMTUSize t=u r=W i=1 a=1540 d=1500 />
+				<MACAddress t=s r=W l=18 nw=1 />
+				<MACAddressOverride t=b r=W d=0 />
+				<X_TP_ClonedMACAddress t=s r=W l=18 />
+				<ConnectionTrigger t=s r=W l=9 A=ConnectionTriggerValues d=AlwaysOn />
+				<RouteProtocolRx t=s r=W l=8 A=RouteProtocolRxValues d=Off />
+				<X_TP_RipOperationMode t=s r=W l=8 A=RipOperationModeValues d=Passive p=13 />
+				<PortMappingNumberOfEntries t=u r=R />
+				<X_TP_IfName t=s r=W l=16 />
+				<X_TP_IGMPProxyEnabled t=b r=W d=1 p=10 />
+				<X_TP_MerEnabled t=b r=W d=0 p=73 />
+				<X_TP_Username t=s r=W l=32 p=73 />
+				<X_TP_Password t=s r=W l=32 p=73 />
+				<X_TP_IPv4Enabled t=b r=W d=1 p=28 h=1 />
+				<X_TP_IPv6Enabled t=b r=W d=0 p=28 h=1 />
+				<X_TP_IPv6ConnStatus t=s r=R l=18 A=wanIpConnectionStatusValues d=Unconfigured p=28 nw=1 h=1 />
+				<X_TP_IPv6AddressingType t=s r=W l=7 A=IPv6AddressingTypeValues d=Auto p=28 h=1 />
+				<X_TP_ExternalIPv6Address t=s r=W l=40 p=28 h=1 />
+				<X_TP_PrefixLength t=u r=W i=0 a=128 d=0 p=28 h=1 />
+				<X_TP_DefaultIPv6Gateway t=s r=W l=40 p=28 h=1 />
+				<X_TP_DefaultIPv6GatewayOverride t=b r=W d=0 p=28 h=1 />
+				<X_TP_IPv6DNSEnabled t=b r=W d=1 p=28 h=1 />
+				<X_TP_IPv6DNSOverrideAllowed t=b r=W d=0 p=28 h=1 />
+				<X_TP_IPv6DNSServers t=s r=W l=80 p=28 h=1 />
+				<X_TP_PDEnabled t=b r=W d=0 p=28 h=1 />
+				<X_TP_SitePrefix t=s r=W l=40 p=28 h=1 />
+				<X_TP_SitePrefixLength t=u r=W d=64 p=28 h=1 />
+				<X_TP_SitePrefixPltime t=i r=W p=28 h=1 />
+				<X_TP_SitePrefixVltime t=i r=W p=28 h=1 />
+				<X_TP_Sit6rdEnabled t=b r=W d=0 p=28 h=1 />
+				<X_TP_DSLiteEnabled t=b r=W d=0 p=28 h=1 />
+				<X_TP_MLDProxyEnabled t=b r=W d=1 p=50 h=1 />
+				<X_TP_TransportType t=s r=R l=7 A=Usb4GDhcpType />
+				<X_TP_DslISP t=s r=W l=32 d="Other ISP" p=59 />
+				<PortMapping.{i} t=o r=PC s=WAN_IP_CONN_PORTMAPPING_OBJ m=16 >
+					<PortMappingEnabled t=b r=W d=0 />
+					<ExternalPort t=u r=W />
+					<X_TP_ExternalPortEnd t=u r=W d=0 />
+					<InternalPort t=u r=W />
+					<X_TP_InternalPortEnd t=u r=W d=0 />
+					<PortMappingProtocol t=s r=W l=11 A=ipProtocol2Values />
+					<InternalClient t=s r=W l=16 />
+					<ServiceName t=s r=W l=16 />
+				</PortMapping.{i}>
+				<X_TP_IPv6PortMapping.{i} t=o r=PC s=WAN_IP_CONN_IP6PORTMAPPING_OBJ m=16 p=91 >
+					<PortMappingEnabled t=b r=W d=0 />
+					<Port t=u r=W />
+					<PortEnd t=u r=W d=0 />
+					<PortMappingProtocol t=s r=W l=11 A=ipProtocol2Values />
+					<InternalClient t=s r=W l=40 />
+					<PortMappingDescription t=s r=W l=256 />
+					<ServiceName t=s r=W l=16 />
+				</X_TP_IPv6PortMapping.{i}>
+				<X_TP_PortTriggering.{i} t=o r=PC s=IP_CONN_PORTTRIGGERING_OBJ m=16 >
+					<Enable t=b r=W d=0 />
+					<TriggerPort t=u r=W />
+					<TriggerProtocol t=s r=W l=11 A=ipProtocol2Values d=TCP />
+					<OpenProtocol t=s r=W l=11 A=ipProtocol2Values d=TCP />
+					<OpenPort t=s r=W l=64 />
+					<ApplicationName t=s r=W l=16 />
+				</X_TP_PortTriggering.{i}>
+			</WANIPConnection.{i}>
+			<WANPPPConnection.{i} t=o r=PC s=WAN_PPP_CONN_OBJ m=16 >
+				<Enable t=b r=W d=0 />
+				<ConnectionStatus t=s r=R l=18 A=wanPppConnectionStatusValues d=Unconfigured nw=1 />
+				<PossibleConnectionTypes t=s r=R l=14 A=wanPppPossibleConnectionTypesValues />
+				<ConnectionType t=s r=W l=14 A=wanPppPossibleConnectionTypesValues d=IP_Routed />
+				<PPPoESessionID t=u r=R i=1 a=4294967295 h=1 />
+				<DefaultGateway t=s r=W l=16 />
+				<Name t=s r=W l=32 />
+				<Uptime t=u r=R da=1 nw=1 />
+				<LastConnectionError t=s r=R l=32 A=wanPppLastConnectionErrorValues d=ERROR_NONE nw=1 />
+				<IdleDisconnectTime t=u r=W i=0 a=4294967296 d=15 />
+				<RSIPAvailable t=b r=R />
+				<NATEnabled t=b r=W d=1 />
+				<X_TP_8021QEnabled t=b r=W d=0 p=57 h=1 />
+				<X_TP_VlanID t=i r=W i=0 a=4094 d=0 p=57 h=1 />
+				<X_TP_VlanPr t=i r=W i=0 a=7 d=0 p=57 h=1 />
+				<X_TP_FullconeNATEnabled t=b r=W d=0 />
+				<X_TP_FirewallEnabled t=b r=W d=1 />
+				<X_TP_IGMPProxyEnabled t=b r=W d=1 p=10 />
+				<Username t=s r=W l=256 />
+				<X_TP_ConnID t=s r=W l=32 p=59 />
+				<X_TP_ONLineNO t=s r=W l=32 p=59 />
+				<X_TP_Suffix t=s r=W l=16 p=59 />
+				<Password t=s r=W l=256 tp=1 cp=1 />
+				<PPPAuthenticationProtocol t=s r=W l=10 A=PPPAuthenticationProtocolValues d=AUTO_AUTH />
+				<X_TP_IfName t=s r=W />
+				<X_TP_L2IfName t=s r=W l=16 />
+				<X_TP_BcastAddr t=s r=W />
+				<X_TP_ConnectionId t=i r=W i=-5 a=100 d=-1 />
+				<X_TP_UseStaticIP t=b r=W d=0 />
+				<X_TP_SpecialDail t=u r=W i=0 a=16 d=0 p=30 />
+				<ExternalIPAddress t=s r=W l=16 d=0.0.0.0 fa=1 />
+				<RemoteIPAddress t=s r=R l=16 />
+				<MaxMRUSize t=u r=W i=1 a=1540 d=1480 />
+				<CurrentMRUSize t=u r=R i=1 a=1540 da=1 />
+				<DNSEnabled t=b r=W d=0 />
+				<DNSOverrideAllowed t=b r=W d=0 />
+				<DNSServers t=s r=W l=64 d=0.0.0.0,0.0.0.0 />
+				<MACAddress t=s r=W l=18 nw=1 />
+				<MACAddressOverride t=b r=W d=0 />
+				<X_TP_ClonedMACAddress t=s r=W l=18 />
+				<TransportType t=s r=W l=6 A=TransportTypeValues d=PPPoE />
+				<PPPoEACName t=s r=W l=32 />
+				<PPPoEServiceName t=s r=W l=32 />
+				<ConnectionTrigger t=s r=W l=9 A=ConnectionTriggerValues d=AlwaysOn />
+				<RouteProtocolRx t=s r=W l=8 A=RouteProtocolRxValues d=Off />
+				<PPPLCPEcho t=u r=W d=30 />
+				<PPPLCPEchoRetry t=u r=W d=0 />
+				<X_TP_SecondConnection t=s r=W l=9 A=pppoeSecondConnectionTypes d=None p=55 h=1 />
+				<X_TP_SecondConnectionIPAddress t=s r=W l=16 d=0.0.0.0 p=55 h=1 />
+				<X_TP_SecondConnectionSubnetMask t=s r=W l=16 d=0.0.0.0 p=55 h=1 />
+				<X_TP_SecondConnectionGateway t=s r=W l=16 d=0.0.0.0 p=55 h=1 />
+				<X_TP_SecondConnectionDNSServers t=s r=W l=64 d=0.0.0.0,0.0.0.0 p=55 h=1 />
+				<X_TP_SecondConnectionStatus t=s r=R l=18 A=wanPppConnectionStatusValues p=55 h=1 />
+				<X_TP_IPv4Enabled t=b r=W d=1 p=28 h=1 />
+				<X_TP_IPv6Enabled t=b r=W d=0 p=28 h=1 />
+				<X_TP_IPv6ConnStatus t=s r=R l=18 A=wanPppConnectionStatusValues d=Unconfigured p=28 nw=1 h=1 />
+				<X_TP_IPv6CPUp t=b r=R d=0 p=28 nw=1 h=1 />
+				<X_TP_IPv6AddressingType t=s r=W l=7 A=IPv6AddressingTypeValues d=Auto p=28 h=1 />
+				<X_TP_ExternalIPv6Address t=s r=W l=40 p=28 h=1 />
+				<X_TP_PrefixLength t=u r=W i=0 a=128 d=0 p=28 h=1 />
+				<X_TP_DefaultIPv6Gateway t=s r=W l=40 p=28 h=1 />
+				<X_TP_DefaultIPv6GatewayOverride t=b r=W d=0 p=28 h=1 />
+				<X_TP_IPv6DNSEnabled t=b r=W d=1 p=28 h=1 />
+				<X_TP_IPv6DNSOverrideAllowed t=b r=W d=0 p=28 h=1 />
+				<X_TP_IPv6DNSServers t=s r=W l=80 p=28 h=1 />
+				<X_TP_PDEnabled t=b r=W d=0 p=28 h=1 />
+				<X_TP_SitePrefix t=s r=W l=40 p=28 h=1 />
+				<X_TP_SitePrefixLength t=u r=W d=64 p=28 h=1 />
+				<X_TP_SitePrefixPltime t=i r=W p=28 h=1 />
+				<X_TP_SitePrefixVltime t=i r=W p=28 h=1 />
+				<X_TP_DSLiteEnabled t=b r=W d=0 p=28 h=1 />
+				<X_TP_MLDProxyEnabled t=b r=W d=1 p=50 h=1 />
+				<X_TP_ReconEnable t=b r=W d=0 p=60 />
+				<X_TP_ReconTime t=s r=W d=00:00 p=60 />
+				<X_TP_DslISP t=s r=W l=32 d="Other ISP" p=59 />
+				<PortMappingNumberOfEntries t=u r=R />
+				<PortMapping.{i} t=o r=PC s=WAN_PPP_CONN_PORTMAPPING_OBJ m=16 >
+					<PortMappingEnabled t=b r=W d=0 />
+					<ExternalPort t=u r=W />
+					<X_TP_ExternalPortEnd t=u r=W d=0 />
+					<InternalPort t=u r=W />
+					<X_TP_InternalPortEnd t=u r=W d=0 />
+					<PortMappingProtocol t=s r=W l=11 A=ipProtocol2Values />
+					<InternalClient t=s r=W l=16 />
+					<ServiceName t=s r=W l=16 />
+				</PortMapping.{i}>
+				<X_TP_IPv6PortMapping.{i} t=o r=PC s=WAN_PPP_CONN_IP6PORTMAPPING_OBJ m=16 p=91 >
+					<PortMappingEnabled t=b r=W d=0 />
+					<Port t=u r=W />
+					<PortEnd t=u r=W d=0 />
+					<PortMappingProtocol t=s r=W l=11 A=ipProtocol2Values />
+					<InternalClient t=s r=W l=40 />
+					<PortMappingDescription t=s r=W l=256 />
+					<ServiceName t=s r=W l=16 />
+				</X_TP_IPv6PortMapping.{i}>
+				<X_TP_PortTriggering.{i} t=o r=PC s=PPP_CONN_PORTTRIGGERING_OBJ m=16 >
+					<Enable t=b r=W d=0 />
+					<TriggerPort t=u r=W />
+					<TriggerProtocol t=s r=W l=11 A=ipProtocol2Values d=TCP />
+					<OpenProtocol t=s r=W l=11 A=ipProtocol2Values d=TCP />
+					<OpenPort t=s r=W l=64 />
+					<ApplicationName t=s r=W l=16 />
+				</X_TP_PortTriggering.{i}>
+				<Stats t=o r=P s=WAN_PPP_CONN_STATS_OBJ m=16 u=1 nw=1 >
+					<EthernetBytesSent t=u r=R da=1 nw=1 />
+					<EthernetBytesReceived t=u r=R da=1 nw=1 />
+					<EthernetPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetErrorsSent t=u r=R da=1 nw=1 />
+					<EthernetErrorsReceived t=u r=R da=1 nw=1 />
+					<EthernetUnicastPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetUnicastPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetDiscardPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetDiscardPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetMulticastPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetMulticastPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetBroadcastPacketsSent t=u r=R da=1 nw=1 />
+					<EthernetBroadcastPacketsReceived t=u r=R da=1 nw=1 />
+					<EthernetUnknownProtoPacketsReceived t=u r=R da=1 nw=1 />
+				</Stats>
+			</WANPPPConnection.{i}>
+		</WANConnectionDevice.{i}>
+	</WANDevice.{i}>
+	<X_TP_StatCfg t=o r=P s=STAT_CFG_OBJ p=104 h=1 >
+		<Enable t=b r=W d=0 h=1 />
+		<Interval t=u r=W i=5 a=60 d=10 h=1 />
+		<Action t=u r=W i=0 a=2 d=0 h=1 />
+		<X_TP_RecordCfg t=o r=P s=RECORD_CFG_OBJ h=1 >
+			<AllDevices t=b r=W d=1 h=1 />
+			<HostName t=s r=W l=64 h=1 />
+			<MacAddress t=s r=W l=18 h=1 />
+			<RecordInterval t=s r=W l=4 A=RecordIntervalValues d=Min h=1 />
+			<X_TP_RecordEntry.{i} t=o r=P s=RECORD_ENTRY_OBJ m=24 u=1 nw=1 h=1 >
+				<Downs t=s r=R l=21 nw=1 h=1 />
+				<Ups t=s r=R l=21 nw=1 h=1 />
+				<Time t=d r=R nw=1 h=1 />
+			</X_TP_RecordEntry.{i}>
+		</X_TP_RecordCfg>
+		<X_TP_StatEntry.{i} t=o r=P s=STAT_ENTRY_OBJ m=64 u=1 nw=1 h=1 >
+			<HostType t=s r=R l=6 A=HostTypeValues nw=1 h=1 />
+			<HostName t=s r=R l=64 nw=1 h=1 />
+			<IpAddress t=u r=R d=0 nw=1 h=1 />
+			<MacAddress t=s r=R l=18 nw=1 h=1 />
+			<TotalBytesRx t=s r=R l=21 nw=1 h=1 />
+			<TotalBytesTx t=s r=R l=21 nw=1 h=1 />
+			<CurrBytesRx t=s r=R l=21 nw=1 h=1 />
+			<CurrBytesTx t=s r=R l=21 nw=1 h=1 />
+			<CurrIcmp t=u r=R d=0 nw=1 h=1 />
+			<CurrUdp t=u r=R d=0 nw=1 h=1 />
+			<CurrSyn t=u r=R d=0 nw=1 h=1 />
+			<CurrIcmpMax t=u r=R d=0 nw=1 h=1 />
+			<CurrUdpMax t=u r=R d=0 nw=1 h=1 />
+			<CurrSynMax t=u r=R d=0 nw=1 h=1 />
+		</X_TP_StatEntry.{i}>
+		<X_TP_DdosCfg t=o r=P s=DDOS_CFG_OBJ h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<EnableIcmpFilter t=b r=W d=0 h=1 />
+			<IcmpLevelLow t=u r=W i=5 a=3600 d=3600 h=1 />
+			<IcmpLevelMiddle t=u r=W i=5 a=3600 d=2400 h=1 />
+			<IcmpLevelHigh t=u r=W i=5 a=3600 d=1200 h=1 />
+			<IcmpThreshold t=u r=W i=5 a=3600 d=50 h=1 />
+			<EnableUdpFilter t=b r=W d=0 h=1 />
+			<UdpLevelLow t=u r=W i=5 a=3600 d=3600 h=1 />
+			<UdpLevelMiddle t=u r=W i=5 a=3600 d=2400 h=1 />
+			<UdpLevelHigh t=u r=W i=5 a=3600 d=1200 h=1 />
+			<UdpThreshold t=u r=W i=5 a=3600 d=500 h=1 />
+			<EnableSynFilter t=b r=W d=0 h=1 />
+			<SynLevelLow t=u r=W i=5 a=3600 d=3600 h=1 />
+			<SynLevelMiddle t=u r=W i=5 a=3600 d=2400 h=1 />
+			<SynLevelHigh t=u r=W i=5 a=3600 d=1200 h=1 />
+			<SynThreshold t=u r=W i=5 a=3600 d=50 h=1 />
+			<ForbidLanPing t=b r=W d=0 h=1 />
+			<Action t=u r=W i=0 a=1 d=0 h=1 />
+			<X_TP_Thwarter.{i} t=o r=P s=DOS_HOST_OBJ m=256 u=1 nw=1 h=1 >
+				<IpAddress t=u r=R d=0 nw=1 h=1 />
+				<MacAddress t=s r=R l=18 nw=1 h=1 />
+			</X_TP_Thwarter.{i}>
+		</X_TP_DdosCfg>
+	</X_TP_StatCfg>
+	<X_TP_ARP t=o r=PC s=ARP_OBJ h=1 >
+		<ArpEntry.{i} t=o r=P s=ARP_ENTRY_OBJ m=256 u=1 nw=1 h=1 >
+			<Flag t=uc r=W i=0 a=2 d=0 nw=1 h=1 />
+			<Ip t=u r=R nw=1 h=1 />
+			<Mac t=s r=R l=18 nw=1 h=1 />
+		</ArpEntry.{i}>
+		<ArpBindTbl t=o r=P s=ARP_BIND_OBJ h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<ArpBindEntry.{i} t=o r=P s=ARP_BIND_ENTRY_OBJ m=128 h=1 >
+				<State t=b r=W d=0 h=1 />
+				<Ip t=u r=W h=1 />
+				<Mac t=s r=W l=18 h=1 />
+			</ArpBindEntry.{i}>
+		</ArpBindTbl>
+	</X_TP_ARP>
+	<QueueManagement t=o r=P s=QUEUE_MANAGEMENT_OBJ p=38 >
+		<Enable t=b r=W d=1 />
+		<MaxClassificationEntries t=u r=W d=32 />
+		<ClassificationNumberOfEntries t=u r=W i=0 a=32 d=0 />
+		<X_TP_MaxAppEntries t=u r=W d=3 p=39 />
+		<X_TP_AppNumberOfEntries t=u r=W i=0 a=3 d=0 p=39 />
+		<X_TP_MaxInterfaceEntries t=u r=W d=2 />
+		<X_TP_InterfaceNumberOfEntries t=u r=W i=0 a=2 d=2 />
+		<DefaultDSCPMark t=i r=W i=-2 d=-1 />
+		<DefaultEthernetPriorityMark t=u r=W i=-2 d=-1 />
+		<Classification.{i} t=o r=P s=CLASSIFICATION_OBJ m=32 >
+			<ClassificationKey t=u r=W />
+			<ClassificationEnable t=b r=W d=0 />
+			<ClassificationOrder t=u r=W d=1 />
+			<X_TP_ClassName t=s r=W />
+			<ClassInterface t=s r=W />
+			<DestIP t=s r=W />
+			<DestMask t=s r=W />
+			<SourceIP t=s r=W />
+			<SourceMask t=s r=W />
+			<Protocol t=i r=W d=-1 />
+			<DestPort t=i r=W d=-1 />
+			<DestPortRangeMax t=i r=W d=-1 />
+			<SourcePort t=i r=W d=-1 />
+			<SourcePortRangeMax t=i r=W d=-1 />
+			<SourceMACAddress t=s r=W l=18 />
+			<SourceMACMask t=s r=W l=18 />
+			<DestMACAddress t=s r=W l=18 />
+			<DestMACMask t=s r=W l=18 />
+			<Ethertype t=i r=W d=-1 />
+			<SourceVendorClassID t=s r=W />
+			<SourceVendorClassIDMode t=s r=W l=10 A=matchMode d=Exact />
+			<SourceUserClassID t=s r=W />
+			<DSCPCheck t=i r=W d=-1 />
+			<EthernetPriorityCheck t=i r=W d=-1 />
+			<VLANIDCheck t=i r=W d=-1 />
+			<DSCPMark t=i r=W i=-2 d=-1 />
+			<EthernetPriorityMark t=i r=W i=-2 d=-1 />
+			<X_TP_ClassInterface t=i r=W i=-1 d=-1 />
+			<ClassQueue t=i r=W i=-1 d=-1 />
+		</Classification.{i}>
+		<X_TP_App.{i} t=o r=P s=QOS_APP_OBJ m=3 p=39 >
+			<AppKey t=uc r=W d=0 />
+			<AppEnable t=b r=W d=0 />
+			<AppName t=s r=W l=6 A=appArray />
+			<ClassInterface t=i r=W i=-1 d=-1 />
+			<ClassQueue t=i r=W i=-1 d=-1 />
+			<DSCPMark t=i r=W i=-2 d=-1 />
+			<EthernetPriorityMark t=i r=W i=-2 d=-1 />
+		</X_TP_App.{i}>
+		<X_TP_Interface.{i} t=o r=P s=QOS_INTF_OBJ m=2 >
+			<QueueNumberOfEntries t=u r=W i=0 a=8 d=0 />
+			<InterfaceKey t=u r=W />
+			<InterfaceEnable t=b r=W d=0 />
+			<InterfaceName t=s r=W />
+			<SchArgType t=uc r=W d=1 />
+			<SchedulerAlgorithm t=uc r=W d=1 />
+			<QoSMode t=uc r=W i=0 d=0 />
+			<LinkType t=b r=W d=1 />
+			<TotalBandwidth t=u r=W i=0 d=0 />
+			<DscpMarkEnable t=b r=W d=1 />
+			<EthernetPriorityMarkEnable t=b r=W d=1 />
+			<Queue.{i} t=o r=P s=QOS_QUEUE_OBJ m=16 >
+				<QueueKey t=u r=W />
+				<QueueEnable t=b r=W d=0 />
+				<QueueName t=s r=W />
+				<QueueWeight t=uc r=W i=0 a=100 d=0 />
+				<ForceWeightEnable t=b r=W d=0 />
+				<QueuePrecedence t=uc r=W i=1 a=8 d=1 />
+				<QueueBufferLength t=u r=W />
+			</Queue.{i}>
+		</X_TP_Interface.{i}>
+	</QueueManagement>
+	<X_TP_TrafficControl t=o r=P s=TC_OBJ h=1 >
+		<TCRuleNumberOfEntries t=u r=W i=0 a=16 d=0 h=1 />
+		<Enable t=uc r=W d=0 h=1 />
+		<LinkType t=b r=W d=0 h=1 />
+		<UpTotalBW t=u r=W i=0 h=1 />
+		<DownTotalBW t=u r=W i=0 h=1 />
+		<UpTCEnable t=b r=W d=0 p=38 h=1 />
+		<DownTCEnable t=b r=W d=0 p=38 h=1 />
+		<QoSSubModule t=b r=R d=1 p=38 h=1 />
+		<IptvEnable t=b r=W d=0 h=1 />
+		<IptvUpMinBW t=u r=W d=0 h=1 />
+		<IptvDownMinBW t=u r=W d=0 h=1 />
+		<VoIPEnable t=b r=W d=0 h=1 />
+		<VoIPUpMinBW t=u r=W d=20 nw=1 h=1 />
+		<TCRule.{i} t=o r=P s=TC_RULE_OBJ m=16 h=1 >
+			<Id t=us r=W d=100 h=1 />
+			<Enable t=b r=W d=1 h=1 />
+			<StartIP t=u r=W d=0 h=1 />
+			<EndIP t=u r=W d=0 h=1 />
+			<StartPort t=us r=W i=0 a=65535 d=0 h=1 />
+			<EndPort t=us r=W i=0 a=65535 d=0 h=1 />
+			<Protocol t=uc r=W h=1 />
+			<Precedence t=uc r=W d=7 h=1 />
+			<UpMinBW t=u r=W d=0 h=1 />
+			<UpMaxBW t=u r=W d=0 h=1 />
+			<DownMinBW t=u r=W d=0 h=1 />
+			<DownMaxBW t=u r=W d=0 h=1 />
+			<IfMark t=u r=R h=1 />
+			<IfName t=s r=R l=16 d=no_interface h=1 />
+			<RuleType t=u r=W d=0 h=1 />
+			<Flag t=b r=W d=0 nw=1 h=1 />
+		</TCRule.{i}>
+	</X_TP_TrafficControl>
+	<X_TP_Iqos t=o r=P s=IQOS_OBJ p=76 h=1 >
+		<Enable t=b r=W d=0 h=1 />
+		<LinkType t=b r=W d=1 h=1 />
+		<UpUnit t=uc r=W d=1 h=1 />
+		<DownUnit t=uc r=W d=1 h=1 />
+		<UpTotalBW t=u r=W i=1 h=1 />
+		<DownTotalBW t=u r=W i=1 h=1 />
+		<IptvEnable t=b r=W d=0 h=1 />
+		<IptvClass t=uc r=W d=4 h=1 />
+		<GuestEnable t=b r=W d=0 h=1 />
+		<GuestClass t=uc r=W d=2 h=1 />
+		<VoIPEnable t=b r=W d=0 h=1 />
+		<VoIPUpMinBW t=u r=W d=20 h=1 />
+		<High t=uc r=W i=15 a=100 d=60 h=1 />
+		<Middle t=uc r=W i=10 a=100 d=30 h=1 />
+		<Low t=uc r=W i=5 a=100 d=10 h=1 />
+		<Version t=s r=W l=16 d=1.5.0 h=1 />
+		<DbLen t=u r=W d=0 h=1 />
+		<IqosConf.{i} t=o r=P s=IQOS_CONF_OBJ m=48 h=1 >
+			<Id t=uc r=W i=0 a=48 d=0 h=1 />
+			<TcpPort t=us r=W d=0 h=1 />
+			<UdpPort t=us r=W d=0 h=1 />
+			<Type t=uc r=W h=1 />
+			<AppName t=s r=W l=33 h=1 />
+			<AppId t=u r=W h=1 />
+		</IqosConf.{i}>
+		<IqosDB t=o r=P s=IQOS_DB_OBJ h=1 >
+			<DatabaseBin t=s r=W l=3000 h=1 />
+		</IqosDB>
+		<IqosRule.{i} t=o r=P s=IQOS_RULE_OBJ m=16 h=1 >
+			<SrcPort t=us r=W d=0 h=1 />
+			<EndPort t=us r=W d=0 h=1 />
+			<MacAddress t=s r=W l=18 h=1 />
+			<Class_ t=uc r=W h=1 />
+			<Type t=uc r=W h=1 />
+			<ConfId t=uc r=W i=0 a=48 h=1 />
+			<AppName t=s r=W l=33 h=1 />
+			<AppId t=u r=W h=1 />
+		</IqosRule.{i}>
+	</X_TP_Iqos>
+	<X_TP_AlgCfg t=o r=P s=ALG_CFG_OBJ h=1 >
+		<PptpAlg t=b r=W d=1 h=1 />
+		<L2tpAlg t=b r=W d=1 h=1 />
+		<IpSecAlg t=b r=W d=1 h=1 />
+		<FtpAlg t=b r=W d=1 h=1 />
+		<TftpAlg t=b r=W d=1 h=1 />
+		<H323Alg t=b r=W d=1 p=33 h=1 />
+		<SipAlg t=b r=W d=1 p=34 h=1 />
+		<RtspAlg t=b r=W d=1 h=1 />
+		<Hw_nat_enable t=b r=W d=1 h=1 />
+	</X_TP_AlgCfg>
+	<X_TP_IPTV t=o r=P s=IPTV_OBJ p=17 h=1 >
+		<X_TP_IPTVISP t=u r=W d=0 h=1 />
+		<DslIptvCfg t=o r=P s=DSL_IPTV_CFG_OBJ h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<LastEnabled t=b r=W d=0 p=31 h=1 />
+			<LinkCfgCreated t=b r=R d=0 p=84 h=1 />
+			<FirstInit t=b r=W d=1 h=1 />
+			<IptvLanPort t=us r=W d=0 h=1 />
+			<IptvVPI t=u r=W i=0 a=255 d=0 h=1 />
+			<IptvVCI t=us r=W i=1 a=65535 d=0 h=1 />
+			<IptvLinkType t=us r=W p=54 h=1 />
+			<IptvVLANEnabled t=b r=W d=0 p=54 h=1 />
+			<IptvVLANID t=i r=W d=0 p=54 h=1 />
+			<IptvVLANPriority t=i r=W i=0 a=7 d=0 p=54 h=1 />
+			<X_TP_8021QEnabled t=b r=W d=0 p=57 h=1 />
+			<X_TP_VlanID t=i r=W i=0 a=4094 d=0 p=57 h=1 />
+			<X_TP_VlanPr t=i r=W i=0 a=7 d=0 p=57 h=1 />
+			<ConnectionType t=s r=W l=11 A=iptvPossibleConnectionTypesValues p=84 h=1 />
+			<MerEnabled t=b r=W d=0 p=84 h=1 />
+			<Username t=s r=W l=256 p=84 h=1 />
+			<Password t=s r=W l=256 p=84 h=1 />
+			<L2IfName t=s r=W l=16 p=84 h=1 />
+			<IspIndex t=i r=W p=84 h=1 />
+		</DslIptvCfg>
+		<EthIptvCfg t=o r=P s=ETH_IPTV_CFG_OBJ p=58 h=1 >
+			<Enable t=b r=W d=0 h=1 />
+			<LastEnabled t=b r=W d=0 p=31 h=1 />
+			<LinkCfgCreated t=b r=R d=0 p=84 h=1 />
+			<FirstInit t=b r=W d=1 h=1 />
+			<IptvLanPort t=us r=W d=0 h=1 />
+			<EnableVlanTag t=b r=W d=0 p=83 h=1 />
+			<VlanTag t=i r=W i=-1 a=4094 d=-1 p=83 h=1 />
+			<IspIndex t=i r=W p=84 h=1 />
+			<L2IfName t=s r=R l=16 p=84 h=1 />
+			<ConnectionType t=s r=W l=11 A=iptvPossibleConnectionTypesValues p=84 h=1 />
+			<Priority t=i r=W i=0 a=7 d=0 p=83 h=1 />
+			<MerEnabled t=b r=W d=0 p=84 h=1 />
+			<Username t=s r=W l=256 p=84 h=1 />
+			<Password t=s r=W l=256 p=84 h=1 />
+		</EthIptvCfg>
+	</X_TP_IPTV>
+	<X_TP_Firewall t=o r=P s=FIREWALL_OBJ h=1 >
+		<Enable t=b r=W d=0 h=1 />
+		<DefaultAction t=uc r=W h=1 />
+		<FirewallMode t=uc r=W d=2 h=1 />
+		<EnalbeParentCtrl t=b r=W d=0 h=1 />
+		<ParentCtrlMode t=uc r=W d=2 h=1 />
+		<EnableUrlFilter t=b r=W d=1 h=1 />
+		<__timerLock t=b r=W d=0 h=1 />
+		<EnableSpiFirewall t=b r=W d=1 h=1 />
+		<EnablePortFiltering t=b r=W d=0 h=1 />
+		<InternalHost.{i} t=o r=PC s=INTERNAL_HOST_OBJ m=128 h=1 >
+			<RefCnt t=uc r=R d=0 h=1 />
+			<Type t=uc r=W d=0 h=1 />
+			<EntryName t=s r=W l=64 h=1 />
+			<IsParentCtrl t=uc r=W h=1 />
+			<AccessMode t=uc r=R d=2 h=1 />
+			<Mac t=s r=W l=18 h=1 />
+			<IPStart t=u r=W h=1 />
+			<IPEnd t=u r=W h=1 />
+			<PortStart t=us r=W h=1 />
+			<PortEnd t=us r=W h=1 />
+		</InternalHost.{i}>
+		<ExternalHost.{i} t=o r=PC s=EXTERNAL_HOST_OBJ m=34 h=1 >
+			<RefCnt t=uc r=R d=0 h=1 />
+			<Type t=uc r=W d=0 h=1 />
+			<EntryName t=s r=W l=64 h=1 />
+			<IsParentCtrl t=uc r=W h=1 />
+			<AccessMode t=uc r=R d=2 h=1 />
+			<AddUrl t=b r=W nw=1 h=1 />
+			<UrlIndexs t=s r=R l=201 d=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 h=1 />
+			<TmpUrl t=s r=W l=129 nw=1 h=1 />
+			<IPStart t=u r=W h=1 />
+			<IPEnd t=u r=W h=1 />
+			<PortStart t=us r=W h=1 />
+			<PortEnd t=us r=W h=1 />
+			<Mac t=s r=W l=18 h=1 />
+		</ExternalHost.{i}>
+		<TaskSchedule.{i} t=o r=PC s=TASK_SCHEDULE_OBJ m=32 h=1 >
+			<RefCnt t=uc r=R h=1 />
+			<IsParentCtrl t=uc r=W h=1 />
+			<EntryName t=s r=W l=64 h=1 />
+			<MonAm t=u r=W h=1 />
+			<MonPm t=u r=W h=1 />
+			<TueAm t=u r=W h=1 />
+			<TuePm t=u r=W h=1 />
+			<WedAm t=u r=W h=1 />
+			<WedPm t=u r=W h=1 />
+			<ThuAm t=u r=W h=1 />
+			<ThuPm t=u r=W h=1 />
+			<FriAm t=u r=W h=1 />
+			<FriPm t=u r=W h=1 />
+			<SatAm t=u r=W h=1 />
+			<SatPm t=u r=W h=1 />
+			<SunAm t=u r=W h=1 />
+			<SunPm t=u r=W h=1 />
+		</TaskSchedule.{i}>
+		<Rule.{i} t=o r=PC s=RULE_OBJ m=128 h=1 >
+			<Enable t=b r=W h=1 />
+			<Action t=uc r=W h=1 />
+			<RuleName t=s r=W l=64 h=1 />
+			<Description t=s r=W l=16 h=1 />
+			<IsParentCtrl t=uc r=W h=1 />
+			<Direction t=uc r=W h=1 />
+			<ServiceType t=u r=W d=1 h=1 />
+			<Protocol t=uc r=W h=1 />
+			<SetAlready t=b r=R d=0 nw=1 h=1 />
+			<InternalHostRef t=s r=W l=64 h=1 />
+			<ExternalHostRef t=s r=W l=64 h=1 />
+			<ScheduleRef t=s r=W l=64 h=1 />
+		</Rule.{i}>
+		<UrlList t=o r=P s=URL_LIST_OBJ h=1 >
+			<UrlCfg.{i} t=o r=P s=URL_CFG_OBJ m=200 h=1 >
+				<RefCnt t=uc r=R h=1 />
+				<UrlAddr t=s r=R l=129 h=1 />
+			</UrlCfg.{i}>
+		</UrlList>
+	</X_TP_Firewall>
+	<X_TP_IPv6Firewall t=o r=P s=IP6_FIREWALL_OBJ p=28 h=1 >
+		<Enable t=b r=W d=0 h=1 />
+		<DefaultAction t=uc r=W h=1 />
+		<EnableIpv6SpiFirewall t=b r=W d=1 h=1 />
+		<InternalHost.{i} t=o r=PC s=IP6_INTERNAL_HOST_OBJ m=20 h=1 >
+			<RefCnt t=uc r=R d=0 h=1 />
+			<Type t=uc r=W d=0 h=1 />
+			<EntryName t=s r=W l=16 h=1 />
+			<IPv6Address t=s r=W l=40 h=1 />
+			<IPv6PrefixLength t=u r=W h=1 />
+			<PortStart t=us r=W h=1 />
+			<PortEnd t=us r=W h=1 />
+		</InternalHost.{i}>
+		<ExternalHost.{i} t=o r=PC s=IP6_EXTERNAL_HOST_OBJ m=17 h=1 >
+			<RefCnt t=uc r=R d=0 h=1 />
+			<Type t=uc r=W d=0 h=1 />
+			<EntryName t=s r=W l=16 h=1 />
+			<IPv6Address t=s r=W l=40 h=1 />
+			<IPv6PrefixLength t=u r=W h=1 />
+			<PortStart t=us r=W h=1 />
+			<PortEnd t=us r=W h=1 />
+		</ExternalHost.{i}>
+		<TaskSchedule.{i} t=o r=PC s=IP6_TASK_SCHEDULE_OBJ m=9 h=1 >
+			<RefCnt t=uc r=R h=1 />
+			<EntryName t=s r=W l=16 h=1 />
+			<MonAm t=u r=W h=1 />
+			<MonPm t=u r=W h=1 />
+			<TueAm t=u r=W h=1 />
+			<TuePm t=u r=W h=1 />
+			<WedAm t=u r=W h=1 />
+			<WedPm t=u r=W h=1 />
+			<ThuAm t=u r=W h=1 />
+			<ThuPm t=u r=W h=1 />
+			<FriAm t=u r=W h=1 />
+			<FriPm t=u r=W h=1 />
+			<SatAm t=u r=W h=1 />
+			<SatPm t=u r=W h=1 />
+			<SunAm t=u r=W h=1 />
+			<SunPm t=u r=W h=1 />
+		</TaskSchedule.{i}>
+		<Rule.{i} t=o r=PC s=IP6_RULE_OBJ m=36 h=1 >
+			<Enable t=b r=W h=1 />
+			<Action t=uc r=W h=1 />
+			<RuleName t=s r=W l=16 h=1 />
+			<Direction t=uc r=W h=1 />
+			<Protocol t=uc r=W h=1 />
+			<SetAlready t=b r=R d=0 nw=1 h=1 />
+			<InternalHostRef t=s r=W l=16 h=1 />
+			<ExternalHostRef t=s r=W l=16 h=1 />
+			<ScheduleRef t=s r=W l=16 h=1 />
+		</Rule.{i}>
+	</X_TP_IPv6Firewall>
+	<X_TP_IPv6Tunnel t=o r=P s=IP6_TUNNEL_OBJ p=28 h=1 >
+		<Mechanism t=u r=W h=1 />
+		<AssociatedWanIfName t=s r=W l=16 h=1 />
+		<Enabled t=b r=W h=1 />
+		<LocalAddress t=s r=W l=40 h=1 />
+		<AssociatedLanIfName t=s r=W l=16 h=1 />
+		<DSLite t=o r=P s=DSLITE_OBJ h=1 >
+			<Enabled t=b r=W d=0 h=1 />
+			<Dynamic t=b r=W d=0 h=1 />
+			<RemoteIPv6Address t=s r=W l=40 h=1 />
+		</DSLite>
+		<Sit6RD t=o r=P s=SIT_6RD_OBJ h=1 >
+			<Enabled t=b r=W d=0 h=1 />
+			<Dynamic t=b r=W d=0 h=1 />
+			<IPv4MaskLen t=u r=W h=1 />
+			<Prefix t=s r=W l=40 h=1 />
+			<PrefixLen t=u r=W h=1 />
+			<BorderRelayIPv4Address t=s r=W l=16 h=1 />
+		</Sit6RD>
+	</X_TP_IPv6Tunnel>
+	<Services t=o r=P s=SERVICES_OBJ >
+		<VoiceService.{i} t=o r=P s=VOICE_OBJ m=1 p=2 >
+			<__isVoIPOnLanSide t=b r=W d=0 h=1 />
+			<__isVoIPOnAnyWan t=b r=W d=1 h=1 />
+			<__VoIPWanIfName t=s r=R l=128 h=1 />
+			<VoiceProfileNumberOfEntries t=u r=R />
+			<X_TP_BoundIfName t=s r=W d=Any_WAN />
+			<X_TP_BoundIpAddr t=s r=W d=0.0.0.0 />
+			<X_TP_BoundIfLinkType t=s r=W l=16 />
+			<X_TP_BoundIfDnsServer t=s r=W l=128 />
+			<X_TP_LoggingLevel t=s r=W l=7 A=LoggingLevelValues d=Error />
+			<X_TP_LoggingDestination t=s r=W l=15 A=LoggingDestinationValues d="Standard Error" />
+			<X_TP_VoiceProcessSts t=o r=P s=XTP_VOICE_PROCESS_STS_OBJ nw=1 >
+				<CmConnectCount t=i r=W nw=1 />
+				<UsbVoiceUsingRecordedFile t=b r=W nw=1 />
+			</X_TP_VoiceProcessSts>
+			<X_TP_VoiceProcess t=o r=P s=XTP_VOICE_PROCESS_OBJ m=1 >
+				<__sendMsgFlag t=u r=W d=0 />
+				<__sendMsgTypeFlag t=u r=W d=0 />
+			</X_TP_VoiceProcess>
+			<Capabilities t=o r=P s=VOICE_CAP_OBJ >
+				<X_TP_SupportPstnGateway t=u r=R d=0 />
+				<X_TP_SupportUsbVM t=b r=R d=1 />
+				<X_TP_FxONum t=u r=R />
+				<X_TP_SupportPstnPolarityReversal t=b r=R />
+				<X_TP_LocaleList t=s r=R l=350 />
+				<X_TP_TransportList t=s r=R l=15 />
+				<MaxProfileCount t=u r=R da=1 />
+				<MaxLineCount t=u r=R da=1 />
+				<MaxSessionsPerLine t=u r=R da=1 />
+				<MaxSessionCount t=u r=R da=1 />
+				<SignalingProtocols t=s r=R l=9 A=SignalingProtocolsValues da=1 />
+				<Regions t=s r=R l=256 d=_ da=1 />
+				<RTCP t=b r=R da=1 />
+				<SRTP t=b r=R da=1 />
+				<RTPRedundancy t=b r=R da=1 />
+				<DSCPCoupled t=b r=R da=1 />
+				<EthernetTaggingCoupled t=b r=R da=1 />
+				<PSTNSoftSwitchOver t=b r=R da=1 />
+				<FaxT38 t=b r=R da=1 />
+				<FaxPassThrough t=b r=R da=1 />
+				<ModemPassThrough t=b r=R da=1 />
+				<ToneGeneration t=b r=R da=1 />
+				<RingGeneration t=b r=R da=1 />
+				<PatternBasedRingGeneration t=b r=R da=1 />
+				<DigitMap t=b r=R da=1 />
+				<NumberingPlan t=b r=R da=1 />
+				<ButtonMap t=b r=R da=1 />
+				<VoicePortTests t=b r=R da=1 />
+				<SIP t=o r=P s=VOICE_CAP_SIP_OBJ >
+					<Role t=s r=R l=21 A=RoleValues da=1 />
+					<Extensions t=s r=R l=256 da=1 />
+					<Transports t=s r=R l=20 da=1 />
+					<URISchemes t=s r=R l=256 da=1 />
+					<EventSubscription t=b r=R da=1 />
+					<ResponseMap t=b r=R da=1 />
+					<TLSKeyExchangeProtocols t=s r=R l=4 A=TLSKeyExchangeProtocolsValues da=1 />
+				</SIP>
+				<MGCP t=o r=P s=VOICE_CAP_MGCP_OBJ >
+					<Extensions t=s r=R l=256 da=1 />
+				</MGCP>
+				<Codecs.{i} t=o r=P s=VOICE_CAP_CODECS_OBJ m=10 >
+					<EntryID t=u r=R i=1 a=4294967295 da=1 />
+					<Codec t=s r=R l=64 da=1 />
+					<BitRate t=u r=R da=1 />
+					<PacketizationPeriod t=s r=R l=64 da=1 />
+					<SilenceSuppression t=b r=R da=1 />
+				</Codecs.{i}>
+			</Capabilities>
+			<VoiceProfile.{i} t=o r=PC s=VOICE_PROF_OBJ m=1 >
+				<Enable t=s r=W l=10 A=enable3qValues />
+				<Reset t=b r=W />
+				<NumberOfLines t=u r=R d=0 />
+				<Name t=s r=W l=64 />
+				<SignalingProtocol t=s r=W l=64 />
+				<MaxSessions t=u r=W d=0 />
+				<DTMFMethod t=s r=W l=8 A=DTMFMethodValues d=RFC2833 />
+				<DTMFMethodG711 t=s r=W l=8 A=DTMFMethodG711Values />
+				<X_TP_HookFlashMethod t=s r=W l=8 A=HookFlashMethodValues d=None />
+				<Region t=s r=W l=4 d=US />
+				<DigitMap t=s r=W l=256 />
+				<DigitMapEnable t=b r=W d=1 />
+				<STUNEnable t=b r=W d=0 />
+				<STUNServer t=s r=W l=256 />
+				<X_TP_STUNServerPort t=u r=W d=0 />
+				<X_TP_LogServer t=s r=W l=64 />
+				<X_TP_LogServerPort t=u r=W d=0 />
+				<ServiceProviderInfo t=o r=P s=VOICE_PROF_PROVIDER_OBJ >
+					<Name t=s r=W l=256 />
+				</ServiceProviderInfo>
+				<SIP t=o r=P s=VOICE_PROF_SIP_OBJ >
+					<ProxyServer t=s r=W l=256 />
+					<ProxyServerPort t=u r=W i=0 a=65535 d=5060 />
+					<ProxyServerTransport t=s r=W l=5 A=voiceTransportValues d=UDP />
+					<RegistrarServer t=s r=W l=256 />
+					<RegistrarServerPort t=u r=W i=0 a=65535 d=5060 />
+					<RegistrarServerTransport t=s r=W l=5 A=voiceTransportValues d=UDP />
+					<X_TP_ToTagMatching t=b r=W d=1 />
+					<X_TP_MusicServer t=s r=W l=64 />
+					<X_TP_MusicServerPort t=u r=W d=0 />
+					<UserAgentDomain t=s r=W l=256 />
+					<UserAgentPort t=u r=W i=0 a=65535 d=0 />
+					<UserAgentTransport t=s r=W l=5 A=voiceTransportValues d=UDP />
+					<OutboundProxy t=s r=W l=256 />
+					<OutboundProxyPort t=u r=W i=0 a=65535 />
+					<Organization t=s r=W l=256 />
+					<RegistrationPeriod t=u r=W i=0 a=4294967295 />
+					<TimerT1 t=u r=W i=1 a=4294967295 d=500 />
+					<TimerT2 t=u r=W i=1 a=4294967295 d=4000 />
+					<RegisterExpires t=u r=W i=1 a=4294967295 />
+					<RegisterRetryInterval t=u r=W i=1 a=4294967295 />
+					<DSCPMark t=u r=W i=0 a=63 d=0 />
+					<VLANIDMark t=i r=W i=-1 a=2147483647 d=-1 />
+					<EthernetPriorityMark t=i r=W i=-1 a=2147483647 d=-1 />
+					<EventSubscribe.{i} t=o r=PC s=VOICE_PROF_SIP_EVTSUBSCRIBE_OBJ >
+						<Event t=s r=W l=32 />
+						<Notifier t=s r=W l=256 />
+						<NotifierPort t=u r=W i=0 a=65535 d=0 />
+						<NotifierTransport t=s r=W l=5 A=voiceTransportValues d=UDP />
+					</EventSubscribe.{i}>
+				</SIP>
+				<MGCP t=o r=P s=VOICE_PROF_MGCP_OBJ >
+					<CallAgent1 t=s r=W l=256 />
+					<CallAgentPort2 t=u r=W i=0 a=65535 d=0 />
+					<User t=s r=W l=64 />
+				</MGCP>
+				<RTP t=o r=P s=VOICE_PROF_RTP_OBJ >
+					<LocalPortMin t=u r=W i=0 a=65535 d=0 />
+					<LocalPortMax t=u r=W i=0 a=65535 d=0 />
+					<DSCPMark t=u r=W i=0 a=63 />
+					<TelephoneEventPayloadType t=u r=W i=0 a=128 />
+				</RTP>
+				<FaxT38 t=o r=P s=VOICE_PROF_FAXT38_OBJ >
+					<Enable t=b r=W d=0 />
+					<BitRate t=u r=W />
+					<HighSpeedPacketRate t=u r=W />
+				</FaxT38>
+				<X_TP_UsbVoiceMail t=o r=P s=XTP_USB_VOICEMAIL_PUBLICCFG_OBJ p=5 >
+					<UsbStatus t=uc r=W />
+					<UsbDevCapacity t=u r=W />
+					<UsbVoiceNotify t=b r=W d=1 />
+					<UsbVoiceNotifyExist t=b r=W />
+					<UsbCustomNotifyExist t=b r=W />
+					<UsbVoiceGlobalWav t=b r=W d=0 />
+					<UsbVoiceDeleteExpired t=b r=W d=1 />
+					<UsbVoiceExpiredDays t=u r=W i=7 a=15 d=7 />
+					<UsbVoiceRecordDuration t=u r=W i=20 a=120 d=60 />
+					<UsbVoiceMailCapacityAvail t=u r=W />
+					<UsbVoiceMailCapacity t=u r=W d=128 />
+				</X_TP_UsbVoiceMail>
+				<X_TP_MultiIsp.{i} t=o r=PC s=XTP_MULTI_ISP_OBJ m=8 >
+					<MultiIspName t=s r=W l=32 />
+					<MultiStatus t=u r=W />
+					<MultiIndexing t=u r=W i=0 a=15 />
+					<MultiProxyServerPort t=u r=W i=0 a=65535 d=5060 />
+					<MultiRegistrarServerPort t=u r=W i=0 a=65535 d=5060 />
+					<MultiRegisterViaOB t=i r=W d=2 />
+					<MultiOutboundProxyPort t=u r=W i=0 a=65535 d=5060 />
+					<MultiProfileName t=s r=W l=35 />
+					<MultiAccountEnable t=u r=W d=0 />
+					<MultiAccountPrior t=u r=W d=4 />
+					<MultiAccountInRoute t=u r=W d=0 />
+					<MultiAccountMwi t=u r=W d=0 />
+					<MultiProxyServer t=s r=W l=44 />
+					<MultiRegistrarServer t=s r=W l=44 />
+					<MultiOutboundProxy t=s r=W l=44 />
+					<MultiDomain t=s r=W l=65 />
+					<MultiVoipPrefixNum t=s r=W l=16 />
+					<MultiVoipNum t=s r=W l=33 />
+					<MultiExtension t=s r=W l=33 />
+					<MultiDisplayName t=s r=W l=256 />
+					<MultiAuthUserName t=s r=W l=128 />
+					<MultiAuthPassword t=s r=W l=128 tp=1 cp=1 />
+					<MultiAnonymousCallEnable t=u r=W d=0 />
+					<Codec t=o r=PC s=XTP_MULTIISP_CODEC_OBJ >
+						<List.{i} t=o r=P s=XTP_MULTIISP_CODEC_LIST_OBJ m=64 >
+							<MultiEntryID t=u r=R i=1 a=4294967295 />
+							<MultiCodec t=s r=R l=20 />
+							<MultiBitRate t=u r=R />
+							<MultiPacketizationPeriod t=s r=W l=64 d=20 />
+							<MultiSilenceSuppression t=b r=W d=1 />
+							<MultiEnable t=b r=W d=1 />
+							<MultiPriority t=u r=W i=0 a=4294967295 d=0 />
+						</List.{i}>
+					</Codec>
+					<IncomingCall.{i} t=o r=PC s=XTP_MULTIISP_INCOMING_CALL_OBJ m=40 >
+						<Missed t=b r=W d=1 />
+						<UnRead t=b r=W d=0 />
+						<CallerName t=s r=W l=32 />
+						<CallerNumber t=s r=W l=32 />
+						<Internal t=b r=W d=0 />
+						<Year t=uc r=W />
+						<Month t=uc r=W />
+						<Day t=uc r=W />
+						<Hour t=uc r=W />
+						<Minutes t=uc r=W />
+						<Seconds t=uc r=W />
+						<TimeZone t=uc r=W />
+					</IncomingCall.{i}>
+					<OutgoingCall.{i} t=o r=PC s=XTP_MULTIISP_OUTGOING_CALL_OBJ m=20 >
+						<CalledName t=s r=W l=32 />
+						<CalledNumber t=s r=W l=32 />
+						<Year t=uc r=W />
+						<Month t=uc r=W />
+						<Day t=uc r=W />
+						<Hour t=uc r=W />
+						<Minutes t=uc r=W />
+						<Seconds t=uc r=W />
+						<TimeZone t=uc r=W />
+					</OutgoingCall.{i}>
+				</X_TP_MultiIsp.{i}>
+				<Line.{i} t=o r=PC s=VOICE_PROF_LINE_OBJ m=16 >
+					<Enable t=s r=W l=10 A=enable3qValues d=Enabled />
+					<X_TP_PhoneType t=s r=W l=9 A=phoneTypeValues d=FXS />
+					<X_TP_PhoneName t=s r=W l=16 />
+					<X_TP_InternalNumber t=s r=W l=16 />
+					<X_TP_Busy t=b r=W d=0 />
+					<X_TP_NewRegister t=b r=W d=0 p=56 />
+					<DirectoryNumber t=s r=W l=32 />
+					<Status t=s r=R l=14 A=voiceStatusValues d=Disabled />
+					<CallState t=s r=R l=14 A=CallStateValues d=Idle da=1 />
+					<PhyReferenceList t=s r=W l=32 />
+					<SIP t=o r=P s=VOICE_PROF_LINE_SIP_OBJ >
+						<AuthUserName t=s r=W l=128 />
+						<AuthPassword t=s r=W l=128 tp=1 cp=1 />
+						<URI t=s r=W l=389 />
+					</SIP>
+					<X_TP_DectHandsetInfo t=o r=P s=XTP_DECT_HANDSET_INFO_OBJ p=56 >
+						<Status t=uc r=W d=0 />
+						<Wideband t=b r=W d=0 />
+						<IPUI t=s r=W l=9 />
+						<TPUI t=s r=W l=5 />
+						<AuthKey t=s r=W l=25 />
+						<CipherKey t=s r=W l=13 />
+						<ServiceClass t=uc r=W />
+						<ModelId t=uc r=W />
+						<TermCap t=u r=W />
+					</X_TP_DectHandsetInfo>
+					<X_TP_VoiceAppInfo t=o r=P s=XTP_VOICEAPP_INFO_OBJ p=62 >
+						<Status t=uc r=W d=0 />
+						<Identification t=u r=W d=0 />
+					</X_TP_VoiceAppInfo>
+					<X_TP_UsbVoiceMail t=o r=P s=VOICE_PROF_LINE_XTPUSBVM_OBJ p=5 >
+						<UsbCustomNotify t=b r=W d=1 />
+						<UsbSelectNotify t=b r=W d=0 />
+						<UsbVoiceMailPinNum t=s r=W l=16 d=123456 tp=1 cp=1 />
+					</X_TP_UsbVoiceMail>
+					<CallingFeatures t=o r=P s=VOICE_PROF_LINE_CALLFEAT_OBJ >
+						<X_TP_OutgoingCallprior t=u r=W d=3 />
+						<X_TP_OutgoingCallpriorAccount t=u r=W d=0xffffffff />
+						<X_TP_OutgoingCallEndWithSharp t=u r=W d=1 />
+						<X_TP_LineMwiEnable t=b r=W d=0 />
+						<CallerIDEnable t=b r=W />
+						<CallerIDName t=s r=W l=256 />
+						<CallWaitingEnable t=b r=W />
+						<X_TP_CallWaitingStart t=b r=W d=0 />
+						<CallWaitingStatus t=s r=R l=20 A=CallWaitingStatusValues />
+						<MaxSessions t=u r=W />
+						<CallForwardUnconditionalEnable t=b r=W />
+						<X_TP_CallForwardUnconditionalStart t=b r=W d=0 />
+						<CallForwardUnconditionalNumber t=s r=W l=36 />
+						<CallForwardOnBusyEnable t=b r=W />
+						<X_TP_CallForwardOnBusyStart t=b r=W d=0 />
+						<CallForwardOnBusyNumber t=s r=W l=36 />
+						<CallForwardOnNoAnswerEnable t=b r=W />
+						<X_TP_CallForwardOnNoAnswerStart t=b r=W d=0 />
+						<CallForwardOnNoAnswerNumber t=s r=W l=36 />
+						<X_TP_CallForwardOnNoAnswerThresholdTime t=i r=W d=18 />
+						<X_TP_UsbVoiceEnable t=u r=W d=0 />
+						<X_TP_UsbAllowRemoteAccess t=u r=W d=1 />
+						<CallTransferEnable t=b r=W />
+						<MWIEnable t=b r=W />
+						<AnonymousCallBlockEnable t=b r=W />
+						<X_TP_AnonymousCallBlockStart t=b r=W d=0 />
+						<AnonymousCallEnable t=b r=W />
+						<X_TP_AnonymousCallStart t=b r=W d=0 />
+						<DoNotDisturbEnable t=b r=W />
+						<X_TP_DoNotDisturbStart t=b r=W d=0 />
+						<CallReturnEnable t=b r=W />
+						<RepeatDialEnable t=b r=W />
+						<X_TP_CAllCompletionOnBusyEnable t=b r=W d=0 />
+						<X_TP_SpeedDialEnable t=b r=W d=0 />
+						<X_TP_WarmLineEnable t=b r=W d=0 />
+						<X_TP_WarmLineStart t=b r=W d=0 />
+						<X_TP_WarmLineNumber t=s r=W l=180 />
+						<X_TP_WarmLineTimer t=u r=W d=3 />
+						<X_TP_CallBarringEnable t=b r=W d=0 />
+						<X_TP_CallBarringMode t=s r=W l=32 d=0 />
+						<X_TP_CallBarringDigitMap t=s r=W l=256 />
+						<X_TP_NetworkPrivacyEnable t=b r=W d=0 />
+						<X_TP_NetworkPrivacyStart t=b r=W d=0 />
+						<X_TP_VMWIEnable t=b r=W d=1 />
+					</CallingFeatures>
+					<VoiceProcessing t=o r=P s=VOICE_PROF_LINE_PROC_OBJ >
+						<TransmitGain t=i r=W />
+						<ReceiveGain t=i r=W />
+					</VoiceProcessing>
+					<Codec t=o r=P s=VOICE_PROF_LINE_CODEC_OBJ >
+						<List.{i} t=o r=P s=VOICE_PROF_LINE_CODEC_LIST_OBJ m=96 >
+							<EntryID t=u r=R i=1 a=4294967295 />
+							<Codec t=s r=R l=64 />
+							<BitRate t=u r=R />
+							<PacketizationPeriod t=s r=W l=64 />
+							<SilenceSuppression t=b r=W d=1 />
+							<Enable t=b r=W d=1 />
+							<Priority t=u r=W i=0 a=4294967295 d=0 />
+						</List.{i}>
+					</Codec>
+					<Stats t=o r=P s=VOICE_PROF_LINE_STATS_OBJ >
+						<ResetStatistics t=b r=W />
+						<PacketsSent t=u r=R da=1 />
+						<PacketsReceived t=u r=R da=1 />
+						<BytesSent t=u r=R da=1 />
+						<BytesReceived t=u r=R da=1 />
+						<PacketsLost t=u r=R da=1 />
+						<IncomingCallsReceived t=u r=R da=1 />
+						<IncomingCallsAnswered t=u r=R da=1 />
+						<IncomingCallsConnected t=u r=R da=1 />
+						<IncomingCallsFailed t=u r=R da=1 />
+						<OutgoingCallsAttempted t=u r=R da=1 />
+						<OutgoingCallsAnswered t=u r=R da=1 />
+						<OutgoingCallsConnected t=u r=R da=1 />
+						<OutgoingCallsFailed t=u r=R da=1 />
+					</Stats>
+				</Line.{i}>
+				<X_TP_FeatureCode.{i} t=o r=P s=XTP_FEATURE_CODE_OBJ m=40 >
+					<ProvId t=u r=W />
+					<Number t=s r=W l=8 />
+				</X_TP_FeatureCode.{i}>
+			</VoiceProfile.{i}>
+			<PhyInterface.{i} t=o r=P s=VOICE_PHY_INTERFACE_OBJ m=4 h=1 >
+				<PhyPort t=s r=R l=2 h=1 />
+				<InterfaceID t=u r=R i=0 a=4294967295 h=1 />
+				<Description t=s r=R l=32 h=1 />
+				<Tests t=o r=P s=VOICE_PHYINTERFACE_TESTS_OBJ h=1 >
+					<TestState t=s r=W l=23 A=voiceTestStateValues h=1 />
+					<TestSelector t=s r=W l=22 A=voiceTestSelectorValues h=1 />
+					<PhoneConnectivity t=b r=R h=1 />
+				</Tests>
+			</PhyInterface.{i}>
+			<X_TP_MultiIspDialPlan t=o r=P s=XTP_VOICE_MULTI_ISPDIALPLAN_OBJ h=1 >
+				<DialPlanEnable t=b r=W d=1 h=1 />
+				<DialPlanPrefix t=s r=W l=16 d=0 h=1 />
+				<DialPlanDestination t=s r=W l=512 d=SIP-1 h=1 />
+				<DialPlanPSTNEnable t=b r=W d=1 h=1 cp=1 />
+				<DialPlanMaxLen t=u r=W d=7 h=1 />
+				<DialPlanTerminate t=u r=W d=0 h=1 />
+				<DialPlanOperate t=u r=W d=0 h=1 />
+				<DialPlanOperateNumber t=s r=W l=32 d=0 h=1 />
+				<DialPlanInterfaceEnable t=u r=W d=0 h=1 />
+				<DialPlanInterfaceBarring t=u r=R d=0 h=1 />
+			</X_TP_MultiIspDialPlan>
+			<X_TP_PSTN.{i} t=o r=PC s=XTP_VOICE_PSTN_OBJ m=1 >
+				<OutgoingCallDialPlan t=s r=W l=128 d=911|102 />
+				<IncomingCallRoutingMode t=s r=W l=5 A=PstnRoutingRuleValues d=Line />
+				<IncomingCallRoutingDest t=s r=W l=256 d=2 />
+				<IncomingCallRoutingAccount t=u r=W d=0 />
+				<IncomingCallSharpEnd t=u r=W d=1 />
+				<PstnPolarityReversal t=u r=W d=0 />
+			</X_TP_PSTN.{i}>
+			<X_TP_DectBaseStation t=o r=P s=XTP_DECT_BASE_STATION_OBJ p=56 >
+				<Name t=s r=W l=16 />
+				<Enabled t=b r=W d=1 />
+				<Pin t=s r=W l=15 d=0000 />
+				<GreenModeEnabled t=b r=W d=0 />
+				<ECOEnabled t=b r=W d=0 />
+				<SecurityModeEnabled t=b r=W d=1 />
+				<ClockMaster t=b r=W d=1 />
+			</X_TP_DectBaseStation>
+			<X_TP_VoiceAppBaseStation t=o r=P s=XTP_VOICEAPP_BASE_STATION_OBJ p=62 >
+				<Name t=s r=W l=16 />
+				<Enabled t=b r=W d=1 />
+				<Pin t=s r=W l=15 d=0000 />
+				<WanEnabled t=b r=W d=0 />
+			</X_TP_VoiceAppBaseStation>
+			<X_TP_TelephoneContact.{i} t=o r=PC s=XTP_TELE_CONTACT_OBJ m=250 h=1 >
+				<Enable t=b r=W d=1 h=1 />
+				<Internal t=b r=W d=0 h=1 />
+				<FirstName t=s r=W l=32 h=1 />
+				<LastName t=s r=W l=32 h=1 />
+				<Type1 t=u r=W d=1 h=1 />
+				<Number1 t=s r=W l=32 h=1 />
+				<Type2 t=u r=W h=1 />
+				<Number2 t=s r=W l=32 h=1 />
+				<Type3 t=u r=W h=1 />
+				<Number3 t=s r=W l=32 h=1 />
+			</X_TP_TelephoneContact.{i}>
+		</VoiceService.{i}>
+		<StorageService t=o r=P s=STORAGE_SERVICE_OBJ p=21 >
+			<Enable t=b r=R d=1 />
+			<UserAccountNumberOfEntries t=u r=R i=0 a=5 d=0 />
+			<PhysicalMediumNumberOfEntries t=u r=R i=0 a=4 d=0 nw=1 />
+			<LogicalVolumeNumberOfEntries t=u r=R i=0 a=20 d=0 nw=1 />
+			<Ready t=b r=R d=0 nw=1 />
+			<Capabilities t=o r=P s=CAPABLE_OBJ >
+				<FTPCapable t=b r=R d=1 />
+				<SupportedNetworkProtocols t=s r=R l=16 d=SMB />
+				<SupportedFileSystemTypes t=s r=R l=32 d=FAT16,FAT32,NTFS />
+			</Capabilities>
+			<UserAccount.{i} t=o r=P s=USER_ACCOUNT_OBJ m=5 >
+				<Enable t=b r=W d=0 />
+				<Username t=s r=W l=32 />
+				<Password t=s r=W l=32 tp=1 cp=1 />
+				<X_TP_UseLoginAccount t=b r=W d=1 />
+				<X_TP_SupperUser t=b r=R d=0 />
+			</UserAccount.{i}>
+			<X_TP_UsbDevice.{i} t=o r=P s=USB_DEVICE_OBJ m=4 nw=1 >
+				<Name t=s r=R l=32 nw=1 />
+				<Vendor t=s r=R l=64 nw=1 />
+				<Model t=s r=R l=64 nw=1 />
+				<SerialNumber t=s r=R l=64 nw=1 />
+				<Capacity t=u r=R d=0 nw=1 />
+				<Status t=s r=R l=8 d=Standby nw=1 />
+				<DevNum t=s r=R l=20 nw=1 />
+				<Enable t=b r=W d=0 nw=1 />
+				<LogicalVolume.{i} t=o r=P s=LOGICAL_VOLUME_OBJ m=20 nw=1 >
+					<Name t=s r=R l=16 nw=1 />
+					<Uuid t=s r=R l=64 nw=1 />
+					<Label t=s r=R l=8 nw=1 />
+					<Status t=s r=R l=8 d=Offline nw=1 />
+					<Enable t=b r=W d=0 nw=1 />
+					<FileSystem t=s r=R l=8 nw=1 />
+					<Capacity t=s r=R l=16 nw=1 />
+					<UsedSpace t=s r=R l=16 nw=1 />
+					<FreeSpace t=s r=R l=16 nw=1 />
+					<DevNum t=s r=R l=16 nw=1 />
+					<Force t=b r=W d=0 nw=1 />
+				</LogicalVolume.{i}>
+			</X_TP_UsbDevice.{i}>
+			<X_TP_FolderBrowse t=o r=P s=FOLDER_BROWSE_OBJ h=1 >
+				<TargetPath t=s r=W l=128 h=1 />
+				<FolderNode.{i} t=o r=P s=FOLDER_NODE_OBJ u=1 nw=1 h=1 >
+					<FolderName t=s r=R l=128 nw=1 h=1 />
+				</FolderNode.{i}>
+			</X_TP_FolderBrowse>
+			<X_TP_DLNAMediaServer t=o r=P s=DLNA_MEDIA_SERVER_OBJ p=22 >
+				<ServerState t=uc r=W d=1 />
+				<ServerName t=s r=W l=16 />
+				<ShareAll t=i r=W d=1 />
+				<ScanFlag t=uc r=W d=0 />
+				<ScanInterval t=u r=W d=3600 />
+				<DLNA_FOLDER.{i} t=o r=PC s=DLNA_MEDIA_SERVER_FOLDER_OBJ m=10 >
+					<Alias t=s r=W l=32 />
+					<Name t=s r=W l=128 />
+					<VolumeUuid t=s r=W l=64 />
+					<VolumeLabel t=s r=W l=8 />
+					<Enable t=b r=W d=0 />
+					<NeedAuth t=b r=W d=1 />
+					<AllowGuestNetwork t=b r=W d=0 />
+				</DLNA_FOLDER.{i}>
+			</X_TP_DLNAMediaServer>
+			<X_TP_SMBService t=o r=P s=SMB_SERVICE_OBJ p=23 >
+				<Enable t=b r=W d=1 />
+				<ServerName t=s r=W l=16 />
+				<ShareAll t=b r=W d=1 />
+				<Anonymous t=b r=W d=0 />
+				<Modified t=b r=W d=0 nw=1 />
+				<SMB_FOLDER.{i} t=o r=P s=SMB_SERVICE_FOLDER_OBJ m=10 >
+					<Alias t=s r=W l=32 />
+					<Name t=s r=W l=128 />
+					<VolumeUuid t=s r=W l=64 />
+					<VolumeLabel t=s r=W l=8 />
+					<Enable t=b r=W d=0 />
+					<NeedAuth t=b r=W d=1 />
+					<AllowGuestNetwork t=b r=W d=0 />
+					<SMB_USER_ACCESS.{i} t=o r=P s=SMB_USER_ACCESS_OBJ m=50 >
+						<UserId t=u r=W i=1 a=5 d=1 />
+						<Permissions t=u r=W i=0 a=7 d=7 />
+					</SMB_USER_ACCESS.{i}>
+				</SMB_FOLDER.{i}>
+			</X_TP_SMBService>
+			<FTPServer t=o r=P s=FTP_SERVER_OBJ p=24 >
+				<Enable t=b r=W d=1 />
+				<ServerName t=s r=W l=16 />
+				<ShareAll t=b r=W d=1 />
+				<Anonymous t=b r=W d=0 />
+				<PortNumber t=u r=W i=0 a=65535 d=21 />
+				<AccessFromInternet t=b r=W d=0 />
+				<WanIP t=s r=R l=128 nw=1 />
+				<Modified t=b r=W d=0 nw=1 />
+				<FTP_FOLDER.{i} t=o r=P s=FTP_SERVER_FOLDER_OBJ m=10 >
+					<Alias t=s r=W l=32 />
+					<Name t=s r=W l=128 />
+					<VolumeUuid t=s r=W l=64 />
+					<VolumeLabel t=s r=W l=8 />
+					<Enable t=b r=W d=0 />
+					<WritePermission t=u r=W i=0 a=7 d=7 />
+					<NeedAuth t=b r=W d=1 />
+					<AllowGuestNetwork t=b r=W d=0 />
+					<FTP_USER_ACCESS.{i} t=o r=P s=FTP_USER_ACCESS_OBJ m=50 >
+						<UserId t=u r=W i=1 a=5 d=1 />
+						<Permissions t=u r=W i=0 a=7 d=7 />
+					</FTP_USER_ACCESS.{i}>
+				</FTP_FOLDER.{i}>
+			</FTPServer>
+		</StorageService>
+		<X_TP_PrintService t=o r=P s=XTP_PRINT_SERVICE_OBJ p=25 >
+			<Enable t=b r=W d=1 />
+			<ServerName t=s r=W l=64 d="No Printer" nw=1 />
+			<Status t=u r=R nw=1 />
+		</X_TP_PrintService>
+	</Services>
+	<X_TP_VoiceDND t=o r=P s=XTP_VOICE_DND_OBJ p=2 h=1 >
+		<Enable t=b r=W d=0 h=1 />
+		<Type t=u r=W d=0 h=1 />
+		<StartHour t=u r=W i=0 a=23 d=0 h=1 />
+		<StartMinute t=u r=W i=0 a=59 d=0 h=1 />
+		<EndHour t=u r=W i=0 a=23 d=6 h=1 />
+		<EndMinute t=u r=W i=0 a=59 d=0 h=1 />
+	</X_TP_VoiceDND>
+	<X_TP_CallForward t=o r=P s=XTP_CALL_FWD_OBJ p=2 h=1 >
+		<NumberOfEntries t=u r=R d=0 h=1 />
+		<List.{i} t=o r=PC s=XTP_CALL_FWD_LIST_OBJ m=16 h=1 >
+			<Enable t=b r=W d=1 h=1 />
+			<FwdType t=u r=W d=0 h=1 />
+			<MatchType t=u r=W d=0 h=1 />
+			<IncomingSipAcctIdx t=u r=W i=0 a=7 h=1 />
+			<CallerNumber t=s r=W l=33 h=1 />
+			<PhoneIdx t=u r=W i=0 a=23 h=1 />
+			<DestNumber t=s r=W l=41 h=1 />
+		</List.{i}>
+	</X_TP_CallForward>
+	<X_TP_CallThrough t=o r=P s=XTP_CALL_THROUGH_OBJ p=2 h=1 >
+		<Enable t=b r=W d=0 h=1 />
+		<IncomingSipAcctIdx t=u r=W i=0 d=4294967295 h=1 />
+		<OutgoingViaSipAcctIdx t=u r=W i=0 d=4294967295 h=1 />
+		<Pin t=s r=W l=16 d=0000 h=1 cp=1 />
+		<AnyCallAllowedEnable t=b r=W d=0 h=1 />
+		<AllowedCallerCount t=u r=R i=0 a=8 d=0 h=1 />
+		<AllowedCallerNum.{i} t=o r=PC s=XTP_CALLTHROUGH_NUM_OBJ m=8 h=1 >
+			<Number t=s r=W l=33 h=1 />
+		</AllowedCallerNum.{i}>
+	</X_TP_CallThrough>
+	<X_TP_CallFireWallCfg t=o r=P s=XTP_IGD_CALL_FIREWALL_CFG_OBJ p=2 h=1 >
+		<SupportedMaxNumber t=u r=R i=0 a=30 d=30 h=1 />
+		<CallFireWallMode t=u r=W d=0 h=1 />
+		<IncomingBlackList t=s r=W l=550 h=1 />
+		<IncomingWhiteList t=s r=W l=550 h=1 />
+	</X_TP_CallFireWallCfg>
+	<X_TP_SpeedDialCfg t=o r=P s=XTP_IGD_SPEED_DIAL_CFG_OBJ p=2 h=1 >
+		<SupportedMaxNumber t=u r=R i=0 a=30 d=30 h=1 />
+		<NumberPairs t=s r=W l=1200 h=1 />
+	</X_TP_SpeedDialCfg>
+	<X_TP_MultiIspDialPlan t=o r=P s=XTP_IGD_MULTI_ISP_DIAL_PLAN_OBJ p=2 h=1 >
+		<Enable t=s r=W d=False h=1 />
+		<__indexManage t=s r=R l=204 h=1 />
+		<List.{i} t=o r=PC s=XTP_IGD_MULTIISPDP_LIST_OBJ m=75 h=1 >
+			<Type t=uc r=W d=0 h=1 />
+			<Attr t=u r=W d=0 h=1 />
+			<Prefix t=s r=W l=20 h=1 />
+			<Replace t=s r=W l=36 h=1 />
+		</List.{i}>
+	</X_TP_MultiIspDialPlan>
+	<X_TP_CallLogCfg t=o r=P s=XTP_CALLLOGCFG_OBJ p=4 h=1 >
+		<LogHeadPos t=i r=W i=-1 a=32767 d=-1 h=1 />
+		<LogTailPos t=i r=W i=-1 a=32767 d=0 h=1 />
+		<Status t=u r=W d=1 h=1 />
+		<Flags t=u r=W d=0 h=1 />
+	</X_TP_CallLogCfg>
+	<X_TP_SysMode t=o r=P s=SYS_MODE_OBJ p=31 h=1 >
+		<AntennaSel t=u r=W i=0 a=1 d=0 h=1 />
+		<Mode t=s r=W l=7 A=modeArray d=USB_3G h=1 />
+		<Usb3gBackup t=b r=W d=0 p=88 h=1 />
+		<EwanBackup t=b r=W d=0 p=89 h=1 />
+		<DSLL3ForwardingName t=s r=W l=32 d=NO_INTERFACE h=1 />
+		<VDSLL3ForwardingName t=s r=W l=32 d=NO_INTERFACE p=54 h=1 />
+		<ETHL3ForwardingName t=s r=R l=32 d=NO_INTERFACE h=1 />
+		<_3GL3ForwardingName t=s r=R l=32 d=NO_INTERFACE h=1 />
+		<LTEL3ForwardingName t=s r=W l=32 d=NO_INTERFACE h=1 />
+		<DSLL3IPv6ForwardingName t=s r=W l=32 d=NO_INTERFACE p=28 h=1 />
+		<VDSLL3IPv6ForwardingName t=s r=W l=32 d=NO_INTERFACE p=54 h=1 />
+		<ETHL3IPv6ForwardingName t=s r=W l=32 d=NO_INTERFACE p=28 h=1 />
+		<LTEL3IPv6ForwardingName t=s r=W l=32 d=NO_INTERFACE p=28 h=1 />
+		<LTEDataSwitch t=b r=W d=1 p=68 h=1 />
+		<LteBackupEnable t=b r=W d=1 p=86 h=1 />
+		<DetectionMode t=b r=W d=0 p=86 h=1 />
+		<IPV4Ping t=s r=W l=20 d=0.0.0.0 p=86 h=1 />
+		<IPV6Ping t=s r=W l=40 d=:: p=86 h=1 />
+		<DNS t=s r=W l=80 d=a.root-servers.net p=86 h=1 />
+	</X_TP_SysMode>
+	<X_TP_VLAN t=o r=P s=VLAN_OBJ p=87 >
+		<Enable t=b r=W d=1 />
+		<InternetGroupVlanID t=us r=W d=5 />
+		<InternetGroupExtendID t=us r=W d=0 />
+		<InternetGroupLanPort t=uc r=W d=255 />
+		<InternetGroupPriority t=uc r=W d=0 />
+		<InternetUntag t=b r=W d=1 />
+		<WorkingMode t=s r=W l=64 />
+		<IspService.{i} t=o r=PC s=ISP_SERVICE_OBJ m=7 >
+			<Enable t=b r=W d=1 />
+			<Name t=s r=W l=16 />
+			<VlanID t=us r=W d=0 />
+			<ExtendID t=uc r=W d=0 />
+			<Priority t=uc r=W d=0 />
+			<LanPort t=uc r=W d=0 />
+			<Untag t=b r=W d=0 />
+		</IspService.{i}>
+	</X_TP_VLAN>
+	<X_TP_EWAN t=o r=P s=EWAN_OBJ p=11 >
+		<Enable t=b r=W d=0 />
+		<MACAddress t=s r=W l=18 />
+		<IfName t=s r=W l=16 />
+	</X_TP_EWAN>
+	<X_TP_UserInfo t=o r=P s=USER_INFO_OBJ p=36 >
+		<UserName t=s r=W l=64 d=tplink />
+		<UserId t=s r=W l=64 d=tplink />
+		<Status t=u r=W d=99 />
+		<Limit t=u r=R d=10 />
+		<Times t=u r=W />
+		<Result t=u r=W d=99 />
+	</X_TP_UserInfo>
+	<X_TP_GponUserInfo t=o r=P s=GPON_USER_INFO_OBJ p=37 >
+		<GponAuthCtc t=o r=P s=GPON_AUTH_CTC_OBJ >
+			<GponAuthCtcPwd t=s r=W l=13 d=tplink />
+			<GponAuthCtcLoid t=s r=W l=25 d=tplink />
+			<GponAuthCtcStatus t=uc r=R d=255 />
+		</GponAuthCtc>
+		<GponAuthSn t=o r=P s=GPON_AUTH_SN_OBJ >
+			<GponSn t=s r=W l=20 />
+		</GponAuthSn>
+		<GponAuthPwd t=o r=P s=GPON_AUTH_PWD_OBJ >
+			<GponPwd t=s r=W l=20 />
+			<PwdType t=u r=W />
+		</GponAuthPwd>
+	</X_TP_GponUserInfo>
+	<X_TP_GponMacInfo t=o r=P s=GPON_MAC_INFO_OBJ p=37 >
+		<FwdRule t=o r=P s=GPON_FWD_RULE_OBJ >
+			<MgmtMode t=i r=W i=0 a=1 d=0 />
+			<LocalRuleEntry.{i} t=o r=P s=GPON_LOCAL_RULE_ENTRY_OBJ m=64 >
+				<Vid t=u r=W i=0 a=4099 />
+				<Pbit t=u r=W i=0 a=8 />
+				<ModVid t=u r=W i=0 a=4099 />
+				<ModPbit t=u r=W i=0 a=8 />
+				<GemPort t=u r=W i=0 a=4095 />
+				<Tcont t=u r=W i=0 a=7 />
+				<Queue t=u r=W i=0 a=7 />
+				<Direction t=s r=W />
+			</LocalRuleEntry.{i}>
+			<RemoteRuleEntry.{i} t=o r=P s=GPON_REMOTE_RULE_ENTRY_OBJ m=64 u=1 nw=1 >
+				<Vid t=u r=W i=0 a=4099 nw=1 />
+				<Pbit t=u r=W i=0 a=8 nw=1 />
+				<ModVid t=u r=W i=0 a=4099 nw=1 />
+				<ModPbit t=u r=W i=0 a=8 nw=1 />
+				<GemPort t=u r=W i=0 a=4095 nw=1 />
+				<Tcont t=u r=W i=0 a=7 nw=1 />
+				<Queue t=u r=W i=0 a=7 nw=1 />
+				<Direction t=s r=W nw=1 />
+			</RemoteRuleEntry.{i}>
+		</FwdRule>
+		<OmciIot t=o r=P s=GPON_OMCI_IOT_OBJ >
+			<OmciIotEntry.{i} t=o r=P s=GPON_OMCI_IOT_ENTRY_OBJ m=32 >
+				<MeId t=us r=W i=1 a=65535 />
+				<MeName t=s r=W l=64 nw=1 />
+				<MeDesc t=s r=W l=512 nw=1 />
+				<Reserved t=b r=W d=0 />
+				<MeAttr.{i} t=o r=P s=GPON_OMCI_ME_ATTR_OBJ m=128 >
+					<MeId t=us r=W i=1 a=65535 />
+					<Index t=uc r=W i=0 a=15 />
+					<Name t=s r=W l=64 nw=1 />
+					<Type t=uc r=W i=0 a=2 nw=1 />
+					<Max t=u r=W d=65535 nw=1 />
+					<Min t=u r=W d=0 nw=1 />
+					<Format t=s r=W l=256 nw=1 />
+					<Value t=s r=W l=32 />
+					<Desc t=s r=W l=512 nw=1 />
+					<Enabled t=b r=W />
+				</MeAttr.{i}>
+			</OmciIotEntry.{i}>
+		</OmciIot>
+	</X_TP_GponMacInfo>
+	<X_TP_Local t=o r=P s=LOCAL_OBJ >
+		<Country t=s r=W l=3 />
+		<Language t=s r=W l=6 p=66 />
+		<IspName t=s r=W l=128 />
+		<IspIndex t=i r=W d=0 />
+		<EwanIspIndex t=i r=W />
+		<IsDefault t=i r=W d=1 />
+	</X_TP_Local>
+	<X_TP_WANDETECT t=o r=P s=WAN_DETECT_OBJ p=53 h=1 >
+		<EnablePoweronAutoPVC t=b r=W d=1 h=1 />
+		<SearchState t=u r=R d=0 nw=1 h=1 />
+		<DetectedVpi t=uc r=R d=0 h=1 />
+		<DetectedVci t=us r=R d=0 h=1 />
+		<DetectedEncap t=u r=R d=0 h=1 />
+		<DetectedVid t=us r=R d=0 h=1 />
+		<DetectedConnType t=u r=R d=0 h=1 />
+		<PVCPair.{i} t=o r=PC s=WAN_DSL_AUTO_PVC_PAIR_OBJ m=32 h=1 >
+			<Vpi t=uc r=W d=0 h=1 />
+			<Vci t=us r=W d=0 h=1 />
+		</PVCPair.{i}>
+	</X_TP_WANDETECT>
+	<X_TP_LTE t=o r=P s=X_TP_LTE_OBJ p=68 nw=1 >
+		<DiagEnabled t=b r=W d=0 nw=1 />
+		<LTE_moduleManufacturer t=s r=R l=64 d=MERCUSYS nw=1 />
+		<LTE_ModelName t=s r=R nw=1 />
+		<LTE_SerialNumber t=s r=R l=64 nw=1 />
+		<LTE_HardwareVersion t=s r=R nw=1 />
+		<LTE_SoftwareVersion t=s r=R l=64 nw=1 />
+		<IMEI t=s r=R l=64 d=0 nw=1 />
+		<MEID t=s r=R l=64 d=0 nw=1 />
+		<IMSI t=s r=R l=64 d=0 nw=1 />
+		<LTE_ModuleAction t=i r=W i=0 a=4 d=0 nw=1 />
+		<SMS t=o r=P s=LTE_SMS_OBJ nw=1 >
+			<MsgConfig t=o r=P s=LTE_SMS_CONFIG_OBJ nw=1 >
+				<SmsReport t=b r=R d=1 fa=1 nw=1 />
+				<MessageCenter t=b r=W d=1 nw=1 />
+				<MessageCenterNumber t=s r=W l=30 nw=1 />
+				<SaveSentMsg t=b r=R d=1 nw=1 />
+			</MsgConfig>
+			<SendNewMsg t=o r=P s=LTE_SMS_SENDNEWMSG_OBJ nw=1 >
+				<Index t=i r=W nw=1 />
+				<To t=s r=W l=21 nw=1 />
+				<TextContent t=s r=W l=2048 nw=1 />
+				<SendTime t=s r=W l=40 nw=1 />
+				<SendResult t=uc r=W nw=1 />
+			</SendNewMsg>
+			<RecvMsgBox t=o r=P s=LTE_SMS_RECVMSGBOX_OBJ nw=1 >
+				<TotalNumber t=i r=R nw=1 />
+				<UnreadNumber t=i r=R nw=1 />
+				<PageNumber t=i r=W nw=1 />
+				<AmountPerPage t=i r=R nw=1 />
+				<RecvMsgEntry.{i} t=o r=P s=LTE_SMS_RECVMSGENTRY_OBJ m=8 nw=1 >
+					<Index t=i r=R nw=1 />
+					<From t=s r=R l=21 nw=1 />
+					<Content t=s r=R l=2048 nw=1 />
+					<ReceivedTime t=s r=R l=40 nw=1 />
+					<Unread t=b r=W nw=1 />
+				</RecvMsgEntry.{i}>
+			</RecvMsgBox>
+			<SendMsgBox t=o r=P s=LTE_SMS_SENDMSGBOX_OBJ nw=1 >
+				<TotalNumber t=i r=R nw=1 />
+				<PageNumber t=i r=W nw=1 />
+				<AmountPerPage t=i r=R nw=1 />
+				<SendMsgEntry.{i} t=o r=P s=LTE_SMS_SENDMSGENTRY_OBJ m=8 nw=1 >
+					<Index t=i r=R nw=1 />
+					<To t=s r=R l=21 nw=1 />
+					<Content t=s r=R l=2048 nw=1 />
+					<SendTime t=s r=R l=40 nw=1 />
+				</SendMsgEntry.{i}>
+			</SendMsgBox>
+			<DraftMsgBox t=o r=P s=LTE_SMS_DRAFTMSGBOX_OBJ nw=1 >
+				<TotalNumber t=i r=R nw=1 />
+				<PageNumber t=i r=W nw=1 />
+				<AmountPerPage t=i r=R nw=1 />
+				<DraftMsgEntry.{i} t=o r=P s=LTE_SMS_DRAFTMSGENTRY_OBJ m=8 nw=1 >
+					<Index t=i r=R nw=1 />
+					<To t=s r=W l=21 nw=1 />
+					<Content t=s r=W l=2048 nw=1 />
+				</DraftMsgEntry.{i}>
+			</DraftMsgBox>
+			<UnreadMsgBox t=o r=PC s=LTE_SMS_UNREADMSGBOX_OBJ nw=1 >
+				<TotalNumber t=i r=W nw=1 />
+				<PageNumber t=i r=W nw=1 />
+				<UnreadMsgEntry.{i} t=o r=P s=LTE_SMS_UNREADMSGENTRY_OBJ m=8 nw=1 >
+					<Index t=i r=R nw=1 />
+					<From t=s r=R l=21 nw=1 />
+					<Content t=s r=R l=2048 nw=1 />
+					<ReceivedTime t=s r=R l=40 nw=1 />
+					<Unread t=b r=W nw=1 />
+				</UnreadMsgEntry.{i}>
+			</UnreadMsgBox>
+		</SMS>
+		<LTE_BandInfo t=o r=P s=LTE_BANDINFO_OBJ nw=1 >
+			<LTE_RadioInterface t=i r=W nw=1 />
+			<LTE_ActiveBand t=i r=W nw=1 />
+			<LTE_ActiveChannel t=i r=W nw=1 />
+		</LTE_BandInfo>
+		<USSD t=o r=P s=LTE_USSD_OBJ p=96 nw=1 >
+			<Action t=uc r=W nw=1 />
+			<NetworkMode t=u r=W d=0 nw=1 />
+			<SessionStatus t=i r=W d=0 nw=1 />
+			<UssdStatus t=i r=W d=0 nw=1 />
+			<ReqContent t=s r=W l=160 nw=1 />
+			<SendResult t=b r=W />
+			<Response t=s r=W l=1024 nw=1 />
+		</USSD>
+		<LTE_WriteCode t=o r=P s=LTE_WRITECODE_OBJ nw=1 >
+			<Code t=s r=W l=32 d=0 nw=1 />
+		</LTE_WriteCode>
+	</X_TP_LTE>
+	<X_TP_CloudService t=o r=P s=CLOUD_SERVICE_OBJ p=67 h=1 >
+		<SwitchStatus t=b r=W d=1 p=67 h=1 />
+		<Alias t=s r=W l=33 h=1 />
+		<Legality t=b r=W d=0 nw=1 h=1 />
+		<IllegalType t=u r=W nw=1 h=1 />
+		<TcspStatus t=uc r=W d=1 nw=1 h=1 />
+		<FwUpgradeInfo t=o r=P s=FW_UPGRADE_INFO_OBJ h=1 >
+			<Type t=uc r=W d=0 h=1 />
+			<Version t=s r=W l=64 h=1 />
+			<ReleaseDate t=s r=W l=16 h=1 />
+			<ReleaseLog t=s r=W l=1024 h=1 />
+			<Url t=s r=W l=1024 h=1 />
+			<LteUpgrade t=b r=W d=0 p=68 h=1 />
+			<Start t=b r=W d=0 h=1 />
+			<Status t=i r=W d=0 h=1 />
+			<Progress t=uc r=W d=0 h=1 />
+			<InformMessage t=s r=W l=1024 h=1 />
+		</FwUpgradeInfo>
+		<CloudUserAccount t=o r=P s=CLOUD_USER_ACCOUNT_OBJ h=1 >
+			<OwnerInfo t=o r=P s=OWNER_INFO_OBJ h=1 >
+				<Email t=s r=W l=65 h=1 />
+				<Passwd t=s r=W l=33 h=1 cp=1 />
+				<NeedUnbind t=b r=W d=0 h=1 />
+				<AccountId t=s r=W l=33 h=1 />
+				<Md5Crypt t=b r=R d=0 nw=1 h=1 />
+			</OwnerInfo>
+			<CurrentUserInfo t=o r=P s=CURRENT_USER_INFO_OBJ nw=1 h=1 >
+				<Nickname t=s r=W l=64 nw=1 h=1 />
+				<Role t=i r=W i=-1 a=1 d=-1 nw=1 h=1 />
+				<Token t=s r=W l=33 nw=1 h=1 />
+				<EwebURL t=s r=W l=256 nw=1 h=1 />
+				<Action t=u r=W i=0 a=8 d=0 nw=1 h=1 />
+				<LoginToken t=s r=W l=34 nw=1 h=1 />
+				<BindStatus t=i r=W nw=1 h=1 />
+				<Status t=i r=W d=0 nw=1 h=1 />
+			</CurrentUserInfo>
+		</CloudUserAccount>
+		<CloudDDNS t=o r=P s=CLOUD_DDNS_OBJ m=16 p=102 h=1 >
+			<Enable t=b r=W d=1 h=1 />
+			<BoundDomain t=s r=W l=36 h=1 />
+			<TmpDomainName t=s r=W l=576 nw=1 h=1 />
+			<Action t=u r=W i=0 a=8 d=0 nw=1 h=1 />
+			<Status t=i r=W d=0 nw=1 h=1 />
+			<CloudDdnsEntry.{i} t=o r=PC s=CLOUD_DDNS_ENTRY_OBJ m=16 u=1 nw=1 h=1 >
+				<DomainName t=s r=W l=36 nw=1 h=1 />
+				<RegDate t=s r=W l=16 nw=1 h=1 />
+				<IsBind t=b r=W d=0 nw=1 h=1 />
+			</CloudDdnsEntry.{i}>
+		</CloudDDNS>
+	</X_TP_CloudService>
+	<X_TP_WANBlock t=o r=P s=WAN_BLOCK_OBJ p=69 >
+		<WANErrorBlock t=o r=P s=WAN_ERROR_BLOCK_OBJ p=70 >
+			<Enable t=b r=W d=1 />
+			<ErrorType t=i r=W d=0 nw=1 />
+		</WANErrorBlock>
+		<FwUpInfoBlock t=o r=P s=FW_UP_INFO_BLOCK_OBJ p=71 >
+			<IsIgnored t=b r=W d=0 nw=1 />
+			<IgnoredTime t=i r=W nw=1 />
+		</FwUpInfoBlock>
+	</X_TP_WANBlock>
+	<IPPingDiagnostics t=o r=P s=IPPING_DIAG_OBJ p=63 nw=1 >
+		<DiagnosticsState t=s r=W l=28 A=IPPingStateValues d=None nw=1 />
+		<Interface t=s r=W l=256 nw=1 />
+		<Host t=s r=W l=256 d=0.0.0.0 nw=1 />
+		<NumberOfRepetitions t=u r=W i=1 a=50 d=2 nw=1 />
+		<Timeout t=u r=W d=100 nw=1 />
+		<DataBlockSize t=u r=W i=0 a=65500 d=64 nw=1 />
+		<DSCP t=uc r=W i=0 a=63 d=0 nw=1 />
+		<X_TP_IfName t=s r=W l=16 nw=1 h=1 />
+		<X_TP_ConnName t=s r=W l=32 nw=1 h=1 />
+		<X_TP_Result t=s r=W l=128 nw=1 h=1 />
+		<X_TP_IPAddress t=s r=W l=16 d=0.0.0.0 nw=1 h=1 />
+		<X_TP_ResponseTime t=u r=R nw=1 h=1 />
+		<X_TP_PktSequence t=u r=W i=1 nw=1 h=1 />
+		<SuccessCount t=u r=R d=0 nw=1 />
+		<FailureCount t=u r=R d=0 nw=1 />
+		<AverageResponseTime t=u r=R d=0 nw=1 />
+		<MinimumResponseTime t=u r=R d=65535 nw=1 />
+		<MaximumResponseTime t=u r=R d=0 nw=1 />
+	</IPPingDiagnostics>
+	<TraceRouteDiagnostics t=o r=P s=TRACEROUTE_DIAG_OBJ p=63 nw=1 >
+		<DiagnosticsState t=s r=W l=28 A=tracerouteDSVals d=None nw=1 />
+		<Interface t=s r=W l=256 nw=1 />
+		<Host t=s r=W l=256 nw=1 />
+		<X_TP_IfName t=s r=W nw=1 h=1 />
+		<X_TP_ConnName t=s r=W l=32 nw=1 />
+		<X_TP_Result t=s r=R l=128 nw=1 h=1 />
+		<X_TP_IPAddress t=s r=W l=16 d=0.0.0.0 nw=1 h=1 />
+		<X_TP_HopSeq t=u r=W i=0 a=64 d=1 nw=1 h=1 />
+		<NumberOfTries t=u r=W i=1 a=3 d=3 nw=1 />
+		<Timeout t=u r=W i=1 d=5000 nw=1 />
+		<DataBlockSize t=u r=W i=1 a=65535 d=38 nw=1 />
+		<DSCP t=uc r=W i=0 a=63 d=0 nw=1 />
+		<MaxHopCount t=uc r=W i=1 a=64 d=30 nw=1 />
+		<ResponseTime t=u r=R d=0 nw=1 />
+		<RouteHopsNumberOfEntries t=u r=R i=0 a=64 d=0 nw=1 />
+		<RouteHops.{i} t=o r=P s=ROUTE_HOPS_OBJ m=64 p=63 nw=1 >
+			<HopHost t=s r=R l=256 nw=1 />
+			<HopHostAddress t=s r=R l=16 nw=1 />
+			<HopErrorCode t=uc r=R nw=1 />
+			<X_TP_ResponseTime t=u r=R d=0 nw=1 h=1 />
+			<HopRTTimes t=s r=R l=16 nw=1 />
+		</RouteHops.{i}>
+	</TraceRouteDiagnostics>
+	<Capabilities t=o r=P s=CAP_OBJ p=63 nw=1 >
+		<PerformanceDiagnostic t=o r=P s=PERF_DIAG_OBJ p=63 nw=1 >
+			<DownloadTransports t=s r=R l=9 d=HTTP,FTP nw=1 />
+			<UploadTransports t=s r=R l=9 d=HTTP,FTP nw=1 />
+		</PerformanceDiagnostic>
+	</Capabilities>
+	<DownloadDiagnostics t=o r=P s=DOWNLOAD_DIAG_OBJ p=63 nw=1 >
+		<DiagnosticsState t=s r=W l=28 A=downloadDSVals d=None p=63 nw=1 />
+		<Interface t=s r=W l=256 p=63 nw=1 />
+		<DownloadURL t=s r=W l=256 p=63 nw=1 />
+		<DownloadTransports t=s r=R l=256 d=HTTP,FTP p=110 nw=1 />
+		<DownloadDiagnosticMaxConnections t=u r=R d=10 p=110 nw=1 />
+		<DownloadDiagnosticsMaxIncrementalResult t=u r=R d=10 p=110 nw=1 />
+		<DSCP t=uc r=W i=0 a=63 d=0 p=63 nw=1 />
+		<EthernetPriority t=uc r=W i=0 a=7 d=0 p=63 nw=1 />
+		<TimeBasedTestDuration t=u r=W i=0 a=999 d=0 p=110 nw=1 />
+		<TimeBasedTestMeasurementInterval t=u r=W i=0 a=999 d=0 p=110 nw=1 />
+		<TimeBasedTestMeasurementOffset t=u r=W i=0 a=255 d=0 p=110 nw=1 />
+		<ProtocolVersion t=s r=W l=5 A=protocolversionDSVals d=Any p=110 nw=1 />
+		<NumberOfConnections t=u r=W d=1 p=110 nw=1 />
+		<IPAddressUsed t=s r=R l=45 p=110 nw=1 />
+		<ROMTime t=d r=R p=63 nw=1 />
+		<BOMTime t=d r=R p=63 nw=1 />
+		<EOMTime t=d r=R p=63 nw=1 />
+		<TestBytesReceived t=u r=R p=63 nw=1 />
+		<TotalBytesReceived t=u r=R p=63 nw=1 />
+		<TotalBytesSent t=u r=R p=110 nw=1 />
+		<TestBytesReceivedUnderFullLoading t=u r=R p=110 nw=1 />
+		<TotalBytesReceivedUnderFullLoading t=u r=R p=110 nw=1 />
+		<TotalBytesSentUnderFullLoading t=u r=R p=110 nw=1 />
+		<PeriodOfFullLoading t=u r=R p=110 nw=1 />
+		<TCPOpenRequestTime t=d r=R p=63 nw=1 />
+		<TCPOpenResponseTime t=d r=R p=63 nw=1 />
+		<PerConnectionResultNumberOfEntries t=u r=R p=110 nw=1 />
+		<EnablePerConnectionResults t=b r=W d=0 p=110 nw=1 />
+		<IncrementalResultNumberOfEntries t=u r=R p=110 nw=1 />
+		<PerConnectionResult.{i} t=o r=P s=PREDOWN_CONN_RESULT_OBJ m=64 p=110 nw=1 >
+			<ROMTime t=d r=R nw=1 />
+			<BOMTime t=d r=R nw=1 />
+			<EOMTime t=d r=R nw=1 />
+			<TestBytesReceived t=u r=R nw=1 />
+			<TotalBytesReceived t=u r=R nw=1 />
+			<TotalBytesSent t=u r=R nw=1 />
+			<TCPOpenRequestTime t=d r=R nw=1 />
+			<TCPOpenResponseTime t=d r=R nw=1 />
+		</PerConnectionResult.{i}>
+		<IncrementalResult.{i} t=o r=P s=PREDOWN_RESULT_OBJ m=64 p=110 nw=1 >
+			<TestBytesReceived t=u r=R nw=1 />
+			<TotalBytesReceived t=u r=R nw=1 />
+			<TotalBytesSent t=u r=R nw=1 />
+			<StartTime t=d r=R nw=1 />
+			<EndTime t=d r=R nw=1 />
+		</IncrementalResult.{i}>
+	</DownloadDiagnostics>
+	<UploadDiagnostics t=o r=P s=UPLOAD_DIAG_OBJ p=63 nw=1 >
+		<DiagnosticsState t=s r=W l=28 A=uploadDSVals d=None p=63 nw=1 />
+		<Interface t=s r=W l=256 p=63 nw=1 />
+		<UploadURL t=s r=W l=256 p=63 nw=1 />
+		<UploadTransports t=s r=R l=256 d=HTTP,FTP p=110 nw=1 />
+		<UploadDiagnosticsMaxConnections t=u r=R d=10 p=110 nw=1 />
+		<UploadDiagnosticsMaxIncrementalResult t=u r=R d=10 p=110 nw=1 />
+		<DSCP t=uc r=W i=0 a=63 d=0 p=63 nw=1 />
+		<EthernetPriority t=uc r=W i=0 a=7 d=0 p=63 nw=1 />
+		<TestFileLength t=u r=W d=0 p=63 nw=1 />
+		<TimeBasedTestDuration t=u r=W i=0 a=999 d=0 p=110 nw=1 />
+		<TimeBasedTestMeasurementInterval t=u r=W i=0 a=999 p=110 nw=1 />
+		<TimeBasedTestMeasurementOffset t=u r=W i=0 a=255 d=0 p=110 nw=1 />
+		<ProtocolVersion t=s r=W l=5 A=protocolversionDSVals d=Any p=110 nw=1 />
+		<NumberOfConnections t=u r=W d=1 p=110 nw=1 />
+		<IPAddressUsed t=s r=R l=45 p=110 nw=1 />
+		<ROMTime t=d r=R p=63 nw=1 />
+		<BOMTime t=d r=R p=63 nw=1 />
+		<EOMTime t=d r=R p=63 nw=1 />
+		<TestBytesSent t=u r=R p=110 nw=1 />
+		<TotalBytesReceived t=u r=R p=110 nw=1 />
+		<TotalBytesSent t=u r=R p=63 nw=1 />
+		<TestBytesSentUnderFullLoading t=u r=R p=110 nw=1 />
+		<TotalBytesReceivedUnderFullLoading t=u r=R p=110 nw=1 />
+		<TotalBytesSentUnderFullLoading t=u r=R p=110 nw=1 />
+		<PeriodOfFullLoading t=u r=R p=110 nw=1 />
+		<TCPOpenRequestTime t=d r=R p=63 nw=1 />
+		<TCPOpenResponseTime t=d r=R p=63 nw=1 />
+		<PerConnectionResultNumberOfEntries t=u r=R p=110 nw=1 />
+		<EnablePerConnectionResults t=b r=W d=0 p=110 nw=1 />
+		<IncrementalResultNumberOfEntries t=u r=R p=110 nw=1 />
+		<PerConnectionResult.{i} t=o r=P s=PREUP_CONN_RESULT_OBJ m=64 p=110 nw=1 >
+			<ROMTime t=d r=R nw=1 />
+			<BOMTime t=d r=R nw=1 />
+			<EOMTime t=d r=R nw=1 />
+			<TestBytesSent t=u r=R nw=1 />
+			<TotalBytesReceived t=u r=R nw=1 />
+			<TotalBytesSent t=u r=R nw=1 />
+			<TCPOpenRequestTime t=d r=R nw=1 />
+			<TCPOpenResponseTime t=d r=R nw=1 />
+		</PerConnectionResult.{i}>
+		<IncrementalResult.{i} t=o r=P s=PREUP_RESULT_OBJ m=64 p=110 nw=1 >
+			<TestBytesSent t=u r=R nw=1 />
+			<TotalBytesReceived t=u r=R nw=1 />
+			<TotalBytesSent t=u r=R nw=1 />
+			<StartTime t=d r=R nw=1 />
+			<EndTime t=d r=R nw=1 />
+		</IncrementalResult.{i}>
+	</UploadDiagnostics>
+	<X_TP_LED_BUTTON t=o r=P s=LED_BUTTON_OBJ p=93 >
+		<Enable t=b r=W d=1 h=1 />
+	</X_TP_LED_BUTTON>
+	<ServerSelectionDiagnostics t=o r=P s=SERVER_SELECTION_DIAG_OBJ p=110 nw=1 h=1 >
+		<DiagnosticsState t=s r=W l=28 A=serverselectionDSVals d=None nw=1 h=1 />
+		<Interface t=s r=W l=256 nw=1 h=1 />
+		<ProtocolVersion t=s r=W l=5 A=protocolversionDSVals d=Any nw=1 h=1 />
+		<Protocol t=s r=W l=9 A=protocolDSVals nw=1 h=1 />
+		<HostList t=s r=W l=256 nw=1 h=1 />
+		<NumberOfRepetitions t=u r=W d=1 nw=1 h=1 />
+		<Timeout t=u r=W nw=1 h=1 />
+		<FastestHost t=s r=R l=256 nw=1 h=1 />
+		<AverageResponseTime t=u r=R nw=1 h=1 />
+		<MinimumResponseTime t=u r=R nw=1 h=1 />
+		<MaximumResponseTime t=u r=R nw=1 h=1 />
+		<IPAddressUsed t=s r=R l=45 nw=1 h=1 />
+	</ServerSelectionDiagnostics>
+	<UDPEchoDiagnostics t=o r=P s=UDPECHO_DIAG_OBJ p=110 nw=1 >
+		<DiagnosticsState t=s r=W l=28 A=serverselectionDSVals d=None nw=1 />
+		<Interface t=s r=W l=256 nw=1 />
+		<Host t=s r=W l=256 nw=1 />
+		<Port t=u r=W i=1 a=65535 nw=1 />
+		<NumberOfRepetitions t=u r=W d=1 nw=1 />
+		<Timeout t=u r=W nw=1 />
+		<DataBlockSize t=u r=W i=1 a=65535 d=24 nw=1 />
+		<DSCP t=u r=W i=0 a=63 d=0 nw=1 />
+		<InterTransmissionTime t=u r=W i=1 a=65535 d=1000 nw=1 />
+		<ProtocolVersion t=s r=W l=5 A=protocolversionDSVals d=Any nw=1 />
+		<IPAddressUsed t=s r=R l=45 nw=1 />
+		<SuccessCount t=u r=R nw=1 />
+		<FailureCount t=u r=R nw=1 />
+		<AverageResponseTime t=u r=R nw=1 />
+		<MinimumResponseTime t=u r=R nw=1 />
+		<MaximumResponseTime t=u r=R nw=1 />
+		<EnableIndividualPacketResults t=b r=W d=0 nw=1 />
+		<IndividualPacketResultNumberOfEntries t=u r=R nw=1 />
+		<UDPEchoDiagnosticsMaxResults t=u r=R i=0 a=256 nw=1 />
+		<IndividualPacketResult.{i} t=o r=P s=PACKET_RESULT_OBJ m=150 nw=1 >
+			<PacketSuccess t=b r=R nw=1 />
+			<PacketSendTime t=d r=R nw=1 />
+			<PacketReceiveTime t=d r=R nw=1 />
+			<TestGenSN t=u r=R nw=1 />
+			<TestRespSN t=u r=R nw=1 />
+			<TestRespRcvTimeStamp t=u r=R nw=1 />
+			<TestRespReplyTimeStamp t=u r=R nw=1 />
+			<TestRespReplyFailureCount t=u r=R nw=1 />
+		</IndividualPacketResult.{i}>
+	</UDPEchoDiagnostics>
+	<UDPEchoConfig t=o r=P s=UDPECHO_CFG_OBJ p=63 nw=1 >
+		<Enable t=b r=W d=0 nw=1 />
+		<Interface t=s r=W l=256 nw=1 />
+		<SourceIPAddress t=s r=W l=16 nw=1 />
+		<UDPPort t=us r=W nw=1 />
+		<EchoPlusEnabled t=b r=W d=0 nw=1 />
+		<EchoPlusSupported t=b r=R d=1 nw=1 />
+		<PacketsReceived t=u r=R nw=1 />
+		<PacketsResponded t=u r=R nw=1 />
+		<BytesReceived t=u r=R nw=1 />
+		<BytesResponded t=u r=R nw=1 />
+		<TimeFirstPacketReceived t=d r=R nw=1 />
+		<TimeLastPacketReceived t=d r=R nw=1 />
+	</UDPEchoConfig>
+	<X_TP_VPN t=o r=P s=VPN_OBJ p=77 >
+		<IPSecVPN t=o r=P s=IPSEC_OBJ m=8 p=78 >
+			<IPSecCFGNumberOfEntries t=u r=W d=0 />
+			<EnableDPD t=b r=W d=0 />
+			<IPSecCFG.{i} t=o r=PC s=IPSEC_CFG_OBJ m=10 >
+				<EntryID t=u r=W />
+				<Enable t=b r=W d=0 />
+				<ConnName t=s r=W l=50 />
+				<RemoteGWAddress t=s r=W l=50 />
+				<LocalIPMode t=u r=W d=0 />
+				<LocalIPAddress t=s r=W l=16 />
+				<LocalMask t=s r=W l=16 />
+				<RemoteIPMode t=u r=W d=0 />
+				<RemoteIPAddress t=s r=W l=16 />
+				<RemoteMask t=s r=W l=16 />
+				<KeyExMethod t=u r=W />
+				<AuthMethod t=uc r=W />
+				<PSK t=s r=W l=256 />
+				<PerfectFSEn t=b r=W d=0 />
+				<ManualEncryptionAlgo t=s r=W l=20 />
+				<ManualEncryptionKey t=s r=W l=70 />
+				<ManualAuthAlgo t=s r=W l=20 />
+				<ManualAthKey t=s r=W l=50 />
+				<SPI t=s r=W l=16 />
+				<Ph1Mode t=s r=W l=20 />
+				<Ph1MyIdType t=s r=W l=10 />
+				<Ph1MyId t=s r=W l=50 />
+				<Ph1PeerIdType t=s r=W l=10 />
+				<Ph1PeerId t=s r=W l=50 />
+				<Ph1EncryptionAlo t=s r=W l=20 />
+				<Ph1IntegrityAlgo t=s r=W l=20 />
+				<Ph1DHGroup t=s r=W l=15 />
+				<Ph1KeyTime t=u r=W d=100 />
+				<Ph2EncryptionAlo t=s r=W l=20 />
+				<Ph2IntegrityAlgo t=s r=W l=20 />
+				<Ph2DHGroup t=s r=W l=15 />
+				<Ph2KeyTime t=u r=W d=100 />
+				<Status t=b r=W d=0 />
+				<RealRemoteIP t=s r=W />
+				<SecondSPI t=s r=W l=16 />
+				<FqdnChanged t=b r=W d=0 />
+			</IPSecCFG.{i}>
+		</IPSecVPN>
+		<OpenVPN t=o r=P s=OPENVPN_OBJ p=79 >
+			<Enable t=b r=W d=0 />
+			<CaGenerating t=uc r=W d=0 />
+			<SubnetAddress t=s r=W l=16 d=10.8.0.0 />
+			<SubnetMask t=s r=W l=16 d=255.255.255.0 />
+			<Proto t=s r=W l=4 A=OpenVPNProtoTypes d=UDP />
+			<Port t=us r=W i=0 a=65535 d=1194 />
+			<Access t=uc r=W d=1 />
+			<MaxClientsNum t=uc r=W d=10 />
+			<Client.{i} t=o r=P s=OVPN_CLIENT_OBJ m=10 nw=1 >
+				<ConnAct t=uc r=W d=0 nw=1 />
+				<WanIp t=s r=W l=16 nw=1 />
+				<WanPort t=u r=W nw=1 />
+				<TunIp t=s r=W l=16 nw=1 />
+			</Client.{i}>
+			<OpenVPNSSLFiles t=o r=P s=OVPN_SSL_FILES_OBJ >
+				<CertAuth t=o r=P s=OVPN_CERT_AUTH_OBJ >
+					<Cert t=s r=W l=800 />
+				</CertAuth>
+				<SSLServer t=o r=P s=OVPN_SSL_SERVER_OBJ >
+					<Cert t=s r=W l=900 />
+					<PrivateKey t=s r=W l=1024 />
+				</SSLServer>
+				<SSLClient t=o r=P s=OVPN_SSL_CLIENT_OBJ >
+					<Cert t=s r=W l=900 />
+					<PrivateKey t=s r=W l=1024 />
+				</SSLClient>
+			</OpenVPNSSLFiles>
+		</OpenVPN>
+		<PPTPVPN t=o r=P s=PPTPVPN_OBJ p=80 >
+			<Enable t=b r=W d=0 />
+			<Username t=s r=W l=256 d=admin />
+			<Password t=s r=W l=256 d=admin />
+			<LocalIp t=s r=W l=16 d=10.7.0.10 />
+			<RemoteIpStart t=s r=W l=16 d=10.7.0.11 />
+			<RemoteIpEnd t=s r=W l=16 d=10.7.0.20 />
+			<MaxClientsNum t=uc r=W d=10 />
+			<Client.{i} t=o r=P s=PVPN_CLIENT_OBJ m=10 nw=1 >
+				<ConnAct t=uc r=W nw=1 />
+				<WanIp t=s r=W l=16 nw=1 />
+				<PtpIp t=s r=W l=16 nw=1 />
+				<PppdPid t=u r=W nw=1 />
+			</Client.{i}>
+		</PPTPVPN>
+	</X_TP_VPN>
+	<X_TP_WEB_UI t=o r=P s=WEB_UI_OBJ p=107 h=1 >
+		<Top t=s r=W l=24 al=web;cli d=rgba(255,96,96,1) h=1 />
+		<TopText t=s r=W l=24 al=web;cli d=rgba(255,255,255,1) h=1 />
+		<TopTextSel t=s r=W l=24 al=web;cli d=rgba(255,96,96,1) h=1 />
+		<TopButton t=s r=W l=24 al=web;cli d=rgba(255,96,96,1) h=1 />
+		<TopButtonHover t=s r=W l=24 al=web;cli d=rgba(255,96,96,1) h=1 />
+		<MenuText t=s r=W l=24 al=web;cli d=rgba(54,68,75,1) h=1 />
+		<MenuTextSel t=s r=W l=24 al=web;cli d=rgba(54,68,75,1) h=1 />
+		<MenuTextHover t=s r=W l=24 al=web;cli d=rgba(255,203,0,1) h=1 />
+		<MenuBackground t=s r=W l=24 al=web;cli d=rgba(255,255,255,1) h=1 />
+		<MenuBackgroundSel t=s r=W l=24 al=web;cli d=rgba(255,203,0,1) h=1 />
+		<MainBackground t=s r=W l=24 al=web;cli d=rgba(255,96,96,1) h=1 />
+		<H4color t=s r=W l=24 al=web;cli d=rgba(255,255,255,1) h=1 />
+		<ButtonBackground t=s r=W l=24 al=web;cli d=rgba(255,96,96,1) h=1 />
+		<ArrowBg t=s r=W l=24 al=web;cli d=rgba(255,255,255,0.25) h=1 />
+		<Bottom t=s r=W l=24 al=web;cli d=rgba(0,85,100,0.15) h=1 />
+		<MapIconColor t=s r=W l=24 al=web;cli d=rgba(0,85,100,1) h=1 />
+		<MapIconColorSel t=s r=W l=24 al=web;cli d=rgba(255,96,96,1) h=1 />
+		<ControlIcon t=s r=W l=24 al=web;cli d=rgba(255,96,96,1) h=1 />
+		<HideMenuList t=s r=W l=1024 al=web;cli h=1 />
+		<ImageListNumberOfEntries t=u r=W d=0 h=1 />
+		<ImageList.{i} t=o r=P s=WEB_IMAGES_OBJ m=2 h=1 >
+			<ImageName t=s r=R l=64 d=0 h=1 />
+			<Part1 t=B r=R l=4094 al=cli h=1 />
+			<Part2 t=B r=R l=4094 al=cli h=1 />
+		</ImageList.{i}>
+	</X_TP_WEB_UI>
+	<X_TP_NetSel t=o r=P s=LTE_NET_SEL_OBJ >
+		<SearchAction t=uc r=W d=0 p=105 />
+		<LteNetListNumberOfEntries t=u r=W />
+		<NetSelType t=uc r=W />
+		<SearchStatus t=uc r=W />
+		<ItemNum t=us r=W />
+		<NetSelList.{i} t=o r=P s=LTE_NET_SEL_LIST_OBJ m=32 >
+			<Mcc t=u r=W />
+			<Mnc t=u r=W />
+			<ItemStat t=i r=W d=0 />
+			<IspName t=s r=W l=32 d=0 />
+		</NetSelList.{i}>
+	</X_TP_NetSel>
+	<X_TP_BandSel t=o r=P s=LTE_BAND_SEL_OBJ p=105 >
+		<SearchAction t=uc r=W d=0 />
+		<SearchStatus t=uc r=W d=0 />
+		<IspName t=s r=W l=32 />
+		<BandSearchedMaskL t=u r=W />
+		<BandSearchedMaskH t=u r=W />
+		<BandPrefMaskL t=u r=W />
+		<BandPrefMaskH t=u r=W />
+	</X_TP_BandSel>
+	<X_TP_OneMesh t=o r=P s=ONEMESH_OBJ p=101 >
+		<Enable t=uc r=W d=0 />
+		<GroupID t=s r=W l=64 d=-1 />
+		<Role t=s r=W l=8 d=master />
+		<EnableSmartConnect t=b r=W d=0 />
+		<SlaveAutoAttachNeeded t=uc r=W d=0 />
+		<SlaveAutoJoinNeeded t=uc r=W d=0 />
+		<MasterAutoProbeNeeded t=uc r=W d=0 />
+		<SlaveRsaN t=s r=W l=260 />
+		<SlaveRsaE t=s r=R l=260 />
+		<MasterPri t=s r=W l=260 />
+		<MasterRsaN t=s r=W l=260 />
+		<MasterRsaE t=s r=W l=260 />
+		<Client.{i} t=o r=P s=ONEMESH_CLIENT_OBJ m=64 p=101 >
+			<Name t=s r=W l=64 />
+			<Mac t=s r=W l=18 />
+			<Location t=s r=W l=16 />
+			<Username t=s r=W l=260 />
+			<Password t=s r=W l=260 />
+			<Joined t=uc r=W d=0 />
+			<MainWCfgTransNeeded t=uc r=W d=0 />
+		</Client.{i}>
+	</X_TP_OneMesh>
+	<X_TP_OneMesh_RT t=o r=P s=ONEMESH_RT_OBJ p=101 nw=1 >
+		<Action t=uc r=W d=0 nw=1 />
+		<Mac t=s r=W l=18 d=0 nw=1 />
+		<Name t=s r=W l=64 d=0 nw=1 />
+		<Location t=s r=W l=16 d=0 nw=1 />
+		<Topology.{i} t=o r=P s=ONEMESH_TOPO_OBJ m=128 p=101 nw=1 >
+			<Topo t=s r=W l=256 d=0 nw=1 />
+		</Topology.{i}>
+		<Avai_Dev.{i} t=o r=P s=ONEMESH_AVAIDEV_OBJ m=32 p=101 nw=1 >
+			<Password_5g t=s r=W l=65 d=0 nw=1 />
+			<Ssid_5g t=s r=W l=33 d=0 nw=1 />
+			<Password_24g t=s r=W l=65 d=0 nw=1 />
+			<Ssid_24g t=s r=W l=33 d=0 nw=1 />
+			<Mac t=s r=W l=18 d=0 nw=1 />
+			<Device_type t=s r=W l=32 d=0 nw=1 />
+			<Model t=s r=W l=32 d=0 nw=1 />
+		</Avai_Dev.{i}>
+		<Device.{i} t=o r=W s=ONEMESH_DEVICE_OBJ m=32 p=101 nw=1 >
+			<Name t=s r=W l=64 d=0 nw=1 />
+			<Ip t=s r=W l=16 d=0 nw=1 />
+			<Model t=s r=W l=32 d=0 nw=1 />
+			<Device_type t=s r=W l=16 d=0 nw=1 />
+			<Mac t=s r=W l=18 d=0 nw=1 />
+			<Location t=s r=W l=16 d=0 nw=1 />
+			<Status t=s r=W l=16 d=0 nw=1 />
+			<Lease t=i r=W d=0 nw=1 />
+		</Device.{i}>
+		<Detail t=o r=P s=ONEMESH_DETAIL_OBJ p=101 nw=1 >
+			<Name t=s r=W l=32 d=0 nw=1 />
+			<Model t=s r=W l=32 d=0 nw=1 />
+			<Device_type t=s r=W l=16 d=0 nw=1 />
+			<Mac t=s r=W l=18 d=0 nw=1 />
+			<Ip t=s r=W l=32 d=0 nw=1 />
+			<Location t=s r=W l=32 d=0 nw=1 />
+			<Status t=s r=W l=16 d=0 nw=1 />
+			<Signal t=uc r=W d=0 nw=1 />
+			<Link_speed_24g t=u r=W d=0 nw=1 />
+			<Link_speed_5g t=u r=W d=0 nw=1 />
+			<Nclient_num t=uc r=W d=0 nw=1 />
+			<Connection_type t=s r=W l=16 d=0 nw=1 />
+		</Detail>
+		<Relist.{i} t=o r=W s=ONEMESH_RELIST_OBJ m=64 p=101 nw=1 >
+			<Mac t=s r=W l=18 d=0 nw=1 />
+		</Relist.{i}>
+		<Meshmac.{i} t=o r=P s=ONEMESH_MAC_OBJ m=128 p=101 nw=1 >
+			<Mac t=s r=W l=18 d=0 nw=1 />
+			<Proxy t=s r=W l=18 d=0 nw=1 />
+			<Devtype t=uc r=W d=0 nw=1 />
+		</Meshmac.{i}>
+		<Reall.{i} t=o r=W s=ONEMESH_REALL_OBJ m=64 p=101 nw=1 >
+			<Mac t=s r=W l=18 d=0 nw=1 />
+		</Reall.{i}>
+	</X_TP_OneMesh_RT>
+	<X_TP_Speedtest t=o r=P s=SPEEDTEST_OBJ p=92 >
+		<Enable t=b r=W d=0 />
+		<Clear t=b r=W d=0 />
+		<Status t=s r=W l=10 A=speedtestStatValues d=Idle />
+		<Url t=s r=W l=64 />
+		<Upload t=u r=W />
+		<Download t=u r=W />
+		<Date t=u r=W />
+		<CurrentIndex t=u r=W d=0 />
+		<SpeedtestLog.{i} t=o r=P s=SPEEDTEST_LOG_OBJ m=100 >
+			<Mode t=uc r=W />
+			<Upload t=u r=W />
+			<Download t=u r=W />
+			<Date t=u r=W />
+		</SpeedtestLog.{i}>
+		<SpeedtestStat t=o r=P s=SPEEDTEST_STAT_OBJ u=1 nw=1 h=1 >
+			<Upload t=s r=R l=21 nw=1 h=1 />
+			<Download t=s r=R l=21 nw=1 h=1 />
+			<Time t=u r=R nw=1 h=1 />
+		</SpeedtestStat>
+	</X_TP_Speedtest>
+	<X_TP_RouteEntry.{i} t=o r=P s=ROUTE_ENTRY_OBJ m=256 u=1 nw=1 h=1 >
+		<DestSubnetMask t=u r=R nw=1 h=1 />
+		<DestIPAddress t=u r=R nw=1 h=1 />
+		<GatewayIPAddress t=u r=R nw=1 h=1 />
+		<Iface t=s r=R l=64 nw=1 h=1 />
+	</X_TP_RouteEntry.{i}>
+	<X_TP_RouteEntryv6.{i} t=o r=P s=ROUTE_ENTRYV6_OBJ m=256 u=1 nw=1 h=1 >
+		<Destination t=s r=R l=45 nw=1 h=1 />
+		<NextHop t=s r=R l=40 nw=1 h=1 />
+		<Iface t=s r=R l=64 nw=1 h=1 />
+	</X_TP_RouteEntryv6.{i}>
+	<X_TP_SkipList t=o r=PC s=SKIPLIST_OBJ nw=1 h=1 >
+		<Number t=u r=W d=0 nw=1 h=1 />
+		<ForceAutoMode t=b r=W d=1 nw=1 h=1 />
+		<ChannelList t=s r=R l=32 nw=1 h=1 />
+	</X_TP_SkipList>
+</InternetGatewayDevice>
+<v>
+	<A n=status3eValues>
+		<e>Disabled</e>
+		<e>Enabled</e>
+		<e>Error</e>
+	</A>
+	<A n=intf4StatusValues>
+		<e>Up</e>
+		<e>NoLink</e>
+		<e>Error</e>
+		<e>Disabled</e>
+	</A>
+	<A n=ethLanMaxBitRateValues>
+		<e>10</e>
+		<e>100</e>
+		<e>1000</e>
+		<e>Auto</e>
+	</A>
+	<A n=duplexModeValues>
+		<e>Half</e>
+		<e>Full</e>
+		<e>Auto</e>
+	</A>
+	<A n=bridgingIntfTypeValues>
+		<e>LANInterface</e>
+		<e>WANInterface</e>
+		<e>LANRouterConnection</e>
+		<e>WANRouterConnection</e>
+	</A>
+	<A n=ConnectionTriggerValues>
+		<e>OnDemand</e>
+		<e>AlwaysOn</e>
+		<e>Manual</e>
+	</A>
+	<A n=ATMAALValues>
+		<e>AAL1</e>
+		<e>AAL2</e>
+		<e>AAL3</e>
+		<e>AAL4</e>
+		<e>AAL5</e>
+	</A>
+	<A n=WANAccessTypeValues>
+		<e>DSL</e>
+		<e>Ethernet</e>
+		<e>POTS</e>
+		<e>PON</e>
+		<e>USB_3G</e>
+		<e>LTE</e>
+	</A>
+	<A n=PhysicalLinkStatusValues>
+		<e>Up</e>
+		<e>Down</e>
+		<e>Initializing</e>
+		<e>Unavailable</e>
+	</A>
+	<A n=dslIntfStatusValues>
+		<e>Up</e>
+		<e>Initializing</e>
+		<e>EstablishingLink</e>
+		<e>NoSignal</e>
+		<e>Error</e>
+		<e>Disabled</e>
+	</A>
+	<A n=modulationTypeValues>
+		<e>ADSL_G.dmt</e>
+		<e>ADSL_G.lite</e>
+		<e>ADSL_G.dmt.bis</e>
+		<e>ADSL_re-adsl</e>
+		<e>ADSL_2plus</e>
+		<e>ADLS_four</e>
+		<e>ADSL_ANSI_T1.413</e>
+		<e>G.shdsl</e>
+		<e>IDSL</e>
+		<e>HDSL</e>
+		<e>SDSL</e>
+		<e>VDSL</e>
+		<e>Multimode</e>
+		<e>VDSL2</e>
+		<e>ADSL_Multimode</e>
+	</A>
+	<A n=LineEncodingValues>
+		<e>DMT</e>
+		<e>CAP</e>
+		<e>2B1Q</e>
+		<e>43BT</e>
+		<e>PAM</e>
+		<e>QAM</e>
+	</A>
+	<A n=DataPathValues>
+		<e>Interleaved</e>
+		<e>Fast</e>
+	</A>
+	<A n=adslWanLinkStatusValues>
+		<e>Up</e>
+		<e>Down</e>
+		<e>Initializing</e>
+		<e>Unavailable</e>
+	</A>
+	<A n=adslWanLinkTypeValues>
+		<e>EoA</e>
+		<e>IPoA</e>
+		<e>PPPoA</e>
+		<e>PPPoE</e>
+		<e>CIP</e>
+		<e>Unconfigured</e>
+	</A>
+	<A n=atmEncapsulationValues>
+		<e>LLC</e>
+		<e>VCMUX</e>
+	</A>
+	<A n=ATMQoSValues>
+		<e>UBR</e>
+		<e>CBR</e>
+		<e>GFR</e>
+		<e>VBR-nrt</e>
+		<e>VBR-rt</e>
+		<e>UBR-plus</e>
+		<e>ABR</e>
+	</A>
+	<A n=wanIpConnectionStatusValues>
+		<e>Unconfigured</e>
+		<e>Connecting</e>
+		<e>Connected</e>
+		<e>PendingDisconnect</e>
+		<e>Disconneting</e>
+		<e>Disconnected</e>
+	</A>
+	<A n=wanIpPossibleConnectionTypesValues>
+		<e>Unconfigured</e>
+		<e>IP_Routed</e>
+		<e>IP_Bridged</e>
+	</A>
+	<A n=wanIpLastConnectionErrorValues>
+		<e>ERROR_NONE</e>
+		<e>ERROR_COMMAND_ABORTED</e>
+		<e>ERROR_NOT_ENABLED_FOR_INTERNET</e>
+		<e>ERROR_USER_DISCONNECT</e>
+		<e>ERROR_ISP_DISCONNECT</e>
+		<e>ERROR_IDLE_DISCONNECT</e>
+		<e>ERROR_FORCED_DISCONNECT</e>
+		<e>ERROR_NO_CARRIER</e>
+		<e>ERROR_IP_CONFIGURATION</e>
+		<e>ERROR_UNKNOWN</e>
+	</A>
+	<A n=AddressingTypeValues>
+		<e>DHCP</e>
+		<e>Static</e>
+	</A>
+	<A n=RouteProtocolRxValues>
+		<e>Off</e>
+		<e>RIPv1</e>
+		<e>RIPv2</e>
+		<e>RIPv1v2</e>
+		<e>OSPF</e>
+	</A>
+	<A n=onOffValues>
+		<e>On</e>
+		<e>Off</e>
+	</A>
+	<A n=wanPppConnectionStatusValues>
+		<e>Unconfigured</e>
+		<e>Connecting</e>
+		<e>Authenticating</e>
+		<e>Connected</e>
+		<e>PendingDisconnect</e>
+		<e>Disconnecting</e>
+		<e>Disconnected</e>
+	</A>
+	<A n=wanPppPossibleConnectionTypesValues>
+		<e>Unconfigured</e>
+		<e>IP_Routed</e>
+		<e>DHCP_Spoofed</e>
+		<e>PPPoE_Bridged</e>
+		<e>PPPoE_Relay</e>
+		<e>PPTP_Relay</e>
+		<e>L2TP_Relay</e>
+	</A>
+	<A n=wanPppLastConnectionErrorValues>
+		<e>ERROR_NONE</e>
+		<e>ERROR_ISP_TIME_OUT</e>
+		<e>ERROR_COMMAND_ABORTED</e>
+		<e>ERROR_NOT_ENABLED_FOR_INTERNET</e>
+		<e>ERROR_BAD_PHONE_NUMBER</e>
+		<e>ERROR_USER_DISCONNECT</e>
+		<e>ERROR_ISP_DISCONNECT</e>
+		<e>ERROR_IDLE_DISCONNECT</e>
+		<e>ERROR_FORCED_DISCONNECT</e>
+		<e>ERROR_SERVER_OUT_OF_RESOURCES</e>
+		<e>ERROR_RESTRICTED_LOGON_HOURS</e>
+		<e>ERROR_ACCOUNT_DISABLED</e>
+		<e>ERROR_ACCOUNT_EXPIRED</e>
+		<e>ERROR_PASSWORD_EXPIRED</e>
+		<e>ERROR_AUTHENTICATION_FAILURE</e>
+		<e>ERROR_NO_DIALTONE</e>
+		<e>ERROR_NO_CARRIER</e>
+		<e>ERROR_NO_ANSWER</e>
+		<e>ERROR_LINE_BUSY</e>
+		<e>ERROR_UNSUPPORTED_BITSPERSECOND</e>
+		<e>ERROR_TOO_MANY_LINE_ERRORS</e>
+		<e>ERROR_IP_CONFIGURATION</e>
+		<e>ERROR_UNKNOWN</e>
+	</A>
+	<A n=PPPAuthenticationProtocolValues>
+		<e>AUTO_AUTH</e>
+		<e>PAP</e>
+		<e>CHAP</e>
+		<e>MS-CHAP</e>
+	</A>
+	<A n=TransportTypeValues>
+		<e>PPPoA</e>
+		<e>PPPoE</e>
+		<e>L2TP</e>
+		<e>PPTP</e>
+		<e>PPP3G</e>
+	</A>
+	<A n=ipProtocol2Values>
+		<e>TCP</e>
+		<e>UDP</e>
+		<e>TCP or UDP</e>
+	</A>
+	<A n=BeaconTypeValues>
+		<e>None</e>
+		<e>Basic</e>
+		<e>WPA</e>
+		<e>11i</e>
+		<e>WPAand11i</e>
+		<e>11iadWPA3</e>
+		<e>WPA3</e>
+	</A>
+	<A n=StandardValues>
+		<e>a</e>
+		<e>b</e>
+		<e>g</e>
+		<e>g-only</e>
+		<e>gn</e>
+		<e>n</e>
+		<e>n-only</e>
+		<e>an</e>
+		<e>ac-only</e>
+		<e>nac</e>
+		<e>ac</e>
+		<e>ad</e>
+	</A>
+	<A n=BasicEncryptionModesValues>
+		<e>None</e>
+		<e>WEPEncryption</e>
+	</A>
+	<A n=BasicAuthenticationModeValues>
+		<e>None</e>
+		<e>EAPAuthentication</e>
+		<e>SharedAuthentication</e>
+		<e>Auto</e>
+	</A>
+	<A n=WPAEncryptionModesValues>
+		<e>WEPEncryption</e>
+		<e>TKIPEncryption</e>
+		<e>WEPandTKIPEncryption</e>
+		<e>AESEncryption</e>
+		<e>WEPandAESEncryption</e>
+		<e>TKIPandAESEncryption</e>
+		<e>WEPandTKIPandAESEncryption</e>
+	</A>
+	<A n=WPAAuthenticationModeValues>
+		<e>PSKAuthentication</e>
+		<e>EAPAuthentication</e>
+	</A>
+	<A n=IEEE11iAuthenticationModeValues>
+		<e>PSKAuthentication</e>
+		<e>EAPAuthentication</e>
+		<e>EAPandPSKAuthentication</e>
+	</A>
+	<A n=IEEEWPA3EncryptionModesValues>
+		<e>AESEncryption</e>
+	</A>
+	<A n=IEEEWPA3AuthenticationModeValues>
+		<e>SAEAuthentication</e>
+	</A>
+	<A n=DeviceOperationModeValues>
+		<e>InfrastructureAccessPoint</e>
+		<e>WirelessBridge</e>
+		<e>WirelessRepeater</e>
+		<e>WirelessStation</e>
+	</A>
+	<A n=ConfigurationStateValues>
+		<e>Not configured</e>
+		<e>Configured</e>
+	</A>
+	<A n=wifiIntfStatusValues>
+		<e>Up</e>
+		<e>Error</e>
+		<e>Disabled</e>
+	</A>
+	<A n=wlMacFilter2Modes>
+		<e>allow</e>
+		<e>deny</e>
+	</A>
+	<A n=LAN_WLANWPS_STATUS>
+		<e>Idle</e>
+		<e>InProgress</e>
+		<e>Success</e>
+		<e>Error</e>
+		<e>OverLap</e>
+	</A>
+	<A n=BandValues>
+		<e>2.4GHz</e>
+		<e>5GHz</e>
+		<e>2.4and5GHz</e>
+	</A>
+	<A n=X_TP_BandwidthValue>
+		<e>20M</e>
+		<e>40M</e>
+		<e>80M</e>
+		<e>160M</e>
+		<e>Auto</e>
+	</A>
+	<A n=forwardingTypes>
+		<e>Default</e>
+		<e>Network</e>
+		<e>Host</e>
+	</A>
+	<A n=BridgeAuthModeValues>
+		<e>Open</e>
+		<e>SharedAuthentication</e>
+		<e>PSKAuthentication</e>
+		<e>PSK2Authentication</e>
+	</A>
+	<A n=BridgeEncryptModeValues>
+		<e>None</e>
+		<e>WEPEncryption</e>
+		<e>TKIPEncryption</e>
+		<e>AESEncryption</e>
+	</A>
+	<A n=AddressSourceValues>
+		<e>DHCP</e>
+		<e>Static</e>
+		<e>AutoIP</e>
+	</A>
+	<A n=ethWanMaxBitRateValues>
+		<e>10</e>
+		<e>100</e>
+		<e>Auto</e>
+	</A>
+	<A n=EthernetLinkStatusValues>
+		<e>Up</e>
+		<e>Down</e>
+		<e>Unavailable</e>
+	</A>
+	<A n=SignalingProtocolsValues>
+		<e>SIP</e>
+		<e>MGCP</e>
+		<e>MGCP-NCS</e>
+		<e>H.248</e>
+		<e>H.323</e>
+	</A>
+	<A n=RoleValues>
+		<e>UserAgent</e>
+		<e>BackToBackUserAgents</e>
+		<e>OutboundProxy</e>
+	</A>
+	<A n=TLSKeyExchangeProtocolsValues>
+		<e>RSA</e>
+		<e>DSS</e>
+	</A>
+	<A n=enable3qValues>
+		<e>Disabled</e>
+		<e>Quiescent</e>
+		<e>Enabled</e>
+	</A>
+	<A n=DTMFMethodValues>
+		<e>InBand</e>
+		<e>RFC2833</e>
+		<e>SIPInfo</e>
+	</A>
+	<A n=DTMFMethodG711Values>
+		<e>InBand</e>
+		<e>RFC2833</e>
+		<e>SIPInfo</e>
+	</A>
+	<A n=voiceTransportValues>
+		<e>UDP</e>
+		<e>TCP</e>
+		<e>TLS</e>
+		<e>SCTP</e>
+	</A>
+	<A n=voiceStatusValues>
+		<e>Up</e>
+		<e>Initializing</e>
+		<e>Registering</e>
+		<e>Unregistering</e>
+		<e>Error</e>
+		<e>Testing</e>
+		<e>Quiescent</e>
+		<e>Disabled</e>
+	</A>
+	<A n=CallStateValues>
+		<e>Idle</e>
+		<e>Calling</e>
+		<e>Ringing</e>
+		<e>Connecting</e>
+		<e>InCall</e>
+		<e>Hold</e>
+		<e>Disconnecting</e>
+	</A>
+	<A n=CallWaitingStatusValues>
+		<e>Disabled</e>
+		<e>Idle</e>
+		<e>SecondaryRinging</e>
+		<e>SecondaryConnecting</e>
+		<e>SecondaryConnected</e>
+	</A>
+	<A n=voiceTestStateValues>
+		<e>None</e>
+		<e>Requested</e>
+		<e>Complete</e>
+		<e>Error_TestNotSupported</e>
+	</A>
+	<A n=voiceTestSelectorValues>
+		<e>PhoneConnectivityTest</e>
+	</A>
+	<A n=LoggingLevelValues>
+		<e>Error</e>
+		<e>Notice</e>
+		<e>Debug</e>
+	</A>
+	<A n=LoggingDestinationValues>
+		<e>Standard Error</e>
+		<e>Syslog</e>
+	</A>
+	<A n=HookFlashMethodValues>
+		<e>None</e>
+		<e>SIPInfo</e>
+	</A>
+	<A n=PstnRoutingRuleValues>
+		<e>Auto</e>
+		<e>VOIP</e>
+		<e>Line</e>
+	</A>
+	<A n=RipOperationModeValues>
+		<e>Passive</e>
+		<e>Active</e>
+	</A>
+	<A n=annexTypeValues>
+		<e>Annex A</e>
+		<e>Annex B</e>
+		<e>Annex L</e>
+		<e>Annex M</e>
+		<e>Annex A/L/M</e>
+		<e>Annex I</e>
+		<e>Annex A/L</e>
+		<e>Annex A/I/J/L/M</e>
+		<e>Annex J</e>
+		<e>Annex B/J</e>
+		<e>Annex A/B</e>
+		<e>Annex A/B/L/M</e>
+		<e>Annex A/I/L</e>
+		<e>Annex auto</e>
+	</A>
+	<A n=IPv6SitePrefixConfigTypeValue>
+		<e>Static</e>
+		<e>Delegated</e>
+	</A>
+	<A n=linkEncapsulationStandardValues>
+		<e>G.992.3_Annex_K_ATM</e>
+		<e>G.992.3_Annex_K_PTM</e>
+		<e>G.993.2_Annex_K_ATM</e>
+		<e>G.993.2_Annex_K_PTM</e>
+		<e>G.994.1</e>
+	</A>
+	<A n=AllowdProfileValues>
+		<e>8a</e>
+		<e>8b</e>
+		<e>8c</e>
+		<e>8d</e>
+		<e>12a</e>
+		<e>12b</e>
+		<e>17a</e>
+		<e>17b</e>
+		<e>30a</e>
+	</A>
+	<A n=IPv6DNSConfigTypeValue>
+		<e>Static</e>
+		<e>DHCPv6</e>
+	</A>
+	<A n=IPv6AddressingTypeValues>
+		<e>DHCPv6</e>
+		<e>SLAAC</e>
+		<e>Static</e>
+		<e>Auto</e>
+	</A>
+	<A n=StatusValues>
+		<e>Up</e>
+		<e>Error</e>
+		<e>Disabled</e>
+	</A>
+	<A n=modeArray>
+		<e>DSL</e>
+		<e>ETH</e>
+		<e>USB_3G</e>
+		<e>LTE</e>
+	</A>
+	<A n=IPv6IfAddressingTypeValues>
+		<e>Static</e>
+		<e>Delegated</e>
+	</A>
+	<A n=PON_statusValues>
+		<e>Up</e>
+		<e>Initializing</e>
+		<e>EstablishingLink</e>
+		<e>NoSignal</e>
+		<e>Error</e>
+		<e>Disabled</e>
+	</A>
+	<A n=ponWanLinkStatusValues>
+		<e>Up</e>
+		<e>Down</e>
+		<e>Initializing</e>
+		<e>Unavailable</e>
+	</A>
+	<A n=ACLServiceValues>
+		<e>All</e>
+		<e>HTTP</e>
+		<e>Telnet</e>
+		<e>FTP</e>
+		<e>SNMP</e>
+		<e>Ping</e>
+		<e>TFTP</e>
+	</A>
+	<A n=ACLLocationValues>
+		<e>Local</e>
+		<e>Remote</e>
+		<e>Both</e>
+	</A>
+	<A n=Usb4GDhcpType>
+		<e>DHCP4G</e>
+	</A>
+	<A n=pppoeSecondConnectionTypes>
+		<e>None</e>
+		<e>DHCP</e>
+		<e>StaticIP</e>
+	</A>
+	<A n=phoneTypeValues>
+		<e>FXS</e>
+		<e>DECT</e>
+		<e>VoiceApp</e>
+	</A>
+	<A n=tracerouteDSVals>
+		<e>None</e>
+		<e>Requested</e>
+		<e>Complete</e>
+		<e>Error_CannotResolveHostName</e>
+		<e>Error_MaxHopCountExceeded</e>
+	</A>
+	<A n=downloadDSVals>
+		<e>None</e>
+		<e>Requested</e>
+		<e>Completed</e>
+		<e>Error_InitConnectionFailed</e>
+		<e>Error_NoResponse</e>
+		<e>Error_TransferFailed</e>
+		<e>Error_PasswordRequestFailed</e>
+		<e>Error_LoginFailed</e>
+		<e>Error_NoTransferMode</e>
+		<e>Error_NoPASV</e>
+		<e>Error_IncorrectSize</e>
+		<e>Error_Timeout</e>
+	</A>
+	<A n=uploadDSVals>
+		<e>None</e>
+		<e>Requested</e>
+		<e>Completed</e>
+		<e>Error_InitConnectionFailed</e>
+		<e>Error_NoResponse</e>
+		<e>Error_PasswordRequestFailed</e>
+		<e>Error_LoginFailed</e>
+		<e>Error_NoTransferMode</e>
+		<e>Error_NoPASV</e>
+		<e>Error_NoCWD</e>
+		<e>Error_NoSTOR</e>
+		<e>Error_NoTransferComplete</e>
+	</A>
+	<A n=serverselectionDSVals>
+		<e>None</e>
+		<e>Requested</e>
+		<e>Completed</e>
+		<e>Error_CannotResolveHostName</e>
+		<e>Error_Internal</e>
+		<e>Error_Other</e>
+	</A>
+	<A n=protocolversionDSVals>
+		<e>Any</e>
+		<e>IPv4</e>
+		<e>IPv6</e>
+	</A>
+	<A n=protocolDSVals>
+		<e>ICMP</e>
+		<e>UDP Echo</e>
+	</A>
+	<A n=RecordIntervalValues>
+		<e>Min</e>
+		<e>Hor</e>
+		<e>Day</e>
+	</A>
+	<A n=HostTypeValues>
+		<e>wired</e>
+		<e>5g</e>
+		<e>2.4g</e>
+	</A>
+	<A n=iptvPossibleConnectionTypesValues>
+		<e>PPPoE</e>
+		<e>Dynamic IP</e>
+		<e>Bridge</e>
+	</A>
+	<A n=speedtestStatValues>
+		<e>Idle</e>
+		<e>Up_test</e>
+		<e>Down_test</e>
+		<e>Fail</e>
+	</A>
+	<A n=IPPingStateValues>
+		<e>None</e>
+		<e>Requested</e>
+		<e>Complete</e>
+		<e>Error_CannotResolveHostName</e>
+		<e>Error_Internal</e>
+		<e>Error_Other</e>
+	</A>
+</v>

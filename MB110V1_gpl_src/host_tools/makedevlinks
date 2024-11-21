@@ -1,0 +1,93 @@
+#!/bin/sh
+cons="  root root 622"
+disk="  root root 660"
+null="  root root 666"
+urandom="  root root  644"
+mkdev () {    # usage: mkdev name [bcu] major minor owner group mode
+        if [ "$opt_v" ]
+        then    if [ "$opt_d" ]
+                then    echo "sudo rm -f $1"
+                else    echo "$1        = $2 $3 $4 $5:$6 $7"
+                fi
+        fi
+        [ ! "$opt_n" ] && sudo rm -f $1 &&
+        [ ! "$opt_d" ] && sudo mknod $1 $2 $3 $4 
+#        [ ! "$opt_d" ] && sudo mknod $1 $2 $3 $4 &&
+#                sudo chown $5:$6 $1 &&
+#                sudo chmod $7 $1
+}  
+cd $1
+
+#mkdev	dev/console	c   4   	65	$cons
+mkdev	dev/console c   5   	1   $cons
+mkdev	dev/flash0  c	200		0   $cons
+mkdev	dev/adsl0   c	100		0	$cons	# zl added 2011-10-25
+#mkdev	dev/gpio    c	10		123 $cons
+#mkdev	dev/gpio1   c	252		0   $cons
+mkdev	dev/led   	c	10		151 $cons
+
+mkdev   dev/mtd       	b  31 	0 	$disk
+mkdev   dev/mtd0      	c  90 	0 	$disk
+mkdev   dev/mtd1      	c  90 	2 	$disk
+mkdev   dev/mtd2      	c  90 	4 	$disk
+mkdev   dev/mtd3      	c  90 	6 	$disk
+mkdev   dev/mtd4      	c  90 	8 	$disk
+mkdev   dev/mtd5     	c  90 	10 	$disk
+mkdev   dev/mtdblock0 	b  31 	0 	$disk
+mkdev   dev/mtdblock1 	b  31 	1 	$disk
+mkdev   dev/mtdblock2 	b  31 	2 	$disk
+mkdev   dev/mtdblock3 	b  31 	3 	$disk
+mkdev   dev/mtdblock4 	b  31 	4 	$disk
+mkdev   dev/mtdblock5 	b  31 	5 	$disk
+
+mkdev	dev/null    c	1   3	$null
+mkdev	dev/ppp	    c	108	0   $cons
+mkdev	dev/ptmx    c	5   2	$null
+
+mkdev	dev/ptyp0   c	2   0	$urandom
+mkdev	dev/ptyp1   c	2   1	$urandom
+mkdev	dev/ptyp2   c	2   2	$urandom
+
+mkdev	dev/tty   	c	5   0	$cons
+mkdev	dev/tty0   	c	4   0	$cons
+mkdev	dev/ttyS0   c	4   64	$cons
+mkdev	dev/ttyS1   c	4   65	$cons
+mkdev	dev/ttyp0   c	3   0	$urandom
+mkdev	dev/ttyp1   c	3   1	$urandom
+mkdev	dev/ttyp2   c	3   2	$urandom
+
+mkdev	dev/urandom  	c	1   9	$urandom
+mkdev	dev/watchdog	c	10  130	$urandom
+mkdev	dev/zero		c	1   5	$urandom
+
+mkdev	dev/dk0			c	63	0	$urandom
+mkdev	dev/caldata		b	31	5	$urandom
+
+mkdev	dev/net/tun	    c	10	200	$cons
+
+mkdev 	dev/sda 		b 	8 	0	$disk
+mkdev 	dev/sda1 		b 	8 	1	$disk
+mkdev 	dev/sda2 		b 	8 	2	$disk
+mkdev 	dev/sdb 		b 	8 	16	$disk
+mkdev 	dev/sdb1 		b 	8 	17	$disk
+mkdev 	dev/sdb2 		b 	8 	18	$disk
+
+mkdev 	dev/pmap 		c 	200	0	$cons
+mkdev 	dev/qostype 	c 	111 2	$cons
+
+#mkdev 	dev/fuse 		c 	10 	229	$cons
+#mkdev 	dev/misc/fuse 	c 	10 	229	$cons
+
+mkdev 	dev/ttyUSB0 	c 	188 0	$urandom	
+mkdev 	dev/ttyUSB1 	c 	188 1	$urandom
+mkdev 	dev/ttyUSB2 	c 	188 2	$urandom
+mkdev 	dev/ttyUSB3 	c 	188 3	$urandom
+
+#mkdev 	dev/usb/lp0 	c 	180 0	$null
+
+mkdev 	dev/AclDsp 		c 	234 0	$null
+mkdev 	dev/FxsDrv 		c 	35 	0	$null
+mkdev	dev/tdicmd		c	214 0	$null
+
+
+

@@ -1,0 +1,14 @@
+Source: npd6
+Section: net
+Priority: optional
+Maintainer: Sean Groarke <sgroarke@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), debhelper (>= 6)
+Standards-Version: 3.9.3
+Homepage: https://code.google.com/p/npd6/
+
+Package: npd6
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libc6 (>=2.4)
+Description: IPv6 neighbor proxy daemon
+ Provides a proxy service to respond to neighbor solicitations requests for a
+ pre-defined IPv6 subnet.

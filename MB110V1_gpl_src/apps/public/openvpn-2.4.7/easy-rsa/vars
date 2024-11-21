@@ -1,0 +1,15 @@
+# easy-rsa parameter settings
+
+export EASY_RSA="/var/easy-rsa"
+export ETC_RSA="/etc/easy-rsa"
+
+# Edit this variable to point to
+# your soon-to-be-created key
+# directory.
+#
+# WARNING: clean-all will do
+# a rm -rf on this directory
+# so make sure you define
+# it correctly!
+export KEY_DIR="$EASY_RSA/keys"
+

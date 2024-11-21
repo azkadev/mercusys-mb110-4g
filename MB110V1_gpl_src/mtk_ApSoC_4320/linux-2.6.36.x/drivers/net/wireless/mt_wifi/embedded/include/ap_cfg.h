@@ -1,0 +1,333 @@
+#ifndef __AP_CFG_H__
+#define __AP_CFG_H__
+
+
+#include "rt_config.h"
+
+//add by caizifeng 1118
+typedef struct _WLAN_BSS_INFO
+{
+	char ssid[33];			
+	unsigned char bssid[6];	
+	unsigned char securityEnable;	
+	unsigned int channel;			
+	unsigned int rssi;	
+	NDIS_802_11_AUTHENTICATION_MODE authMode;	
+	NDIS_802_11_WEP_STATUS	wepStatus;	
+}WLAN_BSS_INFO;
+
+typedef struct _WLAN_RATE_INFO
+{
+	unsigned int basicRateMask;
+	unsigned int basicMcsMask;
+	
+	unsigned int operationalRateMask;
+	unsigned int operationalMcsMask;
+	
+	unsigned int possibleRateMask;
+	unsigned int possibleMcsMask;
+}WLAN_RATE_INFO;
+
+
+typedef struct _WLAN_STA_INFO
+{
+	unsigned char	addr[MAC_ADDR_LEN];
+	unsigned int	tx_packets;
+	unsigned int rx_packets;
+	unsigned char hostName[16];
+}WLAN_STA_INFO;
+
+//end add
+
+/* added by zeng weiji, 2018/02/02 */
+extern UCHAR sharedWscLock;
+typedef struct _WLAN_WPS_LOCK
+{
+	unsigned char setupLock;
+	int setupLockTime;
+}WLAN_WPS_LOCK;
+/* end added */
+
+INT RTMPAPPrivIoctlSet(
+	IN RTMP_ADAPTER *pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *pIoctlCmdStr);
+
+INT RTMPAPPrivIoctlShow(
+	IN RTMP_ADAPTER *pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *pIoctlCmdStr);
+
+#if defined(INF_AR9) || defined(BB_SOC)
+#if defined(AR9_MAPI_SUPPORT) || defined(BB_SOC)
+INT RTMPAPPrivIoctlAR9Show(
+	IN RTMP_ADAPTER *pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *pIoctlCmdStr);
+
+VOID RTMPAR9IoctlGetMacTable(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGetSTAT2(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGetRadioDynInfo(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+#endif /*AR9_MAPI_SUPPORT*/
+#endif/* INF_AR9 */
+
+#if 0
+typedef struct _WLAN_RATE_INFO
+{
+	unsigned int basicRateMask;
+	unsigned int basicMcsMask;
+	
+	unsigned int operationalRateMask;
+	unsigned int operationalMcsMask;
+	
+	unsigned int possibleRateMask;
+	unsigned int possibleMcsMask;
+}WLAN_RATE_INFO;
+#endif
+
+INT RTMPAPSetInformation(
+	IN	PRTMP_ADAPTER	pAd,
+	IN	OUT	RTMP_IOCTL_INPUT_STRUCT	*rq,
+	IN	INT				cmd);
+
+INT RTMPAPQueryInformation(
+	IN	PRTMP_ADAPTER       pAd,
+	IN	OUT	RTMP_IOCTL_INPUT_STRUCT    *rq,
+	IN	INT                 cmd);
+	
+VOID RTMPIoctlStatistics(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGetMacTableStaInfo(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGetMacTable(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGetMacTableStat(
+	IN PRTMP_ADAPTER pAd,
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGetChannelList(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+INT RTMPIoctlGetStaInfo(
+	IN PRTMP_ADAPTER pAd,
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPAPIoctlE2PROM(
+    IN  PRTMP_ADAPTER   pAdapter,
+    IN  RTMP_IOCTL_INPUT_STRUCT    *wrq);
+
+#if defined(DBG) ||(defined(BB_SOC)&&defined(CONFIG_ATE))
+VOID RTMPAPIoctlBBP(
+    IN  PRTMP_ADAPTER   pAdapter,
+    IN  RTMP_IOCTL_INPUT_STRUCT    *wrq);
+
+#ifdef RTMP_RF_RW_SUPPORT
+VOID RTMPAPIoctlRF(
+	IN	PRTMP_ADAPTER	pAdapter,
+	IN	RTMP_IOCTL_INPUT_STRUCT	*wrq);
+#endif /* RTMP_RF_RW_SUPPORT */
+
+#endif /* DBG */
+
+VOID RTMPIoctlGRATEINFO(
+	IN PRTMP_ADAPTER pAd,
+	IN	RTMP_IOCTL_INPUT_STRUCT	*wrq);
+
+VOID RTMPIoctlGBSSINFO(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGSTAINFO(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGSCANBSSINFO(
+	IN PRTMP_ADAPTER pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+
+VOID RtmpDrvMaxRateGet(
+	IN	VOID					*pReserved,
+/*	IN	PHTTRANSMIT_SETTING		pHtPhyMode, */
+	IN	UINT8					MODE,
+	IN	UINT8					ShortGI,
+	IN	UINT8					BW,
+	IN	UINT8					MCS,
+	OUT	UINT32					*pRate);
+
+#ifdef WSC_AP_SUPPORT
+VOID RTMPIoctlWscProfile(
+	IN PRTMP_ADAPTER pAdapter, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlWscProfile(
+	IN PRTMP_ADAPTER pAdapter, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+/*add by woody */
+#if defined(INF_AR9) || defined(BB_SOC)
+#if defined(AR9_MAPI_SUPPORT) || defined(BB_SOC)
+VOID RTMPAR9IoctlWscProfile(
+	IN PRTMP_ADAPTER pAdapter, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlWscPINCode(
+	IN PRTMP_ADAPTER pAdapter, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+
+VOID RTMPIoctlWscStatus(
+	IN PRTMP_ADAPTER pAdapter, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGetWscDynInfo(
+	IN PRTMP_ADAPTER pAdapter, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+
+VOID RTMPIoctlGetWscRegsDynInfo(
+	IN PRTMP_ADAPTER pAdapter, 
+	IN RTMP_IOCTL_INPUT_STRUCT *wrq);
+#endif/*AR9_MAPI_SUPPORT*/
+#endif/* INF_AR9 */
+#endif /* WSC_AP_SUPPORT */
+
+#ifdef DOT11_N_SUPPORT
+VOID RTMPIoctlQueryBaTable(
+	IN	PRTMP_ADAPTER	pAd, 
+	IN	RTMP_IOCTL_INPUT_STRUCT	*wrq);
+#endif /* DOT11_N_SUPPORT */
+
+#ifdef DOT1X_SUPPORT
+VOID RTMPIoctlStaticWepCopy(
+	IN	PRTMP_ADAPTER	pAd, 
+	IN	RTMP_IOCTL_INPUT_STRUCT	*wrq);
+
+VOID RTMPIoctlRadiusData(
+	IN PRTMP_ADAPTER	pAd, 
+	IN RTMP_IOCTL_INPUT_STRUCT		*wrq);
+
+VOID RTMPIoctlAddWPAKey(
+	IN	PRTMP_ADAPTER	pAd, 
+	IN	RTMP_IOCTL_INPUT_STRUCT	*wrq);
+
+VOID RTMPIoctlAddPMKIDCache(
+	IN	PRTMP_ADAPTER	pAd, 
+	IN	RTMP_IOCTL_INPUT_STRUCT	*wrq);
+
+VOID RTMPIoctlSetIdleTimeout(
+	IN	PRTMP_ADAPTER	pAd, 
+	IN	RTMP_IOCTL_INPUT_STRUCT	*wrq);
+
+VOID RTMPIoctlQueryStaAid(
+        IN      PRTMP_ADAPTER   pAd,
+        IN      RTMP_IOCTL_INPUT_STRUCT *wrq);
+#endif /* DOT1X_SUPPORT */
+
+INT Set_AP_Daemon_Status(
+	IN PRTMP_ADAPTER pAd,
+	IN UINT8 WorkSpaceID,
+	IN BOOLEAN Status);
+
+INT Set_AP_IE(
+	IN PRTMP_ADAPTER pAd,
+	IN RTMP_STRING *IE,
+	IN UINT32 IELen);
+
+#ifdef CONFIG_HOTSPOT
+INT Send_ANQP_Rsp(
+	IN PRTMP_ADAPTER pAd,
+	IN RTMP_STRING *PeerMACAddr,
+	IN RTMP_STRING *ANQPReq,
+	IN UINT32 ANQPReqLen);
+#endif
+
+INT	ApCfg_Set_AuthMode_Proc(
+	IN	PRTMP_ADAPTER	pAd, 
+	IN	INT				apidx,
+	IN	RTMP_STRING *arg);
+
+INT	ApCfg_Set_MaxStaNum_Proc(
+	IN PRTMP_ADAPTER 	pAd,
+	IN INT				apidx,
+	IN RTMP_STRING *arg);
+
+INT	ApCfg_Set_IdleTimeout_Proc(RTMP_ADAPTER *pAd, RTMP_STRING *arg);
+
+INT Set_AP_IE(
+	IN PRTMP_ADAPTER pAd,
+	IN RTMP_STRING *IE,
+	IN UINT32 IELen);
+
+#ifdef RTMP_FLASH_SUPPORT
+INT Set_CalWrite_Proc(
+	RTMP_ADAPTER *pAd, RTMP_STRING *arg);
+#endif
+
+
+#ifdef APCLI_SUPPORT
+#ifdef WPA_SUPPLICANT_SUPPORT
+VOID RTMPApCliAddKey(
+	IN	PRTMP_ADAPTER	    pAd, 
+	IN 	INT				apidx,
+	IN	PNDIS_APCLI_802_11_KEY    pApcliKey);
+#endif /* WPA_SUPPLICANT_SUPPORT */
+#endif /* APCLI_SUPPORT */
+#ifdef TP_NETWORK_ROAMING
+//void send_event_to_network_roaming(struct net_device *dev, u_int16_t event, char *data);
+void send_event_to_network_roaming(struct net_device *dev,  u_int16_t siocType, u_int16_t event, char *data);
+/* kev event_code value for Atheros IEEE80211 events */
+enum {
+    IEEE80211_EV_SCAN_DONE,
+    IEEE80211_EV_CHAN_START,
+    IEEE80211_EV_CHAN_END,
+    IEEE80211_EV_RX_MGMT,
+    IEEE80211_EV_P2P_SEND_ACTION_CB,
+    IEEE80211_EV_IF_RUNNING,
+    IEEE80211_EV_IF_NOT_RUNNING,
+    IEEE80211_EV_AUTH_COMPLETE_AP,
+    IEEE80211_EV_ASSOC_COMPLETE_AP,
+    IEEE80211_EV_DEAUTH_COMPLETE_AP,
+    IEEE80211_EV_AUTH_IND_AP,
+    IEEE80211_EV_AUTH_COMPLETE_STA,
+    IEEE80211_EV_ASSOC_COMPLETE_STA,
+    IEEE80211_EV_DEAUTH_COMPLETE_STA,
+    IEEE80211_EV_DISASSOC_COMPLETE_STA,
+    IEEE80211_EV_AUTH_IND_STA,
+    IEEE80211_EV_DEAUTH_IND_STA,
+    IEEE80211_EV_ASSOC_IND_STA,
+    IEEE80211_EV_DISASSOC_IND_STA,
+    IEEE80211_EV_DEAUTH_IND_AP,
+    IEEE80211_EV_DISASSOC_IND_AP,
+    IEEE80211_EV_ASSOC_IND_AP,
+    IEEE80211_EV_REASSOC_IND_AP,
+    IEEE80211_EV_MIC_ERR_IND_AP,
+    IEEE80211_EV_KEYSET_DONE_IND_AP,
+    IEEE80211_EV_BLKLST_STA_AUTH_IND_AP,
+    IEEE80211_EV_WAPI,
+    IEEE80211_EV_TX_MGMT,
+    IEEE80211_EV_CHAN_CHANGE,
+    IEEE80211_EV_RECV_PROBEREQ,
+    IEEE80211_EV_STA_AUTHORIZED,
+    IEEE80211_EV_STA_LEAVE,
+    IEEE80211_EV_ASSOC_FAILURE,
+    IEEE80211_EV_DISASSOC_COMPLETE_AP,
+    IEEE80211_EV_PRIMARY_RADIO_CHANGED,
+    IEEE80211_EV_MU_RPT,
+    IEEE80211_EV_SCAN,
+    IEEE80211_EV_ATF_CONFIG,
+    IEEE80211_EV_MESH_PEER_TIMEOUT,
+    IEEE80211_EV_UNPROTECTED_DEAUTH_IND_STA,
+};
+#endif
+#endif /* __AP_CFG_H__ */

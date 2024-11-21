@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DslCpeConfig>
+	<InternetGatewayDevice>
+		<DeviceInfo>
+			<X_TP_IsFactory val=1 />
+		</DeviceInfo>
+		<X_TP_CloudService>
+			<SwitchStatus val=0 />
+		</X_TP_CloudService>
+        <LANDevice instance=1>
+            <WLANConfiguration instance=1 >
+                <BeaconType val="Basic" />
+                <SSID val="MERCUSYS_0969" />
+                <X_TP_Bandwidth val="40M" />
+            </WLANConfiguration>
+        </LANDevice>
+	</InternetGatewayDevice>
+</DslCpeConfig>

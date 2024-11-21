@@ -1,0 +1,132 @@
+#!/bin/sh
+
+. /etc/easy-rsa/vars
+
+PROGNAME=pkitool
+VERSION=1.0
+
+CA_KEY=$KEY_DIR/openvpn-ca.key
+CA_CERT=$KEY_DIR/openvpn-ca.crt
+SERVER_KEY=$KEY_DIR/openvpn-server.key
+SERVER_CERT=$KEY_DIR/openvpn-server.crt
+CLIENT_KEY=$KEY_DIR/openvpn-client.key
+CLIENT_CERT=$KEY_DIR/openvpn-client.crt
+
+CA_CN=openvpn-CA
+SERVER_CN=openvpn-server
+CLIENT_CN=openvpn-client
+
+KEY_SIZE=1024
+NOT_BEFORE=20180101000000
+NOT_AFTER=20301231235959
+
+GENKEY_TOOL=/usr/sbin/gen_key
+GENCERT_TOOL=/usr/sbin/cert_write
+SERIAL_FILE=$KEY_DIR/serial
+
+get_serial()
+{
+	[ ! -e $SERIAL_FILE ] && echo 1 > $SERIAL_FILE
+	s=$(cat $SERIAL_FILE)
+	echo $s
+	s=$((s+1))
+	echo $s > $SERIAL_FILE
+}
+
+die()
+{
+    local m="$1"
+
+    echo "$m" >&2
+    exit 1
+}
+
+need_vars()
+{
+    echo '  Please edit the vars script to reflect your configuration,'
+    echo '  then source it with "source ./vars".'
+    echo '  Next, to start with a fresh PKI configuration and to delete any'
+    echo '  previous certificates and keys, run "./clean-all".'
+    echo "  Finally, you can run this tool ($PROGNAME) to build certificates/keys."
+}
+
+usage()
+{
+    echo "$PROGNAME $VERSION"
+    echo "Usage: $PROGNAME [options...]"
+    echo "Options:"
+    echo "  --initca    : Build root certificate"
+    echo "  --server  	: Build server certificate"
+	echo "  --client  	: Build client certificate"
+    echo "Notes:"
+    need_vars
+    echo "Examples:"
+    echo "  $PROGNAME --initca		-> Build root certificate"
+    echo "  $PROGNAME --server		-> Build server certificate"
+    echo "  $PROGNAME --client		-> Build client certificate"
+}
+
+
+# Set defaults
+DO_CA="0"
+DO_SERVER="0"
+DO_CLIENT="0"
+
+# Process options
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --initca   ) DO_CA="1" ;;
+		--server   ) DO_SERVER="1" ;;
+		--client   ) DO_CLIENT="1" ;;
+		# errors
+		--*        ) die "$PROGNAME: unknown option: $1" ;;
+		*          ) break ;;
+    esac
+    shift
+done
+
+[ ! -e $GENKEY_TOOL ] && die "$GENKEY_TOOL is not exist."
+[ ! -e $GENCERT_TOOL ] && die "$GENCERT_TOOL is not exist."
+
+if [ $DO_CA -eq 1 ]; then
+	echo "generate root certificate ... "
+	$GENKEY_TOOL type=rsa rsa_keysize=$KEY_SIZE filename=$CA_KEY format=pem
+	
+	[ ! -e $CA_KEY ] && die "$CA_KEY is not exist."
+	rand=$(head -20 /dev/urandom |tr -dc '0-9'|cut -c 1-18)
+	echo "$GENCERT_TOOL selfsign=1 is_ca=1 issuer_key=$CA_KEY issuer_name=CN=$CA_CN not_before=$NOT_BEFORE not_after=$NOT_AFTER serial=$rand max_pathlen=0 output_file=$CA_CERT"
+	$GENCERT_TOOL selfsign=1 is_ca=1 issuer_key=$CA_KEY issuer_name=CN=$CA_CN not_before=$NOT_BEFORE not_after=$NOT_AFTER serial=$rand max_pathlen=0 output_file=$CA_CERT
+	
+	[ ! -e $CA_CERT ] && die "$CA_CERT is not exist."
+fi
+
+if [ $DO_SERVER -eq 1 ]; then
+	echo "generate server certificate ... "
+	$GENKEY_TOOL type=rsa rsa_keysize=$KEY_SIZE filename=$SERVER_KEY format=pem
+	
+	[ ! -e $CA_CERT ] && die "$CA_CERT is not exist."
+	[ ! -e $CA_KEY ] && die "$CA_KEY is not exist."
+	[ ! -e $SERVER_KEY ] && die "$SERVER_KEY is not exist."
+	s=$(get_serial)
+	echo "$GENCERT_TOOL subject_key=$SERVER_KEY subject_name=CN=$SERVER_CN issuer_crt=$CA_CERT issuer_key=$CA_KEY not_before=$NOT_BEFORE not_after=$NOT_AFTER serial=$s max_pathlen=1 ns_cert_type=ssl_server key_usage=digital_signature,key_encipherment output_file=$SERVER_CERT"
+	$GENCERT_TOOL subject_key=$SERVER_KEY subject_name=CN=$SERVER_CN issuer_crt=$CA_CERT issuer_key=$CA_KEY not_before=$NOT_BEFORE not_after=$NOT_AFTER serial=$s max_pathlen=1 ns_cert_type=ssl_server key_usage=digital_signature,key_encipherment output_file=$SERVER_CERT
+	[ ! -e $SERVER_CERT ] && die "$SERVER_CERT is not exist."
+fi
+
+if [ $DO_CLIENT -eq 1 ]; then
+	echo "generate client certificate ... "
+	$GENKEY_TOOL type=rsa rsa_keysize=$KEY_SIZE filename=$CLIENT_KEY format=pem
+	
+	[ ! -e $CA_CERT ] && die "$CA_CERT is not exist."
+	[ ! -e $CA_KEY ] && die "$CA_KEY is not exist."
+	[ ! -e $CLIENT_KEY ] && die "$CLIENT_KEY is not exist."
+	s=$(get_serial)
+	echo "$GENCERT_TOOL subject_key=$CLIENT_KEY subject_name=CN=$CLIENT_CN issuer_crt=$CA_CERT issuer_key=$CA_KEY not_before=$NOT_BEFORE not_after=$NOT_AFTER serial=$s max_pathlen=1 ns_cert_type=ssl_client key_usage=digital_signature output_file=$CLIENT_CERT"
+	$GENCERT_TOOL subject_key=$CLIENT_KEY subject_name=CN=$CLIENT_CN issuer_crt=$CA_CERT issuer_key=$CA_KEY not_before=$NOT_BEFORE not_after=$NOT_AFTER serial=$s max_pathlen=1 ns_cert_type=ssl_client key_usage=digital_signature output_file=$CLIENT_CERT
+	[ ! -e $CLIENT_CERT ] && die "$CLIENT_CERT is not exist."
+fi
+
+if [ -e $CA_KEY ] && [ -e $CA_CERT ] && [ -e $SERVER_KEY ] && [ -e $SERVER_CERT ] && [ -e $CLIENT_KEY ] && [ -e $CLIENT_CERT ]; then
+	touch $EASY_RSA/genok
+fi
+

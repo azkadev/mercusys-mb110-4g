@@ -1,0 +1,13 @@
+/src/config.d
+/src/config.o
+/src/gatedevice.d
+/src/gatedevice.o
+/src/main.d
+/src/main.o
+/src/pmlist.d
+/src/pmlist.o
+/src/strFile.d
+/src/strFile.o
+/src/util.d
+/src/util.o
+/upnpd

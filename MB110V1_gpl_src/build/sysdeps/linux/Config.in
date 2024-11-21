@@ -1,0 +1,1185 @@
+#
+# For a description of the syntax of this configuration file,
+# see scripts/kbuild/config-language.txt.
+#
+
+mainmenu "Lettuce Configuration"
+
+config HAVE_DOT_CONFIG
+	bool
+	default y
+
+menu "General Configuration"
+
+choice
+	prompt "CPU Type"
+	default INCLUDE_CPU
+	help
+	  Choose CPU type
+
+config INCLUDE_CPU_TC3162U
+	bool "Ralink TC3162U"
+
+config INCLUDE_CPU_TC3182
+	bool "Ralink TC3182"
+
+config INCLUDE_CPU_RTL8672
+	bool "Realtek RTL8672"
+
+config INCLUDE_CPU_VR268
+	bool "Lantiq VR268"
+	
+config INCLUDE_CPU_VR288
+	bool "Lantiq VR288"
+	
+config INCLUDE_CPU_AR368
+	bool "Lantiq AR368"
+
+config INCLUDE_CPU_AR368FE
+	bool "Lantiq AR368FE"
+
+config INCLUDE_CPU_AR9344
+	bool "Atheros AR9344"
+
+config INCLUDE_CPU_AR9558
+    bool "Atheros AR9558"
+
+config INCLUDE_CPU_RT63368
+	bool "MTK RT63368"
+	
+config INCLUDE_CPU_RT63365
+	bool "MTK RT63365"
+	
+config INCLUDE_CPU_88F6550 
+	bool "Marvell 88F6550" 
+
+config INCLUDE_CPU_MT7620A
+	bool "MTK MT7620A"
+
+config INCLUDE_CPU_MT7628
+	bool "MTK MT7628"
+
+endchoice
+	
+config KERNEL_MAX_SIZE 
+    string "Kernel bin max size" 
+    default "0x110000" 
+
+choice
+    prompt "TARGET_CPU_ENDIAN"
+    default INCLUDE_CPU_BIG_ENDIAN
+
+config INCLUDE_CPU_BIG_ENDIAN
+    bool "TARGET CPU BIG ENDIAN"
+
+config INCLUDE_CPU_LITTLE_ENDIAN
+    bool "TARGET CPU LITTLE ENDIAN"
+
+endchoice
+
+choice
+    prompt "MTD part type" 
+    default INCLUDE_MTD_TYPE1 
+    help     
+      Choose CPU type 
+ 
+config INCLUDE_MTD_TYPE1 
+    bool "TYPE1, Default 6 MTD parts(16MB)" 
+ 
+config INCLUDE_MTD_TYPE2 
+    bool "TYPE2, Default 7 MTD parts(16MB)" 
+
+config INCLUDE_MTD_TYPE3 
+    bool "TYPE3, Lantiq 8 MTD parts(8MB)" 
+	
+config INCLUDE_MTD_TYPE4 
+    bool "TYPE4, Lantiq 8 MTD parts(16MB)" 
+
+config INCLUDE_MTD_TYPE5
+    bool "TYPE5, Lantiq 8 MTD parts 5GRadio and DECTRadio(16MB)"
+
+config INCLUDE_MTD_TYPE6
+    bool "TYPE6, Lantiq 9 MTD parts(16MB)"
+
+config INCLUDE_MTD_TYPE7
+    bool "TYPE7, MTK 8 MTD parts(8MB)"
+	
+endchoice
+
+config INCLUDE_FLASH_8M
+	bool "8MB Flash Size"
+	default n
+
+config INCLUDE_FLASH_16M
+	bool "16MB Flash Size"
+	default n
+
+choice
+	prompt "Product language"
+	default INCLUDE_LANGUAGE
+	help
+	  Choose language type
+
+config INCLUDE_LANGUAGE_CN
+	bool "Chinese language"
+
+config INCLUDE_LANGUAGE_EN
+	bool "English language"
+
+endchoice
+
+choice
+	prompt "ETH Type"
+	default INCLUDE_ETH_UNKNOW
+
+config INCLUDE_ETH_LTQ
+	bool "Build Lantiq ethernet"
+	default n
+	
+config INCLUDE_ETH_RA
+	bool "Build Ralink ethernet"
+	default n
+	
+config INCLUDE_ETH_ATH
+	bool "Build Atheros ethernet"
+	default n
+	
+config INCLUDE_GMAC1_ONLY
+	bool "Build gmac1 only"
+	depends on INCLUDE_ETH_ATH
+	default n
+endchoice
+
+config INCLUDE_DIGITAL_SIGNATURE
+	bool "Digital signature"
+	default n
+	
+config INCLUDE_SOCKET_LOCK
+	bool "Use socket mechanism for the data model lock"
+	default y if INCLUDE_CPU_TC3182
+	default n if !INCLUDE_CPU_TC3182
+	help
+		semop can not lock the data model well in some platform
+	
+config INCLUDE_WATCHDOG
+	bool "Enable watchdog"
+	default n
+	
+config INCLUDE_SERBIA
+	bool "Customized for Serbia"
+	depends on INCLUDE_CPU_TC3182
+	default n
+
+config INCLUDE_PPA_ACCELERATE
+	bool "Enable Lantiq PPA accelerate"
+	default n
+	
+config INCLUDE_CLI_FULL_FEATURE 
+	bool "Include all cli cmd"
+	default n
+	
+config INCLUDE_USER_ACCOUNT
+	bool "Enable user account,default no need set"
+	default n
+	
+config INCLUDE_CHGINIT_PWD
+	bool "Enable change password when init"
+	default n
+
+config INCLUDE_CHGINIT_PWD_CN
+	bool "Enable change password for domestic market"
+	depends on INCLUDE_CHGINIT_PWD
+	default n
+	
+config INCLUDE_AUTH_PASSWORD
+	bool "Only auth password"
+	depends on INCLUDE_CHGINIT_PWD
+	default n
+	
+config INCLUDE_DOMAIN_INTERCEPT
+	bool "Intercept domain access when access DUT by unsafe domains"
+	default n
+	
+config INCLUDE_TEST
+	bool "test config by yangxv"
+	default n
+
+endmenu
+
+#source archival/Config.in
+
+#
+# Wireless options
+#
+menu 'Wireless Options'
+
+config INCLUDE_LAN_WLAN
+	bool "Build wireless"
+	default n
+	
+config INCLUDE_LAN_WLAN_MSSID
+	bool "Build wireless Multi-SSID"
+	depends on INCLUDE_LAN_WLAN
+	default n
+
+config INCLUDE_LAN_WLAN_GUESTNETWORK
+	bool "Build wireless GuestNetwork"
+	depends on INCLUDE_LAN_WLAN_MSSID
+	default n
+	
+config INCLUDE_LAN_WLAN_THREE_PPA
+	bool "Build wireless GuestNetwork for 3 PPA interfaces"
+	depends on INCLUDE_LAN_WLAN_GUESTNETWORK
+	default y
+	
+config INCLUDE_LAN_WLAN_WDS
+	bool "Build wireless WDS"
+	depends on INCLUDE_LAN_WLAN
+	default n
+	
+config INCLUDE_LAN_WLAN_WDS_DETECT
+	bool "Build wireless wds address mode detect"
+	depends on INCLUDE_LAN_WLAN_WDS
+	default n
+
+config INCLUDE_LAN_WLAN_8021X
+	bool "Build wireless 802.1x"
+	depends on INCLUDE_LAN_WLAN
+	default y
+	
+config INCLUDE_LAN_WLAN_DUALBAND
+	bool "Build wlan dual band"
+	depends on INCLUDE_LAN_WLAN
+	default y	
+		
+config INCLUDE_LAN_WLAN_AC
+	bool "Build wlan 802.11ac"
+	depends on INCLUDE_LAN_WLAN
+	default n
+
+config INCLUDE_LAN_WLAN_MU_BUTTION
+	bool "Add Mu-mimo web switch buttion"
+	depends on INCLUDE_LAN_WLAN_AC
+	default n
+
+config INCLUDE_LAN_WLAN_SCHEDULE
+	bool "Build wireless schedule"
+	depends on INCLUDE_LAN_WLAN
+	default n
+
+config WLAN_VAP_NUM
+	depends on INCLUDE_LAN_WLAN
+	int "VAP NUM"
+	range 1 3
+	default 1
+
+config INCLUDE_LAN_WLAN_HWSWITCH
+        bool "Build wireless hardware switch"
+	depends on INCLUDE_LAN_WLAN
+	default n
+	
+config INCLUDE_LAN_WLAN_DIFFERENT_CHIP
+	bool "Build different wireless chip"
+	depends on INCLUDE_LAN_WLAN_DUALBAND
+	default n
+
+menu 'WIFI Type'
+
+config INCLUDE_WLAN_RA
+	bool "Build Ralink WIFI"
+	depends on INCLUDE_LAN_WLAN
+	default n
+	
+config INCLUDE_WLAN_RTL
+	bool "Build Realtek WIFI"
+	depends on INCLUDE_LAN_WLAN
+	default n
+	
+config INCLUDE_WLAN_ATH
+	bool "Build Atheros WIFI"
+	depends on INCLUDE_LAN_WLAN
+	default n
+
+config INCLUDE_WLAN_LQ
+	bool "Build LANTIQ WIFI"
+	depends on INCLUDE_LAN_WLAN
+	default n
+
+config INCLUDE_WLAN_LQ_WAVE300
+	bool "WAVE300"
+	depends on INCLUDE_WLAN_LQ
+	default n
+
+config INCLUDE_WLAN_LQ_WRX313
+	bool "WRX313"
+	depends on INCLUDE_WLAN_LQ
+	default n
+
+endmenu
+	
+choice 
+	prompt "ATH G_BAND MIMO NUM "
+	default ATH_G_BAND_MIMO_UNKOWN
+	depends on INCLUDE_WLAN_ATH
+	
+config ATH_G_BAND_MIMO_NUM_2_2
+	bool "ATH_G_BAND_MOMO_NUM_2x2"
+	depends on INCLUDE_WLAN_ATH
+	
+config ATH_G_BAND_MIMO_NUM_3_3
+	bool "ATH_G_BAND_MOMO_NUM_3x3"
+	depends on INCLUDE_WLAN_ATH
+	
+endchoice
+
+choice 
+	prompt "ATH A BAND MIMO NUM "
+	default ATH_A_BAND_MIMO_UNKOWN
+	depends on INCLUDE_WLAN_ATH
+	
+config ATH_A_BAND_MIMO_NUM_3_3
+	bool "ATH_A_BAND_MOMO_NUM_3x3"
+	depends on INCLUDE_WLAN_ATH
+	
+endchoice
+	
+endmenu
+
+menu 'DSL Options'
+
+config INCLUDE_ADSLWAN
+	bool "Build DSL"
+	default n
+
+config INCLUDE_VDSLWAN
+	bool "Build vdsl module"
+	depends on INCLUDE_ADSLWAN
+	default n
+
+config INCLUDE_ANNEXB
+	bool "Build AnnexB"
+	depends on INCLUDE_ADSLWAN
+	default n 
+
+config INCLUDE_WAN_VLAN
+	bool "Build Vlan tag with WAN"
+	depends on INCLUDE_ADSLWAN
+	default n
+
+choice
+	prompt "ADSL Type"
+	default INCLUDE_ADSL_UNKNOW
+	depends on INCLUDE_ADSLWAN
+
+config INCLUDE_ADSL_RA
+	bool "Build Ralink DSL"
+
+config INCLUDE_ADSL_RTL
+	bool "Build Realtek DSL"
+
+config INCLUDE_ADSL_LTQ
+	bool "Build Lantiq DSL"
+	
+endchoice
+
+config INCLUDE_AUTO_PVC
+	bool "Build auto PVC"
+	default n
+	
+endmenu	# menu 'DSL Options'
+
+menu 'IPv6 Options'
+	
+config INCLUDE_IPV6
+	bool "Build IPv6"
+	default n
+	
+config INCLUDE_IPV6_MLD
+	bool "Build IPv6 MLD"
+	default n
+	depends on INCLUDE_IPV6
+
+config INCLUDE_IPV6_SLAAC
+	bool "Build IPv6 WAN SLAAC"
+	default n
+	depends on INCLUDE_IPV6
+
+config INCLUDE_IPV6_HTTP
+	bool "Build IPv6 HTTP & Telnet"
+	default n
+	depends on INCLUDE_IPV6
+
+config INCLUDE_IPV6FIREWALL
+	bool "Build IPv6 FIREWALL"
+	default n
+	depends on INCLUDE_IPV6
+
+endmenu
+	
+menu 'USB Options'
+
+config INCLUDE_USB
+	bool "Build USB"
+	default n
+	
+config INCLUDE_USB_3G_DONGLE
+	bool "Build USB 3G dongle"
+	default n
+	depends on INCLUDE_USB
+	
+config INCLUDE_USB_OVER_IP
+	bool "Build USB over IP"
+	default n
+	depends on INCLUDE_USB
+
+choice
+	prompt "USB over IP Type"
+	default INCLUDE_USB_OVER_IP_TPLINK
+	depends on INCLUDE_USB_OVER_IP
+
+config INCLUDE_USB_OVER_IP_TPLINK
+	bool "Build USB over IP of TP-Link"
+	
+config INCLUDE_USB_OVER_IP_KCODES
+	bool "Build USB over IP of KCodes"
+	
+endchoice
+
+config INCLUDE_USB_STORAGE
+	bool "Build USB storage"
+	default n
+	depends on INCLUDE_USB
+	
+menu 'DLNA Options'
+
+config INCLUDE_USB_MEDIA_SERVER
+	bool "Build USB DLNA"
+	default n
+	depends on INCLUDE_USB_STORAGE
+	
+choice
+	prompt "DLNA type"
+	default INCLUDE_USHARE
+	depends on INCLUDE_USB_MEDIA_SERVER
+	
+config INCLUDE_USHARE
+	bool "Build USHARE"
+
+config INCLUDE_MINIDLNA
+	bool "Build MINIDLNA"
+	
+config INCLUDE_LITE_MINIDLNA
+	bool "Build LITE MINIDLNA"
+	
+endchoice
+
+endmenu
+	
+config INCLUDE_USB_SAMBA_SERVER
+	bool "Build USB Samba Server"
+	default n
+	depends on INCLUDE_USB_STORAGE
+
+config INCLUDE_USB_FTP_SERVER
+	bool "Build USB Ftp server"
+	default n
+	depends on INCLUDE_USB_STORAGE
+
+	
+endmenu
+
+menu 'VoIP Options'
+	
+config INCLUDE_VOIP
+	bool "Build VoIP"
+	help
+	      VOIP Support
+	
+choice
+	prompt "DSP selection"
+	depends on INCLUDE_VOIP && (INCLUDE_CPU_TC3182 || INCLUDE_CPU_RT63368)
+
+config INCLUDE_VOIP_WITH_DSP_D2_2S1O
+	depends on INCLUDE_VOIP && INCLUDE_CPU_TC3182
+	bool "D2 2S1O support"
+	def_bool y
+
+config INCLUDE_VOIP_WITH_DSP_MTK
+	depends on INCLUDE_VOIP && INCLUDE_CPU_RT63368
+	bool "MTK DSP support"
+	def_bool y
+
+endchoice
+
+config INCLUDE_DSP_SOCKET_OPEN
+	bool "DSP socket open for upper use"
+	default n
+	help
+		We can call setsockopt for the RTP/RTCP socket
+
+config NUM_FXS_CHANNELS
+	depends on INCLUDE_VOIP
+	int "FxS ports number to be supported"
+	range 1 2
+	default 2
+
+config INCLUDE_DIGITMAP
+	depends on INCLUDE_VOIP
+	bool "support digitmap"
+	default n
+	help
+		support digitmap
+
+config INCLUDE_USB_VOICEMAIL
+	depends on INCLUDE_USB_STORAGE && INCLUDE_VOIP
+	bool "INCLUDE USB VOICEMAIL"
+	default y
+	help
+		support usb voicemail function 
+
+config INCLUDE_FLASH_VOICEMAIL
+	depends on INCLUDE_VOIP
+	bool "INCLUDE FLASH VOICEMAIL"
+	default n
+	help
+		support flash voicemail function 
+
+config INCLUDE_USBVM_MODULE
+	depends on INCLUDE_USB_VOICEMAIL
+	bool "INCLUDE USBVM module"
+	default y
+	help
+		Build a usbvm module for usbvm to play voicemail or voice prompt,the HZ MUST be the multiple of 100
+   
+config INCLUDE_DMZ
+	bool "DMZ Support"
+	depends on INCLUDE_VOIP
+	default y
+	help
+		SIP uses it to ADD/DEL nat rule	
+   
+config INCLUDE_CALLLOG
+	bool "Call log Support"
+	depends on INCLUDE_VOIP	
+	default y
+	
+config INCLUDE_CALLTHROUGH
+	bool "Call through Support"
+	depends on INCLUDE_VOIP	
+	default y
+	
+config INCLUDE_CALLFWD_THROUGH_DUT
+	bool "Call forward through dut Support"
+	depends on INCLUDE_GERMANY_SPEC && INCLUDE_VOIP
+	default y
+	help
+		For germany special callforward env.
+	
+config INCLUDE_DECT
+	bool "DECT Support"
+	depends on INCLUDE_VOIP	
+	default n
+
+config INCLUDE_VOICEAPP
+	bool "VOICEAPP Support"
+	depends on INCLUDE_VOIP	&& INCLUDE_PORTABLE_APP
+	default n
+
+config NUM_DECT_CHANNELS
+	depends on INCLUDE_DECT
+	int "DECT handsets number to be supported"
+	range 1 6
+	default 6	
+   
+config NUM_VOICEAPP_CHANNELS
+	depends on INCLUDE_VOICEAPP
+	int "VOICEAPP endpts number to be supported"
+	range 1 8
+	default 8
+
+config INCLUDE_PSTN
+	bool "IAD supports PSTN"
+	depends on INCLUDE_VOIP
+   
+config INCLUDE_PSTN_LIFELINE
+	bool "IAD supports PSTN lifeline function"
+	depends on INCLUDE_PSTN 
+   
+config INCLUDE_PSTN_POLREV
+	bool "PSTN provides polarity reversal to the FXO port"
+	depends on INCLUDE_PSTN 
+   
+config INCLUDE_PSTN_GATEWAY
+	bool "IAD can act as VoIP to PSTN or PSTN to VoIP gateway"
+	depends on INCLUDE_PSTN 
+
+menu "VOIP locale support"
+	depends on INCLUDE_VOIP
+	   
+choice
+	prompt "Locale selection"
+	depends on INCLUDE_VOIP
+	
+config VOIP_LOCALE_ALL
+	bool "SUPPORT all countries"
+	      
+config VOIP_LOCALE_CUSTOM
+	bool "Support customized contries"
+
+endchoice
+
+config VOIP_CFG_AUSTRALIA
+	bool "Australia"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_BELGIUM	
+	bool "Belgium"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_BRAZIL
+	bool "Brazil"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_CANADA
+	bool "Canada"
+	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_CHILE
+#	bool "Chile"
+#	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_CHINA
+	bool "China"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_COLOMBIA
+	bool "Colombia"
+	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_CZECH
+#	bool "Czech"
+#	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_DENMARK
+#	bool "Denmark"
+#	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_ETSI
+	bool "ETSI"
+	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_FINLAND
+#	bool "Finland"
+#	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_FRANCE
+	bool "France"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_GERMANY
+	bool "Germany"
+	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_HUNGARY
+#	bool "Hungary"
+#	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_INDIA
+	bool "India"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_INDONESIA
+	bool "Indonesia"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_ITALY
+	bool "Italy"
+	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_JAPAN
+#	bool "Japan"
+#	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_LATVIA
+	bool "Latvia"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_LITHUANIA
+	bool "Lithuania"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_MEXICO
+	bool "Mexico"
+	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_NETHERLANDS
+#	bool "Netherlands"
+#	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_NEWZEALAND
+	bool "New Zealand"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_NORTHAMERICA
+#	bool "North America"
+	def_bool y
+	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_NORWAY
+#	bool "Norway"
+#	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_PERU
+	bool "Peru"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_POLAND
+	bool "Poland"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_PORTUGAL
+	bool "Portugal"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_RUSSIA
+	bool "Russia"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_SERBIA
+	bool "Serbia"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_SPAIN
+	bool "Spain"
+	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_SWEDEN
+#	bool "Sweden"
+#	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_SWITZERLAND
+#	bool "Switzerland"
+#	depends on VOIP_LOCALE_CUSTOM
+
+#config VOIP_CFG_TAIWAN
+#	bool "Taiwan"
+#	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_THAILAND
+	bool "Thailand"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_TURKEY
+	bool "Turkey"
+	depends on VOIP_LOCALE_CUSTOM
+
+config VOIP_CFG_UK
+	bool "United Kindom"
+	depends on VOIP_LOCALE_CUSTOM
+
+endmenu  # menu "VOIP locale support"
+
+endmenu	# menu 'VoIP Options'
+
+
+menu 'Function Options'
+
+config INCLUDE_WAN_MODE
+	bool "build system mode"
+	default y
+
+config INCLUDE_APP_IQOS
+	bool "build APP IQOS"
+	default y
+	
+config INCLUDE_QOS
+	bool "build QoS"
+	default n
+	
+config INCLUDE_PORTABLE_APP
+	bool "build portable app"
+	default n
+	
+config INCLUDE_E8_APP
+	bool "build E8 APP"
+	default n
+	depends on INCLUDE_QOS
+	
+config INCLUDE_SSL
+	bool "build openSSL"
+	default n
+	
+config INCLUDE_CWMP
+	bool "build CWMP/TR069"
+	default n
+
+config INCLUDE_CWMP_SSL
+	bool "build SSL CWMP/TR069"
+	default n
+	depends on INCLUDE_CWMP && INCLUDE_SSL
+
+config INCLUDE_CWMP_SSL_VERIFY_PEER
+	bool "CWMP verify the certification of peer"
+	default n
+	depends on INCLUDE_CWMP_SSL
+	
+config INCLUDE_TR143
+	bool "Build TR143"
+	default n
+	depends on INCLUDE_CWMP
+
+config INCLUDE_RIP
+	bool "Build RIP"
+	default n
+
+config INCLUDE_SNMP
+	bool "Build SNMP"
+	default n
+
+config INCLUDE_DDNS
+	bool "Build DDNS"
+	default n
+	
+config INCLUDE_DDNS_PH
+	bool "Build oray DDNS"
+	default n
+	depends on INCLUDE_DDNS
+	
+config INCLUDE_DYNDNS
+	bool "Build dyn DDNS"
+	default n
+	depends on INCLUDE_DDNS
+	
+config INCLUDE_NOIPDNS
+	bool "Build NO-ip DDNS"
+	default n
+	depends on INCLUDE_DDNS
+	
+config INCLUDE_DDNS_USERDEFINE
+	bool "Build user defined DDNS"
+	default n
+	depends on INCLUDE_DDNS
+	
+config INCLUDE_MAIL
+	bool "Build support for mail service"
+	default n
+	
+config INCLUDE_IPTV
+	bool "Build IPTV"
+	default n
+	
+config INCLUDE_IGMP
+	bool "Build IGMP"
+	default n
+
+config INCLUDE_ETHERNET_WAN
+	bool "Build ethernet WAN"
+	default n
+	
+config INCLUDE_BRIDGING
+	bool "Build bridging"
+	default n
+	
+config INCLUDE_ALG
+	bool "Build ALG"
+	default n
+	
+config INCLUDE_ALG_H323
+	bool "Build H323 ALG"
+	default n
+	depends on INCLUDE_ALG
+
+config INCLUDE_ALG_SIP
+	bool "Build SIP ALG"
+	default n
+	depends on INCLUDE_ALG
+	
+config INCLUDE_WAN_DETECT
+	bool "Build Wan Detect"
+	default n
+	
+config INCLUDE_ROUTE_BINDING
+	bool "Build LAN&WAN binding with Policy Route"
+	default n
+
+
+config INCLUDE_BPA
+	bool "Build BigPond Dialing"
+	default y
+
+config INCLUDE_X_TP_VLAN
+	bool "Build Wan Bridge"
+	default n
+	
+config INCLUDE_PPTP
+bool "Build PPTP"
+	default n
+	
+config INCLUDE_L2TP
+bool "Build L2TP"
+	default n
+
+config INCLUDE_ACL
+	bool "Build Basic ACL Function(PING ACL)"
+	default n
+
+config INCLUDE_ACL_ADVANCE
+	bool "Build Full Access Control List Function(Not support yet!!!)"
+	default n
+	depends on INCLUDE_ACL
+
+config INCLUDE_DUAL_ACCESS
+	bool "Build PPPoE Dual Access"
+	default n
+	depends on INCLUDE_ETHERNET_WAN
+
+config INCLUDE_CLOUD
+	bool "Build Cloud Service"
+	default n
+	
+config INCLUDE_CLOUD_UPGRADE
+	bool "Build Cloud firmware upgdade"
+	default n
+	depends on INCLUDE_CLOUD
+
+config INCLUDE_CLOUD_ACCOUNT
+	bool "Build Cloud account"
+	default n
+	depends on INCLUDE_CLOUD
+
+config INCLUDE_WAN_BLOCK
+	bool "Build WAN Block"
+	default n
+	
+config INCLUDE_WAN_BLOCK_WAN_ERROR
+	bool "Build WAN Error Block"
+	default n
+	depends on INCLUDE_WAN_BLOCK
+	
+config INCLUDE_WAN_BLOCK_FW_UP_INFO
+	bool "Build Firmware Upgrade Info Block"
+	default n
+	depends on INCLUDE_WAN_BLOCK
+	
+config INCLUDE_HOSTNAME_EDITABLE
+	bool "Build support for editable hostname"
+	default n
+	
+config INCLUDE_REBOOT_SCHEDULE
+	bool "Build Reboot Schedule"
+	default n
+
+config INCLUDE_LED_SCHEDULE
+	bool "Build Led Schedule"
+	default n
+
+config INCLUDE_BPA
+	bool "Build BigPond Dialing"
+	default y	
+	
+config INCLUDE_VPN
+	bool "Build VPN Function"
+	default n
+	
+config INCLUDE_IPSEC
+	bool "Build IPSec"
+	default n
+	depends on INCLUDE_VPN
+	
+config 	INCLUDE_OPENVPN_SERVER
+	bool "Build OpenVPN server"
+	default n
+	depends on INCLUDE_VPN
+	
+config INCLUDE_PPTPVPN_SERVER
+	bool "Build PPTPVPN server"
+	default n
+	depends on INCLUDE_VPN
+	
+config INCLUDE_HTTP_SSL
+	bool "Build Https(SSL) Support For Access DUT "
+	default n
+
+config INCLUDE_SWITCH_MT7628
+	bool "Build switch for mt7628"
+	depends INCLUDE_CPU_MT7628
+	default y
+
+config INCLUDE_YANDEX_DNS
+	bool "Build Yandex DNS function"
+	default n
+	
+config INCLUDE_RESTRICT_CHILD_ACCESS
+	bool "Build Parent control restrict child access dut without effective time"
+	default n
+
+endmenu  # menu "Function Options"	
+
+menu 'PON Options'
+
+config INCLUDE_PON
+        bool "Build PON"
+        default n
+
+config INCLUDE_PON_EPON
+        bool "Build PON EPON"
+        default n
+        depends on INCLUDE_PON
+
+config INCLUDE_PON_GPON
+        bool "Build PON GPON"
+        default n
+        depends on INCLUDE_PON
+
+endmenu
+
+menu 'Special Functions Options'
+
+config INCLUDE_GERMANY_SPEC
+	bool "Build Germany Spec"
+	default n
+
+config INCLUDE_PPP_RECONN
+	bool "Build PPP RECONNECTION(usually used in Germany.)"
+	default n
+
+config INCLUDE_MER
+	bool "Build support for MER dial mode(For UK sky)"
+	default n
+
+config INCLUDE_IGMP_ETHPROXY
+	bool "Build IGMP Ethernet Proxy for PPP Connection(For UK BT)"
+	default n
+	depends on INCLUDE_IGMP
+
+config INCLUDE_ADSLVID_DETECT
+	bool "Build ADSL Vlan ID Detect function(For DE Telekom)"
+	default n
+	depends on INCLUDE_WAN_VLAN
+
+endmenu
+
+menu 'Backup Options'
+
+config INCLUDE_USB_3G_BACKUP
+	bool "Build USB 3G backup"
+	default n
+
+config INCLUDE_EWAN_BACKUP
+	bool "Build ewan backup"
+	default n
+
+config INCLUDE_CHECK_WANALIVE_WITH_RXPTK
+	bool "Build check wan alive with rx pkt"
+	default n
+
+config INCLUDE_CHECK_WANALIVE_WITH_DNS
+	bool "Build check wan alive with dns"
+	default y
+
+config INCLUDE_CHECK_WANALIVE_WITH_NTP
+	bool "Build check wan alive with ntp"
+	default n
+
+endmenu
+
+menu 'WEB Options'
+
+config INCLUDE_DOMAIN_TPLINKWIFI
+	bool "Use domain name tplinkwifi.net to login"
+	default n
+
+config WEB_INCLUDE_MULTI_EWAN
+	bool "WEB multi Ethernet WAN"
+	default n
+
+config WEB_INCLUDE_DST
+bool "WEB Daylight Savings Time"
+	default n
+
+config WEB_INCLUDE_MOBILE_UI
+bool "WEB Mobile UI"
+	default n
+
+config WEB_INCLUDE_HELP
+bool "WEB Help page"
+	default n
+
+config INCLUDE_WEB_REGION
+	bool "WEB page can change region"
+	default n
+
+config INCLUDE_DAY_MONTH_YEAR
+	bool "Time format is DAY/MONTH/YRAR (Germany)"
+	default n
+
+config INCLUDE_MULTI_LANGUAGE
+	bool "WEB Page support multi language"
+	default n
+	
+config INCLUDE_LANGUAGE_EN_US
+	bool "English United"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_DE_DE
+	bool "German"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_IT_IT
+	bool "Italian"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_RU_RU
+	bool "Russian"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_TR_TR
+	bool "Turkish"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_PL_PL
+	bool "Polish"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_FR_FR
+	bool "French"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_ES_ES
+	bool "Spanish"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_ES_LA
+	bool "Latin American Spanish"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_PT_PT
+	bool "Portuguese"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_PT_BR
+	bool "Brazilian Portuguese"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_EL_GR
+	bool "Greek"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+config INCLUDE_LANGUAGE_TH_TH
+	bool "Thai"
+	default n
+	depends on INCLUDE_MULTI_LANGUAGE
+
+endmenu

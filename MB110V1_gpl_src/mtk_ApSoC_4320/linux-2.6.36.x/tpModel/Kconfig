@@ -1,0 +1,74 @@
+menu "TPLINK Model"
+
+choice
+       prompt "TP-LINK Product MODEL"
+       default TP_MODEL_MR3420V5
+
+config TP_MODEL_C20iV1
+       bool "Build ArcherC20i V1"
+
+config TP_MODEL_C2V1
+       bool "Build ArcherC2 V1"
+	   
+config TP_MODEL_C20V1
+       bool "Build ArcherC20 V1"
+	   
+config TP_MODEL_C50V1
+       bool "Build ArcherC50 V1"
+
+config TP_MODEL_C50V4
+       bool "Build ArcherC50 V4"
+	   
+config TP_MODEL_WR840NV4
+       bool "Build TL-WR840N V4"
+
+config TP_MODEL_WR841NV13
+       bool "Build TL-WR841N V13"
+
+config TP_MODEL_WR845NV3
+       bool "Build TL-WR845N V3"
+
+config TP_MODEL_C20V4
+       bool "Build ArcherC20 V4"
+
+config TP_MODEL_MR3420V5
+       bool "Build MR3420 V5"
+	   
+config TP_MODEL_MR3020V3
+       bool "Build MR3020 V3"
+
+config TP_MODEL_MR6400V3
+       bool "Build MR6400 V3"
+       
+config TP_MODEL_MR400V4
+       bool "Build MR400 V4"
+
+config TP_MODEL_MR6400V5
+       bool "Build MR6400 V5"
+
+config TP_MODEL_MR200V5
+       bool "Build MR200 V5"
+
+config TP_MODEL_MR100V1
+       bool "Build MR100 V1"
+
+config TP_MODEL_MR100V2
+       bool "Build MR100 V2"
+
+config TP_MODEL_MB110V1
+       bool "Build MB110 V1"
+endchoice
+
+config TP_MEMORY_OPTIMIZATION
+       bool "TP_MEMORY_OPTIMIZATION"
+
+config TP_4M_FLASH
+       bool "USE 4M FLASH"
+
+config TP_10M_FLASH
+       bool "TP_10M_FLASH"
+
+   config TP_16M_FLASH
+       bool "TP_16M_FLASH"
+endmenu
+

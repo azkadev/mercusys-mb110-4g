@@ -1,0 +1,11 @@
+Build Instructions
+
+Note: 1) This package has been built successfully on Ubuntu with Ubuntu 12.04.
+      2) Compiling this package on platforms other than Ubuntu may have unexpected results.
+
+How to build:
+1. extract the source code from *.tar.gz file
+2. change to the 'build' directory, simply run commands below:
+   'make env_build boot_build kernel_build modules_build apps_build'
+   'sudo make fs_build image_build'
+3. the final images is in './targets/image_*/'

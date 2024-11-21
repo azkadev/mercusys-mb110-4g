@@ -1,0 +1,12 @@
+radvd
+radvdump
+*.o
+.deps/
+Makefile
+config.h
+config.log
+config.status
+radvd.8
+radvd.conf.5
+radvdump.8
+

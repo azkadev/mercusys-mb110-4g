@@ -1,0 +1,13 @@
+#
+# iqos appidentify kernel module extensions
+#
+
+config APPID_SPF	
+	tristate "appidentify spf extentions"
+	depends on APPID_MOD
+	default m
+	help
+		spf (small packet first) is a common game data recongnize
+		module for appidentify
+
+

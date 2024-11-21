@@ -1,0 +1,10 @@
+src/uuid/libupnp_la-md5.lo: src/uuid/md5.c src/inc/config.h \
+ ../autoconfig.h src/inc/global.h src/inc/md5.h
+
+src/inc/config.h:
+
+../autoconfig.h:
+
+src/inc/global.h:
+
+src/inc/md5.h:

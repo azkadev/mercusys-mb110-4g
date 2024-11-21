@@ -1,0 +1,91 @@
+head
+# trafficCtrl
+accessControl
+arpBind
+# natBoost
+alg
+virtualServer
+portTrigger
+dmz
+upnp
+wlGuestDulBandAdv
+wirelessStat
+wirelessAdv
+wirelessSchedule
+wirelessSettings
+wps
+parentCtrl
+wlGuestDulBandBasic
+networkMap
+wirelessBasic
+status
+time
+# pushService
+diagnostic
+softup
+backNRestore
+manageCtrl
+log
+logConf
+cwmp
+# snmp
+stat
+sysMode
+ethWan
+ethWanBasic
+wan
+route
+# group
+# dslcfg
+ddns
+dhcp
+# usbManage
+# printSrv
+# basic3g
+# folderSharing
+# usb3g
+# usb3gModemList
+# voice_basic
+# voice_telephony
+# voice_usbmailBasic
+# voice_advance
+# voice_telebook
+# voice_calllog
+# voice_electionRule
+# voice_callblocks
+# voice_callforward
+# voice_callthrough
+# voice_dectadv
+# voice_usbmail
+# voice_voiceapp
+# iptvDsl
+# iptvEth
+# ipsec
+wanBasicETH
+# wanBasicDSL
+ipv6Tunnel
+# openvpnServer
+# pptpvpnServer
+# vpnStatus
+# qosSettings
+# qosDatabase
+portFiltering
+firewall
+#ddos
+ledSchedule
+restart
+basicLte
+advanceLte
+PINManagement
+lteIspUpdate
+lteUssd
+# ipv6Firewall
+dataSettings
+lteSmsInbox
+lteSmsNewMsg
+lteSmsOutbox
+lteSmsDraftbox
+lteSmsSettings
+lteAtnSel
+cloudBasic
+tail

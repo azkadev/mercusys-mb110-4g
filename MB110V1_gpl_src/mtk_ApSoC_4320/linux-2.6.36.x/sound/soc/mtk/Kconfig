@@ -1,0 +1,14 @@
+config SND_RALINK_SOC
+	tristate "SoC Audio for Ralink SoC"
+	depends on SND_SOC && (RALINK_MT7620 || RALINK_MT7621 || CONFIG_RALINK_MT7628) 
+	select I2C
+	select I2C_BOARDINFO
+	select I2C_COMPAT
+	select I2C_CHARDEV
+	select I2C_HELPER_AUTO
+	select I2C_RALINK
+	default y if (RALINK_MT7620=y || RALINK_MT7621=y || CONFIG_RALINK_MT7628=y)
+	
+	help
+	  Say Y or M if you want to add support for codecs attached to
+	  the MTK I2S interface.

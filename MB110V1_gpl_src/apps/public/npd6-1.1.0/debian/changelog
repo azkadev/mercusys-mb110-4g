@@ -1,0 +1,76 @@
+npd6 (1.1.0) trusty; urgency=medium
+
+  * Consolidation into 1.1.0
+
+ -- Sean Groarke <sgroarke@gmail.com>  Wed, 16 Jul 2014 16:13:30 +0200
+
+npd6 (1.0.1) trusty; urgency=medium
+
+  * Fix for bug 60
+
+ -- Sean Groarke <sgroarke@gmail.com>  Wed, 16 Jul 2014 16:12:30 +0200
+
+npd6 (1.0.1) quantal; urgency=low
+
+  * Massage into Launchpad-suitable form
+
+ -- Sean Groarke <sgroarke@gmail.com>  Fri, 04 Jan 2013 15:47:20 +0100
+
+npd6 (1.0.0) quantal; urgency=low
+
+  * Merge DEV to TRUNK - Lots of changes and fixes.
+  * Version bump to 1.0.0
+
+ -- Sean Groarke <sgroarke@gmail.com>  Thu, 03 Jan 2013 10:03:18 +0100
+
+npd6 (0.9.99) quantal; urgency=low
+
+  * BETA release! Use with caution!
+  * Bug 48. Allow use of ANY prefix.
+  * Bug 49. No limits interface numbers.
+  * Bug 50. Masks on the prefixes.
+  * Bug 51
+  * Bug 51 and 53. Substantial changes to building and packaging.
+  * Many minor fixes and debug changes.
+  * Sample config file updated.
+  * MAN pages updated.
+
+ -- Sean Groarke <sgroarke@gmail.com>  Wed, 02 Jan 2013 16:17:11 +0100
+
+npd6 (0.7.0) precise; urgency=low
+
+    * Multi-interface support.
+    * Minor bug fixes and doc changes..
+
+ -- Sean Groarke <npd6project@gmail.com>  Mon, 14 Nov 2012 07:00:00 +0200
+
+npd6 (0.6.0) precise; urgency=low
+
+    * Bug fix for issue 42.
+    * Feature fix for issue 43.
+
+ -- Sean Groarke <npd6project@gmail.com>  Mon, 15 Oct 2012 07:00:00 +0200
+
+npd6 (0.5.2) precise; urgency=low
+
+    * Bug fixes for issue 38 & 40.
+
+ -- Sean Groarke <npd6project@gmail.com>  Fri, 12 Oct 2012 07:00:00 +0200
+
+npd6 (0.5.1) unstable; urgency=low
+
+  * Packaging tidy-up.
+
+ -- Sean Groarke <sgroarke@gmail.com>  Wed, 03 Oct 2012 10:37:23 +0200
+
+npd6 (0.5.0) precise; urgency=low
+
+  * Bump version
+
+ -- Craig Miskell <craig@catalyst.net.nz>  Mon, 27 Aug 2012 08:44:59 +1200
+
+npd6 (0.4.6) precise; urgency=low
+
+  * Initial package.
+
+ -- Sean Groarke <npd6project@gmail.com>  Mon, 21 May 2012 14:30:48 +0200

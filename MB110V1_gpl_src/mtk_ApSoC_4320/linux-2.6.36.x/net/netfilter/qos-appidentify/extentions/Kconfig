@@ -1,0 +1,15 @@
+#
+# iqos appidentify kernel module extensions
+#
+
+#menu "iQoS extensions"
+#	
+#endmenu
+
+source "net/netfilter/qos-appidentify/extentions/appid-example/Kconfig"
+
+source "net/netfilter/qos-appidentify/extentions/appid-spf/Kconfig"
+
+
+
+

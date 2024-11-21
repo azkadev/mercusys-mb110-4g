@@ -1,0 +1,11 @@
+*.o
+.deps/
+.libs/
+Makefile
+config.log
+config.status
+libsqlite3.la
+libtool
+sqlite3
+sqlite3.lo
+sqlite3.pc

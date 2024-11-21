@@ -1,0 +1,70 @@
+
+#
+## Ralink RT2880 board
+#
+platform-$(CONFIG_RALINK_RT2880)+= ralink/
+cflags-$(CONFIG_RALINK_RT2880)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_RT2880)	+= 0xffffffff88000000
+
+#
+## Ralink RT2883 board
+#
+platform-$(CONFIG_RALINK_RT2883)+= ralink/
+cflags-$(CONFIG_RALINK_RT2883)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_RT2883)	+= 0xffffffff80000000
+
+#
+## Ralink RT3052 board
+#
+platform-$(CONFIG_RALINK_RT3052)+= ralink/
+cflags-$(CONFIG_RALINK_RT3052)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_RT3052)	+= 0xffffffff80000000
+
+#
+## Ralink RT3352 board
+#
+platform-$(CONFIG_RALINK_RT3352)+= ralink/ softfloat/
+cflags-$(CONFIG_RALINK_RT3352)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_RT3352)	+= 0xffffffff80000000
+
+#
+## Ralink RT5350 board
+#
+platform-$(CONFIG_RALINK_RT5350)+= ralink/ softfloat/
+cflags-$(CONFIG_RALINK_RT5350)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_RT5350)	+= 0xffffffff80000000
+
+#
+## Ralink RT3883 board
+#
+platform-$(CONFIG_RALINK_RT3883)+= ralink/ softfloat/
+cflags-$(CONFIG_RALINK_RT3883)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_RT3883)	+= 0xffffffff80000000
+
+#
+## Ralink RT6855 board
+#
+platform-$(CONFIG_RALINK_RT6855)+= ralink/
+cflags-$(CONFIG_RALINK_RT6855)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_RT6855)	+= 0xffffffff80000000
+
+#
+## Ralink MT7620 board
+#
+platform-$(CONFIG_RALINK_MT7620)+= ralink/
+cflags-$(CONFIG_RALINK_MT7620)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_MT7620)	+= 0xffffffff80000000
+
+#
+## Ralink MT7621 board
+#
+platform-$(CONFIG_RALINK_MT7621)+= ralink/
+cflags-$(CONFIG_RALINK_MT7621)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_MT7621)	+= 0xffffffff80001000
+
+#
+## Ralink MT7628 board
+#
+platform-$(CONFIG_RALINK_MT7628)+= ralink/
+cflags-$(CONFIG_RALINK_MT7628)	+= -I$(srctree)/arch/mips/include/asm/mach-ralink
+load-$(CONFIG_RALINK_MT7628)	+= 0xffffffff80000000

@@ -1,0 +1,7 @@
+*.o
+dropbear
+dropbearkey
+dropbearmulti
+libtomcrypt/libtomcrypt.a
+libtommath/libtommath.a
+scp

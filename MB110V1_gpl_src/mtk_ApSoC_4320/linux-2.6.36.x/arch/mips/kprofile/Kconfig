@@ -1,0 +1,4 @@
+config KPROFILE
+       bool "Kprofile"
+       depends on SYS_HAS_CPU_MIPS32_R1
+       help

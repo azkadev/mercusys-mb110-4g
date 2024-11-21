@@ -1,0 +1,5 @@
+/xl2tpd
+*.o
+*~
+*.bak
+l2tpd
